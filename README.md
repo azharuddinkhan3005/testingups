@@ -1,3 +1,2 @@
 # curemint
-CureMint Project
-
+CureMint Project workflow.
