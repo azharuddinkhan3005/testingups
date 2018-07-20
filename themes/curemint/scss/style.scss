@@ -1,0 +1,20 @@
+// Base-theme fonts.
+@import 'fonts';
+
+// Default variables.
+@import "default-variables";
+
+// Bootstrap Framework.
+@import 'bootstrap/assets/stylesheets/bootstrap';
+
+// Base-theme overrides.
+@import 'overrides';
+
+// curemint project styling
+@import 'curemint/variables';
+@import 'curemint/homepage';
+
+body{
+	font-family: $regular;
+	color: $textcolor;
+}

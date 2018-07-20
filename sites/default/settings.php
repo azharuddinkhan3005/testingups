@@ -24,3 +24,15 @@ if (file_exists($local_settings)) {
   include $local_settings;
 }
 $settings['install_profile'] = 'standard';
+$databases['default']['default'] = array (
+  'database' => 'curemint',
+  'username' => 'vagrant',
+  'password' => 'Vagrant@123',
+  'prefix' => '',
+  'host' => '127.0.0.1',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+
+$settings['hash_salt'] = 'xSeYxB6ITA447_gWo_IF5VdLHijzo_TezP4JOW7Gd9lc4wDfZryT6hIQMjDULG74DGKIibnfAg';
