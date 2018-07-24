@@ -19,5 +19,6 @@ framework:
     scss/bootstrap/assets/javascripts/bootstrap/tab.js: {}
     scss/bootstrap/assets/javascripts/bootstrap/transition.js: {}
     js/owl.carousel.min.js: {}
+    js/slick.js: {}
     js/custom.js: {}
     

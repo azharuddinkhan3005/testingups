@@ -1,23 +1,14 @@
 jQuery(document).ready(function() {
-  jQuery('.owl-carousel').owlCarousel({
-    loop: true,
-    margin: 10,
-    responsiveClass: true,
-    responsive: {
-      0: {
-        items: 1,
-        nav: true
-      },
-      600: {
-        items: 3,
-        nav: false
-      },
-      1000: {
-        items: 5,
-        nav: true,
-        loop: false,
-        margin: 20
-      }
-    }
+  jQuery("#block-views-block-product-list-block-1 .view-content").slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1
+  });
+  jQuery(".supplies .view-content").slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1
   });
 });
