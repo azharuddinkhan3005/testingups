@@ -43,15 +43,18 @@
 			    color: $itemnamecolor;
 			    font-weight: bold;
 			}
-			p{
-				margin-bottom:5px;
-			    font-family: $regular;
-			    font-weight: normal;
-			    color: $textcolor;
-			    font-size: $size14;
-				span{
-					display: $in-block;
-    				width: 42%;
+			.pkg-section{
+				p{
+					margin-bottom:5px;
+				    font-family: $regular;
+				    font-weight: normal;
+				    color: $textcolor;
+				    font-size: $size14;
+				    display: $in-block;
+	    			vertical-align: middle;
+	    			&:first-child{
+	    				padding-right:15px;
+	    			}
 				}
 			}
 			h5{
