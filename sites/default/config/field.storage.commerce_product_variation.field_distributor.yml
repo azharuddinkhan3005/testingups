@@ -1,0 +1,20 @@
+uuid: 9ce3d0f7-5935-4e55-b793-2fcaab5bcf7e
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - node
+id: commerce_product_variation.field_distributor
+field_name: field_distributor
+entity_type: commerce_product_variation
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

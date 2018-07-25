@@ -1,0 +1,243 @@
+#block-curemint-views-block-product-list-block-1{
+	.view-content{
+		position: $rel;
+		.views-row{
+			position:$rel;
+			padding: 10px;
+			.wish-item{
+				position: $abs;
+				top:0;
+				right:0;
+			    font-size: $size20;
+			    display: inline-block;
+			    color: $textcolor;
+			    font-family: FontAwesome;
+			    text-rendering: auto;
+			    text-decoration: none !important;
+			    -webkit-font-smoothing: antialiased;
+			    -moz-osx-font-smoothing: grayscale;
+			    &:before{
+			    	content: "\f08a";
+			    }
+			    &.wish{
+			    color: $wishitemcolor;
+			    	&:before{
+				    	content: "\f004";
+				    }
+			    }
+			}
+			figure{
+				height:250px;
+				display:flex;
+				align-items: center;
+				justify-content: center;
+				overflow: hidden;
+				img{
+					max-width:100%;
+				}
+			}
+			h3{
+				font-size: $size14;
+			    line-height: 20px;
+			    font-family: $bold;
+			    color: $itemnamecolor;
+			    font-weight: bold;
+			}
+			p{
+				margin-bottom:5px;
+			    font-family: $regular;
+			    font-weight: normal;
+			    color: $textcolor;
+			    font-size: $size14;
+				span{
+					display: $in-block;
+    				width: 42%;
+				}
+			}
+			h5{
+				font-family: $regular;
+			    font-weight: normal;
+			    color: $textcolor;
+			    font-size: $size14;
+			}
+			h4{
+			margin: 15px 0 0px;
+				span{
+					color: $itemnamecolor;
+					display: $in-block;
+    				width: 42%;
+    				line-height: 25px;
+    				&:first-child{
+    					font-size: $size20;
+    					font-family: $bold;
+    				}
+    				&:last-child{
+    					font-size:$size12;
+    					text-decoration:line-through;
+    				}
+				}
+			}
+			.rating{
+			padding-bottom: 5px;
+				h6{
+				    color: $instock;
+				    display:$in-block;
+				    font-family: $bold;
+				    font-size: $size14;
+				    margin-right: 5px;
+				    line-height: 25px;
+				    text-transform: capitalize;
+				}
+				ul{
+					display: $in-block;
+					padding:0;
+					margin: 0;
+					list-style: $none;
+					li{
+						display:$in-block;
+						margin-right: 1px;
+						a{
+							display:$in-block;
+						    font-family: FontAwesome;
+						    font-size: $size14;
+						    color: $textcolor;
+						    text-rendering: auto;
+						    -webkit-font-smoothing: antialiased;
+						    -moz-osx-font-smoothing: grayscale;
+						    text-decoration: none !important;
+							&:before{
+								content: "\f006";
+							}
+							&.rate{
+								color:$rateColor;
+								&:before{
+									content: "\f005";
+								}
+							}
+						}
+					}
+				}
+				span{
+					display:$in-block;
+					font-size: $size11;
+    				vertical-align: text-bottom;
+				}
+			}
+			select{
+			    border: 1px solid $selectbordercolor;
+			    border-radius: 4px;
+			    display:$in-block;
+			    padding: 10px 40px 10px 10px;
+			    font-size: $size17;
+			    color: $textcolor;
+			    -webkit-appearance: $none;
+			    outline: $none;
+			    background-image: url(../images/arrow.png);
+			    background-repeat: no-repeat;
+			    background-position: 85% center;
+			    cursor: pointer;
+			    width: 77px;
+			    height: 50px;
+			    box-shadow: $none;
+			}
+			.btn{
+				border: 1px solid $btnbordercolor;
+			    background: transparent;
+			    font-size: $size14;
+			    line-height: 48px;
+			    font-family: $bold;
+			    color: $textcolor;
+			    text-transform: uppercase;
+			    padding: 0px 30px;
+			    border-radius: 3px;
+			    vertical-align: top;
+			    margin-left: 5px;
+			    outline: $none;
+			    box-shadow: $none;
+			}
+		}
+	}
+}
+.slick-dots{
+	display: $none !important;
+}
+.slick-prev{
+	position: absolute;
+    font-size: 0;
+    left: -15px;
+    top: 0;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 0px 4px 4px 0px;
+    width: 64px;
+    border: $none;
+	outline: $none;
+	z-index:1;
+	&:after{
+		content: "";
+	    width: 100%;
+	    height: 100%;
+	    display: $block;
+	    background-image: url(../images/Dark-Right.png);
+	    background-repeat: no-repeat;
+	    background-position: center;
+	    transform: scale(-1);
+	}
+}
+.slick-next{
+	position: absolute;
+    font-size: 0;
+    right: -15px;
+    top: 0;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 0px 4px 4px 0px;
+    width: 64px;
+    border: $none;
+	outline: $none;
+	z-index:1;
+	&:after{
+		content: "";
+	    width: 100%;
+	    height: 100%;
+	    display: $block;
+	    background-image: url(../images/Dark-Right.png);
+	    background-repeat: no-repeat;
+	    background-position: center;
+	}
+}
+.supplies{
+	.view-content{
+		position: $rel;
+		.views-row{
+			position:$rel;
+			padding: 10px;
+			a{
+				figure{
+					position:$rel;
+					height: 260px;
+    				overflow: hidden;
+					img{
+						max-width:100%;
+					}
+					figcaption{
+						position: $abs;
+					    bottom: 0;
+					    width: 100%;
+					    left: 0;
+					    background: rgba(255, 255, 255, 0.75);
+					    font-family: $regular;
+					    font-weight: normal;
+					    color: $itemnamecolor;
+					    font-size: $size14;
+					    text-align: center;
+					    height: 70px;
+					    display: flex;
+					    align-items: center;
+					    justify-content: center;
+					}
+				}
+			}
+		}
+	}
+}

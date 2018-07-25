@@ -1,0 +1,9 @@
+uuid: 2875df08-d965-4066-9777-2cc99c9739f0
+langcode: en
+status: true
+dependencies: {  }
+id: dental_office
+label: 'Dental Office'
+weight: 5
+is_admin: null
+permissions: {  }

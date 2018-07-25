@@ -1,0 +1,23 @@
+uuid: 88b0f8c3-e562-4310-bbb3-cb98e2975c0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.general
+    - field.storage.commerce_product_variation.field_quantity
+id: commerce_product_variation.general.field_quantity
+field_name: field_quantity
+entity_type: commerce_product_variation
+bundle: general
+label: Quantity
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

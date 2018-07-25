@@ -1,0 +1,21 @@
+uuid: a26952d1-d2f6-4117-bded-e7a88116fdb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_hq_details
+  module:
+    - text
+    - user
+id: user.user.field_hq_details
+field_name: field_hq_details
+entity_type: user
+bundle: user
+label: 'HQ Details'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

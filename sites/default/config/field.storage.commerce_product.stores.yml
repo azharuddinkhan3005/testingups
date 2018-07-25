@@ -1,0 +1,20 @@
+uuid: 522b3e25-1e13-4e2d-a9e1-163919ba51c1
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - commerce_store
+id: commerce_product.stores
+field_name: stores
+entity_type: commerce_product
+type: entity_reference
+settings:
+  target_type: commerce_store
+module: core
+locked: true
+cardinality: -1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
