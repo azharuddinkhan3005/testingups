@@ -3,6 +3,7 @@
 		position: $rel;
 		.views-row{
 			position:$rel;
+			padding: 10px;
 			.wish-item{
 				position: $abs;
 				top:0;
@@ -25,8 +26,15 @@
 				    }
 			    }
 			}
-			img{
-				max-width:100%;
+			figure{
+				height:250px;
+				display:flex;
+				align-items: center;
+				justify-content: center;
+				overflow: hidden;
+				img{
+					max-width:100%;
+				}
 			}
 			h3{
 				font-size: $size14;
@@ -203,8 +211,32 @@
 		position: $rel;
 		.views-row{
 			position:$rel;
-			img{
-				max-width:100%;
+			padding: 10px;
+			a{
+				figure{
+					position:$rel;
+					height: 260px;
+    				overflow: hidden;
+					img{
+						max-width:100%;
+					}
+					figcaption{
+						position: $abs;
+					    bottom: 0;
+					    width: 100%;
+					    left: 0;
+					    background: rgba(255, 255, 255, 0.75);
+					    font-family: $regular;
+					    font-weight: normal;
+					    color: $itemnamecolor;
+					    font-size: $size14;
+					    text-align: center;
+					    height: 70px;
+					    display: flex;
+					    align-items: center;
+					    justify-content: center;
+					}
+				}
 			}
 		}
 	}

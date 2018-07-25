@@ -3,9 +3,7 @@ framework:
     theme:
       css/style.css: {}
       css/font-awesome.min.css: {}
-      css/owl.carousel.min.css: {}
   js:
-    js/owl.carousel.min.js: {}
     scss/bootstrap/assets/javascripts/bootstrap/affix.js: {}
     scss/bootstrap/assets/javascripts/bootstrap/alert.js: {}
     scss/bootstrap/assets/javascripts/bootstrap/button.js: {}
@@ -18,7 +16,6 @@ framework:
     scss/bootstrap/assets/javascripts/bootstrap/scrollspy.js: {}
     scss/bootstrap/assets/javascripts/bootstrap/tab.js: {}
     scss/bootstrap/assets/javascripts/bootstrap/transition.js: {}
-    js/owl.carousel.min.js: {}
     js/slick.js: {}
     js/custom.js: {}
     
