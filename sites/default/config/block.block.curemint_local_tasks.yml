@@ -1,0 +1,22 @@
+uuid: 2a040732-376e-4bdf-8d8e-bc5264e5b8b8
+langcode: en
+status: true
+dependencies:
+  theme:
+    - curemint
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: curemint_local_tasks
+theme: curemint
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

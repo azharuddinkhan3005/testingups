@@ -1,0 +1,9 @@
+uuid: 3083e14e-5662-4285-b7d7-5dba0230da8e
+langcode: en
+status: true
+dependencies: {  }
+id: regional
+label: Regional
+weight: 4
+is_admin: null
+permissions: {  }

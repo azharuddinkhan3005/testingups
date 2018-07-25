@@ -1,0 +1,23 @@
+uuid: 3e6f5aa1-da67-429c-a46e-c5e3225ab0a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.general
+    - field.storage.commerce_product_variation.field_formulary_price
+  module:
+    - commerce_price
+id: commerce_product_variation.general.field_formulary_price
+field_name: field_formulary_price
+entity_type: commerce_product_variation
+bundle: general
+label: 'Formulary Price'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_currencies:
+    - USD
+field_type: commerce_price

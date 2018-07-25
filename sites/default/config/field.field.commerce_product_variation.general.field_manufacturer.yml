@@ -1,0 +1,29 @@
+uuid: df23a519-263a-43b1-849c-b9dbd9f3cb4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.general
+    - field.storage.commerce_product_variation.field_manufacturer
+    - taxonomy.vocabulary.manufacturer
+id: commerce_product_variation.general.field_manufacturer
+field_name: field_manufacturer
+entity_type: commerce_product_variation
+bundle: general
+label: Manufacturer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      manufacturer: manufacturer
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

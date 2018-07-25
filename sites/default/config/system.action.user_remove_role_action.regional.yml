@@ -1,0 +1,14 @@
+uuid: 67cde40f-fcc5-4d44-a037-19dd5b68269f
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.regional
+  module:
+    - user
+id: user_remove_role_action.regional
+label: 'Remove the Regional role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: regional

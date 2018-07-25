@@ -1,0 +1,14 @@
+uuid: 9b94b1bf-ede0-443b-84c9-ee0ec88397c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.dental_office
+  module:
+    - user
+id: user_remove_role_action.dental_office
+label: 'Remove the Dental Office role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: dental_office

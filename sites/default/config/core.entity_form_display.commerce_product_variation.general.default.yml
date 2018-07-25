@@ -1,0 +1,112 @@
+uuid: 88610eb2-a8c8-4427-935f-1071a3f6be16
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.general
+    - field.field.commerce_product_variation.general.field_categories
+    - field.field.commerce_product_variation.general.field_distributor
+    - field.field.commerce_product_variation.general.field_distributor_sku
+    - field.field.commerce_product_variation.general.field_formulary_price
+    - field.field.commerce_product_variation.general.field_manufacturer
+    - field.field.commerce_product_variation.general.field_manufacturer_sku
+    - field.field.commerce_product_variation.general.field_packaging_details
+    - field.field.commerce_product_variation.general.field_product_images
+    - field.field.commerce_product_variation.general.field_quantity
+    - image.style.thumbnail
+  module:
+    - commerce_price
+    - image
+    - text
+id: commerce_product_variation.general.default
+targetEntityType: commerce_product_variation
+bundle: general
+mode: default
+content:
+  field_categories:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_distributor:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_distributor_sku:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_formulary_price:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: commerce_price_default
+    region: content
+  field_manufacturer:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_manufacturer_sku:
+    weight: 12
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_packaging_details:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_product_images:
+    weight: 9
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_quantity:
+    weight: 6
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  price:
+    type: commerce_price_default
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sku:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

@@ -1,0 +1,20 @@
+uuid: a345a78c-80ea-4b91-930d-b35c05f6f508
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - text
+id: commerce_product_variation.field_distributor_sku
+field_name: field_distributor_sku
+entity_type: commerce_product_variation
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

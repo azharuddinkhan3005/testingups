@@ -1,0 +1,14 @@
+uuid: 1742116a-e6df-4a92-b97e-4d5d733862f2
+name: Curemint
+mail: fawad@curemint.io
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

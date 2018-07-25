@@ -1,0 +1,19 @@
+uuid: 1bd4f6b5-c9ef-4bad-92cc-8c504a3ca13b
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - text
+id: commerce_product_variation.field_packaging_details
+field_name: field_packaging_details
+entity_type: commerce_product_variation
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

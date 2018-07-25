@@ -1,0 +1,25 @@
+uuid: b5d635fc-1c26-47d8-b19c-a4173b5e796d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - curemint
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: curemint_branding
+theme: curemint
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }
