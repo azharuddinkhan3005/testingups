@@ -1,3 +1,4 @@
+// most purchased items slider
 #block-curemint-views-block-product-list-block-1{
 	.view-content{
 		position: $rel;
@@ -127,7 +128,7 @@
 				}
 			}
 			select{
-			    border: 1px solid $selectbordercolor;
+			    border: 1px solid $btnbordercolor;
 			    border-radius: 4px;
 			    display:$in-block;
 			    padding: 10px 40px 10px 10px;
@@ -161,6 +162,7 @@
 		}
 	}
 }
+// slider
 .slick-dots{
 	display: $none !important;
 }
@@ -209,7 +211,8 @@
 	    background-position: center;
 	}
 }
-.supplies{
+// supplies slider
+#block-views-block-supplies-block-1{
 	.view-content{
 		position: $rel;
 		.views-row{
@@ -239,6 +242,26 @@
 					    align-items: center;
 					    justify-content: center;
 					}
+				}
+			}
+		}
+	}
+}
+
+// shop supplier slider
+.shop-supplier{
+	.view-content{
+		position: $rel;
+		.views-row{
+			position:$rel;
+			padding: 0 5px;
+			figure{
+				position:$rel;
+				border:1px solid $btnbordercolor;
+				overflow: hidden;
+				border-radius:100%;
+				img{
+					max-width:100%;
 				}
 			}
 		}
