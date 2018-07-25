@@ -1,5 +1,5 @@
 jQuery(document).ready(function() {
-  jQuery("#block-views-block-product-list-block-1 .view-content").slick({
+  jQuery("#block-curemint-views-block-product-list-block-1 .view-content").slick({
     dots: true,
     infinite: true,
     slidesToShow: 5,
