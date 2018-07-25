@@ -1,4 +1,3 @@
-
 // Base-theme fonts.
 @import 'fonts';
 
@@ -18,9 +17,10 @@
 @import 'curemint/variables';
 @import 'curemint/homepage';
 
-
-
 body{
 	font-family: $regular;
 	color: $textcolor;
+}
+*{
+	outline:$none !important;
 }
