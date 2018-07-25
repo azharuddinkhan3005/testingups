@@ -1,0 +1,23 @@
+uuid: 7db135fc-6fb8-411c-961f-7c683f884f6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_display_on_home_page
+    - taxonomy.vocabulary.main_categories
+id: taxonomy_term.main_categories.field_display_on_home_page
+field_name: field_display_on_home_page
+entity_type: taxonomy_term
+bundle: main_categories
+label: 'Display on home page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

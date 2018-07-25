@@ -638,7 +638,7 @@ display:
             operator: ''
           group: 1
       sorts: {  }
-      title: 'MOST PURCHASED ITEMs'
+      title: 'MOST PURCHASED ITEMS'
       header:
         area_text_custom:
           id: area_text_custom

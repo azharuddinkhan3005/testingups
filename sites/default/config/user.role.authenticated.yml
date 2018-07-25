@@ -1,4 +1,4 @@
-uuid: 6a368ee9-dc9b-4431-801e-144434c5dd5c
+uuid: 37baf0fa-3a8d-44d4-a1da-346b941a2207
 langcode: en
 status: true
 dependencies: {  }
@@ -9,11 +9,15 @@ label: 'Authenticated user'
 weight: 1
 is_admin: false
 permissions:
+  - 'access checkout'
   - 'access comments'
   - 'access content'
   - 'access shortcuts'
   - 'access site-wide contact form'
+  - 'manage own commerce_payment_method'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
+  - 'view commerce_product'
+  - 'view own commerce_order'

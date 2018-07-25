@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.main_categories.field_display_on_home_page
     - field.field.taxonomy_term.main_categories.field_main_category_image
     - taxonomy.vocabulary.main_categories
   module:
@@ -20,6 +21,16 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_display_on_home_page:
+    weight: 2
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
   field_main_category_image:
     weight: 1
     label: above

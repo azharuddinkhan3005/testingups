@@ -1,4 +1,4 @@
-uuid: b129eacd-a490-418e-908f-b76ac1a468b9
+uuid: b2f88c3b-e695-45e5-a40d-d24a41ba141f
 langcode: en
 status: true
 dependencies: {  }
@@ -9,8 +9,10 @@ label: 'Anonymous user'
 weight: 0
 is_admin: false
 permissions:
+  - 'access checkout'
   - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
   - 'search content'
   - 'use text format restricted_html'
+  - 'view commerce_product'

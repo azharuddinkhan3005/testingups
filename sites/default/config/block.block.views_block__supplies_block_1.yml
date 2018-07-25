@@ -1,9 +1,9 @@
-uuid: 1a28277e-a7a8-4e7f-a6cf-53549ffd8d9a
+uuid: c1246a6c-a15d-4c3c-8047-c0a981024d5a
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.product_list
+    - views.view.supplies
   module:
     - block_class
     - system
@@ -13,14 +13,14 @@ dependencies:
 third_party_settings:
   block_class:
     classes: col-md-12
-id: curemint_views_block__product_list_block_1
+id: views_block__supplies_block_1
 theme: curemint
 region: content
-weight: -1
+weight: -2
 provider: null
-plugin: 'views_block:product_list-block_1'
+plugin: 'views_block:supplies-block_1'
 settings:
-  id: 'views_block:product_list-block_1'
+  id: 'views_block:supplies-block_1'
   label: ''
   provider: views
   label_display: visible
