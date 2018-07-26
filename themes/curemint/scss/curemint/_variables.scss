@@ -55,19 +55,19 @@ $rateColor: #ffa900;
 }
 
 @mixin heading-3 {
-  @include heading;
+  
 }
 
 @mixin heading-4 {
-  @include heading;
+  
 }
 
 @mixin heading-5 {
-  @include heading;
+  
 }
 
 @mixin heading-6 {
-  @include heading;
+  
 }
 
 h1 { @include heading-1; }

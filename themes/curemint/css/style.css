@@ -9821,16 +9821,6 @@ h2 {
   color: #4a4a4a;
 }
 
-/* line 75, ../scss/curemint/_variables.scss */
-h3 {
-  font-family: RalewayMedium;
-}
-
-/* line 76, ../scss/curemint/_variables.scss */
-h4 {
-  font-family: RalewayMedium;
-}
-
 /* line 3, ../scss/curemint/_homepage.scss */
 #block-curemint-views-block-product-list-block-1 .view-content {
   position: relative;
@@ -9868,7 +9858,7 @@ h4 {
 }
 /* line 30, ../scss/curemint/_homepage.scss */
 #block-curemint-views-block-product-list-block-1 .view-content .views-row figure {
-  height: 250px;
+  height: 220px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9886,7 +9876,11 @@ h4 {
   color: #4a4a4a;
   font-weight: bold;
 }
-/* line 48, ../scss/curemint/_homepage.scss */
+/* line 47, ../scss/curemint/_homepage.scss */
+#block-curemint-views-block-product-list-block-1 .view-content .views-row .pkg-section {
+  clear: both;
+}
+/* line 49, ../scss/curemint/_homepage.scss */
 #block-curemint-views-block-product-list-block-1 .view-content .views-row .pkg-section p {
   margin-bottom: 5px;
   font-family: Helvetica;
@@ -9896,43 +9890,47 @@ h4 {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 56, ../scss/curemint/_homepage.scss */
+/* line 57, ../scss/curemint/_homepage.scss */
 #block-curemint-views-block-product-list-block-1 .view-content .views-row .pkg-section p:first-child {
   padding-right: 15px;
 }
-/* line 61, ../scss/curemint/_homepage.scss */
+/* line 60, ../scss/curemint/_homepage.scss */
+#block-curemint-views-block-product-list-block-1 .view-content .views-row .pkg-section p:last-child {
+  float: right;
+}
+/* line 65, ../scss/curemint/_homepage.scss */
 #block-curemint-views-block-product-list-block-1 .view-content .views-row h5 {
   font-family: Helvetica;
   font-weight: normal;
   color: #7f7f7f;
   font-size: 14px;
 }
-/* line 67, ../scss/curemint/_homepage.scss */
+/* line 71, ../scss/curemint/_homepage.scss */
 #block-curemint-views-block-product-list-block-1 .view-content .views-row h4 {
-  margin: 15px 0 0px;
+  margin: 15px 0 10px;
 }
-/* line 69, ../scss/curemint/_homepage.scss */
+/* line 73, ../scss/curemint/_homepage.scss */
 #block-curemint-views-block-product-list-block-1 .view-content .views-row h4 span {
   color: #4a4a4a;
   display: inline-block;
-  width: 42%;
+  width: 44%;
   line-height: 25px;
 }
-/* line 74, ../scss/curemint/_homepage.scss */
+/* line 78, ../scss/curemint/_homepage.scss */
 #block-curemint-views-block-product-list-block-1 .view-content .views-row h4 span:first-child {
   font-size: 20px;
   font-family: HelveticaBold;
 }
-/* line 78, ../scss/curemint/_homepage.scss */
+/* line 82, ../scss/curemint/_homepage.scss */
 #block-curemint-views-block-product-list-block-1 .view-content .views-row h4 span:last-child {
   font-size: 12px;
   text-decoration: line-through;
 }
-/* line 84, ../scss/curemint/_homepage.scss */
+/* line 88, ../scss/curemint/_homepage.scss */
 #block-curemint-views-block-product-list-block-1 .view-content .views-row .rating {
   padding-bottom: 5px;
 }
-/* line 86, ../scss/curemint/_homepage.scss */
+/* line 90, ../scss/curemint/_homepage.scss */
 #block-curemint-views-block-product-list-block-1 .view-content .views-row .rating h6 {
   color: #009347;
   display: inline-block;
@@ -9942,19 +9940,19 @@ h4 {
   line-height: 25px;
   text-transform: capitalize;
 }
-/* line 95, ../scss/curemint/_homepage.scss */
+/* line 99, ../scss/curemint/_homepage.scss */
 #block-curemint-views-block-product-list-block-1 .view-content .views-row .rating ul {
   display: inline-block;
   padding: 0;
   margin: 0;
   list-style: none;
 }
-/* line 100, ../scss/curemint/_homepage.scss */
+/* line 104, ../scss/curemint/_homepage.scss */
 #block-curemint-views-block-product-list-block-1 .view-content .views-row .rating ul li {
   display: inline-block;
   margin-right: 1px;
 }
-/* line 103, ../scss/curemint/_homepage.scss */
+/* line 107, ../scss/curemint/_homepage.scss */
 #block-curemint-views-block-product-list-block-1 .view-content .views-row .rating ul li a {
   display: inline-block;
   font-family: FontAwesome;
@@ -9965,25 +9963,25 @@ h4 {
   -moz-osx-font-smoothing: grayscale;
   text-decoration: none !important;
 }
-/* line 112, ../scss/curemint/_homepage.scss */
+/* line 116, ../scss/curemint/_homepage.scss */
 #block-curemint-views-block-product-list-block-1 .view-content .views-row .rating ul li a:before {
   content: "\f006";
 }
-/* line 115, ../scss/curemint/_homepage.scss */
+/* line 119, ../scss/curemint/_homepage.scss */
 #block-curemint-views-block-product-list-block-1 .view-content .views-row .rating ul li a.rate {
   color: #ffa900;
 }
-/* line 117, ../scss/curemint/_homepage.scss */
+/* line 121, ../scss/curemint/_homepage.scss */
 #block-curemint-views-block-product-list-block-1 .view-content .views-row .rating ul li a.rate:before {
   content: "\f005";
 }
-/* line 124, ../scss/curemint/_homepage.scss */
+/* line 128, ../scss/curemint/_homepage.scss */
 #block-curemint-views-block-product-list-block-1 .view-content .views-row .rating span {
   display: inline-block;
   font-size: 11px;
   vertical-align: text-bottom;
 }
-/* line 130, ../scss/curemint/_homepage.scss */
+/* line 134, ../scss/curemint/_homepage.scss */
 #block-curemint-views-block-product-list-block-1 .view-content .views-row select {
   border: 1px solid #9e9e9e;
   border-radius: 4px;
@@ -10001,7 +9999,7 @@ h4 {
   height: 50px;
   box-shadow: none;
 }
-/* line 147, ../scss/curemint/_homepage.scss */
+/* line 151, ../scss/curemint/_homepage.scss */
 #block-curemint-views-block-product-list-block-1 .view-content .views-row .btn {
   border: 1px solid #9e9e9e;
   background: transparent;
@@ -10014,16 +10012,16 @@ h4 {
   border-radius: 3px;
   vertical-align: top;
   margin-left: 5px;
-  outline: none;
+  float: right;
   box-shadow: none;
 }
 
-/* line 166, ../scss/curemint/_homepage.scss */
+/* line 170, ../scss/curemint/_homepage.scss */
 .slick-dots {
   display: none !important;
 }
 
-/* line 169, ../scss/curemint/_homepage.scss */
+/* line 173, ../scss/curemint/_homepage.scss */
 .slick-prev {
   position: absolute;
   font-size: 0;
@@ -10037,7 +10035,7 @@ h4 {
   outline: none;
   z-index: 1;
 }
-/* line 181, ../scss/curemint/_homepage.scss */
+/* line 185, ../scss/curemint/_homepage.scss */
 .slick-prev:after {
   content: "";
   width: 100%;
@@ -10049,7 +10047,7 @@ h4 {
   transform: scale(-1);
 }
 
-/* line 192, ../scss/curemint/_homepage.scss */
+/* line 196, ../scss/curemint/_homepage.scss */
 .slick-next {
   position: absolute;
   font-size: 0;
@@ -10063,7 +10061,7 @@ h4 {
   outline: none;
   z-index: 1;
 }
-/* line 204, ../scss/curemint/_homepage.scss */
+/* line 208, ../scss/curemint/_homepage.scss */
 .slick-next:after {
   content: "";
   width: 100%;
@@ -10074,26 +10072,26 @@ h4 {
   background-position: center;
 }
 
-/* line 216, ../scss/curemint/_homepage.scss */
+/* line 220, ../scss/curemint/_homepage.scss */
 #block-views-block-supplies-block-1 .view-content {
   position: relative;
 }
-/* line 218, ../scss/curemint/_homepage.scss */
+/* line 222, ../scss/curemint/_homepage.scss */
 #block-views-block-supplies-block-1 .view-content .views-row {
   position: relative;
   padding: 10px;
 }
-/* line 222, ../scss/curemint/_homepage.scss */
+/* line 226, ../scss/curemint/_homepage.scss */
 #block-views-block-supplies-block-1 .view-content .views-row a figure {
   position: relative;
-  height: 260px;
+  height: 240px;
   overflow: hidden;
 }
-/* line 226, ../scss/curemint/_homepage.scss */
+/* line 230, ../scss/curemint/_homepage.scss */
 #block-views-block-supplies-block-1 .view-content .views-row a figure img {
   max-width: 100%;
 }
-/* line 229, ../scss/curemint/_homepage.scss */
+/* line 233, ../scss/curemint/_homepage.scss */
 #block-views-block-supplies-block-1 .view-content .views-row a figure figcaption {
   position: absolute;
   bottom: 0;
@@ -10111,23 +10109,28 @@ h4 {
   justify-content: center;
 }
 
-/* line 253, ../scss/curemint/_homepage.scss */
+/* line 257, ../scss/curemint/_homepage.scss */
 .shop-supplier .view-content {
   position: relative;
 }
-/* line 255, ../scss/curemint/_homepage.scss */
+/* line 259, ../scss/curemint/_homepage.scss */
 .shop-supplier .view-content .views-row {
   position: relative;
   padding: 0 5px;
 }
-/* line 258, ../scss/curemint/_homepage.scss */
+/* line 262, ../scss/curemint/_homepage.scss */
 .shop-supplier .view-content .views-row figure {
   position: relative;
   border: 1px solid #9e9e9e;
   overflow: hidden;
   border-radius: 100%;
+  width: 78px;
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-/* line 263, ../scss/curemint/_homepage.scss */
+/* line 272, ../scss/curemint/_homepage.scss */
 .shop-supplier .view-content .views-row figure img {
   max-width: 100%;
 }

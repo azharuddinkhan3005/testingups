@@ -98,7 +98,7 @@
     <div class="row">
       <!-- shop by suppliers -->
       <div class="col-md-12 shop-supplier">
-        <h2>Supplies</h2>
+        <h2>Shop by Supplier</h2>
         <div class="view-content">
           <div class="views-row">
             <!-- repeat -->
@@ -331,7 +331,7 @@
       <div class="view-content">
         <div class="views-row">
           <!-- repeat -->
-          <a class="wish-item" href="javascript:void();"></a>
+          <!-- <a class="wish-item" href="javascript:void();"></a> -->
             <figure>
               <img alt="CitanestPlainDentalwithoutVasoconstrictor.jpg" src="/themes/curemint/images/CitanestPlainDentalwithoutVasoconstrictor.jpg">
             </figure>
@@ -341,7 +341,7 @@
             </div>
             <h5>Dentsply North America</h5>
             <h4><span>$45.50</span><span>$59.60</span></h4>
-            <div class="rating">
+            <!-- <div class="rating">
               <h6>In stock</h6>
               <ul>
                 <li><a class="star" href="javascript:void();"></a></li>
@@ -351,7 +351,7 @@
                 <li><a class="star" href="javascript:void();"></a></li>
               </ul>
               <span>8.8</span>
-            </div>
+            </div> -->
             <select class="form-control">
               <option>88</option>
               <option>80</option>
@@ -362,15 +362,18 @@
             <!-- repeat end -->
         </div>
         <div class="views-row">
-          <a class="wish-item" href="javascript:void();"></a>
+          <!-- repeat -->
+          <!-- <a class="wish-item" href="javascript:void();"></a> -->
             <figure>
               <img alt="CitanestPlainDentalwithoutVasoconstrictor.jpg" src="/themes/curemint/images/CitanestPlainDentalwithoutVasoconstrictor.jpg">
             </figure>
             <h3>4% Citanest&reg; Plain Dental without Vasoconstrictor - Injection</h3>
-            <p><span>20 Pkg/Case</span><span>46616</span></p>
+            <div class="pkg-section">
+              <p>20 Packages/Case</p><p>46616</p>
+            </div>
             <h5>Dentsply North America</h5>
             <h4><span>$45.50</span><span>$59.60</span></h4>
-            <div class="rating">
+            <!-- <div class="rating">
               <h6>In stock</h6>
               <ul>
                 <li><a class="star" href="javascript:void();"></a></li>
@@ -380,7 +383,7 @@
                 <li><a class="star" href="javascript:void();"></a></li>
               </ul>
               <span>8.8</span>
-            </div>
+            </div> -->
             <select class="form-control">
               <option>88</option>
               <option>80</option>
@@ -388,17 +391,21 @@
               <option>28</option>
             </select>
             <a class="btn btn-default" href="#" role="button">add to cart</a>
+            <!-- repeat end -->
         </div>
         <div class="views-row">
-          <a class="wish-item" href="javascript:void();"></a>
+          <!-- repeat -->
+          <!-- <a class="wish-item" href="javascript:void();"></a> -->
             <figure>
               <img alt="CitanestPlainDentalwithoutVasoconstrictor.jpg" src="/themes/curemint/images/CitanestPlainDentalwithoutVasoconstrictor.jpg">
             </figure>
             <h3>4% Citanest&reg; Plain Dental without Vasoconstrictor - Injection</h3>
-            <p><span>20 Pkg/Case</span><span>46616</span></p>
+            <div class="pkg-section">
+              <p>20 Packages/Case</p><p>46616</p>
+            </div>
             <h5>Dentsply North America</h5>
             <h4><span>$45.50</span><span>$59.60</span></h4>
-            <div class="rating">
+            <!-- <div class="rating">
               <h6>In stock</h6>
               <ul>
                 <li><a class="star" href="javascript:void();"></a></li>
@@ -408,7 +415,7 @@
                 <li><a class="star" href="javascript:void();"></a></li>
               </ul>
               <span>8.8</span>
-            </div>
+            </div> -->
             <select class="form-control">
               <option>88</option>
               <option>80</option>
@@ -416,17 +423,21 @@
               <option>28</option>
             </select>
             <a class="btn btn-default" href="#" role="button">add to cart</a>
+            <!-- repeat end -->
         </div>
         <div class="views-row">
-          <a class="wish-item" href="javascript:void();"></a>
+          <!-- repeat -->
+          <!-- <a class="wish-item" href="javascript:void();"></a> -->
             <figure>
               <img alt="CitanestPlainDentalwithoutVasoconstrictor.jpg" src="/themes/curemint/images/CitanestPlainDentalwithoutVasoconstrictor.jpg">
             </figure>
             <h3>4% Citanest&reg; Plain Dental without Vasoconstrictor - Injection</h3>
-            <p><span>20 Pkg/Case</span><span>46616</span></p>
+            <div class="pkg-section">
+              <p>20 Packages/Case</p><p>46616</p>
+            </div>
             <h5>Dentsply North America</h5>
             <h4><span>$45.50</span><span>$59.60</span></h4>
-            <div class="rating">
+            <!-- <div class="rating">
               <h6>In stock</h6>
               <ul>
                 <li><a class="star" href="javascript:void();"></a></li>
@@ -436,7 +447,7 @@
                 <li><a class="star" href="javascript:void();"></a></li>
               </ul>
               <span>8.8</span>
-            </div>
+            </div> -->
             <select class="form-control">
               <option>88</option>
               <option>80</option>
@@ -444,17 +455,21 @@
               <option>28</option>
             </select>
             <a class="btn btn-default" href="#" role="button">add to cart</a>
+            <!-- repeat end -->
         </div>
         <div class="views-row">
-          <a class="wish-item" href="javascript:void();"></a>
+          <!-- repeat -->
+          <!-- <a class="wish-item" href="javascript:void();"></a> -->
             <figure>
               <img alt="CitanestPlainDentalwithoutVasoconstrictor.jpg" src="/themes/curemint/images/CitanestPlainDentalwithoutVasoconstrictor.jpg">
             </figure>
             <h3>4% Citanest&reg; Plain Dental without Vasoconstrictor - Injection</h3>
-            <p><span>20 Pkg/Case</span><span>46616</span></p>
+            <div class="pkg-section">
+              <p>20 Packages/Case</p><p>46616</p>
+            </div>
             <h5>Dentsply North America</h5>
             <h4><span>$45.50</span><span>$59.60</span></h4>
-            <div class="rating">
+            <!-- <div class="rating">
               <h6>In stock</h6>
               <ul>
                 <li><a class="star" href="javascript:void();"></a></li>
@@ -464,7 +479,7 @@
                 <li><a class="star" href="javascript:void();"></a></li>
               </ul>
               <span>8.8</span>
-            </div>
+            </div> -->
             <select class="form-control">
               <option>88</option>
               <option>80</option>
@@ -472,17 +487,21 @@
               <option>28</option>
             </select>
             <a class="btn btn-default" href="#" role="button">add to cart</a>
+            <!-- repeat end -->
         </div>
         <div class="views-row">
-          <a class="wish-item" href="javascript:void();"></a>
+          <!-- repeat -->
+          <!-- <a class="wish-item" href="javascript:void();"></a> -->
             <figure>
               <img alt="CitanestPlainDentalwithoutVasoconstrictor.jpg" src="/themes/curemint/images/CitanestPlainDentalwithoutVasoconstrictor.jpg">
             </figure>
             <h3>4% Citanest&reg; Plain Dental without Vasoconstrictor - Injection</h3>
-            <p><span>20 Pkg/Case</span><span>46616</span></p>
+            <div class="pkg-section">
+              <p>20 Packages/Case</p><p>46616</p>
+            </div>
             <h5>Dentsply North America</h5>
             <h4><span>$45.50</span><span>$59.60</span></h4>
-            <div class="rating">
+            <!-- <div class="rating">
               <h6>In stock</h6>
               <ul>
                 <li><a class="star" href="javascript:void();"></a></li>
@@ -492,7 +511,7 @@
                 <li><a class="star" href="javascript:void();"></a></li>
               </ul>
               <span>8.8</span>
-            </div>
+            </div> -->
             <select class="form-control">
               <option>88</option>
               <option>80</option>
@@ -500,6 +519,7 @@
               <option>28</option>
             </select>
             <a class="btn btn-default" href="#" role="button">add to cart</a>
+            <!-- repeat end -->
         </div>
       </div>
     </div>

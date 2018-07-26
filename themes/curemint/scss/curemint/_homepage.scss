@@ -28,7 +28,7 @@
 			    }
 			}
 			figure{
-				height:250px;
+				height:220px;
 				display:flex;
 				align-items: center;
 				justify-content: center;
@@ -45,6 +45,7 @@
 			    font-weight: bold;
 			}
 			.pkg-section{
+				clear: both;
 				p{
 					margin-bottom:5px;
 				    font-family: $regular;
@@ -56,6 +57,9 @@
 	    			&:first-child{
 	    				padding-right:15px;
 	    			}
+	    			&:last-child{
+	    				float: $fr;
+	    			}
 				}
 			}
 			h5{
@@ -65,11 +69,11 @@
 			    font-size: $size14;
 			}
 			h4{
-			margin: 15px 0 0px;
+			margin: 15px 0 10px;
 				span{
 					color: $itemnamecolor;
 					display: $in-block;
-    				width: 42%;
+    				width: 44%;
     				line-height: 25px;
     				&:first-child{
     					font-size: $size20;
@@ -156,7 +160,7 @@
 			    border-radius: 3px;
 			    vertical-align: top;
 			    margin-left: 5px;
-			    outline: $none;
+			    float: $fr;
 			    box-shadow: $none;
 			}
 		}
@@ -221,7 +225,7 @@
 			a{
 				figure{
 					position:$rel;
-					height: 260px;
+					height: 240px;
     				overflow: hidden;
 					img{
 						max-width:100%;
@@ -260,6 +264,11 @@
 				border:1px solid $btnbordercolor;
 				overflow: hidden;
 				border-radius:100%;
+				width: 78px;
+			    height: 78px;
+			    display: flex;
+			    align-items: center;
+			    justify-content: center;
 				img{
 					max-width:100%;
 				}
