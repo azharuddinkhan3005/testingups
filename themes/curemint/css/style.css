@@ -10026,18 +10026,19 @@ h2 {
 #block-curemint-views-block-product-list-block-1 .view-content .views-row .field--name-quantity .form-number {
   width: 65px;
   height: 50px;
+  padding: 0 6px;
 }
-/* line 176, ../scss/curemint/_homepage.scss */
+/* line 177, ../scss/curemint/_homepage.scss */
 #block-curemint-views-block-product-list-block-1 .view-content .views-row .form-actions {
   float: right;
 }
 
-/* line 183, ../scss/curemint/_homepage.scss */
+/* line 184, ../scss/curemint/_homepage.scss */
 .slick-dots {
   display: none !important;
 }
 
-/* line 186, ../scss/curemint/_homepage.scss */
+/* line 187, ../scss/curemint/_homepage.scss */
 .slick-prev {
   position: absolute;
   font-size: 0;
@@ -10051,7 +10052,7 @@ h2 {
   outline: none;
   z-index: 1;
 }
-/* line 198, ../scss/curemint/_homepage.scss */
+/* line 199, ../scss/curemint/_homepage.scss */
 .slick-prev:after {
   content: "";
   width: 100%;
@@ -10063,7 +10064,7 @@ h2 {
   transform: scale(-1);
 }
 
-/* line 209, ../scss/curemint/_homepage.scss */
+/* line 210, ../scss/curemint/_homepage.scss */
 .slick-next {
   position: absolute;
   font-size: 0;
@@ -10077,7 +10078,7 @@ h2 {
   outline: none;
   z-index: 1;
 }
-/* line 221, ../scss/curemint/_homepage.scss */
+/* line 222, ../scss/curemint/_homepage.scss */
 .slick-next:after {
   content: "";
   width: 100%;
@@ -10088,26 +10089,26 @@ h2 {
   background-position: center;
 }
 
-/* line 233, ../scss/curemint/_homepage.scss */
+/* line 234, ../scss/curemint/_homepage.scss */
 #block-views-block-supplies-block-1 .view-content {
   position: relative;
 }
-/* line 235, ../scss/curemint/_homepage.scss */
+/* line 236, ../scss/curemint/_homepage.scss */
 #block-views-block-supplies-block-1 .view-content .views-row {
   position: relative;
   padding: 10px;
 }
-/* line 239, ../scss/curemint/_homepage.scss */
+/* line 240, ../scss/curemint/_homepage.scss */
 #block-views-block-supplies-block-1 .view-content .views-row a figure {
   position: relative;
   height: 240px;
   overflow: hidden;
 }
-/* line 243, ../scss/curemint/_homepage.scss */
+/* line 244, ../scss/curemint/_homepage.scss */
 #block-views-block-supplies-block-1 .view-content .views-row a figure img {
   max-width: 100%;
 }
-/* line 246, ../scss/curemint/_homepage.scss */
+/* line 247, ../scss/curemint/_homepage.scss */
 #block-views-block-supplies-block-1 .view-content .views-row a figure figcaption {
   position: absolute;
   bottom: 0;
@@ -10125,15 +10126,15 @@ h2 {
   justify-content: center;
 }
 
-/* line 270, ../scss/curemint/_homepage.scss */
+/* line 271, ../scss/curemint/_homepage.scss */
 .shop-supplier .view-content {
   position: relative;
 }
-/* line 272, ../scss/curemint/_homepage.scss */
+/* line 273, ../scss/curemint/_homepage.scss */
 .shop-supplier .view-content .slick-slide {
   padding: 0 2px;
 }
-/* line 274, ../scss/curemint/_homepage.scss */
+/* line 275, ../scss/curemint/_homepage.scss */
 .shop-supplier .view-content .slick-slide .views-row {
   position: relative;
   padding: 0 5px;
@@ -10141,7 +10142,7 @@ h2 {
   overflow: hidden;
   border-radius: 100%;
 }
-/* line 280, ../scss/curemint/_homepage.scss */
+/* line 281, ../scss/curemint/_homepage.scss */
 .shop-supplier .view-content .slick-slide .views-row figure {
   position: relative;
   height: 64px;
@@ -10149,7 +10150,7 @@ h2 {
   align-items: center;
   justify-content: center;
 }
-/* line 286, ../scss/curemint/_homepage.scss */
+/* line 287, ../scss/curemint/_homepage.scss */
 .shop-supplier .view-content .slick-slide .views-row figure img {
   max-width: 100%;
 }
