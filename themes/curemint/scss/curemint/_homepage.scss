@@ -256,21 +256,23 @@
 .shop-supplier{
 	.view-content{
 		position: $rel;
-		.views-row{
-			position:$rel;
-			padding: 0 5px;
-			figure{
+		.slick-slide{
+			padding:0 2px;
+			.views-row{
 				position:$rel;
-				border:1px solid $btnbordercolor;
-				overflow: hidden;
-				border-radius:100%;
-				width: 78px;
-			    height: 78px;
-			    display: flex;
-			    align-items: center;
-			    justify-content: center;
-				img{
-					max-width:100%;
+				padding: 0 5px;
+				figure{
+					position:$rel;
+					border:1px solid $btnbordercolor;
+					overflow: hidden;
+					border-radius:100%;
+					height:70px;
+				    display: flex;
+				    align-items: center;
+				    justify-content: center;
+					img{
+						max-width:100%;
+					}
 				}
 			}
 		}

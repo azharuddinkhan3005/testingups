@@ -10114,24 +10114,27 @@ h2 {
   position: relative;
 }
 /* line 259, ../scss/curemint/_homepage.scss */
-.shop-supplier .view-content .views-row {
+.shop-supplier .view-content .slick-slide {
+  padding: 0 2px;
+}
+/* line 261, ../scss/curemint/_homepage.scss */
+.shop-supplier .view-content .slick-slide .views-row {
   position: relative;
   padding: 0 5px;
 }
-/* line 262, ../scss/curemint/_homepage.scss */
-.shop-supplier .view-content .views-row figure {
+/* line 264, ../scss/curemint/_homepage.scss */
+.shop-supplier .view-content .slick-slide .views-row figure {
   position: relative;
   border: 1px solid #9e9e9e;
   overflow: hidden;
   border-radius: 100%;
-  width: 78px;
-  height: 78px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-/* line 272, ../scss/curemint/_homepage.scss */
-.shop-supplier .view-content .views-row figure img {
+/* line 273, ../scss/curemint/_homepage.scss */
+.shop-supplier .view-content .slick-slide .views-row figure img {
   max-width: 100%;
 }
 
