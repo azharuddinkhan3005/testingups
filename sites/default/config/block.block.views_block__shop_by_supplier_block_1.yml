@@ -1,9 +1,9 @@
-uuid: c1246a6c-a15d-4c3c-8047-c0a981024d5a
+uuid: fe3aa169-5ccd-4f47-833f-ab075c0980d7
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.supplies
+    - views.view.shop_by_supplier
   module:
     - block_class
     - system
@@ -12,21 +12,20 @@ dependencies:
     - curemint
 third_party_settings:
   block_class:
-    classes: 'col-md-12 supplies'
-id: views_block__supplies_block_1
+    classes: 'col-md-12 shop-supplier'
+id: views_block__shop_by_supplier_block_1
 theme: curemint
 region: content
-weight: -2
+weight: -3
 provider: null
-plugin: 'views_block:supplies-block_1'
+plugin: 'views_block:shop_by_supplier-block_1'
 settings:
-  id: 'views_block:supplies-block_1'
+  id: 'views_block:shop_by_supplier-block_1'
   label: ''
   provider: views
   label_display: visible
   views_label: ''
-  items_per_page: '10'
-  context_mapping: {  }
+  items_per_page: none
 visibility:
   request_path:
     id: request_path

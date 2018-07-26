@@ -44,7 +44,7 @@ content:
       scale: 2
       prefix_suffix: true
     third_party_settings: {  }
-    label: above
+    label: hidden
     region: content
   total_price:
     type: commerce_price_default

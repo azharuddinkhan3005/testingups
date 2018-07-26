@@ -513,6 +513,55 @@ display:
           entity_type: commerce_product_variation
           entity_field: price
           plugin_id: field
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: 'Final output'
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "<!-- repeat -->\n<figure>\n<img src=\"{{ field_product_images }}\">\n</figure>\n<h3>{{ title }}</h3>\n<div class=\"pkg-section\">\n{{ field_packaging_details }}<p>{{ field_manufacturer_sku }}</p>\n</div>\n<h5>{{ field_distributor }} </h5>\n<h4><span>{{ field_formulary_price }}</span><span>{{ price__number }}</span></h4>\n{{ variations }}\n<!-- repeat end -->"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+          plugin_id: custom
         variations:
           id: variations
           table: commerce_product__variations
@@ -521,10 +570,10 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: "<!-- repeat -->\n<figure>\n<img src=\"{{ field_product_images }}\">\n</figure>\n<h3>{{ title }}</h3>\n<div class=\"pkg-section\">\n{{ field_packaging_details }}<p>{{ field_manufacturer_sku }}</p>\n</div>\n<h5>{{ field_distributor }} </h5>\n<h4><span>{{ field_formulary_price }}</span><span>{{ price__number }}</span></h4>\n<select class=\"form-control\">\n  <option>88</option>\n  <option>80</option>\n  <option>81</option>\n  <option>28</option>\n</select>\n<a class=\"btn btn-default\" href=\"#\" role=\"button\">add to cart</a>\n{{ variations }}\n<!-- repeat end -->"
             make_link: false
             path: ''
             absolute: false
@@ -564,7 +613,7 @@ display:
           click_sort_column: target_id
           type: commerce_add_to_cart
           settings:
-            combine: false
+            combine: true
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -576,55 +625,6 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        nothing:
-          id: nothing
-          table: views
-          field: nothing
-          relationship: none
-          group_type: group
-          admin_label: 'Final output'
-          label: ''
-          exclude: false
-          alter:
-            alter_text: true
-            text: "<!-- repeat -->\n<a class=\"wish-item\" href=\"javascript:void();\"></a>\n<figure>\n<img src=\"{{ field_product_images }}\">\n</figure>\n<h3>{{ title }}</h3>\n<div class=\"pkg-section\">\n{{ field_packaging_details }}<p>{{ field_manufacturer_sku }}</p>\n</div>\n<h5>{{ field_distributor }} </h5>\n<h4><span>{{ field_formulary_price }}</span><span>{{ price__number }}</span></h4>\n<div class=\"rating\">\n  <h6>In stock</h6>\n  <ul>\n\t<li><a class=\"star\" href=\"javascript:void();\"></a></li>\n\t<li><a class=\"star\" href=\"javascript:void();\"></a></li>\n\t<li><a class=\"star\" href=\"javascript:void();\"></a></li>\n\t<li><a class=\"star\" href=\"javascript:void();\"></a></li>\n\t<li><a class=\"star\" href=\"javascript:void();\"></a></li>\n  </ul>\n  <span>8.8</span>\n</div>\n<select class=\"form-control\">\n  <option>88</option>\n  <option>80</option>\n  <option>81</option>\n  <option>28</option>\n</select>\n<a class=\"btn btn-default\" href=\"#\" role=\"button\">add to cart</a>\n<!-- repeat end -->"
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: false
-          plugin_id: custom
       filters:
         status:
           value: '1'

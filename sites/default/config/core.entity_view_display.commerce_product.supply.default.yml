@@ -33,9 +33,9 @@ content:
   variations:
     type: commerce_add_to_cart
     weight: 10
-    label: above
+    label: hidden
     settings:
-      combine: false
+      combine: true
     third_party_settings: {  }
     region: content
 hidden:
