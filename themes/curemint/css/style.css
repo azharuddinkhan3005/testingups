@@ -9822,16 +9822,16 @@ h2 {
 }
 
 /* line 3, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content {
+.most-purchased .view-content {
   position: relative;
 }
 /* line 5, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row {
+.most-purchased .view-content .views-row {
   position: relative;
   padding: 10px;
 }
 /* line 8, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row .wish-item {
+.most-purchased .view-content .views-row .wish-item {
   position: absolute;
   top: 0;
   right: 0;
@@ -9845,19 +9845,19 @@ h2 {
   -moz-osx-font-smoothing: grayscale;
 }
 /* line 20, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row .wish-item:before {
+.most-purchased .view-content .views-row .wish-item:before {
   content: "\f08a";
 }
 /* line 23, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row .wish-item.wish {
+.most-purchased .view-content .views-row .wish-item.wish {
   color: #c53938;
 }
 /* line 25, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row .wish-item.wish:before {
+.most-purchased .view-content .views-row .wish-item.wish:before {
   content: "\f004";
 }
 /* line 30, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row figure {
+.most-purchased .view-content .views-row figure {
   height: 220px;
   display: flex;
   align-items: center;
@@ -9865,11 +9865,11 @@ h2 {
   overflow: hidden;
 }
 /* line 36, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row figure img {
+.most-purchased .view-content .views-row figure img {
   max-width: 100%;
 }
 /* line 40, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row h3 {
+.most-purchased .view-content .views-row h3 {
   font-size: 14px;
   line-height: 20px;
   font-family: HelveticaBold;
@@ -9877,11 +9877,11 @@ h2 {
   font-weight: bold;
 }
 /* line 47, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row .pkg-section {
+.most-purchased .view-content .views-row .pkg-section {
   clear: both;
 }
 /* line 49, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row .pkg-section p {
+.most-purchased .view-content .views-row .pkg-section p {
   margin-bottom: 5px;
   font-family: Helvetica;
   font-weight: normal;
@@ -9891,47 +9891,47 @@ h2 {
   vertical-align: middle;
 }
 /* line 57, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row .pkg-section p:first-child {
+.most-purchased .view-content .views-row .pkg-section p:first-child {
   padding-right: 15px;
 }
 /* line 60, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row .pkg-section p:last-child {
+.most-purchased .view-content .views-row .pkg-section p:last-child {
   float: right;
 }
 /* line 65, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row h5 {
+.most-purchased .view-content .views-row h5 {
   font-family: Helvetica;
   font-weight: normal;
   color: #7f7f7f;
   font-size: 14px;
 }
 /* line 71, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row h4 {
+.most-purchased .view-content .views-row h4 {
   margin: 15px 0 10px;
 }
 /* line 73, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row h4 span {
+.most-purchased .view-content .views-row h4 span {
   color: #4a4a4a;
   display: inline-block;
   width: 44%;
   line-height: 25px;
 }
 /* line 78, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row h4 span:first-child {
+.most-purchased .view-content .views-row h4 span:first-child {
   font-size: 20px;
   font-family: HelveticaBold;
 }
 /* line 82, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row h4 span:last-child {
+.most-purchased .view-content .views-row h4 span:last-child {
   font-size: 12px;
   text-decoration: line-through;
 }
 /* line 88, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row .rating {
+.most-purchased .view-content .views-row .rating {
   padding-bottom: 5px;
 }
 /* line 90, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row .rating h6 {
+.most-purchased .view-content .views-row .rating h6 {
   color: #009347;
   display: inline-block;
   font-family: HelveticaBold;
@@ -9941,19 +9941,19 @@ h2 {
   text-transform: capitalize;
 }
 /* line 99, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row .rating ul {
+.most-purchased .view-content .views-row .rating ul {
   display: inline-block;
   padding: 0;
   margin: 0;
   list-style: none;
 }
 /* line 104, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row .rating ul li {
+.most-purchased .view-content .views-row .rating ul li {
   display: inline-block;
   margin-right: 1px;
 }
 /* line 107, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row .rating ul li a {
+.most-purchased .view-content .views-row .rating ul li a {
   display: inline-block;
   font-family: FontAwesome;
   font-size: 14px;
@@ -9964,25 +9964,25 @@ h2 {
   text-decoration: none !important;
 }
 /* line 116, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row .rating ul li a:before {
+.most-purchased .view-content .views-row .rating ul li a:before {
   content: "\f006";
 }
 /* line 119, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row .rating ul li a.rate {
+.most-purchased .view-content .views-row .rating ul li a.rate {
   color: #ffa900;
 }
 /* line 121, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row .rating ul li a.rate:before {
+.most-purchased .view-content .views-row .rating ul li a.rate:before {
   content: "\f005";
 }
 /* line 128, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row .rating span {
+.most-purchased .view-content .views-row .rating span {
   display: inline-block;
   font-size: 11px;
   vertical-align: text-bottom;
 }
 /* line 135, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row select {
+.most-purchased .view-content .views-row select {
   border: 1px solid #9e9e9e;
   border-radius: 4px;
   display: inline-block;
@@ -10000,7 +10000,7 @@ h2 {
   box-shadow: none;
 }
 /* line 152, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row .btn {
+.most-purchased .view-content .views-row .btn {
   border: 1px solid #9e9e9e;
   background: transparent;
   font-size: 14px;
@@ -10015,21 +10015,21 @@ h2 {
   box-shadow: none;
 }
 /* line 166, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row .field--name-quantity {
+.most-purchased .view-content .views-row .field--name-quantity {
   float: left;
 }
 /* line 168, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row .field--name-quantity .control-label {
+.most-purchased .view-content .views-row .field--name-quantity .control-label {
   display: none;
 }
 /* line 171, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row .field--name-quantity .form-number {
+.most-purchased .view-content .views-row .field--name-quantity .form-number {
   width: 65px;
   height: 50px;
   padding: 0 6px;
 }
 /* line 177, ../scss/curemint/_homepage.scss */
-#block-curemint-views-block-product-list-block-1 .view-content .views-row .form-actions {
+.most-purchased .view-content .views-row .form-actions {
   float: right;
 }
 
@@ -10090,26 +10090,26 @@ h2 {
 }
 
 /* line 234, ../scss/curemint/_homepage.scss */
-#block-views-block-supplies-block-1 .view-content {
+.supplies .view-content {
   position: relative;
 }
 /* line 236, ../scss/curemint/_homepage.scss */
-#block-views-block-supplies-block-1 .view-content .views-row {
+.supplies .view-content .views-row {
   position: relative;
   padding: 10px;
 }
 /* line 240, ../scss/curemint/_homepage.scss */
-#block-views-block-supplies-block-1 .view-content .views-row a figure {
+.supplies .view-content .views-row a figure {
   position: relative;
   height: 240px;
   overflow: hidden;
 }
 /* line 244, ../scss/curemint/_homepage.scss */
-#block-views-block-supplies-block-1 .view-content .views-row a figure img {
+.supplies .view-content .views-row a figure img {
   max-width: 100%;
 }
 /* line 247, ../scss/curemint/_homepage.scss */
-#block-views-block-supplies-block-1 .view-content .views-row a figure figcaption {
+.supplies .view-content .views-row a figure figcaption {
   position: absolute;
   bottom: 0;
   width: 100%;
