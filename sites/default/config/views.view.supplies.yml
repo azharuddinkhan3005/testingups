@@ -204,7 +204,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<a href=\"javascript:void();\">\n              <figure>\n                <img src=\"{{ field_main_category_image }}\">\n                <figcaption>{{ name }}</figcaption>\n              </figure>\n            </a>"
+            text: "<a>\n              <figure>\n                <img src=\"{{ field_main_category_image }}\">\n                <figcaption>{{ name }}</figcaption>\n              </figure>\n            </a>"
             make_link: false
             path: ''
             absolute: false

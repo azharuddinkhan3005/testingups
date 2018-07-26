@@ -1,12 +1,10 @@
-uuid: de71c6fd-7fa4-41b6-8cd2-b1b4ad6e9439
+uuid: 7f62b86a-fd01-4678-aafc-2ba7aedf6507
 langcode: en
 status: true
 dependencies:
   config:
     - commerce_product.commerce_product_variation_type.general
     - field.storage.commerce_product_variation.field_manufacturer_sku
-  module:
-    - text
 id: commerce_product_variation.general.field_manufacturer_sku
 field_name: field_manufacturer_sku
 entity_type: commerce_product_variation
@@ -18,4 +16,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: text
+field_type: string

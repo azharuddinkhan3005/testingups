@@ -1,6 +1,6 @@
 uuid: ed7efb43-dea8-4163-a8fa-db21c0414168
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.footer

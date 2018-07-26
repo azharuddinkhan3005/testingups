@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.commerce_product.variations
     - field.storage.commerce_product_variation.field_distributor
+    - field.storage.commerce_product_variation.field_distributor_sku
     - field.storage.commerce_product_variation.field_formulary_price
     - field.storage.commerce_product_variation.field_manufacturer_sku
     - field.storage.commerce_product_variation.field_packaging_details
@@ -57,7 +58,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 5
+          items_per_page: 20
           offset: 0
       style:
         type: default
@@ -200,68 +201,6 @@ display:
           id: field_packaging_details
           table: commerce_product_variation__field_packaging_details
           field: field_packaging_details
-          relationship: variations
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: text_default
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_manufacturer_sku:
-          id: field_manufacturer_sku
-          table: commerce_product_variation__field_manufacturer_sku
-          field: field_manufacturer_sku
           relationship: variations
           group_type: group
           admin_label: ''
@@ -513,6 +452,132 @@ display:
           entity_type: commerce_product_variation
           entity_field: price
           plugin_id: field
+        field_manufacturer_sku:
+          id: field_manufacturer_sku
+          table: commerce_product_variation__field_manufacturer_sku
+          field: field_manufacturer_sku
+          relationship: variations
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_distributor_sku:
+          id: field_distributor_sku
+          table: commerce_product_variation__field_distributor_sku
+          field: field_distributor_sku
+          relationship: variations
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         nothing:
           id: nothing
           table: views
@@ -639,12 +704,7 @@ display:
           group: 1
       sorts: {  }
       title: 'MOST PURCHASED ITEMS'
-      header:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          plugin_id: text_custom
+      header: {  }
       footer: {  }
       empty: {  }
       relationships:
@@ -668,6 +728,7 @@ display:
       tags:
         - 'config:field.storage.commerce_product.variations'
         - 'config:field.storage.commerce_product_variation.field_distributor'
+        - 'config:field.storage.commerce_product_variation.field_distributor_sku'
         - 'config:field.storage.commerce_product_variation.field_formulary_price'
         - 'config:field.storage.commerce_product_variation.field_manufacturer_sku'
         - 'config:field.storage.commerce_product_variation.field_packaging_details'
@@ -687,6 +748,7 @@ display:
       tags:
         - 'config:field.storage.commerce_product.variations'
         - 'config:field.storage.commerce_product_variation.field_distributor'
+        - 'config:field.storage.commerce_product_variation.field_distributor_sku'
         - 'config:field.storage.commerce_product_variation.field_formulary_price'
         - 'config:field.storage.commerce_product_variation.field_manufacturer_sku'
         - 'config:field.storage.commerce_product_variation.field_packaging_details'

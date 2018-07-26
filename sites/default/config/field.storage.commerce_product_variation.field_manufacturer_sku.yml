@@ -1,17 +1,18 @@
-uuid: 9f5fba4f-79fc-4389-8380-a88ac16c24fa
+uuid: 5fe8bf7a-91cf-4423-8f95-a29d9be51472
 langcode: en
 status: true
 dependencies:
   module:
     - commerce_product
-    - text
 id: commerce_product_variation.field_manufacturer_sku
 field_name: field_manufacturer_sku
 entity_type: commerce_product_variation
-type: text
+type: string
 settings:
   max_length: 255
-module: text
+  is_ascii: false
+  case_sensitive: false
+module: core
 locked: false
 cardinality: 1
 translatable: true

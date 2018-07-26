@@ -48,11 +48,12 @@ content:
     type: entity_reference_label
     region: content
   field_distributor_sku:
-    weight: 10
+    weight: 12
     label: above
-    settings: {  }
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
-    type: text_default
+    type: string
     region: content
   field_formulary_price:
     weight: 3
@@ -72,11 +73,12 @@ content:
     type: entity_reference_label
     region: content
   field_manufacturer_sku:
-    weight: 11
+    weight: 13
     label: above
-    settings: {  }
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
-    type: text_default
+    type: string
     region: content
   field_packaging_details:
     weight: 6
