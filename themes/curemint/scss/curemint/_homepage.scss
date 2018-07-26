@@ -131,6 +131,7 @@
     				vertical-align: text-bottom;
 				}
 			}
+
 			select{
 			    border: 1px solid $btnbordercolor;
 			    border-radius: 4px;
@@ -156,12 +157,21 @@
 			    font-family: $bold;
 			    color: $textcolor;
 			    text-transform: uppercase;
-			    padding: 0px 20px;
+			    padding: 0px 15px;
 			    border-radius: 3px;
 			    vertical-align: top;
-			    margin-left: 5px;
-			    float: $fr;
+			    margin: 0px;
 			    box-shadow: $none;
+			}
+			.field--name-quantity {
+				float: $fl;
+				.form-number{
+					width: 65px;
+					height: 50px;
+				}
+			}
+			.form-actions {
+				float: $fr;
 			}
 		}
 	}
