@@ -10121,14 +10121,14 @@ h2 {
 .shop-supplier .view-content .slick-slide .views-row {
   position: relative;
   padding: 0 5px;
-}
-/* line 264, ../scss/curemint/_homepage.scss */
-.shop-supplier .view-content .slick-slide .views-row figure {
-  position: relative;
   border: 1px solid #9e9e9e;
   overflow: hidden;
   border-radius: 100%;
-  height: 70px;
+}
+/* line 267, ../scss/curemint/_homepage.scss */
+.shop-supplier .view-content .slick-slide .views-row figure {
+  position: relative;
+  height: 64px;
   display: flex;
   align-items: center;
   justify-content: center;

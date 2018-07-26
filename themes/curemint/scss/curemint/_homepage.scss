@@ -261,12 +261,12 @@
 			.views-row{
 				position:$rel;
 				padding: 0 5px;
+				border:1px solid $btnbordercolor;
+				overflow: hidden;
+				border-radius:100%;
 				figure{
 					position:$rel;
-					border:1px solid $btnbordercolor;
-					overflow: hidden;
-					border-radius:100%;
-					height:70px;
+					height:64px;
 				    display: flex;
 				    align-items: center;
 				    justify-content: center;
