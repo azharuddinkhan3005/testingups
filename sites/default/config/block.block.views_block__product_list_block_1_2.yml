@@ -1,0 +1,34 @@
+uuid: 00372ef1-8efd-4903-8d56-14c5c8e9d59a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.product_list
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - curemint
+third_party_settings:
+  block_class:
+    classes: 'col-md-12 most-purchased'
+id: views_block__product_list_block_1_2
+theme: curemint
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:product_list-block_1'
+settings:
+  id: 'views_block:product_list-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

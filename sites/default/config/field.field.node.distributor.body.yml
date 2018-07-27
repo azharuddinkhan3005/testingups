@@ -1,0 +1,22 @@
+uuid: d46a24fc-d31a-4528-81ca-7cb5488dcb76
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.distributor
+  module:
+    - text
+id: node.distributor.body
+field_name: body
+entity_type: node
+bundle: distributor
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,22 @@
+uuid: 34f06231-5b09-4918-a688-788e766baf74
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - curemint
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: curemint_messages
+theme: curemint
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

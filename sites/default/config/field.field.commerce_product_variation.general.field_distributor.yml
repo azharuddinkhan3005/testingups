@@ -1,0 +1,28 @@
+uuid: 0bd6cda8-e666-431e-bf46-d60b8f65b697
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.general
+    - field.storage.commerce_product_variation.field_distributor
+    - node.type.distributor
+id: commerce_product_variation.general.field_distributor
+field_name: field_distributor
+entity_type: commerce_product_variation
+bundle: general
+label: Distributor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      distributor: distributor
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

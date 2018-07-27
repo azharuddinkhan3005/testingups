@@ -1,0 +1,37 @@
+uuid: e899b7f3-c56c-4161-a805-084e0356dd04
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.distributor.body
+    - field.field.node.distributor.field_distributor_image
+    - node.type.distributor
+  module:
+    - image
+    - text
+    - user
+id: node.distributor.default
+targetEntityType: node
+bundle: distributor
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_distributor_image:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,9 @@
+uuid: 7bde3499-486e-42bf-8129-11ab44057f23
+langcode: en
+status: true
+dependencies: {  }
+name: Manufacturer
+vid: manufacturer
+description: 'Taxonomy containing a list of manufacturer.'
+hierarchy: 0
+weight: 0

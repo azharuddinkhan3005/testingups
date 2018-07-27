@@ -1,0 +1,14 @@
+uuid: 702e66a1-2df2-4bab-b487-9c25053fe2c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.dental_office
+  module:
+    - user
+id: user_add_role_action.dental_office
+label: 'Add the Dental Office role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: dental_office

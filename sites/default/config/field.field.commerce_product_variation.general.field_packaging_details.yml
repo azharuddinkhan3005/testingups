@@ -1,0 +1,21 @@
+uuid: ac80fccd-8cf8-4a36-8307-52eda9bb8c50
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.general
+    - field.storage.commerce_product_variation.field_packaging_details
+  module:
+    - text
+id: commerce_product_variation.general.field_packaging_details
+field_name: field_packaging_details
+entity_type: commerce_product_variation
+bundle: general
+label: 'Packaging details'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

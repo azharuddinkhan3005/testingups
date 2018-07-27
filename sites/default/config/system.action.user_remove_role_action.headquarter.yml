@@ -1,0 +1,14 @@
+uuid: 379784a4-2414-425d-b942-38ba7c6528a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.headquarter
+  module:
+    - user
+id: user_remove_role_action.headquarter
+label: 'Remove the Headquarter role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: headquarter

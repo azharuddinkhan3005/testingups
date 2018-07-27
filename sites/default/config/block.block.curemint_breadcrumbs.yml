@@ -1,0 +1,22 @@
+uuid: a3172a2a-0dff-4272-9255-ab869976790b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - curemint
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: curemint_breadcrumbs
+theme: curemint
+region: navigation
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

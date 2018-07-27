@@ -1,0 +1,9 @@
+uuid: a0a0fbd4-1221-47d6-afdd-68495544c062
+langcode: en
+status: true
+dependencies: {  }
+id: headquarter
+label: Headquarter
+weight: 3
+is_admin: null
+permissions: {  }

@@ -1,0 +1,14 @@
+uuid: 3c28a552-5687-4048-9c91-485cd516cfa9
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.regional
+  module:
+    - user
+id: user_add_role_action.regional
+label: 'Add the Regional role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: regional

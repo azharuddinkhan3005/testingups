@@ -62,7 +62,7 @@
         theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
       ]
     %}
-    <!-- <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
+    <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
       {% if not navbar_attributes.hasClass(container) %}
         <div class="{{ container }}">
       {% endif %}
@@ -88,457 +88,30 @@
       {% if not navbar_attributes.hasClass(container) %}
         </div>
       {% endif %}
-    </header> -->
+    </header>
   {% endblock %}
 {% endif %}
 
 {# Main #}
 {% block main %}
-  <div role="main" class="main-container container-fluid js-quickedit-main-content">
+  <div role="main" class="main-container {{ container }} js-quickedit-main-content">
     <div class="row">
-      <!-- shop by suppliers -->
-      <div class="col-md-12 shop-supplier">
-        <h2>Shop by Supplier</h2>
-        <div class="view-content">
-          <div class="views-row">
-            <!-- repeat -->
-            <a href="javascript:void();">
-              <figure>
-                <img src="/themes/curemint/images/dental-implants.jpg">
-              </figure>
-            </a>
-            <!-- repeat end -->
-          </div>
-          <div class="views-row">
-            <a href="javascript:void();">
-              <figure>
-                <img src="/themes/curemint/images/dental-implants.jpg">
-              </figure>
-            </a>
-          </div>
-          <div class="views-row">
-            <a href="javascript:void();">
-              <figure>
-                <img src="/themes/curemint/images/dental-implants.jpg">
-              </figure>
-            </a>
-          </div>
-          <div class="views-row">
-            <a href="javascript:void();">
-              <figure>
-                <img src="/themes/curemint/images/dental-implants.jpg">
-              </figure>
-            </a>
-          </div>
-          <div class="views-row">
-            <a href="javascript:void();">
-              <figure>
-                <img src="/themes/curemint/images/dental-implants.jpg">
-              </figure>
-            </a>
-          </div>
-          <div class="views-row">
-            <a href="javascript:void();">
-              <figure>
-                <img src="/themes/curemint/images/dental-implants.jpg">
-              </figure>
-            </a>
-          </div>
-          <div class="views-row">
-            <a href="javascript:void();">
-              <figure>
-                <img src="/themes/curemint/images/dental-implants.jpg">
-              </figure>
-            </a>
-          </div>
-          <div class="views-row">
-            <a href="javascript:void();">
-              <figure>
-                <img src="/themes/curemint/images/dental-implants.jpg">
-              </figure>
-            </a>
-          </div>
-          <div class="views-row">
-            <a href="javascript:void();">
-              <figure>
-                <img src="/themes/curemint/images/dental-implants.jpg">
-              </figure>
-            </a>
-          </div>
-          <div class="views-row">
-            <a href="javascript:void();">
-              <figure>
-                <img src="/themes/curemint/images/dental-implants.jpg">
-              </figure>
-            </a>
-          </div>
-          <div class="views-row">
-            <a href="javascript:void();">
-              <figure>
-                <img src="/themes/curemint/images/dental-implants.jpg">
-              </figure>
-            </a>
-          </div>
-          <div class="views-row">
-            <a href="javascript:void();">
-              <figure>
-                <img src="/themes/curemint/images/dental-implants.jpg">
-              </figure>
-            </a>
-          </div>
-          <div class="views-row">
-            <a href="javascript:void();">
-              <figure>
-                <img src="/themes/curemint/images/dental-implants.jpg">
-              </figure>
-            </a>
-          </div>
-          <div class="views-row">
-            <a href="javascript:void();">
-              <figure>
-                <img src="/themes/curemint/images/dental-implants.jpg">
-              </figure>
-            </a>
-          </div>
-          <div class="views-row">
-            <a href="javascript:void();">
-              <figure>
-                <img src="/themes/curemint/images/dental-implants.jpg">
-              </figure>
-            </a>
-          </div>
-          <div class="views-row">
-            <a href="javascript:void();">
-              <figure>
-                <img src="/themes/curemint/images/dental-implants.jpg">
-              </figure>
-            </a>
-          </div>
-          <div class="views-row">
-            <a href="javascript:void();">
-              <figure>
-                <img src="/themes/curemint/images/dental-implants.jpg">
-              </figure>
-            </a>
-          </div>
-          <div class="views-row">
-            <a href="javascript:void();">
-              <figure>
-                <img src="/themes/curemint/images/dental-implants.jpg">
-              </figure>
-            </a>
-          </div>
-          <div class="views-row">
-            <a href="javascript:void();">
-              <figure>
-                <img src="/themes/curemint/images/dental-implants.jpg">
-              </figure>
-            </a>
-          </div>
-          <div class="views-row">
-            <a href="javascript:void();">
-              <figure>
-                <img src="/themes/curemint/images/dental-implants.jpg">
-              </figure>
-            </a>
-          </div>
-          <div class="views-row">
-            <a href="javascript:void();">
-              <figure>
-                <img src="/themes/curemint/images/dental-implants.jpg">
-              </figure>
-            </a>
-          </div>
-        </div>
-      </div>
-      <!-- shop by suppliers end -->
-      <!-- supplies -->
-      <div id="block-views-block-supplies-block-1" class="col-md-12 supplies">
-        <h2>Supplies</h2>
-        <div class="view-content">
-          <div class="views-row">
-            <!-- repeat -->
-            <a href="javascript:void();">
-              <figure>
-                <img src="/themes/curemint/images/dental-implants.jpg">
-                <figcaption>Surgical and Implant Products</figcaption>
-              </figure>
-            </a>
-            <!-- repeat end -->
-          </div>
-          <div class="views-row">
-            <a href="javascript:void();">
-              <figure>
-                <img src="/themes/curemint/images/dental-implants.jpg">
-                <figcaption>Surgical and Implant Products</figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="views-row">
-            <a href="javascript:void();">
-              <figure>
-                <img src="/themes/curemint/images/dental-implants.jpg">
-                <figcaption>Surgical and Implant Products</figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="views-row">
-            <a href="javascript:void();">
-              <figure>
-                <img src="/themes/curemint/images/dental-implants.jpg">
-                <figcaption>Surgical and Implant Products</figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="views-row">
-            <a href="javascript:void();">
-              <figure>
-                <img src="/themes/curemint/images/dental-implants.jpg">
-                <figcaption>Surgical and Implant Products</figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="views-row">
-            <a href="javascript:void();">
-              <figure>
-                <img src="/themes/curemint/images/dental-implants.jpg">
-                <figcaption>Surgical and Implant Products</figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="views-row">
-            <a href="javascript:void();">
-              <figure>
-                <img src="/themes/curemint/images/dental-implants.jpg">
-                <figcaption>Surgical and Implant Products</figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="views-row">
-            <a href="javascript:void();">
-              <figure>
-                <img src="/themes/curemint/images/dental-implants.jpg">
-                <figcaption>Surgical and Implant Products</figcaption>
-              </figure>
-            </a>
-          </div>
-        </div>
-      </div>
-      <!-- supplies end -->
-      <!-- most purchased items -->
-      <div class="col-md-12 most-purchased" id="block-curemint-views-block-product-list-block-1">
-      <h2>Most purchased items</h2>
-      <div class="view-content">
-        <div class="views-row">
-          <!-- repeat -->
-          <!-- <a class="wish-item" href="javascript:void();"></a> -->
-            <figure>
-              <img alt="CitanestPlainDentalwithoutVasoconstrictor.jpg" src="/themes/curemint/images/CitanestPlainDentalwithoutVasoconstrictor.jpg">
-            </figure>
-            <h3>4% Citanest&reg; Plain Dental without Vasoconstrictor - Injection</h3>
-            <div class="pkg-section">
-              <p>20 Packages/Case</p><p>46616</p>
-            </div>
-            <h5>Dentsply North America</h5>
-            <h4><span>$45.50</span><span>$59.60</span></h4>
-            <!-- <div class="rating">
-              <h6>In stock</h6>
-              <ul>
-                <li><a class="star" href="javascript:void();"></a></li>
-                <li><a class="star" href="javascript:void();"></a></li>
-                <li><a class="star" href="javascript:void();"></a></li>
-                <li><a class="star" href="javascript:void();"></a></li>
-                <li><a class="star" href="javascript:void();"></a></li>
-              </ul>
-              <span>8.8</span>
-            </div> -->
-            <select class="form-control">
-              <option>88</option>
-              <option>80</option>
-              <option>81</option>
-              <option>28</option>
-            </select>
-            <a class="btn btn-default" href="#" role="button">add to cart</a>
-            <!-- repeat end -->
-        </div>
-        <div class="views-row">
-          <!-- repeat -->
-          <!-- <a class="wish-item" href="javascript:void();"></a> -->
-            <figure>
-              <img alt="CitanestPlainDentalwithoutVasoconstrictor.jpg" src="/themes/curemint/images/CitanestPlainDentalwithoutVasoconstrictor.jpg">
-            </figure>
-            <h3>4% Citanest&reg; Plain Dental without Vasoconstrictor - Injection</h3>
-            <div class="pkg-section">
-              <p>20 Packages/Case</p><p>46616</p>
-            </div>
-            <h5>Dentsply North America</h5>
-            <h4><span>$45.50</span><span>$59.60</span></h4>
-            <!-- <div class="rating">
-              <h6>In stock</h6>
-              <ul>
-                <li><a class="star" href="javascript:void();"></a></li>
-                <li><a class="star" href="javascript:void();"></a></li>
-                <li><a class="star" href="javascript:void();"></a></li>
-                <li><a class="star" href="javascript:void();"></a></li>
-                <li><a class="star" href="javascript:void();"></a></li>
-              </ul>
-              <span>8.8</span>
-            </div> -->
-            <select class="form-control">
-              <option>88</option>
-              <option>80</option>
-              <option>81</option>
-              <option>28</option>
-            </select>
-            <a class="btn btn-default" href="#" role="button">add to cart</a>
-            <!-- repeat end -->
-        </div>
-        <div class="views-row">
-          <!-- repeat -->
-          <!-- <a class="wish-item" href="javascript:void();"></a> -->
-            <figure>
-              <img alt="CitanestPlainDentalwithoutVasoconstrictor.jpg" src="/themes/curemint/images/CitanestPlainDentalwithoutVasoconstrictor.jpg">
-            </figure>
-            <h3>4% Citanest&reg; Plain Dental without Vasoconstrictor - Injection</h3>
-            <div class="pkg-section">
-              <p>20 Packages/Case</p><p>46616</p>
-            </div>
-            <h5>Dentsply North America</h5>
-            <h4><span>$45.50</span><span>$59.60</span></h4>
-            <!-- <div class="rating">
-              <h6>In stock</h6>
-              <ul>
-                <li><a class="star" href="javascript:void();"></a></li>
-                <li><a class="star" href="javascript:void();"></a></li>
-                <li><a class="star" href="javascript:void();"></a></li>
-                <li><a class="star" href="javascript:void();"></a></li>
-                <li><a class="star" href="javascript:void();"></a></li>
-              </ul>
-              <span>8.8</span>
-            </div> -->
-            <select class="form-control">
-              <option>88</option>
-              <option>80</option>
-              <option>81</option>
-              <option>28</option>
-            </select>
-            <a class="btn btn-default" href="#" role="button">add to cart</a>
-            <!-- repeat end -->
-        </div>
-        <div class="views-row">
-          <!-- repeat -->
-          <!-- <a class="wish-item" href="javascript:void();"></a> -->
-            <figure>
-              <img alt="CitanestPlainDentalwithoutVasoconstrictor.jpg" src="/themes/curemint/images/CitanestPlainDentalwithoutVasoconstrictor.jpg">
-            </figure>
-            <h3>4% Citanest&reg; Plain Dental without Vasoconstrictor - Injection</h3>
-            <div class="pkg-section">
-              <p>20 Packages/Case</p><p>46616</p>
-            </div>
-            <h5>Dentsply North America</h5>
-            <h4><span>$45.50</span><span>$59.60</span></h4>
-            <!-- <div class="rating">
-              <h6>In stock</h6>
-              <ul>
-                <li><a class="star" href="javascript:void();"></a></li>
-                <li><a class="star" href="javascript:void();"></a></li>
-                <li><a class="star" href="javascript:void();"></a></li>
-                <li><a class="star" href="javascript:void();"></a></li>
-                <li><a class="star" href="javascript:void();"></a></li>
-              </ul>
-              <span>8.8</span>
-            </div> -->
-            <select class="form-control">
-              <option>88</option>
-              <option>80</option>
-              <option>81</option>
-              <option>28</option>
-            </select>
-            <a class="btn btn-default" href="#" role="button">add to cart</a>
-            <!-- repeat end -->
-        </div>
-        <div class="views-row">
-          <!-- repeat -->
-          <!-- <a class="wish-item" href="javascript:void();"></a> -->
-            <figure>
-              <img alt="CitanestPlainDentalwithoutVasoconstrictor.jpg" src="/themes/curemint/images/CitanestPlainDentalwithoutVasoconstrictor.jpg">
-            </figure>
-            <h3>4% Citanest&reg; Plain Dental without Vasoconstrictor - Injection</h3>
-            <div class="pkg-section">
-              <p>20 Packages/Case</p><p>46616</p>
-            </div>
-            <h5>Dentsply North America</h5>
-            <h4><span>$45.50</span><span>$59.60</span></h4>
-            <!-- <div class="rating">
-              <h6>In stock</h6>
-              <ul>
-                <li><a class="star" href="javascript:void();"></a></li>
-                <li><a class="star" href="javascript:void();"></a></li>
-                <li><a class="star" href="javascript:void();"></a></li>
-                <li><a class="star" href="javascript:void();"></a></li>
-                <li><a class="star" href="javascript:void();"></a></li>
-              </ul>
-              <span>8.8</span>
-            </div> -->
-            <select class="form-control">
-              <option>88</option>
-              <option>80</option>
-              <option>81</option>
-              <option>28</option>
-            </select>
-            <a class="btn btn-default" href="#" role="button">add to cart</a>
-            <!-- repeat end -->
-        </div>
-        <div class="views-row">
-          <!-- repeat -->
-          <!-- <a class="wish-item" href="javascript:void();"></a> -->
-            <figure>
-              <img alt="CitanestPlainDentalwithoutVasoconstrictor.jpg" src="/themes/curemint/images/CitanestPlainDentalwithoutVasoconstrictor.jpg">
-            </figure>
-            <h3>4% Citanest&reg; Plain Dental without Vasoconstrictor - Injection</h3>
-            <div class="pkg-section">
-              <p>20 Packages/Case</p><p>46616</p>
-            </div>
-            <h5>Dentsply North America</h5>
-            <h4><span>$45.50</span><span>$59.60</span></h4>
-            <!-- <div class="rating">
-              <h6>In stock</h6>
-              <ul>
-                <li><a class="star" href="javascript:void();"></a></li>
-                <li><a class="star" href="javascript:void();"></a></li>
-                <li><a class="star" href="javascript:void();"></a></li>
-                <li><a class="star" href="javascript:void();"></a></li>
-                <li><a class="star" href="javascript:void();"></a></li>
-              </ul>
-              <span>8.8</span>
-            </div> -->
-            <select class="form-control">
-              <option>88</option>
-              <option>80</option>
-              <option>81</option>
-              <option>28</option>
-            </select>
-            <a class="btn btn-default" href="#" role="button">add to cart</a>
-            <!-- repeat end -->
-        </div>
-      </div>
-    </div>
-    <!-- most purchased items end -->
+
       {# Header #}
       {% if page.header %}
         {% block header %}
-          <!-- <div class="col-sm-12" role="heading">
+          <div class="col-sm-12" role="heading">
             {{ page.header }}
-          </div> -->
+          </div>
         {% endblock %}
       {% endif %}
 
       {# Sidebar First #}
       {% if page.sidebar_first %}
         {% block sidebar_first %}
-          <!-- <aside class="col-sm-3" role="complementary">
+          <aside class="col-sm-3" role="complementary">
             {{ page.sidebar_first }}
-          </aside> -->
+          </aside>
         {% endblock %}
       {% endif %}
 
@@ -551,7 +124,7 @@
           page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
         ]
       %}
-      <!-- <section{{ content_attributes.addClass(content_classes) }}>
+      <section{{ content_attributes.addClass(content_classes) }}>
 
         {# Highlighted #}
         {% if page.highlighted %}
@@ -572,7 +145,7 @@
           <a id="main-content"></a>
           {{ page.content }}
         {% endblock %}
-      </section> -->
+      </section>
 
       {# Sidebar Second #}
       {% if page.sidebar_second %}
