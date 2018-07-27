@@ -6,4 +6,15 @@ id: headquarter
 label: Headquarter
 weight: 3
 is_admin: null
-permissions: {  }
+permissions:
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'access users overview'
+  - 'administer users'
+  - 'assign dental_office role'
+  - 'assign regional role'
+  - 'create users'
+  - 'edit users with role dental_office'
+  - 'edit users with role regional'
+  - userprotect.access_headquarters.bypass
+  - userprotect.access_regional.bypass

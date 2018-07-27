@@ -8,7 +8,7 @@ dependencies:
     module:
       - commerce_product
   module:
-    - commerce_order
+    - commerce_price
 _core:
   default_config_hash: AI9120ApX7uexCUMTuO3RgE5bWu8175i_bNlPMRXe7M
 id: commerce_order_item.default.default
@@ -19,27 +19,25 @@ content:
   purchased_entity:
     type: entity_reference_autocomplete
     weight: 0
+    region: content
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    region: content
   quantity:
-    type: commerce_quantity
+    type: number
     weight: 1
+    region: content
     settings:
       placeholder: ''
-      step: '1'
     third_party_settings: {  }
-    region: content
   unit_price:
-    type: commerce_unit_price
+    type: commerce_price_default
     weight: 2
-    settings:
-      require_confirmation: true
-    third_party_settings: {  }
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
   status: true

@@ -6,4 +6,11 @@ id: regional
 label: Regional
 weight: 4
 is_admin: null
-permissions: {  }
+permissions:
+  - 'access toolbar'
+  - 'access users overview'
+  - 'administer users'
+  - 'assign dental_office role'
+  - 'create users'
+  - 'edit users with role dental_office'
+  - userprotect.access_regional.bypass

@@ -21,9 +21,9 @@ content:
   purchased_entity:
     type: commerce_product_variation_attributes
     weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   quantity:
     type: number
     weight: 0
