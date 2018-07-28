@@ -9807,12 +9807,12 @@ p:last-child,
   display: none;
 }
 
-/* line 73, ../scss/curemint/_variables.scss */
+/* line 74, ../scss/curemint/_variables.scss */
 h1 {
   font-family: RalewayMedium;
 }
 
-/* line 74, ../scss/curemint/_variables.scss */
+/* line 75, ../scss/curemint/_variables.scss */
 h2 {
   font-family: RalewayMedium;
   font-size: 20px;
@@ -9821,16 +9821,21 @@ h2 {
   color: #4a4a4a;
 }
 
-/* line 3, ../scss/curemint/_homepage.scss */
+/* line 2, ../scss/curemint/_homepage.scss */
+.view-frontpage, #navbar {
+  display: none;
+}
+
+/* line 7, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content {
   position: relative;
 }
-/* line 5, ../scss/curemint/_homepage.scss */
+/* line 9, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content .views-row {
   position: relative;
   padding: 10px;
 }
-/* line 8, ../scss/curemint/_homepage.scss */
+/* line 12, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content .views-row .wish-item {
   position: absolute;
   top: 0;
@@ -9844,19 +9849,19 @@ h2 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 20, ../scss/curemint/_homepage.scss */
+/* line 24, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content .views-row .wish-item:before {
   content: "\f08a";
 }
-/* line 23, ../scss/curemint/_homepage.scss */
+/* line 27, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content .views-row .wish-item.wish {
   color: #c53938;
 }
-/* line 25, ../scss/curemint/_homepage.scss */
+/* line 29, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content .views-row .wish-item.wish:before {
   content: "\f004";
 }
-/* line 30, ../scss/curemint/_homepage.scss */
+/* line 34, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content .views-row figure {
   height: 220px;
   display: flex;
@@ -9864,23 +9869,36 @@ h2 {
   justify-content: center;
   overflow: hidden;
 }
-/* line 36, ../scss/curemint/_homepage.scss */
+/* line 40, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content .views-row figure img {
   max-width: 100%;
 }
-/* line 40, ../scss/curemint/_homepage.scss */
+/* line 44, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content .views-row h3 {
   font-size: 14px;
-  line-height: 20px;
   font-family: HelveticaBold;
   color: #4a4a4a;
   font-weight: bold;
+  min-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  display: -moz-box;
+  line-height: 20px;
+  /* fallback */
+  max-height: 40px;
+  /* fallback */
+  -webkit-line-clamp: 2;
+  /* number of lines to show */
+  -moz-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
 }
-/* line 47, ../scss/curemint/_homepage.scss */
+/* line 61, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content .views-row .pkg-section {
   clear: both;
 }
-/* line 49, ../scss/curemint/_homepage.scss */
+/* line 63, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content .views-row .pkg-section p {
   margin-bottom: 5px;
   font-family: Helvetica;
@@ -9890,47 +9908,45 @@ h2 {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 57, ../scss/curemint/_homepage.scss */
-.most-purchased .view-content .views-row .pkg-section p:first-child {
-  padding-right: 15px;
-}
-/* line 60, ../scss/curemint/_homepage.scss */
+/* line 74, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content .views-row .pkg-section p:last-child {
-  float: right;
+  padding-left: 15px;
 }
-/* line 65, ../scss/curemint/_homepage.scss */
+/* line 79, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content .views-row h5 {
   font-family: Helvetica;
   font-weight: normal;
   color: #7f7f7f;
   font-size: 14px;
+  clear: both;
 }
-/* line 71, ../scss/curemint/_homepage.scss */
+/* line 86, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content .views-row h4 {
   margin: 15px 0 10px;
+  clear: both;
 }
-/* line 73, ../scss/curemint/_homepage.scss */
+/* line 89, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content .views-row h4 span {
   color: #4a4a4a;
   display: inline-block;
-  width: 44%;
+  width: 46%;
   line-height: 25px;
 }
-/* line 78, ../scss/curemint/_homepage.scss */
+/* line 94, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content .views-row h4 span:first-child {
   font-size: 20px;
   font-family: HelveticaBold;
 }
-/* line 82, ../scss/curemint/_homepage.scss */
+/* line 98, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content .views-row h4 span:last-child {
   font-size: 12px;
   text-decoration: line-through;
 }
-/* line 88, ../scss/curemint/_homepage.scss */
+/* line 104, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content .views-row .rating {
   padding-bottom: 5px;
 }
-/* line 90, ../scss/curemint/_homepage.scss */
+/* line 106, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content .views-row .rating h6 {
   color: #009347;
   display: inline-block;
@@ -9940,19 +9956,19 @@ h2 {
   line-height: 25px;
   text-transform: capitalize;
 }
-/* line 99, ../scss/curemint/_homepage.scss */
+/* line 115, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content .views-row .rating ul {
   display: inline-block;
   padding: 0;
   margin: 0;
   list-style: none;
 }
-/* line 104, ../scss/curemint/_homepage.scss */
+/* line 120, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content .views-row .rating ul li {
   display: inline-block;
   margin-right: 1px;
 }
-/* line 107, ../scss/curemint/_homepage.scss */
+/* line 123, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content .views-row .rating ul li a {
   display: inline-block;
   font-family: FontAwesome;
@@ -9963,25 +9979,25 @@ h2 {
   -moz-osx-font-smoothing: grayscale;
   text-decoration: none !important;
 }
-/* line 116, ../scss/curemint/_homepage.scss */
+/* line 132, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content .views-row .rating ul li a:before {
   content: "\f006";
 }
-/* line 119, ../scss/curemint/_homepage.scss */
+/* line 135, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content .views-row .rating ul li a.rate {
   color: #ffa900;
 }
-/* line 121, ../scss/curemint/_homepage.scss */
+/* line 137, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content .views-row .rating ul li a.rate:before {
   content: "\f005";
 }
-/* line 128, ../scss/curemint/_homepage.scss */
+/* line 144, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content .views-row .rating span {
   display: inline-block;
   font-size: 11px;
   vertical-align: text-bottom;
 }
-/* line 135, ../scss/curemint/_homepage.scss */
+/* line 151, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content .views-row select {
   border: 1px solid #9e9e9e;
   border-radius: 4px;
@@ -9999,7 +10015,7 @@ h2 {
   height: 50px;
   box-shadow: none;
 }
-/* line 152, ../scss/curemint/_homepage.scss */
+/* line 168, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content .views-row .btn {
   border: 1px solid #9e9e9e;
   background: transparent;
@@ -10008,37 +10024,42 @@ h2 {
   font-family: HelveticaBold;
   color: #7f7f7f;
   text-transform: uppercase;
-  padding: 0px 15px;
+  padding: 0px 20px;
   border-radius: 3px;
   vertical-align: top;
   margin: 0px;
   box-shadow: none;
 }
-/* line 166, ../scss/curemint/_homepage.scss */
+/* line 182, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content .views-row .field--name-quantity {
   float: left;
 }
-/* line 168, ../scss/curemint/_homepage.scss */
+/* line 184, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content .views-row .field--name-quantity .control-label {
   display: none;
+  /* label of quantity display none */
 }
-/* line 171, ../scss/curemint/_homepage.scss */
+/* line 187, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content .views-row .field--name-quantity .form-number {
-  width: 65px;
+  width: 77px;
   height: 50px;
-  padding: 0 6px;
+  padding: 0 5px 0 15px;
+  color: #7f7f7f;
+  font-size: 16px;
+  box-shadow: none;
+  border-color: #ccc;
 }
-/* line 177, ../scss/curemint/_homepage.scss */
+/* line 197, ../scss/curemint/_homepage.scss */
 .most-purchased .view-content .views-row .form-actions {
   float: right;
 }
 
-/* line 184, ../scss/curemint/_homepage.scss */
+/* line 204, ../scss/curemint/_homepage.scss */
 .slick-dots {
   display: none !important;
 }
 
-/* line 187, ../scss/curemint/_homepage.scss */
+/* line 207, ../scss/curemint/_homepage.scss */
 .slick-prev {
   position: absolute;
   font-size: 0;
@@ -10052,7 +10073,7 @@ h2 {
   outline: none;
   z-index: 1;
 }
-/* line 199, ../scss/curemint/_homepage.scss */
+/* line 219, ../scss/curemint/_homepage.scss */
 .slick-prev:after {
   content: "";
   width: 100%;
@@ -10064,7 +10085,7 @@ h2 {
   transform: scale(-1);
 }
 
-/* line 210, ../scss/curemint/_homepage.scss */
+/* line 230, ../scss/curemint/_homepage.scss */
 .slick-next {
   position: absolute;
   font-size: 0;
@@ -10078,7 +10099,7 @@ h2 {
   outline: none;
   z-index: 1;
 }
-/* line 222, ../scss/curemint/_homepage.scss */
+/* line 242, ../scss/curemint/_homepage.scss */
 .slick-next:after {
   content: "";
   width: 100%;
@@ -10089,26 +10110,26 @@ h2 {
   background-position: center;
 }
 
-/* line 234, ../scss/curemint/_homepage.scss */
+/* line 254, ../scss/curemint/_homepage.scss */
 .supplies .view-content {
   position: relative;
 }
-/* line 236, ../scss/curemint/_homepage.scss */
+/* line 256, ../scss/curemint/_homepage.scss */
 .supplies .view-content .views-row {
   position: relative;
   padding: 10px;
 }
-/* line 240, ../scss/curemint/_homepage.scss */
+/* line 260, ../scss/curemint/_homepage.scss */
 .supplies .view-content .views-row a figure {
   position: relative;
   height: 240px;
   overflow: hidden;
 }
-/* line 244, ../scss/curemint/_homepage.scss */
+/* line 264, ../scss/curemint/_homepage.scss */
 .supplies .view-content .views-row a figure img {
   max-width: 100%;
 }
-/* line 247, ../scss/curemint/_homepage.scss */
+/* line 267, ../scss/curemint/_homepage.scss */
 .supplies .view-content .views-row a figure figcaption {
   position: absolute;
   bottom: 0;
@@ -10119,22 +10140,22 @@ h2 {
   font-weight: normal;
   color: #4a4a4a;
   font-size: 14px;
-  text-align: center;
+  text-align: left;
   height: 70px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  padding: 0 20px;
 }
 
-/* line 271, ../scss/curemint/_homepage.scss */
+/* line 291, ../scss/curemint/_homepage.scss */
 .shop-supplier .view-content {
   position: relative;
 }
-/* line 273, ../scss/curemint/_homepage.scss */
+/* line 293, ../scss/curemint/_homepage.scss */
 .shop-supplier .view-content .slick-slide {
   padding: 0 2px;
 }
-/* line 275, ../scss/curemint/_homepage.scss */
+/* line 295, ../scss/curemint/_homepage.scss */
 .shop-supplier .view-content .slick-slide .views-row {
   position: relative;
   padding: 0 5px;
@@ -10142,15 +10163,15 @@ h2 {
   overflow: hidden;
   border-radius: 100%;
 }
-/* line 281, ../scss/curemint/_homepage.scss */
+/* line 301, ../scss/curemint/_homepage.scss */
 .shop-supplier .view-content .slick-slide .views-row figure {
   position: relative;
-  height: 64px;
+  height: 74px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-/* line 287, ../scss/curemint/_homepage.scss */
+/* line 307, ../scss/curemint/_homepage.scss */
 .shop-supplier .view-content .slick-slide .views-row figure img {
   max-width: 100%;
 }
