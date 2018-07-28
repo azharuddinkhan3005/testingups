@@ -5,9 +5,11 @@ dependencies:
   config:
     - field.field.user.user.commerce_remote_id
     - field.field.user.user.field_address
+    - field.field.user.user.field_headquarter
     - field.field.user.user.field_hq_details
     - field.field.user.user.field_name
     - field.field.user.user.field_number
+    - field.field.user.user.field_regional_office
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -35,6 +37,15 @@ content:
     third_party_settings: {  }
     type: address_default
     region: content
+  field_headquarter:
+    weight: 13
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_hq_details:
     weight: 11
     settings:
@@ -58,6 +69,15 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_regional_office:
+    weight: 14
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   language:
     weight: 0
