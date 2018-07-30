@@ -10,7 +10,7 @@ id: user.user.field_number
 field_name: field_number
 entity_type: user
 bundle: user
-label: Number
+label: 'Phone number'
 description: ''
 required: false
 translatable: false
