@@ -9822,7 +9822,7 @@ h2 {
 }
 
 /* line 2, ../scss/curemint/_homepage.scss */
-.view-frontpage, #navbar {
+.view-frontpage {
   display: none;
 }
 
