@@ -100,6 +100,7 @@ content:
     third_party_settings: {  }
 hidden:
   field_distributor_sku: true
+  field_manufacturer_sku: true
   product_id: true
   sku: true
   title: true

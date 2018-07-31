@@ -26,4 +26,12 @@ content:
     third_party_settings: {  }
     label: hidden
 hidden:
+  commerce_remote_id: true
+  field_address: true
+  field_headquarter: true
+  field_hq_details: true
+  field_name: true
+  field_number: true
+  field_regional_office: true
   member_for: true
+  profile_customer: true
