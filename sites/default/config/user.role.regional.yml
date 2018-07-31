@@ -4,6 +4,13 @@ status: true
 dependencies: {  }
 id: regional
 label: Regional
-weight: 4
+weight: -7
 is_admin: null
-permissions: {  }
+permissions:
+  - 'access user profiles'
+  - 'access users overview'
+  - 'administer users'
+  - 'assign dental_office role'
+  - 'create users'
+  - 'edit users with role dental_office'
+  - userprotect.access_regional.bypass

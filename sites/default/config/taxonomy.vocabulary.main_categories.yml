@@ -2,8 +2,8 @@ uuid: 17e69f5b-a0fd-4ea7-9660-a005c5d6788a
 langcode: en
 status: true
 dependencies: {  }
-name: 'Main categories'
+name: 'Supply categories'
 vid: main_categories
 description: 'Main Categories for Curemint'
-hierarchy: 1
+hierarchy: 0
 weight: 0
