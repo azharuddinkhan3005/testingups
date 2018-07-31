@@ -1,0 +1,41 @@
+uuid: 0db228d8-7ad7-4e9d-bb60-7701f885deff
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.regional
+  module:
+    - user
+name: access_regional
+label: 'Access Regional'
+protectedEntityTypeId: user_role
+protectedEntityId: regional
+protections:
+  user_name:
+    id: user_name
+    provider: userprotect
+    status: true
+  user_roles:
+    id: user_roles
+    provider: userprotect
+    status: true
+  user_pass:
+    id: user_pass
+    provider: userprotect
+    status: true
+  user_status:
+    id: user_status
+    provider: userprotect
+    status: true
+  user_delete:
+    id: user_delete
+    provider: userprotect
+    status: true
+  user_mail:
+    id: user_mail
+    provider: userprotect
+    status: true
+  user_edit:
+    id: user_edit
+    provider: userprotect
+    status: true

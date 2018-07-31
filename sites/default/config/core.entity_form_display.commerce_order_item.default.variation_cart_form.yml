@@ -10,26 +10,17 @@ dependencies:
       - commerce_cart
       - commerce_product
       - commerce_variation_cart_form
-  module:
-    - commerce_order
 _core:
   default_config_hash: ckTrNmHo6qD3KP5GGTjzA4UhBNN9vhLXRJqwMlT__E4
 id: commerce_order_item.default.variation_cart_form
 targetEntityType: commerce_order_item
 bundle: default
 mode: variation_cart_form
-content:
-  quantity:
-    type: commerce_quantity
-    weight: 1
-    settings:
-      placeholder: ''
-      step: '1'
-    third_party_settings: {  }
-    region: content
+content: {  }
 hidden:
   created: true
   purchased_entity: true
+  quantity: true
   status: true
   uid: true
   unit_price: true

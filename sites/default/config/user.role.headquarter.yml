@@ -4,6 +4,42 @@ status: true
 dependencies: {  }
 id: headquarter
 label: Headquarter
-weight: 3
+weight: -6
 is_admin: null
-permissions: {  }
+permissions:
+  - 'access commerce_product overview'
+  - 'access content overview'
+  - 'access taxonomy overview'
+  - 'access user profiles'
+  - 'access users overview'
+  - 'administer commerce_product'
+  - 'administer nodes'
+  - 'administer taxonomy'
+  - 'administer users'
+  - 'assign dental_office role'
+  - 'assign regional role'
+  - 'create distributor content'
+  - 'create supply commerce_product'
+  - 'create terms in main_categories'
+  - 'create terms in manufacturer'
+  - 'create users'
+  - 'delete any distributor content'
+  - 'delete any supply commerce_product'
+  - 'delete distributor revisions'
+  - 'delete own distributor content'
+  - 'delete own supply commerce_product'
+  - 'delete terms in main_categories'
+  - 'delete terms in manufacturer'
+  - 'edit any distributor content'
+  - 'edit own distributor content'
+  - 'edit terms in main_categories'
+  - 'edit terms in manufacturer'
+  - 'edit users with role dental_office'
+  - 'edit users with role regional'
+  - 'revert distributor revisions'
+  - 'update any supply commerce_product'
+  - 'update own supply commerce_product'
+  - userprotect.access_headquarters.bypass
+  - userprotect.access_regional.bypass
+  - 'view distributor revisions'
+  - 'view supply commerce_product'

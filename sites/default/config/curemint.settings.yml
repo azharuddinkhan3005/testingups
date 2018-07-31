@@ -3,9 +3,9 @@ _core:
   default_config_hash: _5qrDuRmWmRVjW00si3U1s1NrgrocA4N653EYGRfgEE
 favicon:
   mimetype: image/vnd.microsoft.icon
-  path: ''
+  path: 'public://favicon.ico'
   url: 'http://localdev.curemint/themes/curemint/favicon.ico'
-  use_default: 1
+  use_default: 0
 schemas:
   bootstrap: 8000
   curemint: 8000
@@ -15,9 +15,9 @@ features:
   favicon: 1
   node_user_picture: 1
 logo:
-  path: ''
+  path: 'public://logo.jpg'
   url: ''
-  use_default: 1
+  use_default: 0
 fluid_container: 1
 table_responsive: '-1'
 table: ''

@@ -4,6 +4,6 @@ status: true
 dependencies: {  }
 id: dental_office
 label: 'Dental Office'
-weight: 5
+weight: -8
 is_admin: null
 permissions: {  }
