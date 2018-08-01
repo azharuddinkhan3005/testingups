@@ -2,8 +2,8 @@ cdn_provider: ''
 _core:
   default_config_hash: _5qrDuRmWmRVjW00si3U1s1NrgrocA4N653EYGRfgEE
 favicon:
-  mimetype: image/vnd.microsoft.icon
-  path: 'public://favicon.ico'
+  mimetype: image/jpeg
+  path: themes/curemint/favicon.jpg
   url: 'http://localdev.curemint/themes/curemint/favicon.ico'
   use_default: 0
 schemas:
@@ -15,7 +15,7 @@ features:
   favicon: 1
   node_user_picture: 1
 logo:
-  path: 'public://logo.jpg'
+  path: themes/curemint/logo.jpg
   url: ''
   use_default: 0
 fluid_container: 1
