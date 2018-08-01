@@ -2,7 +2,7 @@
 @import 'fonts';
 
 // Default variables.
-@import "default-variables";
+@import 'default-variables';
 
 // Bootstrap Framework.
 @import '../bootstrap/assets/stylesheets/bootstrap';
@@ -10,17 +10,18 @@
 // Base-theme overrides.
 @import 'overrides';
 
-// slick slider 
-@import '_slick';
+// slick slider
+@import 'slick';
 
 // curemint project styling
 @import 'curemint/variables';
 @import 'curemint/homepage';
 
-body{
-	font-family: $regular;
-	color: $textcolor;
+body {
+  color: $textcolor;
+  font-family: $regular;
 }
-*{
-	outline:$none !important;
+
+* {
+  outline: $none;
 }

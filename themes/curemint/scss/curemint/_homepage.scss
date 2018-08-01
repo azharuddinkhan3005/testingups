@@ -19,20 +19,16 @@
     text-decoration: none;
     text-rendering: auto;
     top: 0;
-    
-    &:before {
-      content: '\f08a';
-    }
- 
+
+    &::before { content: '\f08a'; }
   }
 
   .wish {
     color: $wishitemcolor;
 
-    &:before {
+    &::before {
       content: '\f004';
     }
-
   }
 
   img {
@@ -57,12 +53,12 @@
     font-size: $size14;
     font-weight: bold;
     -moz-line-clamp: 2;
-    -webkit-line-clamp: 2;  
+    -webkit-line-clamp: 2;
     line-height: 20px;
     max-height: 40px;
     min-height: 40px;
-    overflow: hidden;      
-    text-overflow: ellipsis;   
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   h5 {
@@ -103,7 +99,7 @@
     font-size: $size16;
     height: 50px;
     padding: 0 5px 0 15px;
-    width: 77px;  				
+    width: 77px;
   }
 
   .form-actions {
@@ -187,7 +183,7 @@
     text-decoration: none;
     text-rendering: auto;
 
-    &:before {
+    &::before {
       content: '\f006';
     }
 
@@ -196,7 +192,7 @@
   .rate {
     color: $ratecolor;
 
-    &:before {
+    &::before {
       content: '\f005';
     }
 
@@ -217,7 +213,7 @@
 }
 
 .slick-prev {
-  background: rgba(255, 255, 255, .75);
+  background: $sliderarrow;
   border: $none;
   border-radius: 0 4px 4px 0;
   font-size: 0;
@@ -226,10 +222,10 @@
   outline: $none;
   position: $abs;
   top: 0;
-  width: 64px; 
+  width: 64px;
   z-index: 1;
 
-  &:after {
+  &::after {
     background-image: url('../images/Dark-Right.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -243,7 +239,7 @@
 }
 
 .slick-next {
-  background: rgba(255, 255, 255, .75);
+  background: $sliderarrow;
   border: $none;
   border-radius: 0 4px 4px 0;
   font-size: 0;
@@ -252,10 +248,10 @@
   position: $abs;
   right: -15px;
   top: 0;
-  width: 64px; 
+  width: 64px;
   z-index: 1;
 
-  &:after {
+  &::after {
     background-image: url('../images/Dark-Right.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -284,7 +280,7 @@
 
   figcaption {
     align-items: center;
-    background: rgba(255, 255, 255, .75);
+    background: $sliderarrow;
     bottom: 0;
     color: $itemnamecolor;
     display: flex;
@@ -296,20 +292,20 @@
     padding: 0 20px;
     position: $abs;
     text-align: left;
-    width: 100%;      
+    width: 100%;
   }
 
 }
 
 // shop supplier slider
- 
+
 .shop-supplier .view-content {
   position: $rel;
 
   .slick-slide {
     padding: 0 2px;
   }
-  
+
   img {
     max-width: 100%;
   }
