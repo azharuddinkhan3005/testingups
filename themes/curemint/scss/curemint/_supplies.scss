@@ -1,0 +1,35 @@
+// supplies slider
+.supplies .views-row {
+  padding: 10px;
+  position: $rel;
+
+  img {
+    max-width: 100%;
+  }
+
+  .suppliesitem {
+
+    &__img {
+      height: 240px;
+      overflow: hidden;
+      position: $rel;
+    }
+
+    &__name {
+      align-items: center;
+      background: $sliderarrow;
+      bottom: 0;
+      color: $itemnamecolor;
+      display: flex;
+      font-family: $regular;
+      font-size: $size14;
+      font-weight: normal;
+      height: 70px;
+      left: 0;
+      padding: 0 20px;
+      position: $abs;
+      text-align: left;
+      width: 100%;
+    }
+  }
+}

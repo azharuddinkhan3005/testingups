@@ -1,7 +1,3 @@
-// home page default content hide
-.view-frontpage {
-  display: $none;
-}
 // most purchased items slider
 .most-purchased .views-row {
   padding: 10px;
@@ -35,7 +31,7 @@
     max-width: 100%;
   }
 
-  figure {
+  .items-img {
     align-items: center;
     display: flex;
     height: 220px;
@@ -43,7 +39,7 @@
     overflow: hidden;
   }
 
-  h3 {
+  .item-name {
     -moz-box-orient: vertical;
     -webkit-box-orient: vertical;
     color: $itemnamecolor;
@@ -54,14 +50,14 @@
     font-weight: bold;
     -moz-line-clamp: 2;
     -webkit-line-clamp: 2;
-    line-height: 20px;
+    line-height: $size20;
     max-height: 40px;
     min-height: 40px;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
-  h5 {
+  .item-distributor {
     clear: both;
     color: $textcolor;
     font-family: $regular;
@@ -77,7 +73,7 @@
     color: $textcolor;
     font-family: $bold;
     font-size: $size14;
-    line-height: 48px;
+    line-height: $size48;
     margin: 0;
     padding: 0 20px;
     text-transform: uppercase;
@@ -108,26 +104,28 @@
 
 }
 
-.most-purchased h4 span {
-  color: $itemnamecolor;
-  display: $in-block;
-  line-height: 25px;
-  margin: 15px 0 10px;
-  width: 46%;
+.itemprice {
 
-  &:first-child {
+  span {
+    color: $itemnamecolor;
+    display: $in-block;
+    line-height: $size25;
+    margin: 15px 0 10px;
+    width: 46%;
+  }
+
+  &__formulary {
     font-family: $bold;
     font-size: $size20;
   }
 
-  &:last-child {
+  &__msrp {
     font-size: $size12;
     text-decoration: line-through;
   }
-
 }
 
-.pkg-section {
+.pkgsection {
   clear: both;
   color: $textcolor;
   display: $in-block;
@@ -141,12 +139,14 @@
     float: $fl;
   }
 
-  p:last-child {
+  &__sku {
     float: $fr;
     padding-left: 15px;
   }
 
 }
+
+// rating section
 
 .rating {
   padding-bottom: 5px;
@@ -156,7 +156,7 @@
     display: $in-block;
     font-family: $bold;
     font-size: $size14;
-    line-height: 25px;
+    line-height: $size25;
     margin-right: 5px;
     text-transform: capitalize;
   }
@@ -204,130 +204,3 @@
     vertical-align: text-bottom;
   }
 }
-
-
-// slider
-.slick-dots {
-  display: $none;
-  visibility: hidden;
-}
-
-.slick-prev {
-  background: $sliderarrow;
-  border: $none;
-  border-radius: 0 4px 4px 0;
-  font-size: 0;
-  height: 100%;
-  left: -15px;
-  outline: $none;
-  position: $abs;
-  top: 0;
-  width: 64px;
-  z-index: 1;
-
-  &::after {
-    background-image: url('../images/Dark-Right.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    content: '';
-    display: $block;
-    height: 100%;
-    transform: scale(-1);
-    width: 100%;
-  }
-
-}
-
-.slick-next {
-  background: $sliderarrow;
-  border: $none;
-  border-radius: 0 4px 4px 0;
-  font-size: 0;
-  height: 100%;
-  outline: $none;
-  position: $abs;
-  right: -15px;
-  top: 0;
-  width: 64px;
-  z-index: 1;
-
-  &::after {
-    background-image: url('../images/Dark-Right.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    content: '';
-    display: $block;
-    height: 100%;
-    width: 100%;
-  }
-
-}
-
-// supplies slider
-.supplies .views-row {
-  padding: 10px;
-  position: $rel;
-
-  img {
-    max-width: 100%;
-  }
-
-  figure {
-    height: 240px;
-    overflow: hidden;
-    position: $rel;
-  }
-
-  figcaption {
-    align-items: center;
-    background: $sliderarrow;
-    bottom: 0;
-    color: $itemnamecolor;
-    display: flex;
-    font-family: $regular;
-    font-size: $size14;
-    font-weight: normal;
-    height: 70px;
-    left: 0;
-    padding: 0 20px;
-    position: $abs;
-    text-align: left;
-    width: 100%;
-  }
-
-}
-
-// shop supplier slider
-
-.shop-supplier .view-content {
-  position: $rel;
-
-  .slick-slide {
-    padding: 0 2px;
-  }
-
-  img {
-    max-width: 100%;
-  }
-
-  .views-row {
-    border: 1px solid $btnbordercolor;
-    border-radius: 100%;
-    overflow: hidden;
-    padding: 0 5px;
-    position: $rel;
-  }
-
-  figure {
-    align-items: center;
-    display: flex;
-    height: 74px;
-    justify-content: center;
-    position: $rel;
-  }
-
-}
-
-
-
-

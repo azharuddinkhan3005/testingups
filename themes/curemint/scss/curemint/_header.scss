@@ -1,0 +1,120 @@
+// custom header
+.custom-header {
+  border-bottom: 1px solid $bordercolor;
+
+  .logo {
+    padding-top: 9px;
+
+    &__navbtn {
+      border: $none;
+      display: $in-block;
+      float: $none;
+      margin: 0 29px 0 0;
+      padding-left: 0;
+      vertical-align: middle;
+    }
+  }
+
+  .icon-bar {
+    background-color: $iconbarcolor;
+    height: 2px;
+    width: 19px;
+
+    + .icon-bar {
+      margin-top: 5px;
+    }
+  }
+
+  .searchprod {
+    padding-bottom: 8px;
+
+    &__form__group {
+      position: $rel;
+    }
+
+    &__form__input {
+      background: $inputbg;
+      border-color: $bordercolor;
+      border-radius: 4px;
+      border-width: 2px;
+      box-shadow: $none;
+      color: $inputcolor;
+      font-family: SFProText;
+      font-size: 1rem;
+      font-weight: normal;
+      height: 52px;
+      letter-spacing: normal;
+      line-height: 1.43;
+      padding: 20px 63px;
+      width: 100%;
+    }
+
+    &__form__btn {
+      background: transparent;
+      border: $none;
+      border-radius: 100%;
+      box-shadow: $none;
+      display: $block;
+      height: 20px;
+      left: 22px;
+      overflow: hidden;
+      padding: 0;
+      position: $abs;
+      top: 17px;
+      width: 21px;
+    }
+  }
+
+  .navtools {
+    list-style: $none;
+    margin: 0;
+    padding: 15px 0 3px 10px;
+
+    &__list {
+      display: $in-block;
+      padding: 0 15px;
+      vertical-align: middle;
+    }
+
+    .last {
+      padding-right: 0;
+    }
+  }
+
+  .listicon {
+
+    &__img {
+      height: 18px;
+      width: 21px;
+    }
+  }
+
+  .profileicon {
+
+    &__img {
+      width: 18px;
+    }
+  }
+
+  .carticon {
+    position: $rel;
+
+    &__img {
+      height: 20px;
+      width: 21px;
+    }
+
+    &__item {
+      background-color: $cartcolor;
+      border-radius: 100%;
+      color: $whitecolor;
+      display: $block;
+      font-size: $size10;
+      line-height: $size13;
+      padding: 1px 5px;
+      position: $abs;
+      right: -7px;
+      top: -8px;
+    }
+  }
+}
