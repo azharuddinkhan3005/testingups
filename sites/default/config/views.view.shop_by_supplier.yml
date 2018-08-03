@@ -133,7 +133,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<a>\n              <figure>\n                <img src=\"{{ field_distributor_image }}\">\n              </figure>\n            </a>"
+            text: "<a class=\"distributor-link\">\n  <figure class=\"distributor-link-img\">\n    <img src=\"{{ field_distributor_image }}\">\n  </figure>\n</a>"
             make_link: false
             path: ''
             absolute: false
