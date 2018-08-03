@@ -1,0 +1,46 @@
+// cart
+.cart {
+
+  &__dropdown {
+    background-color: $whitecolor;
+    border: 1px solid $cartboxborder;
+    box-shadow: 1px 2px 2px 0 $cartboxshadow;
+    display: $none;
+    line-height: $size25;
+    list-style: $none;
+    margin: 0;
+    padding: 30px;
+    position: $abs;
+    right: -20px;
+    top: 44px;
+    width: 420px;
+    z-index: 1;
+
+    &__list {
+      border-bottom: 1px solid $cartboxlistborder;
+      clear: both;
+      font-size: $size15;
+      line-height: $size25;
+      padding: 5px 0;
+    }
+
+    &__price {
+      float: $fr;
+      font-family: $bold;
+      text-align: $fr;
+    }
+
+    &__item {
+      float: $fr;
+      font-family: $bold;
+      text-align: $fr;
+    }
+  }
+
+  &:hover & {
+
+    &__dropdown {
+      display: $block;
+    }
+  }
+}

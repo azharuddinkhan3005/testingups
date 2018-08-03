@@ -9810,12 +9810,12 @@ p:last-child,
   display: none;
 }
 
-/* line 76, ../scss/curemint/_variables.scss */
+/* line 79, ../scss/curemint/_variables.scss */
 h1 {
   font-family: RalewayMedium;
 }
 
-/* line 80, ../scss/curemint/_variables.scss */
+/* line 83, ../scss/curemint/_variables.scss */
 h2 {
   font-family: RalewayMedium;
   font-size: 1.25rem;
@@ -9843,7 +9843,7 @@ h2 {
 }
 /* line 18, ../scss/curemint/_header.scss */
 .custom-header .icon-bar {
-  background-color: #999999;
+  background-color: #999;
   height: 2px;
   width: 19px;
 }
@@ -9895,37 +9895,39 @@ h2 {
 .custom-header .navtools {
   list-style: none;
   margin: 0;
-  padding: 15px 0 3px 10px;
+  padding: 15px 0 0 10px;
 }
 /* line 73, ../scss/curemint/_header.scss */
 .custom-header .navtools__list {
   display: inline-block;
   padding: 0 15px;
-  vertical-align: middle;
+  vertical-align: top;
 }
 /* line 79, ../scss/curemint/_header.scss */
-.custom-header .navtools .last {
+.custom-header .navtools .cart {
+  padding-bottom: 25px;
   padding-right: 0;
+  position: relative;
 }
-/* line 86, ../scss/curemint/_header.scss */
+/* line 88, ../scss/curemint/_header.scss */
 .custom-header .listicon__img {
   height: 18px;
   width: 21px;
 }
-/* line 94, ../scss/curemint/_header.scss */
+/* line 96, ../scss/curemint/_header.scss */
 .custom-header .profileicon__img {
   width: 18px;
 }
-/* line 99, ../scss/curemint/_header.scss */
+/* line 101, ../scss/curemint/_header.scss */
 .custom-header .carticon {
   position: relative;
 }
-/* line 102, ../scss/curemint/_header.scss */
+/* line 104, ../scss/curemint/_header.scss */
 .custom-header .carticon__img {
   height: 20px;
   width: 21px;
 }
-/* line 107, ../scss/curemint/_header.scss */
+/* line 109, ../scss/curemint/_header.scss */
 .custom-header .carticon__item {
   background-color: #0089dd;
   border-radius: 100%;
@@ -9937,6 +9939,47 @@ h2 {
   position: absolute;
   right: -7px;
   top: -8px;
+}
+
+/* line 4, ../scss/curemint/_cart-dropdown.scss */
+.cart__dropdown {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.2);
+  display: none;
+  line-height: 1.5625rem;
+  list-style: none;
+  margin: 0;
+  padding: 30px;
+  position: absolute;
+  right: -20px;
+  top: 44px;
+  width: 420px;
+  z-index: 1;
+}
+/* line 19, ../scss/curemint/_cart-dropdown.scss */
+.cart__dropdown__list {
+  border-bottom: 1px solid #f5f5f5;
+  clear: both;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  padding: 5px 0;
+}
+/* line 27, ../scss/curemint/_cart-dropdown.scss */
+.cart__dropdown__price {
+  float: right;
+  font-family: HelveticaBold;
+  text-align: right;
+}
+/* line 33, ../scss/curemint/_cart-dropdown.scss */
+.cart__dropdown__item {
+  float: right;
+  font-family: HelveticaBold;
+  text-align: right;
+}
+/* line 42, ../scss/curemint/_cart-dropdown.scss */
+.cart:hover .cart__dropdown {
+  display: block;
 }
 
 /* line 2, ../scss/curemint/_homepage.scss */
@@ -10261,12 +10304,12 @@ h2 {
   width: 100%;
 }
 
-/* line 24, ../scss/style.scss */
+/* line 25, ../scss/style.scss */
 :root {
   font-size: 1rem;
 }
 
-/* line 28, ../scss/style.scss */
+/* line 29, ../scss/style.scss */
 body {
   color: #7f7f7f;
   font-family: Helvetica;
@@ -10274,12 +10317,12 @@ body {
   margin-top: 9px;
 }
 
-/* line 35, ../scss/style.scss */
+/* line 36, ../scss/style.scss */
 * {
   outline: none;
 }
 
-/* line 40, ../scss/style.scss */
+/* line 41, ../scss/style.scss */
 .view-frontpage {
   display: none;
 }

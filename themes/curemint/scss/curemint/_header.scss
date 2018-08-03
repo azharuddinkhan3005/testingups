@@ -68,16 +68,18 @@
   .navtools {
     list-style: $none;
     margin: 0;
-    padding: 15px 0 3px 10px;
+    padding: 15px 0 0 10px;
 
     &__list {
       display: $in-block;
       padding: 0 15px;
-      vertical-align: middle;
+      vertical-align: top;
     }
 
-    .last {
+    .cart {
+      padding-bottom: 25px;
       padding-right: 0;
+      position: $rel;
     }
   }
 
