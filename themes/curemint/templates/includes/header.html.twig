@@ -47,15 +47,19 @@
             <!-- cart icon -->
             <a class="carticon" href="#">
               <!-- cart items -->
-              <span class="carticon__item">4</span>
+              {% if items_count %}
+              <span class="carticon__item">{{ items_count }}</span>
+              {% endif %}
               <img class="carticon__img" src="/themes/curemint/images/cart.jpg">
             </a>
 
             <!-- cart dropdown -->
+            {% if items_count %}
             <ul class="cart__dropdown">
-              <li class="cart__dropdown__list"><span class="cart__dropdown__title">Your Savings:</span><span class="cart__dropdown__price">$888.88</span></li>
-              <li class="cart__dropdown__list"><span class="cart__dropdown__title">Items in Your Cart:</span><span class="cart__dropdown__item">4</span></li>
+              <li class="cart__dropdown__list"><span class="cart__dropdown__title">Your Savings:</span><span class="cart__dropdown__price">${{ savings }}</span></li>
+              <li class="cart__dropdown__list"><span class="cart__dropdown__title">Items in Your Cart:</span><span class="cart__dropdown__item">{{ items_count }}</span></li>
             </ul>
+            {% endif %}
           </li>
 
         </ul>
