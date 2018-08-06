@@ -8,8 +8,8 @@ dependencies:
     - field.field.commerce_product_variation.general.field_categories
     - field.field.commerce_product_variation.general.field_distributor
     - field.field.commerce_product_variation.general.field_distributor_sku
-    - field.field.commerce_product_variation.general.field_formulary_price
     - field.field.commerce_product_variation.general.field_manufacturer
+    - field.field.commerce_product_variation.general.field_manufacturer_sku
     - field.field.commerce_product_variation.general.field_packaging_details
     - field.field.commerce_product_variation.general.field_product_images
     - field.field.commerce_product_variation.general.field_quantity
@@ -46,15 +46,6 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-    region: content
-  field_formulary_price:
-    weight: 3
-    label: above
-    settings:
-      strip_trailing_zeroes: false
-      currency_display: symbol
-    third_party_settings: {  }
-    type: commerce_price_default
     region: content
   field_manufacturer:
     weight: 7
