@@ -23,13 +23,17 @@
 @import 'curemint/supplies';
 
 :root {
-  font-size: $size16;
+  font-size: rem-calc(16);
+}
+
+html {
+  @include rem-base;
 }
 
 body {
-  color: $textcolor;
-  font-family: $regular;
-  font-size: $size14;
+  color: $graycolor;
+  font-family: $helvetica-r;
+  font-size: rem-calc(14);
   margin-top: 9px;
 }
 

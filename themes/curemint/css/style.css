@@ -9810,12 +9810,12 @@ p:last-child,
   display: none;
 }
 
-/* line 79, ../scss/curemint/_variables.scss */
+/* line 135, ../scss/curemint/_variables.scss */
 h1 {
   font-family: RalewayMedium;
 }
 
-/* line 83, ../scss/curemint/_variables.scss */
+/* line 139, ../scss/curemint/_variables.scss */
 h2 {
   font-family: RalewayMedium;
   font-size: 1.25rem;
@@ -9833,7 +9833,7 @@ h2 {
   padding-top: 9px;
 }
 /* line 8, ../scss/curemint/_header.scss */
-.custom-header .logo__navbtn {
+.custom-header .logo .navbar-toggle {
   border: none;
   display: inline-block;
   float: none;
@@ -9856,11 +9856,11 @@ h2 {
   padding-bottom: 8px;
 }
 /* line 31, ../scss/curemint/_header.scss */
-.custom-header .searchprod__form__group {
+.custom-header .searchprod__form-group {
   position: relative;
 }
 /* line 35, ../scss/curemint/_header.scss */
-.custom-header .searchprod__form__input {
+.custom-header .searchprod__form-input {
   background: #fafafa;
   border-color: #efefef;
   border-radius: 4px;
@@ -9877,7 +9877,7 @@ h2 {
   width: 100%;
 }
 /* line 52, ../scss/curemint/_header.scss */
-.custom-header .searchprod__form__btn {
+.custom-header .searchprod__form-btn {
   background: transparent;
   border: none;
   border-radius: 100%;
@@ -9891,44 +9891,44 @@ h2 {
   top: 17px;
   width: 21px;
 }
-/* line 68, ../scss/curemint/_header.scss */
-.custom-header .navtools {
+
+/* line 69, ../scss/curemint/_header.scss */
+.navtools {
   list-style: none;
   margin: 0;
-  padding: 15px 0 0 10px;
+  padding: 15px 0 0px 10px;
 }
-/* line 73, ../scss/curemint/_header.scss */
-.custom-header .navtools__list {
+/* line 74, ../scss/curemint/_header.scss */
+.navtools__list {
   display: inline-block;
   padding: 0 15px;
   vertical-align: top;
 }
-/* line 79, ../scss/curemint/_header.scss */
-.custom-header .navtools .cart {
+/* line 80, ../scss/curemint/_header.scss */
+.navtools__list-cart {
   padding-bottom: 25px;
   padding-right: 0;
-  position: relative;
 }
-/* line 88, ../scss/curemint/_header.scss */
-.custom-header .listicon__img {
+/* line 87, ../scss/curemint/_header.scss */
+.navtools__listicon-img {
   height: 18px;
   width: 21px;
 }
-/* line 96, ../scss/curemint/_header.scss */
-.custom-header .profileicon__img {
+/* line 95, ../scss/curemint/_header.scss */
+.navtools__profileicon-img {
   width: 18px;
 }
-/* line 101, ../scss/curemint/_header.scss */
-.custom-header .carticon {
+/* line 100, ../scss/curemint/_header.scss */
+.navtools__carticon {
   position: relative;
 }
-/* line 104, ../scss/curemint/_header.scss */
-.custom-header .carticon__img {
+/* line 103, ../scss/curemint/_header.scss */
+.navtools__carticon-img {
   height: 20px;
   width: 21px;
 }
-/* line 109, ../scss/curemint/_header.scss */
-.custom-header .carticon__item {
+/* line 108, ../scss/curemint/_header.scss */
+.navtools__carticon-item {
   background-color: #0089dd;
   border-radius: 100%;
   color: #fff;
@@ -9958,7 +9958,7 @@ h2 {
   z-index: 1;
 }
 /* line 19, ../scss/curemint/_cart-dropdown.scss */
-.cart__dropdown__list {
+.cart__dropdown-list {
   border-bottom: 1px solid #f5f5f5;
   clear: both;
   font-size: 0.9375rem;
@@ -9966,19 +9966,20 @@ h2 {
   padding: 5px 0;
 }
 /* line 27, ../scss/curemint/_cart-dropdown.scss */
-.cart__dropdown__price {
+.cart__dropdown-price {
   float: right;
   font-family: HelveticaBold;
   text-align: right;
 }
 /* line 33, ../scss/curemint/_cart-dropdown.scss */
-.cart__dropdown__item {
+.cart__dropdown-item {
   float: right;
   font-family: HelveticaBold;
   text-align: right;
 }
-/* line 42, ../scss/curemint/_cart-dropdown.scss */
-.cart:hover .cart__dropdown {
+
+/* line 45, ../scss/curemint/_cart-dropdown.scss */
+.navtools__list-cart:hover .cart__dropdown {
   display: block;
 }
 
@@ -10310,6 +10311,11 @@ h2 {
 }
 
 /* line 29, ../scss/style.scss */
+html {
+  font-size: 100%;
+}
+
+/* line 33, ../scss/style.scss */
 body {
   color: #7f7f7f;
   font-family: Helvetica;
@@ -10317,12 +10323,12 @@ body {
   margin-top: 9px;
 }
 
-/* line 36, ../scss/style.scss */
+/* line 40, ../scss/style.scss */
 * {
   outline: none;
 }
 
-/* line 41, ../scss/style.scss */
+/* line 45, ../scss/style.scss */
 .view-frontpage {
   display: none;
 }
