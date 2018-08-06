@@ -1,18 +1,18 @@
 // slider
 .slick-dots {
-  display: $none;
+  display: none;
   visibility: hidden;
 }
 
 .slick-prev {
-  background: $sliderarrow;
-  border: $none;
+  background: $lightwhitecolor;
+  border: 0;
   border-radius: 0 4px 4px 0;
   font-size: 0;
   height: 100%;
   left: -15px;
-  outline: $none;
-  position: $abs;
+  outline: none;
+  position: absolute;
   top: 0;
   width: 64px;
   z-index: 1;
@@ -22,7 +22,7 @@
     background-position: center;
     background-repeat: no-repeat;
     content: '';
-    display: $block;
+    display: block;
     height: 100%;
     transform: scale(-1);
     width: 100%;
@@ -31,13 +31,13 @@
 }
 
 .slick-next {
-  background: $sliderarrow;
-  border: $none;
+  background: $lightwhitecolor;
+  border: 0;
   border-radius: 0 4px 4px 0;
   font-size: 0;
   height: 100%;
-  outline: $none;
-  position: $abs;
+  outline: none;
+  position: absolute;
   right: -15px;
   top: 0;
   width: 64px;
@@ -48,7 +48,7 @@
     background-position: center;
     background-repeat: no-repeat;
     content: '';
-    display: $block;
+    display: block;
     height: 100%;
     width: 100%;
   }

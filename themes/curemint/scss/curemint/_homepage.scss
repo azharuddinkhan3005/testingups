@@ -1,16 +1,16 @@
 // most purchased items slider
 .most-purchased .views-row {
   padding: 10px;
-  position: $rel;
+  position: relative;
 
   .wish-item {
-    color: $textcolor;
-    display: $in-block;
+    color: $graycolor;
+    display: inline-block;
     font-family: FontAwesome;
-    font-size: $size20;
+    font-size: rem-calc(20);
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    position: $abs;
+    position: absolute;
     right: 0;
     text-decoration: none;
     text-rendering: auto;
@@ -20,7 +20,7 @@
   }
 
   .wish {
-    color: $wishitemcolor;
+    color: $madderlakecolor;
 
     &::before {
       content: '\f004';
@@ -42,15 +42,15 @@
   .item-name {
     -moz-box-orient: vertical;
     -webkit-box-orient: vertical;
-    color: $itemnamecolor;
+    color: $quartzcolor;
     display: -webkit-box;
     display: -moz-box;
-    font-family: $bold;
-    font-size: $size14;
+    font-family: $helvetica-b;
+    font-size: rem-calc(14);
     font-weight: bold;
     -moz-line-clamp: 2;
     -webkit-line-clamp: 2;
-    line-height: $size20;
+    line-height: rem-calc(20);
     max-height: 40px;
     min-height: 40px;
     overflow: hidden;
@@ -59,21 +59,21 @@
 
   .item-distributor {
     clear: both;
-    color: $textcolor;
-    font-family: $regular;
-    font-size: $size14;
+    color: $graycolor;
+    font-family: $helvetica-r;
+    font-size: rem-calc(14);
     font-weight: normal;
   }
 
   .btn {
     background: transparent;
-    border: 1px solid $btnbordercolor;
+    border: 1px solid $spanishlightgraycolor;
     border-radius: 3px;
-    box-shadow: $none;
-    color: $textcolor;
-    font-family: $bold;
-    font-size: $size14;
-    line-height: $size48;
+    box-shadow: none;
+    color: $graycolor;
+    font-family: $helvetica-b;
+    font-size: rem-calc(14);
+    line-height: rem-calc(48);
     margin: 0;
     padding: 0 20px;
     text-transform: uppercase;
@@ -81,25 +81,25 @@
   }
 
   .field--name-quantity {
-    float: $fl;
+    float: left;
   }
 
   .control-label {
-    display: $none;
+    display: none;
   }
 
   .form-number {
-    border-color: $selectbordercolor;
-    box-shadow: $none;
-    color: $textcolor;
-    font-size: $size16;
+    border-color: $chinesesilvercolor;
+    box-shadow: none;
+    color: $graycolor;
+    font-size: rem-calc(16);
     height: 50px;
     padding: 0 5px 0 15px;
     width: 77px;
   }
 
   .form-actions {
-    float: $fr;
+    float: right;
   }
 
 }
@@ -107,40 +107,40 @@
 .itemprice {
 
   span {
-    color: $itemnamecolor;
-    display: $in-block;
-    line-height: $size25;
+    color: $quartzcolor;
+    display: inline-block;
+    line-height: rem-calc(25);
     margin: 15px 0 10px;
     width: 46%;
   }
 
   &__formulary {
-    font-family: $bold;
-    font-size: $size20;
+    font-family: $helvetica-b;
+    font-size: rem-calc(20);
   }
 
   &__msrp {
-    font-size: $size12;
+    font-size: rem-calc(12);
     text-decoration: line-through;
   }
 }
 
 .pkgsection {
   clear: both;
-  color: $textcolor;
-  display: $in-block;
-  font-family: $regular;
-  font-size: $size14;
+  color: $graycolor;
+  display: inline-block;
+  font-family: $helvetica-r;
+  font-size: rem-calc(14);
   font-weight: normal;
   margin-bottom: 5px;
   vertical-align: middle;
 
   p:first-child {
-    float: $fl;
+    float: left;
   }
 
   &__sku {
-    float: $fr;
+    float: right;
     padding-left: 15px;
   }
 
@@ -152,32 +152,32 @@
   padding-bottom: 5px;
 
   h6 {
-    color: $instock;
-    display: $in-block;
-    font-family: $bold;
-    font-size: $size14;
-    line-height: $size25;
+    color: $spanishgreencolor;
+    display: inline-block;
+    font-family: $helvetica-b;
+    font-size: rem-calc(14);
+    line-height: rem-calc(25);
     margin-right: 5px;
     text-transform: capitalize;
   }
 
   ul {
-    display: $in-block;
-    list-style: $none;
+    display: inline-block;
+    list-style: none;
     margin: 0;
     padding: 0;
   }
 
   li {
-    display: $in-block;
+    display: inline-block;
     margin-right: 1px;
   }
 
   a {
-    color: $textcolor;
-    display: $in-block;
+    color: $graycolor;
+    display: inline-block;
     font-family: FontAwesome;
-    font-size: $size14;
+    font-size: rem-calc(14);
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     text-decoration: none;
@@ -190,7 +190,7 @@
   }
 
   .rate {
-    color: $ratecolor;
+    color: $chromeyellowcolor;
 
     &::before {
       content: '\f005';
@@ -199,8 +199,8 @@
   }
 
   span {
-    display: $in-block;
-    font-size: $size11;
+    display: inline-block;
+    font-size: rem-calc(11);
     vertical-align: text-bottom;
   }
 }

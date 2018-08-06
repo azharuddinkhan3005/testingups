@@ -5,7 +5,7 @@
 
       <!-- logo and menu icon -->
       <div class="col-md-3 logo">
-        <button type="button" class="navbar-toggle collapsed logo__navbtn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -16,9 +16,9 @@
       <!-- search bar -->
       <div class="searchprod col-md-7">
         <form class="searchprod__form">
-          <div class="form-group searchprod__form__group">
-            <input type="search" class="form-control searchprod__form__input" id="search" placeholder="Search">
-            <button class="btn searchprod__form__btn"><img src="/themes/curemint/images/search.svg"></button>
+          <div class="form-group searchprod__form-group">
+            <input type="search" class="form-control searchprod__form-input" id="search" placeholder="Search">
+            <button class="btn searchprod__form-btn"><img src="/themes/curemint/images/search.svg"></button>
           </div>
         </form>
       </div>
@@ -29,33 +29,34 @@
 
           <!-- list icon-->
           <li class="navtools__list">
-            <a class="listicon" href="#">
-              <img class="listicon__img" src="/themes/curemint/images/list.jpg">
+            <a class="navtools__listicon" href="#">
+              <img class="navtools__listicon-img" src="/themes/curemint/images/list.jpg">
             </a>
           </li>
 
           <!-- user icon-->
           <li class="navtools__list">
-            <a class="profileicon" href="#">
-              <img class="profileicon__img" src="/themes/curemint/images/user.jpg">
+            <a class="navtools__profileicon" href="#">
+              <img class="navtools__profileicon-img" src="/themes/curemint/images/user.jpg">
             </a>
           </li>
 
-          <!-- cart -->
-          <li class="navtools__list cart last">
+          <!-- cart icon-->
+          <li class="navtools__list navtools__list-cart">
+            <a class="navtools__carticon" href="/cart">
 
-            <!-- cart icon -->
-            <a class="carticon" href="#">
               <!-- cart items -->
-              <span class="carticon__item">4</span>
-              <img class="carticon__img" src="/themes/curemint/images/cart.jpg">
+              <span class="navtools__carticon-item">{{ items_count }}</span>
+              <img class="navtools__carticon-img" src="/themes/curemint/images/cart.jpg">
             </a>
 
             <!-- cart dropdown -->
+            {% if items_count %}
             <ul class="cart__dropdown">
-              <li class="cart__dropdown__list"><span class="cart__dropdown__title">Your Savings:</span><span class="cart__dropdown__price">$888.88</span></li>
-              <li class="cart__dropdown__list"><span class="cart__dropdown__title">Items in Your Cart:</span><span class="cart__dropdown__item">4</span></li>
+              <li class="cart__dropdown-list"><span class="cart__dropdown-title">Your Savings:</span><span class="cart__dropdown-price">${{ savings }}</span></li>
+              <li class="cart__dropdown-list"><span class="cart__dropdown-title">Items in Your Cart:</span><span class="cart__dropdown-item">{{ items_count }}</span></li>
             </ul>
+            {% endif %}
           </li>
 
         </ul>

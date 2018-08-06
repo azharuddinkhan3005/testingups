@@ -1,12 +1,12 @@
-uuid: ad077d0e-9a37-4615-9e49-26cea790b076
+uuid: 6e3e06e2-690e-4003-aa01-3a2ef31149d6
 langcode: en
 status: true
 dependencies:
   module:
     - commerce_price
     - commerce_product
-id: commerce_product_variation.field_formulary_price
-field_name: field_formulary_price
+id: commerce_product_variation.field_msrp_price
+field_name: field_msrp_price
 entity_type: commerce_product_variation
 type: commerce_price
 settings: {  }

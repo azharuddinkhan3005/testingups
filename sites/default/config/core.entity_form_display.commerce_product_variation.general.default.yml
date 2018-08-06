@@ -7,9 +7,9 @@ dependencies:
     - field.field.commerce_product_variation.general.field_categories
     - field.field.commerce_product_variation.general.field_distributor
     - field.field.commerce_product_variation.general.field_distributor_sku
-    - field.field.commerce_product_variation.general.field_formulary_price
     - field.field.commerce_product_variation.general.field_manufacturer
     - field.field.commerce_product_variation.general.field_manufacturer_sku
+    - field.field.commerce_product_variation.general.field_msrp_price
     - field.field.commerce_product_variation.general.field_packaging_details
     - field.field.commerce_product_variation.general.field_product_images
     - field.field.commerce_product_variation.general.field_quantity
@@ -43,12 +43,6 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_formulary_price:
-    weight: 7
-    settings: {  }
-    third_party_settings: {  }
-    type: commerce_price_default
-    region: content
   field_manufacturer:
     weight: 2
     settings: {  }
@@ -62,6 +56,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_msrp_price:
+    weight: 15
+    settings: {  }
+    third_party_settings: {  }
+    type: commerce_price_default
     region: content
   field_packaging_details:
     weight: 5
