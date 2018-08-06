@@ -9941,48 +9941,6 @@ h2 {
   top: -8px;
 }
 
-/* line 4, ../scss/curemint/_cart-dropdown.scss */
-.cart__dropdown {
-  background-color: #fff;
-  border: 1px solid #dbdbdb;
-  box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.2);
-  display: none;
-  line-height: 1.5625rem;
-  list-style: none;
-  margin: 0;
-  padding: 30px;
-  position: absolute;
-  right: -20px;
-  top: 44px;
-  width: 420px;
-  z-index: 1;
-}
-/* line 19, ../scss/curemint/_cart-dropdown.scss */
-.cart__dropdown-list {
-  border-bottom: 1px solid #f5f5f5;
-  clear: both;
-  font-size: 0.9375rem;
-  line-height: 1.5625rem;
-  padding: 5px 0;
-}
-/* line 27, ../scss/curemint/_cart-dropdown.scss */
-.cart__dropdown-price {
-  float: right;
-  font-family: HelveticaBold;
-  text-align: right;
-}
-/* line 33, ../scss/curemint/_cart-dropdown.scss */
-.cart__dropdown-item {
-  float: right;
-  font-family: HelveticaBold;
-  text-align: right;
-}
-
-/* line 45, ../scss/curemint/_cart-dropdown.scss */
-.navtools__list-cart:hover .cart__dropdown {
-  display: block;
-}
-
 /* line 2, ../scss/curemint/_homepage.scss */
 .most-purchased .views-row {
   padding: 10px;
@@ -10305,17 +10263,17 @@ h2 {
   width: 100%;
 }
 
-/* line 25, ../scss/style.scss */
+/* line 24, ../scss/style.scss */
 :root {
   font-size: 1rem;
 }
 
-/* line 29, ../scss/style.scss */
+/* line 28, ../scss/style.scss */
 html {
   font-size: 100%;
 }
 
-/* line 33, ../scss/style.scss */
+/* line 32, ../scss/style.scss */
 body {
   color: #7f7f7f;
   font-family: Helvetica;
@@ -10323,12 +10281,12 @@ body {
   margin-top: 9px;
 }
 
-/* line 40, ../scss/style.scss */
+/* line 39, ../scss/style.scss */
 * {
   outline: none;
 }
 
-/* line 45, ../scss/style.scss */
+/* line 44, ../scss/style.scss */
 .view-frontpage {
   display: none;
 }
