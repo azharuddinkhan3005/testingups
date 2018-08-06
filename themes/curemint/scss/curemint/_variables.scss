@@ -1,26 +1,83 @@
 // font-family
-$bold: HelveticaBold;
-$regular: Helvetica;
+$helvetica-b: HelveticaBold;
+$helvetica-r: Helvetica;
 $ralewaym: RalewayMedium;
 
-// font size
-$size10: .625rem;
-$size11: .6875rem;
-$size12: .75rem;
-$size13: .8125rem;
-$size14: .875rem;
-$size15: .9375rem;
-$size16: 1rem;
-$size17: 1.0625rem;
-$size18: 1.125rem;
-$size19: 1.1875rem;
-$size20: 1.25rem;
-$size21: 1.3125rem;
-$size22: 1.375rem;
-$size23: 1.4375rem;
-$size24: 1.5rem;
-$size25: 1.5625rem;
-$size48: 3rem;
+// ----
+// rem mixins
+// ----
+
+$rem-base: 16px !default;
+
+@function rem-separator($list) {
+  @if function-exists('list-separator') == true {
+    @return list-separator($list);
+  }
+  $test-list: ();
+  @each $item in $list {
+    $test-list: append($test-list, $item, space);
+  }
+  @return if($test-list == $list, space, comma);
+}
+
+@mixin rem-base($zoom: 100%) {
+  font-size: $zoom / 16px * $rem-base;
+}
+
+@function rem-convert($to, $values...) {
+  $result: ();
+  $separator: rem-separator($values);
+  @each $value in $values {
+    @if type-of($value) == 'number' and unit($value) == 'rem' and $to == 'px' {
+      $result: append($result, $value / 1rem * $rem-base, $separator);
+    } @else if type-of($value) == 'number' and unit($value) == 'px' and $to == 'rem' {
+      $result: append($result, $value / ($rem-base / 1rem), $separator);
+    } @else if type-of($value) == 'list' {
+      $result: append($result, rem-convert($to, $value...), $separator);
+    } @else { $result: append($result, $value, $separator); }
+  }
+  @return if(length($result) == 1, nth($result, 1), $result);
+}
+
+@function rem($values...) {
+  @return rem-convert(rem, $values...);
+}
+
+@mixin rem($properties, $values...) {
+  @if type-of($properties) == 'map' {
+    @each $property in map-keys($properties) {
+      @include rem($property, map-get($properties, $property));
+    }
+  } @else {
+    @each $property in $properties {
+      #{$property}: rem-convert(rem, $values...);
+    }
+  }
+}
+
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+@function convert-to-rem($value, $base-value: $rem-base) {
+  $value: strip-unit($value) / strip-unit($base-value) * 1rem;
+  @if ($value == 0) {
+    $value: 0;
+  } // Turn 0em into 0
+  @return $value;
+}
+
+@function rem-calc($values, $base-value: $rem-base) {
+  $max: length($values);
+  @if $max == 1 {
+    @return convert-to-rem(nth($values, 1), $base-value);
+  }
+  $remvalues: ();
+  @for $i from 1 through $max {
+    $remvalues: append($remvalues, convert-to-rem(nth($values, $i), $base-value));
+  }
+  @return $remvalues;
+}
 
 // positions
 $rel: relative;
@@ -40,20 +97,20 @@ $fr: right;
 // colors
 $whitecolor: #fff;
 $blackcolor: #000;
-$textcolor: #7f7f7f;
-$itemnamecolor: #4a4a4a;
-$wishitemcolor: #c53938;
-$instock: #009347;
-$btnbordercolor: #9e9e9e;
-$ratecolor: #ffa900;
-$selectbordercolor: #ccc;
-$sliderarrow: rgba(255, 255, 255, .75);
-$bordercolor: #efefef;
-$inputbg: #fafafa;
-$inputcolor: #4d4d4d;
-$btncolor: #b3b3b3;
-$cartcolor: #0089dd;
-$iconbarcolor: #999999;
+$graycolor: #7f7f7f;
+$quartzcolor: #4a4a4a;
+$madderlakecolor: #c53938;
+$spanishgreencolor: #009347;
+$spanishlightgraycolor: #9e9e9e;
+$chromeyellowcolor: #ffa900;
+$chinesesilvercolor: #ccc;
+$lightwhitecolor: rgba(255, 255, 255, .75);
+$brightgraycolor: #efefef;
+$lotioncolor: #fafafa;
+$darklivercolor: #4d4d4d;
+$philippinesilvercolor: #b3b3b3;
+$bluecolacolor: #0089dd;
+$spanishgraycolor: #999;
 
 
 // headings
@@ -67,10 +124,10 @@ $iconbarcolor: #999999;
 
 @mixin heading-2 {
   @include heading;
-  font-size: $size20;
+  font-size: rem-calc(20px);
   text-transform: uppercase;
   margin-bottom: 18px;
-  color: $itemnamecolor;
+  color: $quartzcolor;
 }
 
 h1 {
