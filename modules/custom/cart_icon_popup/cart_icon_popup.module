@@ -12,6 +12,10 @@ function cart_icon_popup_theme() {
   );
 }
 
+<<<<<<< 50e9eb3b7d439ace7098aa57fed561f167a522c5
+=======
+
+>>>>>>> worked on the cart icon and retrieved the data from the cart to show on the drop down. Also added a custom module cart_icon_popup to achieve the same.
 /**
 * Implements hook_preprocess_HOOK() for block.html.twig.
 */
@@ -21,6 +25,7 @@ function curemint_preprocess_block(&$variables){
     $variables['#cache']['max-age'] = 0;
   }
 }
+<<<<<<< 50e9eb3b7d439ace7098aa57fed561f167a522c5
 
 /**
 * Implements hook_theme_suggestions_alter().
@@ -31,3 +36,5 @@ function curemint_preprocess_block(&$variables){
     $suggestions[] = 'commerce-cart-block-custom.html.twig';
   }
 } */
+=======
+>>>>>>> worked on the cart icon and retrieved the data from the cart to show on the drop down. Also added a custom module cart_icon_popup to achieve the same.
