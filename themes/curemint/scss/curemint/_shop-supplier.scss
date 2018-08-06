@@ -1,7 +1,7 @@
 // shop supplier slider
 
 .shop-supplier .view-content {
-  position: $rel;
+  position: relative;
 
   .slick-slide {
     padding: 0 2px;
@@ -16,7 +16,7 @@
     border-radius: 100%;
     overflow: hidden;
     padding: 0 5px;
-    position: $rel;
+    position: relative;
   }
 
   .distributor-link-img {
@@ -24,7 +24,7 @@
     display: flex;
     height: 74px;
     justify-content: center;
-    position: $rel;
+    position: relative;
   }
 
 }

@@ -9810,12 +9810,12 @@ p:last-child,
   display: none;
 }
 
-/* line 135, ../scss/curemint/_variables.scss */
+/* line 123, ../scss/curemint/_variables.scss */
 h1 {
   font-family: RalewayMedium;
 }
 
-/* line 139, ../scss/curemint/_variables.scss */
+/* line 127, ../scss/curemint/_variables.scss */
 h2 {
   font-family: RalewayMedium;
   font-size: 1.25rem;
@@ -9834,7 +9834,7 @@ h2 {
 }
 /* line 8, ../scss/curemint/_header.scss */
 .custom-header .logo .navbar-toggle {
-  border: none;
+  border: 0;
   display: inline-block;
   float: none;
   margin: 0 29px 0 0;
@@ -9879,7 +9879,7 @@ h2 {
 /* line 52, ../scss/curemint/_header.scss */
 .custom-header .searchprod__form-btn {
   background: transparent;
-  border: none;
+  border: 0;
   border-radius: 100%;
   box-shadow: none;
   display: block;
@@ -10195,7 +10195,7 @@ h2 {
 /* line 7, ../scss/curemint/_slider.scss */
 .slick-prev {
   background: rgba(255, 255, 255, 0.75);
-  border: none;
+  border: 0;
   border-radius: 0 4px 4px 0;
   font-size: 0;
   height: 100%;
@@ -10221,7 +10221,7 @@ h2 {
 /* line 33, ../scss/curemint/_slider.scss */
 .slick-next {
   background: rgba(255, 255, 255, 0.75);
-  border: none;
+  border: 0;
   border-radius: 0 4px 4px 0;
   font-size: 0;
   height: 100%;

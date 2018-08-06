@@ -4,13 +4,13 @@
   &__dropdown {
     background-color: $whitecolor;
     border: 1px solid $gainsborocolor;
-    box-shadow: 1px 2px 2px 0 $lightblcakcolor;
-    display: $none;
+    box-shadow: 1px 2px 2px 0 $lightblackcolor;
+    display: none;
     line-height: rem-calc(25px);
-    list-style: $none;
+    list-style: none;
     margin: 0;
     padding: 30px;
-    position: $abs;
+    position: absolute;
     right: -20px;
     top: 44px;
     width: 420px;
@@ -25,15 +25,15 @@
     }
 
     &-price {
-      float: $fr;
+      float: right;
       font-family: $helvetica-b;
-      text-align: $fr;
+      text-align: right;
     }
 
     &-item {
-      float: $fr;
+      float: right;
       font-family: $helvetica-b;
-      text-align: $fr;
+      text-align: right;
     }
   }
 }
@@ -43,7 +43,7 @@
   &__list-cart:hover .cart {
 
     &__dropdown {
-      display: $block;
+      display: block;
     }
   }
 }

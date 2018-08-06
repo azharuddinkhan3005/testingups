@@ -1,7 +1,7 @@
 // supplies slider
 .supplies .views-row {
   padding: 10px;
-  position: $rel;
+  position: relative;
 
   img {
     max-width: 100%;
@@ -12,7 +12,7 @@
     &__img {
       height: 240px;
       overflow: hidden;
-      position: $rel;
+      position: relative;
     }
 
     &__name {
@@ -27,7 +27,7 @@
       height: 70px;
       left: 0;
       padding: 0 20px;
-      position: $abs;
+      position: absolute;
       text-align: left;
       width: 100%;
     }
