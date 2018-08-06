@@ -3,44 +3,47 @@
 
   &__dropdown {
     background-color: $whitecolor;
-    border: 1px solid $cartboxborder;
-    box-shadow: 1px 2px 2px 0 $cartboxshadow;
-    display: $none;
-    line-height: $size25;
-    list-style: $none;
+    border: 1px solid $gainsborocolor;
+    box-shadow: 1px 2px 2px 0 $lightblackcolor;
+    display: none;
+    line-height: rem-calc(25px);
+    list-style: none;
     margin: 0;
     padding: 30px;
-    position: $abs;
+    position: absolute;
     right: -20px;
     top: 44px;
     width: 420px;
     z-index: 1;
 
-    &__list {
-      border-bottom: 1px solid $cartboxlistborder;
+    &-list {
+      border-bottom: 1px solid $culturedcolor;
       clear: both;
-      font-size: $size15;
-      line-height: $size25;
+      font-size: rem-calc(15px);
+      line-height: rem-calc(25px);
       padding: 5px 0;
     }
 
-    &__price {
-      float: $fr;
-      font-family: $bold;
-      text-align: $fr;
+    &-price {
+      float: right;
+      font-family: $helvetica-b;
+      text-align: right;
     }
 
-    &__item {
-      float: $fr;
-      font-family: $bold;
-      text-align: $fr;
+    &-item {
+      float: right;
+      font-family: $helvetica-b;
+      text-align: right;
     }
   }
+}
 
-  &:hover & {
+.navtools {
+
+  &__list-cart:hover .cart {
 
     &__dropdown {
-      display: $block;
+      display: block;
     }
   }
 }

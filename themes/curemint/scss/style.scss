@@ -10,7 +10,7 @@
 // Base-theme overrides.
 @import 'overrides';
 
-// slick slider
+// slick slider.
 @import 'slick';
 
 // curemint project styling
@@ -23,21 +23,25 @@
 @import 'curemint/supplies';
 
 :root {
-  font-size: $size16;
+  font-size: rem-calc(16);
+}
+
+html {
+  @include rem-base;
 }
 
 body {
-  color: $textcolor;
-  font-family: $regular;
-  font-size: $size14;
+  color: $graycolor;
+  font-family: $helvetica-r;
+  font-size: rem-calc(14);
   margin-top: 9px;
 }
 
 * {
-  outline: $none;
+  outline: none;
 }
 
 // home page default content hide
 .view-frontpage {
-  display: $none;
+  display: none;
 }
