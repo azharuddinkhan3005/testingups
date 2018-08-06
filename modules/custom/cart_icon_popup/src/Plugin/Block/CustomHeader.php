@@ -67,3 +67,4 @@ class CustomHeader extends BlockBase {
     );
   }
 }
+sites/default/config/core.entity_view_display.commerce_product_variation.general.cart.yml

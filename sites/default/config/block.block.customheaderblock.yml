@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - cart_icon_popup
+    - system
   theme:
     - curemint
 id: customheaderblock
