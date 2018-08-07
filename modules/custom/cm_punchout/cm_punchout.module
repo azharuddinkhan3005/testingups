@@ -1,0 +1,147 @@
+<?php
+
+/**
+ * @file
+ * Defines functionality to add punchout capabilities for PO2GO suppliers.
+ */
+
+use Drupal\file\Entity\File;
+use Drupal\taxonomy\Entity\Term;
+use Drupal\user\Entity\User;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_preprocess_views_view_unformatted().
+ */
+function cm_punchout_preprocess_views_view_unformatted(&$variables) {
+  if ($variables['view']->id() === 'shop_by_supplier') {
+    $punchout_customer_details = _cm_punchout_get_user_details();
+
+    foreach ($variables['view']->result as $id => $row) {
+      $distributor_image_url = '';
+      if ($punchout_type = $row->_entity->field_punchout_type->value !== 'punchout' ||
+          !$punchout_supplier = $row->_entity->field_punchout_supplier_select->target_id) {
+        continue;
+      }
+      if ($row->_entity->field_distributor_image->target_id) {
+        $file = File::load($row->_entity->field_distributor_image->target_id);
+        $distributor_image_url = file_url_transform_relative(file_create_url($file->getFileUri()));
+      }
+      if (!is_array($punchout_customer_details)) {
+        $variables['rows'][$id]['content'] = [
+          '#theme' => 'punchout_supplier',
+          '#href' => '/punchout/error/' . $punchout_customer_details,
+          '#distributor_image_path' => $distributor_image_url,
+        ];
+        continue;
+      }
+
+      if ($row->_entity->field_distributor_image->target_id) {
+        $file = File::load($row->_entity->field_distributor_image->target_id);
+        $distributor_image_url = file_url_transform_relative(file_create_url($file->getFileUri()));
+      }
+      $punchout_supplier_endpoint = Term::load($punchout_supplier)->field_punchout_endpoint->value;
+      $punchout_supplier_mode = Term::load($punchout_supplier)->field_punchout_mode->value;
+      $punchout_params = _cm_punchout_param_format($user_dets, $punchout_supplier_mode);
+
+      $variables['rows'][$id]['content'] = [
+        '#theme' => 'punchout_supplier',
+        '#action' => $punchout_supplier_endpoint,
+        '#params' => $punchout_params,
+        '#shared_secret' => '',
+        '#pos' => '',
+        '#distributor_image_path' => $distributor_image_url,
+        '#id' => 'punchout-supplier-' . $id,
+      ];
+    }
+  }
+}
+
+/**
+ * Helper function to format the parameters to be sent to PO2GO.
+ *
+ * @param array $user_dets
+ *   An array consisting of user data.
+ * @param string $punchout_supplier_mode
+ *   A string depicting the mode in which punchout requests will be sent.
+ *
+ * @return string
+ *   A base64 encoded string of the parameters array.
+ */
+function _cm_punchout_param_format(array $user_dets, $punchout_supplier_mode) {
+  $parameters = [
+    'operation' => 'create',
+    'mode' => $punchout_supplier_mode,
+    'body' => [
+      'contact' => [
+        'email' => $user_dets['email'],
+        'name' => $user_dets['name'],
+        'unique' => $user_dets['name'],
+      ],
+      'shipping' => [
+        'data' => [
+          'shipping_id' => "Main",
+          'shipping_business' => $user_dets['address']['organization'],
+          'shipping_to' => $user_dets['address']['organization'],
+          'shipping_street' => $user_dets['address']['address_line1'] . ' ' . $user_dets['address']['address_line2'],
+          'shipping_city' => $user_dets['address']['locality'],
+          'shipping_state' => $user_dets['address']['administrative_area'],
+          'shipping_zip' => $user_dets['address']['postal_code'],
+          'shipping_country' => $user_dets['address']['country_name'],
+          'country_id' => $user_dets['address']['country_code'],
+        ],
+      ],
+    ],
+  ];
+  $parameters_json = json_encode($parameters);
+  $parameters_base64_encode = base64_encode($parameters_json);
+  return $parameters_base64_encode;
+}
+
+/**
+ * Helper function to get the user details.
+ *
+ * @return mixed
+ *   Return an array of user data with address(shipping address) or strings
+ *   indicating an error status.
+ */
+function _cm_punchout_get_user_details() {
+  $user = Drupal::currentUser();
+  if ($user->isAnonymous()) {
+    return 'ERR_ANON';
+  }
+  $user_object = User::load($user->id());
+  $user_address = reset($user_object->field_address->getValue());
+  if (empty($user_address)) {
+    return 'ERR_NOADDR';
+  }
+  $user_dets['name'] = $user_object->field_name->value;
+  $user_dets['email'] = $user_object->mail->value;
+  $user_dets['username'] = $user_object->name->value;
+
+  $user_address['country_name'] = (Drupal::service('country_manager')->getStandardList())[$user_address['country_code']]->getUntranslatedString();
+
+  $user_dets['address'] = $user_address;
+
+  return $user_dets;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function cm_punchout_theme() {
+  return [
+    'punchout_supplier' => [
+      'variables' => [
+        'action' => '',
+        'params' => '',
+        'shared_secret' => '',
+        'pos' => '',
+        'return_url' => Url::fromUri('internal:/')->setAbsolute()->toString() . 'punchout/poom',
+        'distributor_image_path' => '',
+        'id' => '',
+        'href' => '#',
+      ],
+    ],
+  ];
+}

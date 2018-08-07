@@ -1,0 +1,19 @@
+uuid: 88a48d32-471d-4449-add7-04e75bdb506c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_punchout_endpoint
+    - taxonomy.vocabulary.punchout_suppliers
+id: taxonomy_term.punchout_suppliers.field_punchout_endpoint
+field_name: field_punchout_endpoint
+entity_type: taxonomy_term
+bundle: punchout_suppliers
+label: 'Punchout Endpoint'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

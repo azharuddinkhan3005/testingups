@@ -1,0 +1,36 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display Punchout supplier rows.
+ *
+ * Available variables:
+ * - id:  The unique form ID.
+ * - action: The punchout endpoint.
+ * - params: The URL-encoded JSON array defining the PunchOut request; note that the Gateway will also accept a parameter called
+             params-base64 that contains the base64-encoded JSON array
+ * - shared_secret: The secret key to authenticate the punchout setup request.
+ * - pos: The System session ID.
+ * - return_url: The procurement system's URL that will receive the return-cart POST.
+ * - distributor_image_path: The image path of the punchout supplier.
+ * - href: The anchor hypertext ref.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% if action %}
+  {% set po_anchor_attr = 'document.getElementById("' ~ id ~ '").submit();' %}
+  <form id="{{ id }}" action="{{ action }}" method="post">
+    <input name="return_url" type="hidden" value="{{ return_url }}" />
+    <input name="params" type="hidden" value="{{ params }}" />
+    <input name="sharedsecret" type="hidden" value="{{ shared_secret }}" />
+  </form>
+{% endif %}
+<a href="{{ href }}" onclick="{{ po_anchor_attr }}">
+  <figure>
+    <img src="{{ distributor_image_path }}">
+  </figure>
+</a>
+
