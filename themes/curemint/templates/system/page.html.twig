@@ -52,8 +52,16 @@
  */
 #}
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
-{# Custom Header #}
-{% include '@curemint/includes/header.html.twig' %}
+{# Custom header #}
+{% if page.custom_header %}
+ {% block custom_header %}
+ <header class="custom-header">
+   <div class="container">
+     {{ page.custom_header }}
+   </div>
+  </header>
+ {% endblock %}
+{% endif %}
 
 {# Navbar #}
 {% if page.navigation or page.navigation_collapsible %}
