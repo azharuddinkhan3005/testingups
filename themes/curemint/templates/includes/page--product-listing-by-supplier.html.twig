@@ -145,7 +145,20 @@
         {# Content #}
         {% block content %}
           <a id="main-content"></a>
-          {{ page.content }}
+          <div>
+            <!-- repeat -->
+            <figure class="items-img">
+            <img src="{{ field_product_images }}">
+            </figure>
+            <h3 class="item-name">{{ title }}</h3>
+            <div class="pkgsection">
+            {{ field_packaging_details }}<p class="pkgsection__sku">{{ field_manufacturer_sku }}</p>
+            </div>
+            <h5 class="item-distributor">{{ field_distributor }} </h5>
+            <h4 class="itemprice"><span class="itemprice__formulary">{{ field_formulary_price }}</span><span class="itemprice__msrp">{{ price__number }}</span></h4>
+            {{ variations }}
+            <!-- repeat end -->
+          </div>
         {% endblock %}
       </section>
 
