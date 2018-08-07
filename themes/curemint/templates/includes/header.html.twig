@@ -43,18 +43,20 @@
 
           <!-- cart icon-->
           <li class="navtools__list navtools__list-cart">
-            <a class="navtools__carticon" href="#">
+            <a class="navtools__carticon" href="/cart">
 
               <!-- cart items -->
-              <span class="navtools__carticon-item">4</span>
+              <span class="navtools__carticon-item">{{ items_count }}</span>
               <img class="navtools__carticon-img" src="/themes/curemint/images/cart.jpg">
             </a>
 
             <!-- cart dropdown -->
+            {% if items_count %}
             <ul class="cart__dropdown">
-              <li class="cart__dropdown-list"><span class="cart__dropdown-title">Your Savings:</span><span class="cart__dropdown-price">$888.88</span></li>
-              <li class="cart__dropdown-list"><span class="cart__dropdown-title">Items in Your Cart:</span><span class="cart__dropdown-item">4</span></li>
+              <li class="cart__dropdown-list"><span class="cart__dropdown-title">Your Savings:</span><span class="cart__dropdown-price">${{ savings }}</span></li>
+              <li class="cart__dropdown-list"><span class="cart__dropdown-title">Items in Your Cart:</span><span class="cart__dropdown-item">{{ items_count }}</span></li>
             </ul>
+            {% endif %}
           </li>
 
         </ul>

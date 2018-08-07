@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function cart_icon_popup_theme() {
+  return array(
+   'cart_icon_popup' => array(
+            'variables' => array('title' => NULL, 'link' => NULL, 'items_count' => NULL, 'savings' => NULL),
+            'template' => 'header',
+        ),
+  );
+}
+
+
+/**
+* Implements hook_preprocess_HOOK() for block.html.twig.
+*/
+function curemint_preprocess_block(&$variables){
+  if($variables['attributes']['id'] == 'block-customheaderblock') {
+    //-- This stops the block being cache in drupal 8
+    $variables['#cache']['max-age'] = 0;
+  }
+}

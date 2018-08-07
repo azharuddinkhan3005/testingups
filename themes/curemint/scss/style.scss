@@ -15,6 +15,7 @@
 
 // curemint project styling
 @import 'curemint/variables';
+@import 'curemint/mixins';
 @import 'curemint/header';
 @import 'curemint/cart-dropdown';
 @import 'curemint/homepage';
@@ -39,6 +40,14 @@ body {
 
 * {
   outline: none;
+}
+
+h1 {
+  @include heading-1;
+}
+
+h2 {
+  @include heading-2;
 }
 
 // home page default content hide
