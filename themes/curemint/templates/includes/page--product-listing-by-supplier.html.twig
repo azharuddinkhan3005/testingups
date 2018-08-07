@@ -52,8 +52,45 @@
  */
 #}
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
-{# Custom Header #}
-{% include '@curemint/includes/header.html.twig' %}
+{# Custom header #}
+{% if page.custom_header %}
+ {% block custom_header %}
+ <header class="custom-header">
+   <div class="container">
+     {{ page.custom_header }}
+   </div>
+  </header>
+ {% endblock %}
+{% endif %}
+<div class="header-navbar">
+  <div class="container">
+     <div class="row">
+       <div class="col-md-8">
+         <ol class="breadcrumb">
+          <li class="breadcrumb__list"><a class="breadcrumb__link" href="#">Home</a></li>
+          <li class="breadcrumb__list breadcrumb__active">Most Purchased</li>
+        </ol>
+       </div>
+       <div class="col-md-2">
+         <form class="formsort">
+           <label class="formsort__label">Sort:</label>
+           <select class="formsort__select">
+             <option>Recent</option>
+             <option>Recent</option>
+             <option>Recent</option>
+           </select>
+         </form>
+       </div>
+       <div class="col-md-2">
+        <ul class="layoutview">
+          <li class="layoutview__list"><span class="layoutview__label">View:</span></li>
+          <li class="layoutview__list"><a href="#" class="layoutview__grid"><img class="layoutview__grid-img" src="/themes/curemint/images/grid.jpg"></a></li>
+          <li class="layoutview__list"><a href="#" class="layoutview__listitem"><img class="layoutview__listitem-img" src="/themes/curemint/images/list-img.jpg"></a></li>
+        </ul>
+       </div>
+     </div>
+   </div>
+</div>
 {# Navbar #}
 {% if page.navigation or page.navigation_collapsible %}
   {% block navbar %}
@@ -145,19 +182,328 @@
         {# Content #}
         {% block content %}
           <a id="main-content"></a>
-          <div>
-            <!-- repeat -->
-            <figure class="items-img">
-            <img src="{{ field_product_images }}">
-            </figure>
-            <h3 class="item-name">{{ title }}</h3>
-            <div class="pkgsection">
-            {{ field_packaging_details }}<p class="pkgsection__sku">{{ field_manufacturer_sku }}</p>
+          <div class="most-purchased productlist-supplier">
+            <div class="row">
+              <div class="col-sm-2 views-row">
+                <!-- repeat -->
+                  <figure class="items-img">
+                  <img src="/sites/default/files/styles/medium/public/2018-07/Etch-Rite%20Kit-2.jpg?itok=FK6_UJJq">
+                  </figure>
+                  <h3 class="item-name">Product 1</h3>
+                  <div class="pkgsection">
+                  <p>4 Packages/Cases</p><p class="pkgsection__sku">46616</p>
+                  </div>
+                  <h5 class="item-distributor">Distributor 1 </h5>
+                  <h4 class="itemprice"><span class="itemprice__formulary">$56.00</span><span class="itemprice__msrp">$58.00</span></h4>
+                  <form>
+                    <div class="field--name-quantity">
+                      <input data-drupal-selector="edit-quantity-0-value" class="form-number form-control" type="number" id="edit-quantity-0-value--2" name="quantity[0][value]" value="1" step="0.01" min="0" placeholder="" tabindex="0">
+                    </div>
+                    <div class="form-actions">
+                      <button data-drupal-selector="edit-submit" class="button button--primary js-form-submit form-submit btn-success btn" type="submit" id="edit-submit--2" name="op" value="Add to cart" tabindex="0">Add to cart</button>
+                    </div>
+                  </form>
+                  <!-- repeat end -->
+              </div>
+             <div class="col-sm-2 views-row">
+                <!-- repeat -->
+                  <figure class="items-img">
+                  <img src="/sites/default/files/styles/medium/public/2018-07/Etch-Rite%20Kit-2.jpg?itok=FK6_UJJq">
+                  </figure>
+                  <h3 class="item-name">Product 1</h3>
+                  <div class="pkgsection">
+                  <p>4 Packages/Cases</p><p class="pkgsection__sku">46616</p>
+                  </div>
+                  <h5 class="item-distributor">Distributor 1 </h5>
+                  <h4 class="itemprice"><span class="itemprice__formulary">$56.00</span><span class="itemprice__msrp">$58.00</span></h4>
+                  <form>
+                    <div class="field--name-quantity">
+                      <input data-drupal-selector="edit-quantity-0-value" class="form-number form-control" type="number" id="edit-quantity-0-value--2" name="quantity[0][value]" value="1" step="0.01" min="0" placeholder="" tabindex="0">
+                    </div>
+                    <div class="form-actions">
+                      <button data-drupal-selector="edit-submit" class="button button--primary js-form-submit form-submit btn-success btn" type="submit" id="edit-submit--2" name="op" value="Add to cart" tabindex="0">Add to cart</button>
+                    </div>
+                  </form>
+                  <!-- repeat end -->
+              </div>
+              <div class="col-sm-2 views-row">
+                <!-- repeat -->
+                  <figure class="items-img">
+                  <img src="/sites/default/files/styles/medium/public/2018-07/Etch-Rite%20Kit-2.jpg?itok=FK6_UJJq">
+                  </figure>
+                  <h3 class="item-name">Product 1</h3>
+                  <div class="pkgsection">
+                  <p>4 Packages/Cases</p><p class="pkgsection__sku">46616</p>
+                  </div>
+                  <h5 class="item-distributor">Distributor 1 </h5>
+                  <h4 class="itemprice"><span class="itemprice__formulary">$56.00</span><span class="itemprice__msrp">$58.00</span></h4>
+                  <form>
+                    <div class="field--name-quantity">
+                      <input data-drupal-selector="edit-quantity-0-value" class="form-number form-control" type="number" id="edit-quantity-0-value--2" name="quantity[0][value]" value="1" step="0.01" min="0" placeholder="" tabindex="0">
+                    </div>
+                    <div class="form-actions">
+                      <button data-drupal-selector="edit-submit" class="button button--primary js-form-submit form-submit btn-success btn" type="submit" id="edit-submit--2" name="op" value="Add to cart" tabindex="0">Add to cart</button>
+                    </div>
+                  </form>
+                  <!-- repeat end -->
+              </div>
+              <div class="col-sm-2 views-row">
+                <!-- repeat -->
+                  <figure class="items-img">
+                  <img src="/sites/default/files/styles/medium/public/2018-07/Etch-Rite%20Kit-2.jpg?itok=FK6_UJJq">
+                  </figure>
+                  <h3 class="item-name">Product 1</h3>
+                  <div class="pkgsection">
+                  <p>4 Packages/Cases</p><p class="pkgsection__sku">46616</p>
+                  </div>
+                  <h5 class="item-distributor">Distributor 1 </h5>
+                  <h4 class="itemprice"><span class="itemprice__formulary">$56.00</span><span class="itemprice__msrp">$58.00</span></h4>
+                  <form>
+                    <div class="field--name-quantity">
+                      <input data-drupal-selector="edit-quantity-0-value" class="form-number form-control" type="number" id="edit-quantity-0-value--2" name="quantity[0][value]" value="1" step="0.01" min="0" placeholder="" tabindex="0">
+                    </div>
+                    <div class="form-actions">
+                      <button data-drupal-selector="edit-submit" class="button button--primary js-form-submit form-submit btn-success btn" type="submit" id="edit-submit--2" name="op" value="Add to cart" tabindex="0">Add to cart</button>
+                    </div>
+                  </form>
+                  <!-- repeat end -->
+              </div>
+              <div class="col-sm-2 views-row">
+                <!-- repeat -->
+                  <figure class="items-img">
+                  <img src="/sites/default/files/styles/medium/public/2018-07/Etch-Rite%20Kit-2.jpg?itok=FK6_UJJq">
+                  </figure>
+                  <h3 class="item-name">Product 1</h3>
+                  <div class="pkgsection">
+                  <p>4 Packages/Cases</p><p class="pkgsection__sku">46616</p>
+                  </div>
+                  <h5 class="item-distributor">Distributor 1 </h5>
+                  <h4 class="itemprice"><span class="itemprice__formulary">$56.00</span><span class="itemprice__msrp">$58.00</span></h4>
+                  <form>
+                    <div class="field--name-quantity">
+                      <input data-drupal-selector="edit-quantity-0-value" class="form-number form-control" type="number" id="edit-quantity-0-value--2" name="quantity[0][value]" value="1" step="0.01" min="0" placeholder="" tabindex="0">
+                    </div>
+                    <div class="form-actions">
+                      <button data-drupal-selector="edit-submit" class="button button--primary js-form-submit form-submit btn-success btn" type="submit" id="edit-submit--2" name="op" value="Add to cart" tabindex="0">Add to cart</button>
+                    </div>
+                  </form>
+                  <!-- repeat end -->
+              </div>
             </div>
-            <h5 class="item-distributor">{{ field_distributor }} </h5>
-            <h4 class="itemprice"><span class="itemprice__formulary">{{ field_formulary_price }}</span><span class="itemprice__msrp">{{ price__number }}</span></h4>
-            {{ variations }}
-            <!-- repeat end -->
+            <div class="row">
+            <div class="col-sm-2 views-row">
+              <!-- repeat -->
+                <figure class="items-img">
+                <img src="/sites/default/files/styles/medium/public/2018-07/Etch-Rite%20Kit-2.jpg?itok=FK6_UJJq">
+                </figure>
+                <h3 class="item-name">Product 1</h3>
+                <div class="pkgsection">
+                <p>4 Packages/Cases</p><p class="pkgsection__sku">46616</p>
+                </div>
+                <h5 class="item-distributor">Distributor 1 </h5>
+                <h4 class="itemprice"><span class="itemprice__formulary">$56.00</span><span class="itemprice__msrp">$58.00</span></h4>
+                <form>
+                  <div class="field--name-quantity">
+                    <input data-drupal-selector="edit-quantity-0-value" class="form-number form-control" type="number" id="edit-quantity-0-value--2" name="quantity[0][value]" value="1" step="0.01" min="0" placeholder="" tabindex="0">
+                  </div>
+                  <div class="form-actions">
+                    <button data-drupal-selector="edit-submit" class="button button--primary js-form-submit form-submit btn-success btn" type="submit" id="edit-submit--2" name="op" value="Add to cart" tabindex="0">Add to cart</button>
+                  </div>
+                </form>
+                <!-- repeat end -->
+            </div>
+           <div class="col-sm-2 views-row">
+              <!-- repeat -->
+                <figure class="items-img">
+                <img src="/sites/default/files/styles/medium/public/2018-07/Etch-Rite%20Kit-2.jpg?itok=FK6_UJJq">
+                </figure>
+                <h3 class="item-name">Product 1</h3>
+                <div class="pkgsection">
+                <p>4 Packages/Cases</p><p class="pkgsection__sku">46616</p>
+                </div>
+                <h5 class="item-distributor">Distributor 1 </h5>
+                <h4 class="itemprice"><span class="itemprice__formulary">$56.00</span><span class="itemprice__msrp">$58.00</span></h4>
+                <form>
+                  <div class="field--name-quantity">
+                    <input data-drupal-selector="edit-quantity-0-value" class="form-number form-control" type="number" id="edit-quantity-0-value--2" name="quantity[0][value]" value="1" step="0.01" min="0" placeholder="" tabindex="0">
+                  </div>
+                  <div class="form-actions">
+                    <button data-drupal-selector="edit-submit" class="button button--primary js-form-submit form-submit btn-success btn" type="submit" id="edit-submit--2" name="op" value="Add to cart" tabindex="0">Add to cart</button>
+                  </div>
+                </form>
+                <!-- repeat end -->
+            </div>
+            <div class="col-sm-2 views-row">
+              <!-- repeat -->
+                <figure class="items-img">
+                <img src="/sites/default/files/styles/medium/public/2018-07/Etch-Rite%20Kit-2.jpg?itok=FK6_UJJq">
+                </figure>
+                <h3 class="item-name">Product 1</h3>
+                <div class="pkgsection">
+                <p>4 Packages/Cases</p><p class="pkgsection__sku">46616</p>
+                </div>
+                <h5 class="item-distributor">Distributor 1 </h5>
+                <h4 class="itemprice"><span class="itemprice__formulary">$56.00</span><span class="itemprice__msrp">$58.00</span></h4>
+                <form>
+                  <div class="field--name-quantity">
+                    <input data-drupal-selector="edit-quantity-0-value" class="form-number form-control" type="number" id="edit-quantity-0-value--2" name="quantity[0][value]" value="1" step="0.01" min="0" placeholder="" tabindex="0">
+                  </div>
+                  <div class="form-actions">
+                    <button data-drupal-selector="edit-submit" class="button button--primary js-form-submit form-submit btn-success btn" type="submit" id="edit-submit--2" name="op" value="Add to cart" tabindex="0">Add to cart</button>
+                  </div>
+                </form>
+                <!-- repeat end -->
+            </div>
+            <div class="col-sm-2 views-row">
+              <!-- repeat -->
+                <figure class="items-img">
+                <img src="/sites/default/files/styles/medium/public/2018-07/Etch-Rite%20Kit-2.jpg?itok=FK6_UJJq">
+                </figure>
+                <h3 class="item-name">Product 1</h3>
+                <div class="pkgsection">
+                <p>4 Packages/Cases</p><p class="pkgsection__sku">46616</p>
+                </div>
+                <h5 class="item-distributor">Distributor 1 </h5>
+                <h4 class="itemprice"><span class="itemprice__formulary">$56.00</span><span class="itemprice__msrp">$58.00</span></h4>
+                <form>
+                  <div class="field--name-quantity">
+                    <input data-drupal-selector="edit-quantity-0-value" class="form-number form-control" type="number" id="edit-quantity-0-value--2" name="quantity[0][value]" value="1" step="0.01" min="0" placeholder="" tabindex="0">
+                  </div>
+                  <div class="form-actions">
+                    <button data-drupal-selector="edit-submit" class="button button--primary js-form-submit form-submit btn-success btn" type="submit" id="edit-submit--2" name="op" value="Add to cart" tabindex="0">Add to cart</button>
+                  </div>
+                </form>
+                <!-- repeat end -->
+            </div>
+            <div class="col-sm-2 views-row">
+              <!-- repeat -->
+                <figure class="items-img">
+                <img src="/sites/default/files/styles/medium/public/2018-07/Etch-Rite%20Kit-2.jpg?itok=FK6_UJJq">
+                </figure>
+                <h3 class="item-name">Product 1</h3>
+                <div class="pkgsection">
+                <p>4 Packages/Cases</p><p class="pkgsection__sku">46616</p>
+                </div>
+                <h5 class="item-distributor">Distributor 1 </h5>
+                <h4 class="itemprice"><span class="itemprice__formulary">$56.00</span><span class="itemprice__msrp">$58.00</span></h4>
+                <form>
+                  <div class="field--name-quantity">
+                    <input data-drupal-selector="edit-quantity-0-value" class="form-number form-control" type="number" id="edit-quantity-0-value--2" name="quantity[0][value]" value="1" step="0.01" min="0" placeholder="" tabindex="0">
+                  </div>
+                  <div class="form-actions">
+                    <button data-drupal-selector="edit-submit" class="button button--primary js-form-submit form-submit btn-success btn" type="submit" id="edit-submit--2" name="op" value="Add to cart" tabindex="0">Add to cart</button>
+                  </div>
+                </form>
+                <!-- repeat end -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-2 views-row">
+              <!-- repeat -->
+                <figure class="items-img">
+                <img src="/sites/default/files/styles/medium/public/2018-07/Etch-Rite%20Kit-2.jpg?itok=FK6_UJJq">
+                </figure>
+                <h3 class="item-name">Product 1</h3>
+                <div class="pkgsection">
+                <p>4 Packages/Cases</p><p class="pkgsection__sku">46616</p>
+                </div>
+                <h5 class="item-distributor">Distributor 1 </h5>
+                <h4 class="itemprice"><span class="itemprice__formulary">$56.00</span><span class="itemprice__msrp">$58.00</span></h4>
+                <form>
+                  <div class="field--name-quantity">
+                    <input data-drupal-selector="edit-quantity-0-value" class="form-number form-control" type="number" id="edit-quantity-0-value--2" name="quantity[0][value]" value="1" step="0.01" min="0" placeholder="" tabindex="0">
+                  </div>
+                  <div class="form-actions">
+                    <button data-drupal-selector="edit-submit" class="button button--primary js-form-submit form-submit btn-success btn" type="submit" id="edit-submit--2" name="op" value="Add to cart" tabindex="0">Add to cart</button>
+                  </div>
+                </form>
+                <!-- repeat end -->
+            </div>
+           <div class="col-sm-2 views-row">
+              <!-- repeat -->
+                <figure class="items-img">
+                <img src="/sites/default/files/styles/medium/public/2018-07/Etch-Rite%20Kit-2.jpg?itok=FK6_UJJq">
+                </figure>
+                <h3 class="item-name">Product 1</h3>
+                <div class="pkgsection">
+                <p>4 Packages/Cases</p><p class="pkgsection__sku">46616</p>
+                </div>
+                <h5 class="item-distributor">Distributor 1 </h5>
+                <h4 class="itemprice"><span class="itemprice__formulary">$56.00</span><span class="itemprice__msrp">$58.00</span></h4>
+                <form>
+                  <div class="field--name-quantity">
+                    <input data-drupal-selector="edit-quantity-0-value" class="form-number form-control" type="number" id="edit-quantity-0-value--2" name="quantity[0][value]" value="1" step="0.01" min="0" placeholder="" tabindex="0">
+                  </div>
+                  <div class="form-actions">
+                    <button data-drupal-selector="edit-submit" class="button button--primary js-form-submit form-submit btn-success btn" type="submit" id="edit-submit--2" name="op" value="Add to cart" tabindex="0">Add to cart</button>
+                  </div>
+                </form>
+                <!-- repeat end -->
+            </div>
+            <div class="col-sm-2 views-row">
+              <!-- repeat -->
+                <figure class="items-img">
+                <img src="/sites/default/files/styles/medium/public/2018-07/Etch-Rite%20Kit-2.jpg?itok=FK6_UJJq">
+                </figure>
+                <h3 class="item-name">Product 1</h3>
+                <div class="pkgsection">
+                <p>4 Packages/Cases</p><p class="pkgsection__sku">46616</p>
+                </div>
+                <h5 class="item-distributor">Distributor 1 </h5>
+                <h4 class="itemprice"><span class="itemprice__formulary">$56.00</span><span class="itemprice__msrp">$58.00</span></h4>
+                <form>
+                  <div class="field--name-quantity">
+                    <input data-drupal-selector="edit-quantity-0-value" class="form-number form-control" type="number" id="edit-quantity-0-value--2" name="quantity[0][value]" value="1" step="0.01" min="0" placeholder="" tabindex="0">
+                  </div>
+                  <div class="form-actions">
+                    <button data-drupal-selector="edit-submit" class="button button--primary js-form-submit form-submit btn-success btn" type="submit" id="edit-submit--2" name="op" value="Add to cart" tabindex="0">Add to cart</button>
+                  </div>
+                </form>
+                <!-- repeat end -->
+            </div>
+            <div class="col-sm-2 views-row">
+              <!-- repeat -->
+                <figure class="items-img">
+                <img src="/sites/default/files/styles/medium/public/2018-07/Etch-Rite%20Kit-2.jpg?itok=FK6_UJJq">
+                </figure>
+                <h3 class="item-name">Product 1</h3>
+                <div class="pkgsection">
+                <p>4 Packages/Cases</p><p class="pkgsection__sku">46616</p>
+                </div>
+                <h5 class="item-distributor">Distributor 1 </h5>
+                <h4 class="itemprice"><span class="itemprice__formulary">$56.00</span><span class="itemprice__msrp">$58.00</span></h4>
+                <form>
+                  <div class="field--name-quantity">
+                    <input data-drupal-selector="edit-quantity-0-value" class="form-number form-control" type="number" id="edit-quantity-0-value--2" name="quantity[0][value]" value="1" step="0.01" min="0" placeholder="" tabindex="0">
+                  </div>
+                  <div class="form-actions">
+                    <button data-drupal-selector="edit-submit" class="button button--primary js-form-submit form-submit btn-success btn" type="submit" id="edit-submit--2" name="op" value="Add to cart" tabindex="0">Add to cart</button>
+                  </div>
+                </form>
+                <!-- repeat end -->
+            </div>
+            <div class="col-sm-2 views-row">
+              <!-- repeat -->
+                <figure class="items-img">
+                <img src="/sites/default/files/styles/medium/public/2018-07/Etch-Rite%20Kit-2.jpg?itok=FK6_UJJq">
+                </figure>
+                <h3 class="item-name">Product 1</h3>
+                <div class="pkgsection">
+                <p>4 Packages/Cases</p><p class="pkgsection__sku">46616</p>
+                </div>
+                <h5 class="item-distributor">Distributor 1 </h5>
+                <h4 class="itemprice"><span class="itemprice__formulary">$56.00</span><span class="itemprice__msrp">$58.00</span></h4>
+                <form>
+                  <div class="field--name-quantity">
+                    <input data-drupal-selector="edit-quantity-0-value" class="form-number form-control" type="number" id="edit-quantity-0-value--2" name="quantity[0][value]" value="1" step="0.01" min="0" placeholder="" tabindex="0">
+                  </div>
+                  <div class="form-actions">
+                    <button data-drupal-selector="edit-submit" class="button button--primary js-form-submit form-submit btn-success btn" type="submit" id="edit-submit--2" name="op" value="Add to cart" tabindex="0">Add to cart</button>
+                  </div>
+                </form>
+                <!-- repeat end -->
+            </div>
+          </div>
           </div>
         {% endblock %}
       </section>
