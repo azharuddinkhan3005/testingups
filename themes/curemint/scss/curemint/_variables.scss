@@ -1,7 +1,7 @@
 // font-family
 $bold: HelveticaBold;
 $regular: Helvetica;
-$RalewayM: RalewayMedium;
+$ralewaym: RalewayMedium;
 
 // font size
 $size11: 11px;
@@ -35,12 +35,14 @@ $itemnamecolor: #4a4a4a;
 $wishitemcolor: #c53938;
 $instock: #009347;
 $btnbordercolor: #9e9e9e;
+$ratecolor: #ffa900;
 $selectbordercolor: #ccc;
-$rateColor: #ffa900;
+$sliderarrow: rgba(255, 255, 255, .75);
+
 
 // headings
 @mixin heading {
-  font-family: $RalewayM;
+  font-family: $ralewaym;
 }
 
 @mixin heading-1 {
@@ -52,26 +54,14 @@ $rateColor: #ffa900;
   font-size: $size20;
   text-transform: uppercase;
   margin-bottom: 18px;
-  color:$itemnamecolor;
+  color: $itemnamecolor;
 }
 
-@mixin heading-3 {
-  
+h1 {
+  @include heading-1;
 }
 
-@mixin heading-4 {
-  
+h2 {
+  @include heading-2;
 }
 
-@mixin heading-5 {
-  
-}
-
-@mixin heading-6 {
-  
-}
-
-h1 { @include heading-1; }
-h2 { @include heading-2; }
-h3 { @include heading-3; }
-h4 { @include heading-4; }
