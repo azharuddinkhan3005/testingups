@@ -42,7 +42,7 @@ function cm_punchout_preprocess_views_view_unformatted(&$variables) {
       }
       $punchout_supplier_endpoint = Term::load($punchout_supplier)->field_punchout_endpoint->value;
       $punchout_supplier_mode = Term::load($punchout_supplier)->field_punchout_mode->value;
-      $punchout_params = _cm_punchout_param_format($user_dets, $punchout_supplier_mode);
+      $punchout_params = _cm_punchout_param_format($punchout_customer_details, $punchout_supplier_mode);
 
       $variables['rows'][$id]['content'] = [
         '#theme' => 'punchout_supplier',
