@@ -589,7 +589,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<!-- repeat -->\n<figure>\n<img src=\"{{ field_product_images }}\">\n</figure>\n<h3>{{ title }}</h3>\n<div class=\"pkg-section\">\n{{ field_packaging_details }}<p>{{ field_manufacturer_sku }}</p>\n</div>\n<h5>{{ field_distributor }} </h5>\n<h4><span>{{ field_formulary_price }}</span><span>{{ price__number }}</span></h4>\n{{ variations }}\n<!-- repeat end -->"
+            text: "<!-- repeat -->\n<figure class=\"items-img\">\n<img src=\"{{ field_product_images }}\">\n</figure>\n<h3 class=\"item-name\">{{ title }}</h3>\n<div class=\"pkgsection\">\n{{ field_packaging_details }}<p class=\"pkgsection__sku\">{{ field_manufacturer_sku }}</p>\n</div>\n<h5 class=\"item-distributor\">{{ field_distributor }} </h5>\n<h4 class=\"itemprice\"><span class=\"itemprice__formulary\">{{ field_formulary_price }}</span><span class=\"itemprice__msrp\">{{ price__number }}</span></h4>\n{{ variations }}\n<!-- repeat end -->"
             make_link: false
             path: ''
             absolute: false
