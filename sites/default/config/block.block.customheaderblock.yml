@@ -4,13 +4,12 @@ status: true
 dependencies:
   module:
     - cart_icon_popup
-    - system
   theme:
     - curemint
 id: customheaderblock
 theme: curemint
-region: navigation
-weight: 0
+region: custom_header
+weight: -8
 provider: null
 plugin: custom_header
 settings:
@@ -18,9 +17,4 @@ settings:
   label: 'Custom Header Block'
   provider: cart_icon_popup
   label_display: '0'
-visibility:
-  request_path:
-    id: request_path
-    pages: '<front>'
-    negate: false
-    context_mapping: {  }
+visibility: {  }
