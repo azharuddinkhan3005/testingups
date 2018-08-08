@@ -28,12 +28,12 @@ module:
   config: 0
   config_filter: 0
   config_ignore: 0
+  config_split: 0
   config_update: 0
   contact: 0
   contextual: 0
   datetime: 0
   dblog: 0
-  devel: 0
   dynamic_page_cache: 0
   editor: 0
   entity: 0
@@ -46,7 +46,6 @@ module:
   history: 0
   image: 0
   inline_entity_form: 0
-  kint: 0
   link: 0
   menu_block: 0
   menu_item_role_access: 0
