@@ -1,6 +1,6 @@
 jQuery(document).ready(function() {
   // most purchased items slider
-  jQuery(".most-purchased .view-content").slick({
+  jQuery(".most-purchased-listing .view-content").slick({
     dots: false,
     infinite: true,
     slidesToShow: 5,
