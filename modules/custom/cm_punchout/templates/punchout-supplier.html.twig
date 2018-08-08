@@ -28,8 +28,8 @@
     <input name="sharedsecret" type="hidden" value="{{ shared_secret }}" />
   </form>
 {% endif %}
-<a href="{{ href }}" onclick="{{ po_anchor_attr }}">
-  <figure>
+<a class="distributor-link" href="{{ href }}" onclick="{{ po_anchor_attr }}">
+  <figure class="distributor-link-img">
     <img src="{{ distributor_image_path }}">
   </figure>
 </a>
