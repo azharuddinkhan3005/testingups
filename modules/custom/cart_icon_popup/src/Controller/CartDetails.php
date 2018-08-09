@@ -30,4 +30,3 @@ class CartDetails {
     return $cart;
   }
 }
-?>
