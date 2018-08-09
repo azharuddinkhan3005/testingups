@@ -1,5 +1,7 @@
 <?php
 
+use Drupal\views\ViewExecutable;
+
 /**
  * Implements hook_theme().
  */
@@ -19,5 +21,24 @@ function curemint_preprocess_block(&$variables){
   if($variables['attributes']['id'] == 'block-customheaderblock') {
     //-- This stops the block being cache in drupal 8
     $variables['#cache']['max-age'] = 0;
+  }
+}
+
+/**
+ * Implements hook_entity_view_alter().
+ */
+function cart_icon_popup_entity_view_alter(array &$build, Drupal\Core\Entity\EntityInterface $entity, \Drupal\Core\Entity\Display\EntityViewDisplayInterface $display) {
+  if ($build['#view_mode'] == 'cart' && $entity->getEntityTypeId() == 'commerce_product_variation') {
+    $build['product_name']['#markup'] = $entity->getTitle();
+  }
+}
+
+/**
+ * Implements hook_views_pre_render().
+ */
+function cart_icon_popup_views_pre_render(ViewExecutable $view) {
+  if ($view->id() == 'commerce_cart_form') {
+      // My Codegoes here.
+    //$view->header = t('My custom header text');
   }
 }
