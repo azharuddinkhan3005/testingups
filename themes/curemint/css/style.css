@@ -10296,22 +10296,25 @@ p:last-child,
 /* line 2, ../scss/curemint/_footer.scss */
 .custom-footer {
   background-color: #0c384f;
+  bottom: 0;
   padding-bottom: 31px;
   padding-top: 50px;
+  position: absolute;
   text-align: center;
+  width: 100%;
 }
-/* line 9, ../scss/curemint/_footer.scss */
+/* line 12, ../scss/curemint/_footer.scss */
 .custom-footer .footernav__menu {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 15, ../scss/curemint/_footer.scss */
+/* line 18, ../scss/curemint/_footer.scss */
 .custom-footer .footernav__list {
   display: inline-block;
   padding: 0 14px;
 }
-/* line 20, ../scss/curemint/_footer.scss */
+/* line 23, ../scss/curemint/_footer.scss */
 .custom-footer .footernav__link {
   color: #fff;
   font-family: Helvetica;
@@ -10319,16 +10322,16 @@ p:last-child,
   line-height: 1.5625rem;
   text-decoration: none;
 }
-/* line 29, ../scss/curemint/_footer.scss */
+/* line 32, ../scss/curemint/_footer.scss */
 .custom-footer .footerlogo {
   padding-bottom: 9px;
   padding-top: 31px;
 }
-/* line 33, ../scss/curemint/_footer.scss */
+/* line 36, ../scss/curemint/_footer.scss */
 .custom-footer .footerlogo__img {
   width: 140px;
 }
-/* line 38, ../scss/curemint/_footer.scss */
+/* line 41, ../scss/curemint/_footer.scss */
 .custom-footer .copyright {
   color: #fff;
   font-family: Helvetica;
@@ -10344,9 +10347,11 @@ p:last-child,
 /* line 31, ../scss/style.scss */
 html {
   font-size: 100%;
+  position: relative;
+  min-height: 100%;
 }
 
-/* line 35, ../scss/style.scss */
+/* line 37, ../scss/style.scss */
 body {
   color: #7f7f7f;
   font-family: Helvetica;
@@ -10354,17 +10359,17 @@ body {
   margin-top: 9px;
 }
 
-/* line 42, ../scss/style.scss */
+/* line 44, ../scss/style.scss */
 * {
   outline: none;
 }
 
-/* line 46, ../scss/style.scss */
+/* line 48, ../scss/style.scss */
 h1 {
   font-family: RalewayMedium;
 }
 
-/* line 50, ../scss/style.scss */
+/* line 52, ../scss/style.scss */
 h2 {
   font-family: RalewayMedium;
   font-size: 1.25rem;
@@ -10373,7 +10378,7 @@ h2 {
   color: #4a4a4a;
 }
 
-/* line 55, ../scss/style.scss */
+/* line 57, ../scss/style.scss */
 .view-frontpage {
   display: none;
 }

@@ -30,6 +30,8 @@
 
 html {
   @include rem-base;
+  position: relative;
+  min-height: 100%;
 }
 
 body {

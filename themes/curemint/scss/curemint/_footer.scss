@@ -1,9 +1,12 @@
 // custom footer
 .custom-footer {
   background-color: $prussianbluecolor;
+  bottom: 0;
   padding-bottom: 31px;
   padding-top: 50px;
+  position: absolute;
   text-align: center;
+  width: 100%;
 
   .footernav {
     &__menu {
