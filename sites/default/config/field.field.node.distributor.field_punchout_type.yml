@@ -1,0 +1,23 @@
+uuid: 5c4b823d-a390-4665-9d4e-7eeb608aa014
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_punchout_type
+    - node.type.distributor
+  module:
+    - options
+id: node.distributor.field_punchout_type
+field_name: field_punchout_type
+entity_type: node
+bundle: distributor
+label: 'Punchout type'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: non_punchout
+default_value_callback: ''
+settings: {  }
+field_type: list_string
