@@ -1,0 +1,29 @@
+uuid: 11344166-c573-49d2-ac38-b78c464e4f58
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_punchout_supplier_select
+    - node.type.distributor
+    - taxonomy.vocabulary.punchout_suppliers
+id: node.distributor.field_punchout_supplier_select
+field_name: field_punchout_supplier_select
+entity_type: node
+bundle: distributor
+label: 'PunchOut Supplier select'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      punchout_suppliers: punchout_suppliers
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

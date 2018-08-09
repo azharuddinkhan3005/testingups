@@ -1,0 +1,4 @@
+services:
+  cm_punchout.messenger:
+    class: Drupal\cm_punchout\CmPunchoutMessenger
+    arguments: ['@messenger']
