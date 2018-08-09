@@ -37,7 +37,9 @@
         <a class="navtools__carticon" href="/cart">
 
           <!-- cart items -->
+          {% if items_count %}
           <span class="navtools__carticon-item">{{ items_count }}</span>
+          {% endif %}
           <img class="navtools__carticon-img" src="/themes/curemint/images/cart.jpg">
         </a>
 

@@ -9921,11 +9921,13 @@ p:last-child,
   color: #fff;
   display: block;
   font-size: 0.625rem;
-  line-height: 0.8125rem;
-  padding: 1px 5px;
+  height: 17px;
+  line-height: 1.0625rem;
   position: absolute;
   right: -7px;
-  top: -8px;
+  text-align: center;
+  top: -12px;
+  width: 17px;
 }
 
 /* line 4, ../scss/curemint/_cart-dropdown.scss */
