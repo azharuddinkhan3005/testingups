@@ -44,19 +44,21 @@ class CustomHeader extends BlockBase {
     $entity_manager = \Drupal::entityManager();
     $store = $entity_manager->getStorage('commerce_store')->load($store_id);
     //$store = $current_store->getStore();
-    $cart = $cart_provider->getCart($order_type, $store);  
+    $cart = $cart_provider->getCart($order_type, $store);
     if ($cart){
       $items = $cart-> getItems();
       $items_count = count($items);
       $total_formulary_price = ($cart->total_price->number);
-    }
-    foreach($items as $item){
-      $quantity = $item->getQuantity();
+      $total_msrp_price = NULL;
+      foreach($items as $item){
+        $quantity = $item->getQuantity();
         $msrp_price = ($item->getPurchasedEntity()->field_msrp_price->number);
-      $total_msrp_price += $quantity * $msrp_price;
+        if ($quantity && $msrp_price) {
+          $total_msrp_price += $quantity * $msrp_price;
+        }
+      }
+      $savings = ($total_msrp_price - $total_formulary_price);
     }
-    $savings = ($total_msrp_price - $total_formulary_price);
-
     return array(
       '#title' => 'Custom Header',
       '#theme' => 'cart_icon_popup',
