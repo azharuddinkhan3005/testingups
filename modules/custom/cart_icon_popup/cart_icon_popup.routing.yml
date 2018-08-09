@@ -1,0 +1,7 @@
+cart_icon_popup.cart_info:
+  path: '/cart_info'
+  defaults:
+    _controller: '\Drupal\cart_icon_popup\Controller\CartDetails::getCartDetails'
+    _title: 'Cart Details'
+  requirements: 
+    _permission: 'access content'

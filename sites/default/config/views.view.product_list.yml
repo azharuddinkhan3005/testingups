@@ -6,8 +6,8 @@ dependencies:
     - field.storage.commerce_product.variations
     - field.storage.commerce_product_variation.field_distributor
     - field.storage.commerce_product_variation.field_distributor_sku
-    - field.storage.commerce_product_variation.field_formulary_price
     - field.storage.commerce_product_variation.field_manufacturer_sku
+    - field.storage.commerce_product_variation.field_msrp_price
     - field.storage.commerce_product_variation.field_packaging_details
     - field.storage.commerce_product_variation.field_product_images
     - image.style.medium
@@ -322,10 +322,10 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_formulary_price:
-          id: field_formulary_price
-          table: commerce_product_variation__field_formulary_price
-          field: field_formulary_price
+        field_msrp_price:
+          id: field_msrp_price
+          table: commerce_product_variation__field_msrp_price
+          field: field_msrp_price
           relationship: variations
           group_type: group
           admin_label: ''
@@ -589,7 +589,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<!-- repeat -->\n<figure class=\"items-img\">\n<img src=\"{{ field_product_images }}\">\n</figure>\n<h3 class=\"item-name\">{{ title }}</h3>\n<div class=\"pkgsection\">\n{{ field_packaging_details }}<p class=\"pkgsection__sku\">{{ field_manufacturer_sku }}</p>\n</div>\n<h5 class=\"item-distributor\">{{ field_distributor }} </h5>\n<h4 class=\"itemprice\"><span class=\"itemprice__formulary\">{{ field_formulary_price }}</span><span class=\"itemprice__msrp\">{{ price__number }}</span></h4>\n{{ variations }}\n<!-- repeat end -->"
+            text: "<!-- repeat -->\n<figure class=\"items-img\">\n<img src=\"{{ field_product_images }}\">\n</figure>\n<h3 class=\"item-name\">{{ title }}</h3>\n<div class=\"pkgsection\">\n{{ field_packaging_details }}<p class=\"pkgsection__sku\">{{ field_manufacturer_sku }}</p>\n</div>\n<h5 class=\"item-distributor\">{{ field_distributor }} </h5>\n<h4 class=\"itemprice\"><span class=\"itemprice__formulary\">{{ price__number }}</span><span class=\"itemprice__msrp\">{{ field_msrp_price }}</span></h4>\n{{ variations }}\n<!-- repeat end -->"
             make_link: false
             path: ''
             absolute: false
@@ -729,8 +729,8 @@ display:
         - 'config:field.storage.commerce_product.variations'
         - 'config:field.storage.commerce_product_variation.field_distributor'
         - 'config:field.storage.commerce_product_variation.field_distributor_sku'
-        - 'config:field.storage.commerce_product_variation.field_formulary_price'
         - 'config:field.storage.commerce_product_variation.field_manufacturer_sku'
+        - 'config:field.storage.commerce_product_variation.field_msrp_price'
         - 'config:field.storage.commerce_product_variation.field_packaging_details'
         - 'config:field.storage.commerce_product_variation.field_product_images'
   block_1:
@@ -750,7 +750,7 @@ display:
         - 'config:field.storage.commerce_product.variations'
         - 'config:field.storage.commerce_product_variation.field_distributor'
         - 'config:field.storage.commerce_product_variation.field_distributor_sku'
-        - 'config:field.storage.commerce_product_variation.field_formulary_price'
         - 'config:field.storage.commerce_product_variation.field_manufacturer_sku'
+        - 'config:field.storage.commerce_product_variation.field_msrp_price'
         - 'config:field.storage.commerce_product_variation.field_packaging_details'
         - 'config:field.storage.commerce_product_variation.field_product_images'

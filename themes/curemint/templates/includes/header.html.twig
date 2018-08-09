@@ -1,59 +1,56 @@
 <!-- custom header -->
-<header class="custom-header">
-  <div class="container">
-    <div class="row">
+<div class="row">
 
-      <!-- logo and menu icon -->
-      <div class="col-md-3 logo">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="/"><img class="logo__img" alt="curemint" src="/themes/curemint/logo.png"></a>
-      </div>
-
-      <!-- search bar -->
-      <div class="searchprod col-md-7">
-        <form class="searchprod__form">
-          <div class="form-group searchprod__form-group">
-            <input type="search" class="form-control searchprod__form-input" id="search" placeholder="Search">
-            <button class="btn searchprod__form-btn"><img src="/themes/curemint/images/search.svg"></button>
-          </div>
-        </form>
-      </div>
-
-      <!-- nav bar -->
-      <div class="col-md-2">
-        <ul class="navtools">
-
-          <!-- list icon-->
-          <li class="navtools__list">
-            <a class="navtools__listicon" href="#">
-              <img class="navtools__listicon-img" src="/themes/curemint/images/list.jpg">
-            </a>
-          </li>
-
-          <!-- user icon-->
-          <li class="navtools__list">
-            <a class="navtools__profileicon" href="#">
-              <img class="navtools__profileicon-img" src="/themes/curemint/images/user.jpg">
-            </a>
-          </li>
-
-          <!-- cart icon-->
-          <li class="navtools__list navtools__list-cart">
-            <a class="navtools__carticon" href="#">
-
-              <!-- cart items -->
-              <span class="navtools__carticon-item">4</span>
-              <img class="navtools__carticon-img" src="/themes/curemint/images/cart.jpg">
-            </a>
-          </li>
-
-        </ul>
-      </div>
-
-    </div>
+  <!-- logo and menu icon -->
+  <div class="col-md-3 logo">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a href="/"><img class="logo__img" alt="curemint" src="/themes/curemint/logo.png"></a>
   </div>
-</header>
+
+  <!-- search bar -->
+  <div class="searchprod col-md-7">
+    <form class="searchprod__form">
+      <div class="form-group searchprod__form-group">
+        <input type="search" class="form-control searchprod__form-input" id="search" placeholder="Search">
+        <button class="btn searchprod__form-btn"><img src="/themes/curemint/images/search.svg"></button>
+      </div>
+    </form>
+  </div>
+
+  <!-- nav bar -->
+  <div class="col-md-2">
+    <ul class="navtools">
+
+      <!-- user icon-->
+      <li class="navtools__list">
+        <a class="navtools__profileicon" href="#">
+          <img class="navtools__profileicon-img" src="/themes/curemint/images/user.jpg">
+        </a>
+      </li>
+
+      <!-- cart icon-->
+      <li class="navtools__list navtools__list-cart">
+        <a class="navtools__carticon" href="/cart">
+
+          <!-- cart items -->
+          <span class="navtools__carticon-item">{{ items_count }}</span>
+          <img class="navtools__carticon-img" src="/themes/curemint/images/cart.jpg">
+        </a>
+
+        <!-- cart dropdown -->
+        {% if items_count %}
+        <ul class="cart__dropdown">
+          <li class="cart__dropdown-list"><span class="cart__dropdown-title">Your Savings:</span><span class="cart__dropdown-price">${{ savings }}</span></li>
+          <li class="cart__dropdown-list"><span class="cart__dropdown-title">Items in Your Cart:</span><span class="cart__dropdown-item">{{ items_count }}</span></li>
+        </ul>
+        {% endif %}
+      </li>
+
+    </ul>
+  </div>
+
+</div>

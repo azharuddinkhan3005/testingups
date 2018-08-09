@@ -1,0 +1,6 @@
+name: Cart popup
+type: module
+description: 'Displays the cart information on hover over the cart Icon'
+package: Custom
+core: '8.x'
+project: 'cart_icon_popup'

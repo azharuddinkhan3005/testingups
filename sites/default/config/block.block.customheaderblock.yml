@@ -1,0 +1,26 @@
+uuid: d5e6b34d-43fe-4b25-a5d5-f8c798726cad
+langcode: en
+status: true
+dependencies:
+  module:
+    - cart_icon_popup
+    - system
+  theme:
+    - curemint
+id: customheaderblock
+theme: curemint
+region: navigation
+weight: 0
+provider: null
+plugin: custom_header
+settings:
+  id: custom_header
+  label: 'Custom Header Block'
+  provider: cart_icon_popup
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
