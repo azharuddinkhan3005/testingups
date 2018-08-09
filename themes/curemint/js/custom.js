@@ -21,3 +21,18 @@ jQuery(document).ready(function() {
     slidesToScroll: 1
   });
 });
+
+//sticky footer
+var height = jQuery(window).height();
+var headerHeight = jQuery('header').outerHeight();
+var footerHeight = jQuery('.custom-footer').outerHeight();
+var finalHeight = height - headerHeight - footerHeight - 75;
+jQuery('.main-container').css('min-height', finalHeight);
+
+jQuery(window).resize(function(){
+  var height = jQuery(window).height();
+  var headerHeight = jQuery('header').outerHeight();
+  var footerHeight = jQuery('.custom-footer').outerHeight();
+  var finalHeight = height - headerHeight - footerHeight - 75;
+  jQuery('.main-container').css('min-height', finalHeight);
+});
