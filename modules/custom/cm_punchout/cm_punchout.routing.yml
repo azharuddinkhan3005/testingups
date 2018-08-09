@@ -1,0 +1,13 @@
+cm_punchout.errorRedirect:
+  path: '/punchout/error/{type}'
+  defaults:
+    _controller: '\Drupal\cm_punchout\Controller\CmPunchout::errorRedirect'
+  requirements:
+    _permission: 'access content'
+
+cm_punchout.getPunchoutOrderMessage:
+  path: '/punchout/poom'
+  defaults:
+    _controller: '\Drupal\cm_punchout\Controller\CmPunchout::getPunchoutOrderMessage'
+  requirements:
+    _permission: 'access content'

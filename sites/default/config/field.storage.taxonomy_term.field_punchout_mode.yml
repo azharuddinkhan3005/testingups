@@ -1,0 +1,27 @@
+uuid: 14e13563-3a28-42bb-a84a-33101b73b174
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - taxonomy
+id: taxonomy_term.field_punchout_mode
+field_name: field_punchout_mode
+entity_type: taxonomy_term
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: test
+      label: Test
+    -
+      value: production
+      label: Production
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
