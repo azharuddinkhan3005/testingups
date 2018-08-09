@@ -10295,17 +10295,60 @@ p:last-child,
   width: 100%;
 }
 
-/* line 26, ../scss/style.scss */
+/* line 2, ../scss/curemint/_footer.scss */
+.custom-footer {
+  background-color: #0c384f;
+  padding-bottom: 31px;
+  padding-top: 50px;
+  text-align: center;
+}
+/* line 9, ../scss/curemint/_footer.scss */
+.custom-footer .footernav__menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 15, ../scss/curemint/_footer.scss */
+.custom-footer .footernav__list {
+  display: inline-block;
+  padding: 0 14px;
+}
+/* line 20, ../scss/curemint/_footer.scss */
+.custom-footer .footernav__link {
+  color: #fff;
+  font-family: Helvetica;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  text-decoration: none;
+}
+/* line 29, ../scss/curemint/_footer.scss */
+.custom-footer .footerlogo {
+  padding-bottom: 9px;
+  padding-top: 31px;
+}
+/* line 33, ../scss/curemint/_footer.scss */
+.custom-footer .footerlogo__img {
+  width: 140px;
+}
+/* line 38, ../scss/curemint/_footer.scss */
+.custom-footer .copyright {
+  color: #fff;
+  font-family: Helvetica;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+}
+
+/* line 27, ../scss/style.scss */
 :root {
   font-size: 1rem;
 }
 
-/* line 30, ../scss/style.scss */
+/* line 31, ../scss/style.scss */
 html {
   font-size: 100%;
 }
 
-/* line 34, ../scss/style.scss */
+/* line 35, ../scss/style.scss */
 body {
   color: #7f7f7f;
   font-family: Helvetica;
@@ -10313,17 +10356,17 @@ body {
   margin-top: 9px;
 }
 
-/* line 41, ../scss/style.scss */
+/* line 42, ../scss/style.scss */
 * {
   outline: none;
 }
 
-/* line 45, ../scss/style.scss */
+/* line 46, ../scss/style.scss */
 h1 {
   font-family: RalewayMedium;
 }
 
-/* line 49, ../scss/style.scss */
+/* line 50, ../scss/style.scss */
 h2 {
   font-family: RalewayMedium;
   font-size: 1.25rem;
@@ -10332,7 +10375,7 @@ h2 {
   color: #4a4a4a;
 }
 
-/* line 54, ../scss/style.scss */
+/* line 55, ../scss/style.scss */
 .view-frontpage {
   display: none;
 }
