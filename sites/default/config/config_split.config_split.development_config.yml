@@ -6,6 +6,7 @@ id: development_config
 label: 'Development Config'
 folder: sites/default/config_dev
 module:
+  dblog: 0
   devel: 0
   kint: 0
 theme: {  }
