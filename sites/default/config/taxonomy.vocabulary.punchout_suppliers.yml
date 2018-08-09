@@ -1,0 +1,9 @@
+uuid: fa151035-e055-45a5-a9f3-cf7435e445a3
+langcode: en
+status: true
+dependencies: {  }
+name: 'PunchOut Suppliers'
+vid: punchout_suppliers
+description: ''
+hierarchy: 0
+weight: 0
