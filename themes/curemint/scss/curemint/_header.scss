@@ -112,11 +112,13 @@
       color: $whitecolor;
       display: block;
       font-size: rem-calc(10px);
-      line-height: rem-calc(13px);
-      padding: 1px 5px;
+      height: 17px;
+      line-height: rem-calc(17px);
       position: absolute;
       right: -7px;
-      top: -8px;
+      text-align: center;
+      top: -12px;
+      width: 17px;
     }
   }
 }
