@@ -20,14 +20,19 @@ jQuery(document).ready(function() {
     slidesToShow: 16,
     slidesToScroll: 1
   });
-  //sticky footer
-  footerAlign();
 });
 
-function footerAlign() {
-  jQuery('.custom-footer').css('display', 'block');
-  jQuery('.custom-footer').css('height', 'auto');
+//sticky footer
+var height = jQuery(window).height();
+var headerHeight = jQuery('header').outerHeight();
+var footerHeight = jQuery('.custom-footer').outerHeight();
+var finalHeight = height - headerHeight - footerHeight - 75;
+jQuery('.main-container').css('min-height', finalHeight);
+
+jQuery(window).resize(function(){
+  var height = jQuery(window).height();
+  var headerHeight = jQuery('header').outerHeight();
   var footerHeight = jQuery('.custom-footer').outerHeight();
-  jQuery('body').css('padding-bottom', footerHeight);
-  jQuery('.custom-footer').css('height', footerHeight);
-}
+  var finalHeight = height - headerHeight - footerHeight - 75;
+  jQuery('.main-container').css('min-height', finalHeight);
+});

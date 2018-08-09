@@ -10296,25 +10296,23 @@ p:last-child,
 /* line 2, ../scss/curemint/_footer.scss */
 .custom-footer {
   background-color: #0c384f;
-  bottom: 0;
   padding-bottom: 31px;
   padding-top: 50px;
-  position: absolute;
+  margin-top: 30px;
   text-align: center;
-  width: 100%;
 }
-/* line 12, ../scss/curemint/_footer.scss */
+/* line 10, ../scss/curemint/_footer.scss */
 .custom-footer .footernav__menu {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 18, ../scss/curemint/_footer.scss */
+/* line 16, ../scss/curemint/_footer.scss */
 .custom-footer .footernav__list {
   display: inline-block;
   padding: 0 14px;
 }
-/* line 23, ../scss/curemint/_footer.scss */
+/* line 21, ../scss/curemint/_footer.scss */
 .custom-footer .footernav__link {
   color: #fff;
   font-family: Helvetica;
@@ -10322,16 +10320,16 @@ p:last-child,
   line-height: 1.5625rem;
   text-decoration: none;
 }
-/* line 32, ../scss/curemint/_footer.scss */
+/* line 30, ../scss/curemint/_footer.scss */
 .custom-footer .footerlogo {
   padding-bottom: 9px;
   padding-top: 31px;
 }
-/* line 36, ../scss/curemint/_footer.scss */
+/* line 34, ../scss/curemint/_footer.scss */
 .custom-footer .footerlogo__img {
   width: 140px;
 }
-/* line 41, ../scss/curemint/_footer.scss */
+/* line 39, ../scss/curemint/_footer.scss */
 .custom-footer .copyright {
   color: #fff;
   font-family: Helvetica;
