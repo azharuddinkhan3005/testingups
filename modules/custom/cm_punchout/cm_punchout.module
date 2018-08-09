@@ -76,7 +76,7 @@ function _cm_punchout_param_format(array $user_dets, $punchout_supplier_mode) {
       'contact' => [
         'email' => $user_dets['email'],
         'name' => $user_dets['name'],
-        'unique' => $user_dets['name'],
+        'unique' => $user_dets['username'],
       ],
       'shipping' => [
         'data' => [
