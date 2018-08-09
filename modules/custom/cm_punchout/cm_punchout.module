@@ -111,7 +111,8 @@ function _cm_punchout_get_user_details() {
     return 'ERR_ANON';
   }
   $user_object = User::load($user->id());
-  $user_address = reset($user_object->field_address->getValue());
+  $address_arr = $user_object->field_address->getValue();
+  $user_address = reset($address_arr);
   if (empty($user_address)) {
     return 'ERR_NOADDR';
   }
