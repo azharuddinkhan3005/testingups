@@ -1,0 +1,20 @@
+uuid: 5f5bce98-06cd-4513-a2f1-8167243036dc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_punchout_supplier_select
+field_name: field_punchout_supplier_select
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

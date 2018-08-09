@@ -1,0 +1,14 @@
+name: Curemint Punchout
+description: Provides integration with punchout 2 go.
+package: Custom
+
+type: module
+core: 8.x
+
+dependencies:
+
+test_dependencies:
+
+configure: cm_punchout.settings
+
+php: 7.1
