@@ -15,13 +15,32 @@
 
 // curemint project styling
 @import 'curemint/variables';
+@import 'curemint/header';
 @import 'curemint/homepage';
+@import 'curemint/slider';
+@import 'curemint/shop-supplier';
+@import 'curemint/supplies';
+
+:root {
+  font-size: rem-calc(16);
+}
+
+html {
+  @include rem-base;
+}
 
 body {
-  color: $textcolor;
-  font-family: $regular;
+  color: $graycolor;
+  font-family: $helvetica-r;
+  font-size: rem-calc(14);
+  margin-top: 9px;
 }
 
 * {
-  outline: $none;
+  outline: none;
+}
+
+// home page default content hide
+.view-frontpage {
+  display: none;
 }

@@ -112,3 +112,14 @@
       url('../fonts/HelveticaBold_0.ttf') format('truetype'),
       url('../fonts/HelveticaBold_0.svg#HelveticaBold_0') format('svg');
 }
+
+@font-face {
+  font-family: 'SFProText';
+  src: url('../fonts/SFUIDisplayRegular.eot');
+  src: url('../fonts/SFUIDisplayRegular.eot') format('embedded-opentype'),
+       url('../fonts/SFUIDisplayRegular.woff2') format('woff2'),
+       url('../fonts/SFUIDisplayRegular.woff') format('woff'),
+       url('../fonts/SFUIDisplayRegular.ttf') format('truetype'),
+       url('../fonts/SFUIDisplayRegular.svg#SFUIDisplayRegular') format('svg');
+}
+

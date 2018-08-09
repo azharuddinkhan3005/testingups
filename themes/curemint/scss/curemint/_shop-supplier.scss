@@ -1,0 +1,30 @@
+// shop supplier slider
+
+.shop-supplier .view-content {
+  position: relative;
+
+  .slick-slide {
+    padding: 0 2px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .views-row {
+    border: 1px solid $spanishlightgraycolor;
+    border-radius: 100%;
+    overflow: hidden;
+    padding: 0 5px;
+    position: relative;
+  }
+
+  .distributor-link-img {
+    align-items: center;
+    display: flex;
+    height: 74px;
+    justify-content: center;
+    position: relative;
+  }
+
+}

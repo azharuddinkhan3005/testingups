@@ -1,20 +1,16 @@
-// home page default content hide
-.view-frontpage {
-  display: $none;
-}
 // most purchased items slider
 .most-purchased .views-row {
   padding: 10px;
-  position: $rel;
+  position: relative;
 
   .wish-item {
-    color: $textcolor;
-    display: $in-block;
+    color: $graycolor;
+    display: inline-block;
     font-family: FontAwesome;
-    font-size: $size20;
+    font-size: rem-calc(20);
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    position: $abs;
+    position: absolute;
     right: 0;
     text-decoration: none;
     text-rendering: auto;
@@ -24,7 +20,7 @@
   }
 
   .wish {
-    color: $wishitemcolor;
+    color: $madderlakecolor;
 
     &::before {
       content: '\f004';
@@ -35,7 +31,7 @@
     max-width: 100%;
   }
 
-  figure {
+  .items-img {
     align-items: center;
     display: flex;
     height: 220px;
@@ -43,41 +39,41 @@
     overflow: hidden;
   }
 
-  h3 {
+  .item-name {
     -moz-box-orient: vertical;
     -webkit-box-orient: vertical;
-    color: $itemnamecolor;
+    color: $quartzcolor;
     display: -webkit-box;
     display: -moz-box;
-    font-family: $bold;
-    font-size: $size14;
+    font-family: $helvetica-b;
+    font-size: rem-calc(14);
     font-weight: bold;
     -moz-line-clamp: 2;
     -webkit-line-clamp: 2;
-    line-height: 20px;
+    line-height: rem-calc(20);
     max-height: 40px;
     min-height: 40px;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
-  h5 {
+  .item-distributor {
     clear: both;
-    color: $textcolor;
-    font-family: $regular;
-    font-size: $size14;
+    color: $graycolor;
+    font-family: $helvetica-r;
+    font-size: rem-calc(14);
     font-weight: normal;
   }
 
   .btn {
     background: transparent;
-    border: 1px solid $btnbordercolor;
+    border: 1px solid $spanishlightgraycolor;
     border-radius: 3px;
-    box-shadow: $none;
-    color: $textcolor;
-    font-family: $bold;
-    font-size: $size14;
-    line-height: 48px;
+    box-shadow: none;
+    color: $graycolor;
+    font-family: $helvetica-b;
+    font-size: rem-calc(14);
+    line-height: rem-calc(48);
     margin: 0;
     padding: 0 20px;
     text-transform: uppercase;
@@ -85,99 +81,103 @@
   }
 
   .field--name-quantity {
-    float: $fl;
+    float: left;
   }
 
   .control-label {
-    display: $none;
+    display: none;
   }
 
   .form-number {
-    border-color: $selectbordercolor;
-    box-shadow: $none;
-    color: $textcolor;
-    font-size: $size16;
+    border-color: $chinesesilvercolor;
+    box-shadow: none;
+    color: $graycolor;
+    font-size: rem-calc(16);
     height: 50px;
     padding: 0 5px 0 15px;
     width: 77px;
   }
 
   .form-actions {
-    float: $fr;
+    float: right;
   }
 
 }
 
-.most-purchased h4 span {
-  color: $itemnamecolor;
-  display: $in-block;
-  line-height: 25px;
-  margin: 15px 0 10px;
-  width: 46%;
+.itemprice {
 
-  &:first-child {
-    font-family: $bold;
-    font-size: $size20;
+  span {
+    color: $quartzcolor;
+    display: inline-block;
+    line-height: rem-calc(25);
+    margin: 15px 0 10px;
+    width: 46%;
   }
 
-  &:last-child {
-    font-size: $size12;
+  &__formulary {
+    font-family: $helvetica-b;
+    font-size: rem-calc(20);
+  }
+
+  &__msrp {
+    font-size: rem-calc(12);
     text-decoration: line-through;
   }
-
 }
 
-.pkg-section {
+.pkgsection {
   clear: both;
-  color: $textcolor;
-  display: $in-block;
-  font-family: $regular;
-  font-size: $size14;
+  color: $graycolor;
+  display: inline-block;
+  font-family: $helvetica-r;
+  font-size: rem-calc(14);
   font-weight: normal;
   margin-bottom: 5px;
   vertical-align: middle;
 
   p:first-child {
-    float: $fl;
+    float: left;
   }
 
-  p:last-child {
-    float: $fr;
+  &__sku {
+    float: right;
     padding-left: 15px;
   }
 
 }
 
+// rating section
+
 .rating {
   padding-bottom: 5px;
 
   h6 {
-    color: $instock;
-    display: $in-block;
-    font-family: $bold;
-    font-size: $size14;
-    line-height: 25px;
+    color: $spanishgreencolor;
+    display: inline-block;
+    font-family: $helvetica-b;
+    font-size: rem-calc(14);
+    line-height: rem-calc(25);
     margin-right: 5px;
     text-transform: capitalize;
   }
 
   ul {
-    display: $in-block;
-    list-style: $none;
+    display: inline-block;
+    list-style: none;
     margin: 0;
     padding: 0;
   }
 
   li {
-    display: $in-block;
+    display: inline-block;
     margin-right: 1px;
   }
 
   a {
-    color: $textcolor;
-    display: $in-block;
+    color: $graycolor;
+    display: inline-block;
     font-family: FontAwesome;
-    font-size: $size14;
+    font-size: rem-calc(14);
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     text-decoration: none;
@@ -190,7 +190,7 @@
   }
 
   .rate {
-    color: $ratecolor;
+    color: $chromeyellowcolor;
 
     &::before {
       content: '\f005';
@@ -199,135 +199,8 @@
   }
 
   span {
-    display: $in-block;
-    font-size: $size11;
+    display: inline-block;
+    font-size: rem-calc(11);
     vertical-align: text-bottom;
   }
 }
-
-
-// slider
-.slick-dots {
-  display: $none;
-  visibility: hidden;
-}
-
-.slick-prev {
-  background: $sliderarrow;
-  border: $none;
-  border-radius: 0 4px 4px 0;
-  font-size: 0;
-  height: 100%;
-  left: -15px;
-  outline: $none;
-  position: $abs;
-  top: 0;
-  width: 64px;
-  z-index: 1;
-
-  &::after {
-    background-image: url('../images/Dark-Right.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    content: '';
-    display: $block;
-    height: 100%;
-    transform: scale(-1);
-    width: 100%;
-  }
-
-}
-
-.slick-next {
-  background: $sliderarrow;
-  border: $none;
-  border-radius: 0 4px 4px 0;
-  font-size: 0;
-  height: 100%;
-  outline: $none;
-  position: $abs;
-  right: -15px;
-  top: 0;
-  width: 64px;
-  z-index: 1;
-
-  &::after {
-    background-image: url('../images/Dark-Right.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    content: '';
-    display: $block;
-    height: 100%;
-    width: 100%;
-  }
-
-}
-
-// supplies slider
-.supplies .views-row {
-  padding: 10px;
-  position: $rel;
-
-  img {
-    max-width: 100%;
-  }
-
-  figure {
-    height: 240px;
-    overflow: hidden;
-    position: $rel;
-  }
-
-  figcaption {
-    align-items: center;
-    background: $sliderarrow;
-    bottom: 0;
-    color: $itemnamecolor;
-    display: flex;
-    font-family: $regular;
-    font-size: $size14;
-    font-weight: normal;
-    height: 70px;
-    left: 0;
-    padding: 0 20px;
-    position: $abs;
-    text-align: left;
-    width: 100%;
-  }
-
-}
-
-// shop supplier slider
-
-.shop-supplier .view-content {
-  position: $rel;
-
-  .slick-slide {
-    padding: 0 2px;
-  }
-
-  img {
-    max-width: 100%;
-  }
-
-  .views-row {
-    border: 1px solid $btnbordercolor;
-    border-radius: 100%;
-    overflow: hidden;
-    padding: 0 5px;
-    position: $rel;
-  }
-
-  figure {
-    align-items: center;
-    display: flex;
-    height: 74px;
-    justify-content: center;
-    position: $rel;
-  }
-
-}
-
-
-
-
