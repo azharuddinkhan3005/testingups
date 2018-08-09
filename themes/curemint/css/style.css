@@ -10494,19 +10494,27 @@ p:last-child,
   width: 26px;
 }
 
-/* line 29, ../scss/style.scss */
+/* line 1, ../scss/curemint/_shoppingcart.scss */
+.page-header {
+  font-family: 'RalewayRegular';
+  font-size: 20px;
+  font-weight: 600;
+  color: #4a4a4a;
+}
+
+/* line 30, ../scss/style.scss */
 :root {
   font-size: 1rem;
 }
 
-/* line 33, ../scss/style.scss */
+/* line 34, ../scss/style.scss */
 html {
   font-size: 100%;
   position: relative;
   min-height: 100%;
 }
 
-/* line 39, ../scss/style.scss */
+/* line 40, ../scss/style.scss */
 body {
   color: #7f7f7f;
   font-family: Helvetica;
@@ -10514,17 +10522,17 @@ body {
   margin-top: 9px;
 }
 
-/* line 46, ../scss/style.scss */
+/* line 47, ../scss/style.scss */
 * {
   outline: none;
 }
 
-/* line 50, ../scss/style.scss */
+/* line 51, ../scss/style.scss */
 h1 {
   font-family: RalewayMedium;
 }
 
-/* line 54, ../scss/style.scss */
+/* line 55, ../scss/style.scss */
 h2 {
   font-family: RalewayMedium;
   font-size: 1.25rem;
@@ -10533,7 +10541,7 @@ h2 {
   color: #4a4a4a;
 }
 
-/* line 59, ../scss/style.scss */
+/* line 60, ../scss/style.scss */
 .view-frontpage {
   display: none;
 }
