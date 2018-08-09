@@ -1,0 +1,38 @@
+uuid: c1306288-8e36-4b4a-b925-940841aaacab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.punchout_suppliers.field_punchout_endpoint
+    - field.field.taxonomy_term.punchout_suppliers.field_punchout_mode
+    - taxonomy.vocabulary.punchout_suppliers
+  module:
+    - options
+    - text
+id: taxonomy_term.punchout_suppliers.default
+targetEntityType: taxonomy_term
+bundle: punchout_suppliers
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_punchout_endpoint:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_punchout_mode:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden: {  }
