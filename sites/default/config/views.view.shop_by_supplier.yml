@@ -3,15 +3,15 @@ langcode: en
 status: true
 dependencies:
   config:
-  - field.storage.node.field_distributor_image
-  - field.storage.node.field_punchout_supplier_select
-  - field.storage.node.field_punchout_type
-  - node.type.distributor
+    - field.storage.node.field_distributor_image
+    - field.storage.node.field_punchout_supplier_select
+    - field.storage.node.field_punchout_type
+    - node.type.distributor
   module:
-  - image
-  - node
-  - options
-  - user
+    - image
+    - node
+    - options
+    - user
 id: shop_by_supplier
 label: 'Shop by supplier'
 module: views
@@ -346,14 +346,14 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-      - 'languages:language_content'
-      - 'languages:language_interface'
-      - 'user.node_grants:view'
-      - user.permissions
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
       tags:
-      - 'config:field.storage.node.field_distributor_image'
-      - 'config:field.storage.node.field_punchout_supplier_select'
-      - 'config:field.storage.node.field_punchout_type'
+        - 'config:field.storage.node.field_distributor_image'
+        - 'config:field.storage.node.field_punchout_supplier_select'
+        - 'config:field.storage.node.field_punchout_type'
   block_1:
     display_plugin: block
     id: block_1
@@ -365,11 +365,11 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-      - 'languages:language_content'
-      - 'languages:language_interface'
-      - 'user.node_grants:view'
-      - user.permissions
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
       tags:
-      - 'config:field.storage.node.field_distributor_image'
-      - 'config:field.storage.node.field_punchout_supplier_select'
-      - 'config:field.storage.node.field_punchout_type'
+        - 'config:field.storage.node.field_distributor_image'
+        - 'config:field.storage.node.field_punchout_supplier_select'
+        - 'config:field.storage.node.field_punchout_type'

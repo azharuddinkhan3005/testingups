@@ -3,16 +3,16 @@ langcode: en
 status: true
 dependencies:
   config:
-  - field.field.node.distributor.body
-  - field.field.node.distributor.field_distributor_image
-  - field.field.node.distributor.field_punchout_supplier_select
-  - field.field.node.distributor.field_punchout_type
-  - image.style.thumbnail
-  - node.type.distributor
+    - field.field.node.distributor.body
+    - field.field.node.distributor.field_distributor_image
+    - field.field.node.distributor.field_punchout_supplier_select
+    - field.field.node.distributor.field_punchout_type
+    - image.style.thumbnail
+    - node.type.distributor
   module:
-  - image
-  - path
-  - text
+    - image
+    - path
+    - text
 id: node.distributor.default
 targetEntityType: node
 bundle: distributor
@@ -59,8 +59,8 @@ content:
             value: ''
             values: {  }
             value_form:
-            -
-              value: punchout
+              -
+                value: punchout
             effect: show
             effect_options: {  }
             selector: ''
