@@ -25,6 +25,13 @@
   <div class="col-md-2">
     <ul class="navtools">
 
+      <!-- list icon-->
+      <li class="navtools__list">
+        <a class="navtools__listicon" href="#">
+          <img class="navtools__listicon-img" src="/themes/curemint/images/list.jpg">
+        </a>
+      </li>
+
       <!-- user icon-->
       <li class="navtools__list">
         <a class="navtools__profileicon" href="#">
@@ -48,6 +55,7 @@
         <ul class="cart__dropdown">
           <li class="cart__dropdown-list"><span class="cart__dropdown-title">Your Savings:</span><span class="cart__dropdown-price">${{ savings }}</span></li>
           <li class="cart__dropdown-list"><span class="cart__dropdown-title">Items in Your Cart:</span><span class="cart__dropdown-item">{{ items_count }}</span></li>
+
         </ul>
         {% endif %}
       </li>

@@ -3,9 +3,6 @@
 namespace Drupal\cart_icon_popup\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
-use Drupal\commerce_product\Entity\ProductInterface;
-use Drupal\commerce_product\Entity\ProductVariation;
-use Drupal\Core\Entity\ContentEntityBase;
 
 /**
  * Provides a 'header' block.
@@ -37,6 +34,7 @@ class CustomHeader extends BlockBase {
   }
   public function build() {
     $store_id = 1;
+    $items_count = $savings = 0;
     //$current_store = \Drupal::service('commerce_store.current_store');
     $order_type = 'default';
     $cart_manager = \Drupal::service('commerce_cart.cart_manager');
