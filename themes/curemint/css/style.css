@@ -10346,6 +10346,52 @@ p:last-child,
   width: 20%;
 }
 
+/* line 11, ../scss/curemint/_productbysupplier.scss */
+.path-product-listing-by-supplier .page-header {
+  display: none;
+}
+
+/* line 16, ../scss/curemint/_productbysupplier.scss */
+.pagination {
+  border-radius: 0;
+  clear: both;
+  display: block;
+  text-align: center;
+}
+/* line 22, ../scss/curemint/_productbysupplier.scss */
+.pagination li a {
+  background: transparent;
+  border: 0;
+  color: #212121;
+  float: none;
+  font-family: Helvetica;
+  font-size: 14px;
+  padding: 6px 10px;
+}
+/* line 32, ../scss/curemint/_productbysupplier.scss */
+.pagination li a:hover {
+  background: transparent;
+  color: #212121;
+}
+/* line 38, ../scss/curemint/_productbysupplier.scss */
+.pagination .pager__item--first {
+  display: none;
+}
+/* line 42, ../scss/curemint/_productbysupplier.scss */
+.pagination .pager__item--last {
+  display: none;
+}
+/* line 47, ../scss/curemint/_productbysupplier.scss */
+.pagination .active a {
+  background-color: transparent;
+  color: #bdbdbd;
+}
+/* line 51, ../scss/curemint/_productbysupplier.scss */
+.pagination .active a:hover {
+  background-color: transparent;
+  color: #bdbdbd;
+}
+
 /* line 1, ../scss/curemint/_header-navbar.scss */
 .header-navbar {
   border-bottom: 1px solid #efefef;

@@ -7,3 +7,50 @@
   }
 }
 
+.path-product-listing-by-supplier {
+  .page-header {
+    display: none;
+  }
+}
+
+.pagination {
+  border-radius: 0;
+  clear: both;
+  display: block;
+  text-align: center;
+
+  li a {
+    background: transparent;
+    border: 0;
+    color: $rasinblackcolor;
+    float: none;
+    font-family: Helvetica;
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  li a:hover {
+    background: transparent;
+    color: $rasinblackcolor;
+  }
+
+  .pager {
+    &__item--first {
+      display: none;
+    }
+
+    &__item--last {
+      display: none;
+    }
+  }
+
+  .active a {
+    background-color: transparent;
+    color: $graylightcolor;
+
+    &:hover {
+      background-color: transparent;
+      color: $graylightcolor;
+    }
+  }
+}
