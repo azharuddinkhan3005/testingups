@@ -3,9 +3,6 @@
 namespace Drupal\cart_icon_popup\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
-use Drupal\commerce_product\Entity\ProductInterface;
-use Drupal\commerce_product\Entity\ProductVariation;
-use Drupal\Core\Entity\ContentEntityBase;
 
 /**
  * Provides a 'header' block.
@@ -67,4 +64,3 @@ class CustomHeader extends BlockBase {
     );
   }
 }
-sites/default/config/core.entity_view_display.commerce_product_variation.general.cart.yml

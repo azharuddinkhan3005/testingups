@@ -3,14 +3,16 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.distributor.body
-    - field.field.node.distributor.field_distributor_image
-    - image.style.thumbnail
-    - node.type.distributor
+  - field.field.node.distributor.body
+  - field.field.node.distributor.field_distributor_image
+  - field.field.node.distributor.field_punchout_supplier_select
+  - field.field.node.distributor.field_punchout_type
+  - image.style.thumbnail
+  - node.type.distributor
   module:
-    - image
-    - path
-    - text
+  - image
+  - path
+  - text
 id: node.distributor.default
 targetEntityType: node
 bundle: distributor
@@ -38,6 +40,39 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_punchout_supplier_select:
+    weight: 124
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        44641ae9-1292-4b96-a975-b8f68ac4dd8f:
+          dependee: field_punchout_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+            -
+              value: punchout
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: distributor
+    type: entity_reference_autocomplete
+    region: content
+  field_punchout_type:
+    weight: 123
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   path:
     type: path
