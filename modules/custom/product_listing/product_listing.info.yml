@@ -1,0 +1,6 @@
+name: Product Listing
+type: module
+description: 'Displays the product listing by  suppliers'
+package: Custom
+core: '8.x'
+project: 'product_listing'

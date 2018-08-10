@@ -1,0 +1,102 @@
+.header-navbar {
+  border-bottom: 1px solid $brightgraycolor;
+  padding-bottom: 16px;
+  padding-top: 20px;
+
+  .breadcrumb {
+    background-color: transparent;
+    border-radius: 0;
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
+
+    &__list {
+      color: $graycolor;
+      font-family: $sftext;
+      font-size: rem-calc(14px);
+      line-height: rem-calc(20px);
+      padding: 0 20px 0 0;
+      position: relative;
+      text-decoration: none;
+    }
+
+    &__link {
+      color: $graycolor;
+      font-family: $sftext;
+      font-size: rem-calc(14px);
+      line-height: rem-calc(20px);
+      text-decoration: none;
+    }
+  }
+
+  .formsort {
+    text-align: right;
+
+    &__label {
+      color: $graycolor;
+      font-family: $sftext;
+      font-size: rem-calc(14px);
+      font-weight: 400;
+      line-height: rem-calc(20px);
+      margin-bottom: 0;
+    }
+
+    &__select {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      background-image: url('../images/sort.png');
+      background-position: right;
+      background-repeat: no-repeat;
+      border: 0;
+      color: $graycolor;
+      font-family: $sftext;
+      font-size: rem-calc(14px);
+      font-weight: 400;
+      line-height: rem-calc(20px);
+      width: 75px;
+    }
+  }
+
+  .layoutview {
+    list-style: none;
+    margin: 0;
+    padding: 0 12px 0 0;
+    text-align: right;
+
+    &__list {
+      display: inline-block;
+      padding: 0 0 0 14px;
+      vertical-align: top;
+    }
+
+    &__label {
+      color: $graycolor;
+      font-family: $sftext;
+      font-size: rem-calc(14px);
+      font-weight: 400;
+      line-height: rem-calc(20px);
+    }
+
+    &__grid-img {
+      width: 23px;
+    }
+
+    &__listitem-img {
+      width: 23px;
+    }
+  }
+}
+
+.breadcrumb {
+
+  &__list + li::before {
+    background-image: url('../images/breadcrumb-img.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    content: '';
+    display: inline-block;
+    font-size: 0;
+    height: 9px;
+    width: 26px;
+  }
+}
