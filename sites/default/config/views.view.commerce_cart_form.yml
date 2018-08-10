@@ -8,6 +8,7 @@ dependencies:
     module:
       - commerce_cart
   module:
+    - cart_icon_popup
     - commerce_cart
     - commerce_order
     - commerce_price
@@ -321,17 +322,26 @@ display:
           entity_type: commerce_order_item
           entity_field: order_item_id
           plugin_id: standard
-      header: {  }
-      footer:
-        commerce_order_total:
-          id: commerce_order_total
+      header:
+        curemint_order_total:
+          id: curemint_order_total
           table: views
-          field: commerce_order_total
+          field: curemint_order_total
           relationship: none
           group_type: group
           admin_label: ''
           empty: false
-          plugin_id: commerce_order_total
+          plugin_id: curemint_order_total
+      footer:
+        curemint_order_total:
+          id: curemint_order_total
+          table: views
+          field: curemint_order_total
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          plugin_id: curemint_order_total
       empty: {  }
       relationships:
         order_items:
