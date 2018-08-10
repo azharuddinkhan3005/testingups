@@ -10497,9 +10497,11 @@ p:last-child,
 /* line 1, ../scss/curemint/_shoppingcart.scss */
 .page-header {
   font-family: 'RalewayRegular';
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   color: #4a4a4a;
+  border: 0;
+  text-transform: uppercase;
 }
 
 /* line 30, ../scss/style.scss */
