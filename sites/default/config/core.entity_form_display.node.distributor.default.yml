@@ -118,4 +118,6 @@ content:
       placeholder: ''
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_punchout_supplier_select: true
+  field_punchout_type: true

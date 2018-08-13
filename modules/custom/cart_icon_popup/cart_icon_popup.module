@@ -1,14 +1,25 @@
 <?php
 
+use Drupal\views\ViewExecutable;
+
 /**
  * Implements hook_theme().
  */
 function cart_icon_popup_theme() {
   return array(
-   'cart_icon_popup' => array(
-            'variables' => array('title' => NULL, 'link' => NULL, 'items_count' => NULL, 'savings' => NULL),
-            'template' => 'header',
-        ),
+    'cart_icon_popup' => [
+      'variables' => ['title' => NULL, 'link' => NULL, 'items_count' => NULL, 'savings' => NULL],
+      'template' => 'header',
+    ],
+    'curemint_order_total_summary' => [
+      'variables' => [
+        'title' => NULL,
+        'link' => NULL,
+        'savings' => NULL,
+        'subtotal' => NULL,
+      ],
+      'template' => 'curemint-order-total-summary',
+    ],
   );
 }
 
@@ -19,5 +30,14 @@ function curemint_preprocess_block(&$variables){
   if($variables['attributes']['id'] == 'block-customheaderblock') {
     //-- This stops the block being cache in drupal 8
     $variables['#cache']['max-age'] = 0;
+  }
+}
+
+/**
+ * Implements hook_entity_view_alter().
+ */
+function cart_icon_popup_entity_view_alter(array &$build, Drupal\Core\Entity\EntityInterface $entity, \Drupal\Core\Entity\Display\EntityViewDisplayInterface $display) {
+  if ($build['#view_mode'] == 'cart' && $entity->getEntityTypeId() == 'commerce_product_variation') {
+    $build['product_name']['#markup'] = $entity->getTitle();
   }
 }
