@@ -1,0 +1,14 @@
+uuid: 8d955d2c-9f0e-4c69-b7df-ec0f8cfb61c9
+langcode: en
+status: true
+dependencies: {  }
+name: 155x145
+label: 155x145
+effects:
+  4d6b69d1-ba73-44ca-9253-d9f46cc9ba95:
+    uuid: 4d6b69d1-ba73-44ca-9253-d9f46cc9ba95
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 155
+      height: 145
