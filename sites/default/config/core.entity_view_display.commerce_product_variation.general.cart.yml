@@ -14,11 +14,11 @@ dependencies:
     - field.field.commerce_product_variation.general.field_packaging_details
     - field.field.commerce_product_variation.general.field_product_images
     - field.field.commerce_product_variation.general.field_quantity
-    - image.style.thumbnail
+    - image.style.155x145
   module:
+    - cart_icon_popup
     - commerce_price
     - commerce_variation_cart_form
-    - image
     - text
 third_party_settings:
   commerce_variation_cart_form:
@@ -28,6 +28,22 @@ targetEntityType: commerce_product_variation
 bundle: general
 mode: cart
 content:
+  field_distributor:
+    type: entity_reference_label
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+  field_manufacturer_sku:
+    type: string
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   field_packaging_details:
     weight: 1
     label: hidden
@@ -39,15 +55,15 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: thumbnail
+      image_style: 155x145
       image_link: ''
     third_party_settings: {  }
-    type: image
+    type: curemint_image
     region: content
   price:
     label: hidden
     type: commerce_price_default
-    weight: 2
+    weight: 4
     region: content
     settings:
       strip_trailing_zeroes: false
@@ -56,10 +72,8 @@ content:
 hidden:
   commerce_variation_cart_form: true
   field_categories: true
-  field_distributor: true
   field_distributor_sku: true
   field_manufacturer: true
-  field_manufacturer_sku: true
   field_msrp_price: true
   field_quantity: true
   product_id: true
