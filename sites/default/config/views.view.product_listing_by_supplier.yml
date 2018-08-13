@@ -58,7 +58,7 @@ display:
       pager:
         type: full
         options:
-          items_per_page: 5
+          items_per_page: 15
           offset: 0
           id: 0
           total_pages: null
@@ -664,11 +664,38 @@ display:
           entity_type: commerce_product
           entity_field: type
           plugin_id: commerce_entity_bundle
-      sorts: {  }
+      sorts:
+        title:
+          id: title
+          table: commerce_product_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: commerce_product
+          entity_field: title
+          plugin_id: standard
       title: 'Product listing'
       header: {  }
       footer: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: 'No Products found.'
+            format: basic_html
+          plugin_id: text
       relationships:
         variations:
           id: variations
