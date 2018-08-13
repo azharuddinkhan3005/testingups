@@ -20,6 +20,11 @@ jQuery(document).ready(function() {
     slidesToShow: 16,
     slidesToScroll: 1
   });
+  //  checkout button clicked
+  jQuery(".checkout .btn-default").click(function(){
+     jQuery("#edit-checkout").trigger("click");
+     return false;
+  });
 });
 
 //sticky footer

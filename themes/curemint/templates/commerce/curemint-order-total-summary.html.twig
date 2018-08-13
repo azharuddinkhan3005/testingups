@@ -1,10 +1,13 @@
-<div>
-    <div>
-        <span>Your Savings:</span>
-        <span>${{ savings }}</span>
-    </div>
-    <div>
-        <span>Subtotal:</span>
-        <span>${{ subtotal }}</span>
-    </div>
+<div class="saving-summary">
+  <div class="saving">
+      <span class="saving__title">Your Savings:</span>
+      <span class="saving__price">${{ savings }}</span>
+  </div>
+  <div class="subtotal">
+      <span class="subtotal__title">Subtotal:</span>
+      <span class="subtotal__price">${{ subtotal }}</span>
+  </div>
+  <div class="checkout">
+  	<button class="btn-default btn" type="submit">Go to Checkout</button>
+  </div>
 </div>

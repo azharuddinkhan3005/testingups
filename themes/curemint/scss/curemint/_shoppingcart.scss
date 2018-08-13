@@ -1,0 +1,157 @@
+.page-header {
+  border: 0;
+  color: $quartzcolor;
+  font-family: $raleway-r;
+  font-size: rem-calc(20px);
+  font-weight: 600;
+  padding-top: 10px;
+  text-transform: uppercase;
+}
+
+.saving-summary {
+  color: $sonicsilvercolor;
+  font-family: $helvetica-r;
+  font-size: rem-calc(15px);
+  text-align: right;
+}
+
+.view-header {
+
+  .saving-summary {
+    padding-bottom: 35px;
+  }
+}
+
+.saving {
+  display: inline-block;
+
+  &__price {
+    font-weight: bold;
+  }
+}
+
+.subtotal {
+  display: inline-block;
+  padding-left: 30px;
+
+  &__price {
+    font-weight: bold;
+  }
+}
+
+.checkout {
+  display: inline-block;
+  padding-left: 30px;
+
+  .btn-default {
+    background-image: linear-gradient(to bottom, $bluecolacolor, $frenchbluecolor);
+    border: 0;
+    box-shadow: 0 2px 2px 0 $lightblackcolor;
+    color: $whitecolor;
+    font-family: $sftext;
+    font-size: rem-calc(15px);
+    font-weight: bold;
+    height: 40px;
+    text-align: center;
+    text-shadow: 0 1px 1px $lightgraycolor;
+    text-transform: uppercase;
+    width: 200px;
+
+    &:active:focus {
+      color: $whitecolor;
+    }
+  }
+}
+
+.view-commerce-cart-form {
+
+  .table-striped {
+    border: 1px solid $brightgraycolor;
+
+    thead {
+      display: none;
+    }
+
+    .table-row {
+      background-color: transparent;
+    }
+
+    .views-field {
+      border: 0;
+      padding-top: 25px;
+    }
+  }
+
+  .field {
+    color: $quartzcolor;
+    font-family: $sftext;
+    font-weight: bold;
+
+    &--type-image {
+      float: left;
+      height: 145px;
+      margin-right: 15px;
+      text-align: center;
+      width: 155px;
+    }
+
+    .img-responsive {
+      display: inline-block;
+    }
+
+    &--name-field-packaging-details {
+      color: $graycolor;
+      font-weight: normal;
+      padding: 10px 0 0;
+    }
+
+    &--name-price {
+      color: $graycolor;
+      font-weight: normal;
+      padding: 10px 0 0;
+    }
+  }
+
+  .views-field-edit-quantity {
+    .form-type-number {
+      display: inline-block;
+    }
+
+    .form-number {
+      border-color: $chinesesilvercolor;
+      box-shadow: none;
+      color: $graycolor;
+      font-size: rem-calc(16px);
+      height: 40px;
+      margin-left: 5px;
+      padding: 0 5px 0 15px;
+    }
+  }
+
+  .views-field-total-price {
+    &__number {
+      font-size: rem-calc(16px);
+    }
+  }
+
+  .form-actions {
+    .btn-default {
+      background-image: linear-gradient(to bottom, $bluecolacolor, $frenchbluecolor);
+      border: 0;
+      box-shadow: 0 2px 2px 0 $lightblackcolor;
+      color: $whitecolor;
+      display: none;
+      font-family: $sftext;
+      font-weight: bold;
+      text-align: center;
+      text-shadow: 0 1px 1px $lightgraycolor;
+    }
+
+    .form-submit {
+      font-size: rem-calc(15px);
+      height: 40px;
+      text-transform: uppercase;
+      width: 200px;
+    }
+  }
+}
