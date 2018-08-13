@@ -69,7 +69,7 @@
   {% endif %}
   {% if header %}
     <thead>
-    <tr>
+    <tr class="table-row">
       {% for key, column in header %}
         {% if column.default_classes %}
           {%
@@ -102,7 +102,7 @@
   {% endif %}
   <tbody>
   {% for row in rows %}
-    <tr{{ row.attributes }}>
+    <tr{{ row.attributes }} class="table-row">
       {% for key, column in row.columns %}
         {% if column.default_classes %}
           {% set column_classes = [ 'views-field' ] %}
