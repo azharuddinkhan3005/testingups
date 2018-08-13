@@ -1,26 +1,22 @@
-uuid: 00372ef1-8efd-4903-8d56-14c5c8e9d59a
+uuid: 6ca0614a-d196-461c-bc43-a66b3a0b689c
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.product_list
+    - views.view.most_purchased_items
   module:
-    - block_class
     - system
     - views
   theme:
     - curemint
-third_party_settings:
-  block_class:
-    classes: 'col-md-12 most-purchased most-purchased-listing'
-id: views_block__product_list_block_1_2
+id: views_block__most_purchased_items_block_1
 theme: curemint
 region: content
 weight: 0
 provider: null
-plugin: 'views_block:product_list-block_1'
+plugin: 'views_block:most_purchased_items-block_1'
 settings:
-  id: 'views_block:product_list-block_1'
+  id: 'views_block:most_purchased_items-block_1'
   label: ''
   provider: views
   label_display: visible
