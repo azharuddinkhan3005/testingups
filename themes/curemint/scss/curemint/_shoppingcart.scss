@@ -39,6 +39,30 @@
   }
 }
 
+.checkout {
+  display: inline-block;
+  padding-left: 30px;
+
+  .btn-default {
+    background-image: linear-gradient(to bottom, $bluecolacolor, $frenchbluecolor);
+    border: 0;
+    box-shadow: 0 2px 2px 0 $lightblackcolor;
+    color: $whitecolor;
+    font-family: $sftext;
+    font-size: rem-calc(15px);
+    font-weight: bold;
+    height: 40px;
+    text-align: center;
+    text-shadow: 0 1px 1px $lightgraycolor;
+    text-transform: uppercase;
+    width: 200px;
+
+    &:active:focus {
+      color: $whitecolor;
+    }
+  }
+}
+
 .view-commerce-cart-form {
 
   .table-striped {
@@ -116,6 +140,7 @@
       border: 0;
       box-shadow: 0 2px 2px 0 $lightblackcolor;
       color: $whitecolor;
+      display: none;
       font-family: $sftext;
       font-weight: bold;
       text-align: center;
