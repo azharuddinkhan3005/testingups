@@ -1,0 +1,5 @@
+services:
+  cart_icon_popup.route_subscriber:
+    class: Drupal\cart_icon_popup\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }
