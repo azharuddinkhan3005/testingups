@@ -11,12 +11,14 @@
     max-width: 100%;
   }
 
+// view row inline width override
   .views-row {
     border: 1px solid $spanishlightgraycolor;
-    border-radius: 100%;
+    border-radius: 40px;
     overflow: hidden;
     padding: 0 5px;
     position: relative;
+    width: 74px !important;
   }
 
   .distributor-link-img {

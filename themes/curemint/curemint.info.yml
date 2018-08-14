@@ -8,6 +8,7 @@ package: 'Bootstrap'
 
 regions:
   custom_header: 'Custom Header'
+  advertisement_banner: 'Advertisement Banner'
   navigation: 'Navigation'
   navigation_collapsible: 'Navigation (Collapsible)'
   header: 'Top Bar'

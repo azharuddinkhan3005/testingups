@@ -112,10 +112,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: image_url
           settings:
             image_style: 1440x352
-            image_link: ''
           group_column: ''
           group_columns: {  }
           group_rows: true

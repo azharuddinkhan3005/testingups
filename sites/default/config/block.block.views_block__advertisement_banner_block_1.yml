@@ -11,7 +11,7 @@ dependencies:
     - curemint
 id: views_block__advertisement_banner_block_1
 theme: curemint
-region: content
+region: advertisement_banner
 weight: -8
 provider: null
 plugin: 'views_block:advertisement_banner-block_1'
