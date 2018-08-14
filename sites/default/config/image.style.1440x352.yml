@@ -1,0 +1,14 @@
+uuid: 0f8ee2d7-a968-4f14-adeb-b17cce997255
+langcode: en
+status: true
+dependencies: {  }
+name: 1440x352
+label: 1440x352
+effects:
+  335802f4-9d01-48b3-9f99-bfdd9a2e18fb:
+    uuid: 335802f4-9d01-48b3-9f99-bfdd9a2e18fb
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1440
+      height: 352
