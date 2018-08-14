@@ -1,29 +1,25 @@
-uuid: fe3aa169-5ccd-4f47-833f-ab075c0980d7
+uuid: ad9536e7-23bd-4013-b22e-e94a90cc5384
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.shop_by_supplier
+    - views.view.advertisement_banner
   module:
-    - block_class
     - system
     - views
   theme:
     - curemint
-third_party_settings:
-  block_class:
-    classes: 'col-md-12 shop-supplier'
-id: views_block__shop_by_supplier_block_1
+id: views_block__advertisement_banner_block_1
 theme: curemint
 region: content
-weight: -2
+weight: -8
 provider: null
-plugin: 'views_block:shop_by_supplier-block_1'
+plugin: 'views_block:advertisement_banner-block_1'
 settings:
-  id: 'views_block:shop_by_supplier-block_1'
+  id: 'views_block:advertisement_banner-block_1'
   label: ''
   provider: views
-  label_display: visible
+  label_display: '0'
   views_label: ''
   items_per_page: none
 visibility:

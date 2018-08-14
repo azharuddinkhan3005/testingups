@@ -20,7 +20,7 @@ dependencies:
     - text
 third_party_settings:
   commerce_variation_cart_form:
-    combine: 0
+    combine: '1'
 id: commerce_product_variation.general.default
 targetEntityType: commerce_product_variation
 bundle: general
