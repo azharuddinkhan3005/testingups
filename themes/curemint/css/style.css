@@ -9819,6 +9819,10 @@ p:last-child,
   padding-top: 9px;
 }
 /* line 8, ../scss/curemint/_header.scss */
+.custom-header .logo__img {
+  margin-top: 5px;
+}
+/* line 12, ../scss/curemint/_header.scss */
 .custom-header .logo .navbar-toggle {
   border: 0;
   display: inline-block;
@@ -9827,25 +9831,25 @@ p:last-child,
   padding-left: 0;
   vertical-align: middle;
 }
-/* line 18, ../scss/curemint/_header.scss */
+/* line 22, ../scss/curemint/_header.scss */
 .custom-header .icon-bar {
   background-color: #999;
   height: 2px;
   width: 19px;
 }
-/* line 23, ../scss/curemint/_header.scss */
+/* line 27, ../scss/curemint/_header.scss */
 .custom-header .icon-bar + .icon-bar {
   margin-top: 5px;
 }
-/* line 28, ../scss/curemint/_header.scss */
+/* line 32, ../scss/curemint/_header.scss */
 .custom-header .searchprod {
   padding-bottom: 8px;
 }
-/* line 31, ../scss/curemint/_header.scss */
+/* line 35, ../scss/curemint/_header.scss */
 .custom-header .searchprod__form-group {
   position: relative;
 }
-/* line 35, ../scss/curemint/_header.scss */
+/* line 39, ../scss/curemint/_header.scss */
 .custom-header .searchprod__form-input {
   background: #fafafa;
   border-color: #efefef;
@@ -9862,7 +9866,7 @@ p:last-child,
   padding: 20px 63px;
   width: 100%;
 }
-/* line 52, ../scss/curemint/_header.scss */
+/* line 56, ../scss/curemint/_header.scss */
 .custom-header .searchprod__form-btn {
   background: transparent;
   border: 0;
@@ -9878,43 +9882,43 @@ p:last-child,
   width: 21px;
 }
 
-/* line 69, ../scss/curemint/_header.scss */
+/* line 73, ../scss/curemint/_header.scss */
 .navtools {
   list-style: none;
   margin: 0;
   padding: 15px 19px 0 0;
   text-align: right;
 }
-/* line 75, ../scss/curemint/_header.scss */
+/* line 79, ../scss/curemint/_header.scss */
 .navtools__list {
   display: inline-block;
   padding: 0 15px;
   vertical-align: top;
 }
-/* line 81, ../scss/curemint/_header.scss */
+/* line 85, ../scss/curemint/_header.scss */
 .navtools__list-cart {
   padding-bottom: 25px;
   padding-right: 0;
 }
-/* line 88, ../scss/curemint/_header.scss */
+/* line 92, ../scss/curemint/_header.scss */
 .navtools__listicon-img {
   height: 18px;
   width: 21px;
 }
-/* line 96, ../scss/curemint/_header.scss */
+/* line 100, ../scss/curemint/_header.scss */
 .navtools__profileicon-img {
   width: 18px;
 }
-/* line 101, ../scss/curemint/_header.scss */
+/* line 105, ../scss/curemint/_header.scss */
 .navtools__carticon {
   position: relative;
 }
-/* line 104, ../scss/curemint/_header.scss */
+/* line 108, ../scss/curemint/_header.scss */
 .navtools__carticon-img {
   height: 20px;
   width: 21px;
 }
-/* line 109, ../scss/curemint/_header.scss */
+/* line 113, ../scss/curemint/_header.scss */
 .navtools__carticon-item {
   background-color: #0089dd;
   border-radius: 100%;
@@ -10245,15 +10249,16 @@ p:last-child,
 .shop-supplier .view-content img {
   max-width: 100%;
 }
-/* line 14, ../scss/curemint/_shop-supplier.scss */
+/* line 15, ../scss/curemint/_shop-supplier.scss */
 .shop-supplier .view-content .views-row {
   border: 1px solid #9e9e9e;
-  border-radius: 100%;
+  border-radius: 40px;
   overflow: hidden;
   padding: 0 5px;
   position: relative;
+  width: 74px !important;
 }
-/* line 22, ../scss/curemint/_shop-supplier.scss */
+/* line 24, ../scss/curemint/_shop-supplier.scss */
 .shop-supplier .view-content .distributor-link-img {
   align-items: center;
   display: flex;
@@ -10263,21 +10268,27 @@ p:last-child,
 }
 
 /* line 2, ../scss/curemint/_supplies.scss */
+.supplies {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+/* line 7, ../scss/curemint/_supplies.scss */
 .supplies .views-row {
   padding: 10px;
   position: relative;
 }
-/* line 6, ../scss/curemint/_supplies.scss */
+/* line 11, ../scss/curemint/_supplies.scss */
 .supplies .views-row img {
   max-width: 100%;
 }
-/* line 12, ../scss/curemint/_supplies.scss */
+/* line 17, ../scss/curemint/_supplies.scss */
 .supplies .views-row .suppliesitem__img {
   height: 240px;
   overflow: hidden;
   position: relative;
 }
-/* line 18, ../scss/curemint/_supplies.scss */
+/* line 23, ../scss/curemint/_supplies.scss */
 .supplies .views-row .suppliesitem__name {
   align-items: center;
   background: rgba(255, 255, 255, 0.75);
@@ -10298,9 +10309,9 @@ p:last-child,
 /* line 2, ../scss/curemint/_footer.scss */
 .custom-footer {
   background-color: #0c384f;
+  margin-top: 30px;
   padding-bottom: 31px;
   padding-top: 50px;
-  margin-top: 30px;
   text-align: center;
 }
 /* line 10, ../scss/curemint/_footer.scss */
@@ -10365,7 +10376,7 @@ p:last-child,
   color: #212121;
   float: none;
   font-family: Helvetica;
-  font-size: 14px;
+  font-size: 0.9375rem;
   padding: 6px 10px;
 }
 /* line 32, ../scss/curemint/_productbysupplier.scss */
@@ -10501,48 +10512,49 @@ p:last-child,
   font-family: RalewayRegular;
   font-size: 1.25rem;
   font-weight: 600;
-  padding-top: 10px;
+  padding-top: 30px;
   text-transform: uppercase;
 }
 
 /* line 11, ../scss/curemint/_shoppingcart.scss */
 .saving-summary {
   color: #757575;
+  float: right;
   font-family: Helvetica;
   font-size: 0.9375rem;
   text-align: right;
 }
 
-/* line 20, ../scss/curemint/_shoppingcart.scss */
+/* line 21, ../scss/curemint/_shoppingcart.scss */
 .view-header .saving-summary {
   padding-bottom: 35px;
 }
 
-/* line 25, ../scss/curemint/_shoppingcart.scss */
+/* line 26, ../scss/curemint/_shoppingcart.scss */
 .saving {
   display: inline-block;
 }
-/* line 28, ../scss/curemint/_shoppingcart.scss */
+/* line 29, ../scss/curemint/_shoppingcart.scss */
 .saving__price {
   font-weight: bold;
 }
 
-/* line 33, ../scss/curemint/_shoppingcart.scss */
+/* line 34, ../scss/curemint/_shoppingcart.scss */
 .subtotal {
   display: inline-block;
   padding-left: 30px;
 }
-/* line 37, ../scss/curemint/_shoppingcart.scss */
+/* line 38, ../scss/curemint/_shoppingcart.scss */
 .subtotal__price {
   font-weight: bold;
 }
 
-/* line 42, ../scss/curemint/_shoppingcart.scss */
+/* line 43, ../scss/curemint/_shoppingcart.scss */
 .checkout {
   display: inline-block;
   padding-left: 30px;
 }
-/* line 46, ../scss/curemint/_shoppingcart.scss */
+/* line 47, ../scss/curemint/_shoppingcart.scss */
 .checkout .btn-default {
   background-image: linear-gradient(to bottom, #0089dd, #0069c4);
   border: 0;
@@ -10557,35 +10569,39 @@ p:last-child,
   text-transform: uppercase;
   width: 200px;
 }
-/* line 60, ../scss/curemint/_shoppingcart.scss */
+/* line 61, ../scss/curemint/_shoppingcart.scss */
 .checkout .btn-default:active:focus {
   color: #fff;
 }
 
-/* line 68, ../scss/curemint/_shoppingcart.scss */
+/* line 69, ../scss/curemint/_shoppingcart.scss */
+.view-commerce-cart-form .table-responsive {
+  clear: both;
+}
+/* line 73, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .table-striped {
   border: 1px solid #efefef;
 }
-/* line 71, ../scss/curemint/_shoppingcart.scss */
+/* line 76, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .table-striped thead {
   display: none;
 }
-/* line 75, ../scss/curemint/_shoppingcart.scss */
+/* line 80, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .table-striped .table-row {
   background-color: transparent;
 }
-/* line 79, ../scss/curemint/_shoppingcart.scss */
+/* line 84, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .table-striped .views-field {
   border: 0;
   padding-top: 25px;
 }
-/* line 85, ../scss/curemint/_shoppingcart.scss */
+/* line 90, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .field {
   color: #4a4a4a;
   font-family: SFProText;
   font-weight: bold;
 }
-/* line 90, ../scss/curemint/_shoppingcart.scss */
+/* line 95, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .field--type-image {
   float: left;
   height: 145px;
@@ -10593,39 +10609,41 @@ p:last-child,
   text-align: center;
   width: 155px;
 }
-/* line 98, ../scss/curemint/_shoppingcart.scss */
+/* line 103, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .field .img-responsive {
   display: inline-block;
 }
-/* line 102, ../scss/curemint/_shoppingcart.scss */
+/* line 107, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .field--name-field-packaging-details {
   color: #7f7f7f;
   font-weight: normal;
   padding: 10px 0 0;
 }
-/* line 108, ../scss/curemint/_shoppingcart.scss */
+/* line 113, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .field--name-field-manufacturer-sku {
   color: #7f7f7f;
+  display: inline-block;
   font-weight: normal;
-  padding: 10px 0 0;
-}
-/* line 114, ../scss/curemint/_shoppingcart.scss */
-.view-commerce-cart-form .field--name-field-distributor {
-  color: #7f7f7f;
-  font-weight: normal;
-  padding: 10px 0 0;
+  padding: 10px 5px 0;
 }
 /* line 120, ../scss/curemint/_shoppingcart.scss */
+.view-commerce-cart-form .field--name-field-distributor {
+  color: #7f7f7f;
+  display: inline-block;
+  font-weight: normal;
+  padding: 10px 0 0;
+}
+/* line 127, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .field--name-price {
   color: #7f7f7f;
   font-weight: normal;
   padding: 10px 0 0;
 }
-/* line 128, ../scss/curemint/_shoppingcart.scss */
+/* line 135, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .views-field-edit-quantity .form-type-number {
   display: inline-block;
 }
-/* line 132, ../scss/curemint/_shoppingcart.scss */
+/* line 139, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .views-field-edit-quantity .form-number {
   border-color: #ccc;
   box-shadow: none;
@@ -10635,11 +10653,11 @@ p:last-child,
   margin-left: 5px;
   padding: 0 5px 0 15px;
 }
-/* line 144, ../scss/curemint/_shoppingcart.scss */
+/* line 151, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .views-field-total-price__number {
   font-size: 1rem;
 }
-/* line 150, ../scss/curemint/_shoppingcart.scss */
+/* line 157, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .form-actions .btn-default {
   background-image: linear-gradient(to bottom, #0089dd, #0069c4);
   border: 0;
@@ -10651,7 +10669,7 @@ p:last-child,
   text-align: center;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 }
-/* line 162, ../scss/curemint/_shoppingcart.scss */
+/* line 169, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .form-actions .form-submit {
   font-size: 0.9375rem;
   height: 40px;
@@ -10659,19 +10677,78 @@ p:last-child,
   width: 200px;
 }
 
-/* line 30, ../scss/style.scss */
+/* line 1, ../scss/curemint/_headerbanner.scss */
+.navbar-default {
+  margin-bottom: 0;
+}
+
+/* line 5, ../scss/curemint/_headerbanner.scss */
+.view-advertisement-banner {
+  position: relative;
+}
+/* line 8, ../scss/curemint/_headerbanner.scss */
+.view-advertisement-banner .advertisement-banner-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+}
+/* line 15, ../scss/curemint/_headerbanner.scss */
+.view-advertisement-banner .advertisement-banner-content {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  left: 0;
+  padding-left: 191px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* line 28, ../scss/curemint/_headerbanner.scss */
+.banner-title {
+  color: #323439;
+  font-family: RalewayRegular;
+  font-size: 2.5rem;
+}
+/* line 34, ../scss/curemint/_headerbanner.scss */
+.banner-subtitle {
+  color: #323439;
+  font-family: RalewayRegular;
+  font-size: 1.5rem;
+  padding-bottom: 16px;
+  padding-top: 3px;
+}
+/* line 42, ../scss/curemint/_headerbanner.scss */
+.banner-link a {
+  background-image: linear-gradient(to bottom, #0089dd, #0069c4);
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  color: #fff;
+  display: inline-block;
+  font-family: SFProText;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 50px;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  width: 220px;
+}
+
+/* line 31, ../scss/style.scss */
 :root {
   font-size: 1rem;
 }
 
-/* line 34, ../scss/style.scss */
+/* line 35, ../scss/style.scss */
 html {
   font-size: 100%;
   position: relative;
   min-height: 100%;
 }
 
-/* line 40, ../scss/style.scss */
+/* line 41, ../scss/style.scss */
 body {
   color: #7f7f7f;
   font-family: Helvetica;
@@ -10679,17 +10756,17 @@ body {
   margin-top: 9px;
 }
 
-/* line 47, ../scss/style.scss */
+/* line 48, ../scss/style.scss */
 * {
   outline: none;
 }
 
-/* line 51, ../scss/style.scss */
+/* line 52, ../scss/style.scss */
 h1 {
   font-family: RalewayMedium;
 }
 
-/* line 55, ../scss/style.scss */
+/* line 56, ../scss/style.scss */
 h2 {
   font-family: RalewayMedium;
   font-size: 1.25rem;
@@ -10698,7 +10775,7 @@ h2 {
   color: #4a4a4a;
 }
 
-/* line 60, ../scss/style.scss */
+/* line 61, ../scss/style.scss */
 .view-frontpage {
   display: none;
 }

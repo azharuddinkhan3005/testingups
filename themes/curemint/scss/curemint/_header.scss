@@ -5,6 +5,10 @@
   .logo {
     padding-top: 9px;
 
+    &__img {
+      margin-top: 5px;
+    }
+
     .navbar-toggle {
       border: 0;
       display: inline-block;

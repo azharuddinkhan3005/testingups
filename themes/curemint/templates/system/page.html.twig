@@ -103,6 +103,13 @@
   {% endblock %}
 {% endif %}
 
+{# Advertisement Banner #}
+{% if page.advertisement_banner %}
+ {% block advertisement_banner %}
+     {{ page.advertisement_banner }}
+ {% endblock %}
+{% endif %}
+
 {# Main #}
 {% block main %}
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
