@@ -3,6 +3,9 @@
 namespace Drupal\cart_icon_popup\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
+use Drupal\cart_icon_popup\CuremintTotalSummary;
+use Symfony\Component\DependencyInjection\ContainerInterface;
+use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 
 /**
  * Provides a 'header' block.
@@ -10,58 +13,54 @@ use Drupal\Core\Block\BlockBase;
  * @Block(
  *   id = "custom_header",
  *   admin_label = @Translation("Custom Header Block"),
- *
  * )
  */
-class CustomHeader extends BlockBase {
+class CustomHeader extends BlockBase implements ContainerFactoryPluginInterface {
+
+  /**
+   * The Curemint Total Summary service object.
+   *
+   * @var \Drupal\cart_icon_popup\CuremintTotalSummary
+   */
+  protected $curemintTotalSummary;
+
+  /**
+   * Constructor of the class.
+   *
+   * @param array $configuration
+   *   A configuration array containing information about the plugin instance.
+   * @param string $plugin_id
+   *   The plugin_id for the plugin instance.
+   * @param mixed $plugin_definition
+   *   The plugin implementation definition.
+   * @param \Drupal\cart_icon_popup\CuremintTotalSummary $curemint_total_summary
+   *   The curemint total summary service object.
+   */
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, CuremintTotalSummary $curemint_total_summary) {
+    parent::__construct($configuration, $plugin_id, $plugin_definition);
+
+    $this->curemintTotalSummary = $curemint_total_summary;
+  }
+
   /**
    * {@inheritdoc}
    */
-  public function getItemCount(){
-    //$cart_manager = \Drupal::service('Drupal\commerce_product\Entity\ProductVariation');
-   $store_id = 1;
-   //$current_store = \Drupal::service('commerce_store.current_store');
-   $order_type = 'default';
-   $cart_manager = \Drupal::service('commerce_cart.cart_manager');
-   $cart_provider = \Drupal::service('commerce_cart.cart_provider');
-   $entity_manager = \Drupal::entityManager();
-   $store = $entity_manager->getStorage('commerce_store')->load($store_id);
-   //$store = $current_store->getStore();
-   $cart = $cart_provider->getCart($order_type, $store);
-   $items_count = count($cart-> getItems());
-
-   return $items_count;
+  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
+    return new static(
+      $configuration,
+      $plugin_id,
+      $plugin_definition,
+      $container->get('cart_icon_popup.order_total_summary')
+    );
   }
+
   public function build() {
-    $store_id = 1;
-    $items_count = $savings = 0;
-    //$current_store = \Drupal::service('commerce_store.current_store');
-    $order_type = 'default';
-    $cart_manager = \Drupal::service('commerce_cart.cart_manager');
-    $cart_provider = \Drupal::service('commerce_cart.cart_provider');
-    $entity_manager = \Drupal::entityManager();
-    $store = $entity_manager->getStorage('commerce_store')->load($store_id);
-    //$store = $current_store->getStore();
-    $cart = $cart_provider->getCart($order_type, $store);
-    if ($cart){
-      $items = $cart-> getItems();
-      $items_count = count($items);
-      $total_formulary_price = ($cart->total_price->number);
-      $total_msrp_price = NULL;
-      foreach($items as $item){
-        $quantity = $item->getQuantity();
-        $msrp_price = ($item->getPurchasedEntity()->field_msrp_price->number);
-        if ($quantity && $msrp_price) {
-          $total_msrp_price += $quantity * $msrp_price;
-        }
-      }
-      $savings = ($total_msrp_price - $total_formulary_price);
-    }
-    return array(
+    $totals = $this->curemintTotalSummary->buildTotals();
+    return [
       '#title' => 'Custom Header',
       '#theme' => 'cart_icon_popup',
-      '#items_count' => $items_count,
-      '#savings' => $savings
-    );
+      '#items_count' => $totals['quantity'],
+      '#savings' => $totals['savings'],
+    ];
   }
 }

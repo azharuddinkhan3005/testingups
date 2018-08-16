@@ -3,3 +3,6 @@ services:
     class: Drupal\cart_icon_popup\Routing\RouteSubscriber
     tags:
       - { name: event_subscriber }
+  cart_icon_popup.order_total_summary:
+    class: Drupal\cart_icon_popup\CuremintTotalSummary
+    arguments: ['@entity_type.manager', '@commerce_cart.cart_provider', '@commerce_price.currency_formatter']

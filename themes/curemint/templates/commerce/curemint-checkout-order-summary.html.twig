@@ -1,0 +1,8 @@
+<div class="totals">
+  {% for total in totals %}
+    <div class="total_element">
+      <span class="total_element_label">{{ total.label }}:</span>
+      <span class="total_element_value">{{ total.value }}</span>
+    </div>
+  {% endfor %}
+</div>
