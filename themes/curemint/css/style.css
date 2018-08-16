@@ -10616,34 +10616,35 @@ p:last-child,
 /* line 107, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .field--name-field-packaging-details {
   color: #7f7f7f;
+  display: inline-block;
   font-weight: normal;
   padding: 10px 0 0;
 }
-/* line 113, ../scss/curemint/_shoppingcart.scss */
+/* line 114, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .field--name-field-manufacturer-sku {
   color: #7f7f7f;
   display: inline-block;
   font-weight: normal;
   padding: 10px 5px 0;
 }
-/* line 120, ../scss/curemint/_shoppingcart.scss */
+/* line 121, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .field--name-field-distributor {
   color: #7f7f7f;
   display: inline-block;
   font-weight: normal;
   padding: 10px 0 0;
 }
-/* line 127, ../scss/curemint/_shoppingcart.scss */
+/* line 128, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .field--name-price {
   color: #7f7f7f;
   font-weight: normal;
   padding: 10px 0 0;
 }
-/* line 135, ../scss/curemint/_shoppingcart.scss */
+/* line 136, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .views-field-edit-quantity .form-type-number {
   display: inline-block;
 }
-/* line 139, ../scss/curemint/_shoppingcart.scss */
+/* line 140, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .views-field-edit-quantity .form-number {
   border-color: #ccc;
   box-shadow: none;
@@ -10653,11 +10654,11 @@ p:last-child,
   margin-left: 5px;
   padding: 0 5px 0 15px;
 }
-/* line 151, ../scss/curemint/_shoppingcart.scss */
+/* line 152, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .views-field-total-price__number {
   font-size: 1rem;
 }
-/* line 157, ../scss/curemint/_shoppingcart.scss */
+/* line 158, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .form-actions .btn-default {
   background-image: linear-gradient(to bottom, #0089dd, #0069c4);
   border: 0;
@@ -10669,7 +10670,7 @@ p:last-child,
   text-align: center;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 }
-/* line 169, ../scss/curemint/_shoppingcart.scss */
+/* line 170, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .form-actions .form-submit {
   font-size: 0.9375rem;
   height: 40px;
