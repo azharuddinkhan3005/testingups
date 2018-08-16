@@ -2,6 +2,7 @@
 
 namespace Drupal\cart_icon_popup\Plugin\views\area;
 
+use Drupal\cart_icon_popup\CuremintTotalSummary;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\views\Plugin\views\area\AreaPluginBase;
@@ -25,6 +26,13 @@ class CuremintOrderTotal extends AreaPluginBase {
   protected $orderStorage;
 
   /**
+   * The Curemint Total Summary service object.
+   *
+   * @var \Drupal\cart_icon_popup\CuremintTotalSummary
+   */
+  protected $curemintTotalSummary;
+
+  /**
    * Constructs a new CuremintOrderTotal instance.
    *
    * @param array $configuration
@@ -35,11 +43,14 @@ class CuremintOrderTotal extends AreaPluginBase {
    *   The plugin implementation definition.
    * @param \Drupal\Core\Entity\EntityTypeManagerInterface $entity_type_manager
    *   The entity type manager.
+   * @param \Drupal\cart_icon_popup\CuremintTotalSummary $curemint_total_summary
+   *   The total summary service object.
    */
-  public function __construct(array $configuration, $plugin_id, $plugin_definition, EntityTypeManagerInterface $entity_type_manager) {
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, EntityTypeManagerInterface $entity_type_manager, CuremintTotalSummary $curemint_total_summary) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
 
     $this->orderStorage = $entity_type_manager->getStorage('commerce_order');
+    $this->curemintTotalSummary = $curemint_total_summary;
   }
 
   /**
@@ -50,7 +61,8 @@ class CuremintOrderTotal extends AreaPluginBase {
       $configuration,
       $plugin_id,
       $plugin_definition,
-      $container->get('entity_type.manager')
+      $container->get('entity_type.manager'),
+      $container->get('cart_icon_popup.order_total_summary')
     );
   }
 
@@ -77,32 +89,13 @@ class CuremintOrderTotal extends AreaPluginBase {
           continue;
         }
         if ($order = $this->orderStorage->load($argument->getValue())) {
-            $store_id = 1;
-            $order_type = 'default';
-            $cart_provider = \Drupal::service('commerce_cart.cart_provider');
-            $entity_manager = \Drupal::entityManager();
-            $store = $entity_manager->getStorage('commerce_store')->load($store_id);
-            $cart = $cart_provider->getCart($order_type, $store);
-            if ($cart) {
-              $items = $cart->getItems();
-              $total_formulary_price = ($cart->total_price->number);
-              $total_msrp_price = NULL;
-              foreach ($items as $item) {
-                $quantity = $item->getQuantity();
-                $msrp_price = ($item->getPurchasedEntity()->field_msrp_price->number);
-                if ($quantity && $msrp_price) {
-                  $total_msrp_price += $quantity * $msrp_price;
-                }
-              }
-              $savings = ($total_msrp_price - $total_formulary_price);
-            }
-
-            return [
-              '#title' => 'Custom Header',
-              '#theme' => 'curemint_order_total_summary',
-              '#savings' => $savings,
-              '#subtotal' => (float)$total_formulary_price,
-            ];
+          $totals = $this->curemintTotalSummary->buildTotals();
+          return [
+            '#title' => 'Custom Header',
+            '#theme' => 'curemint_order_total_summary',
+            '#savings' => $totals['savings'],
+            '#subtotal' => $totals['subtotal'],
+          ];
         }
       }
     }

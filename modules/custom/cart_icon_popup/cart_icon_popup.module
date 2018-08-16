@@ -8,7 +8,12 @@ use Drupal\views\ViewExecutable;
 function cart_icon_popup_theme() {
   return array(
     'cart_icon_popup' => [
-      'variables' => ['title' => NULL, 'link' => NULL, 'items_count' => NULL, 'savings' => NULL],
+      'variables' => [
+        'title' => NULL,
+        'link' => NULL,
+        'items_count' => NULL,
+        'savings' => NULL,
+      ],
       'template' => 'header',
     ],
     'curemint_order_total_summary' => [
@@ -19,6 +24,12 @@ function cart_icon_popup_theme() {
         'subtotal' => NULL,
       ],
       'template' => 'curemint-order-total-summary',
+    ],
+    'curemint_checkout_order_summary' => [
+      'variables' => [
+        'totals' => NULL,
+      ],
+      'template' => 'curemint-checkout-order-summary',
     ],
   );
 }
