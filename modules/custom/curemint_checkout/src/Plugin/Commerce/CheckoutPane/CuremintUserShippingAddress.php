@@ -9,9 +9,9 @@ use Drupal\checkout_pane\Plugin\Commerce\CheckoutPane\User;
 
 /**
  * @CommerceCheckoutPane(
- *  id = "custom_user_address",
- *  label = @Translation("Custom User Address"),
- *  admin_label = @Translation("Custom User Address"),
+ *  id = "curemint_user_address",
+ *  label = @Translation("Curemint User Address"),
+ *  admin_label = @Translation("Curemint User Address"),
  * )
  */
 class CuremintUserShippingAddress extends CheckoutPaneBase implements CheckoutPaneInterface {
@@ -33,7 +33,7 @@ class CuremintUserShippingAddress extends CheckoutPaneBase implements CheckoutPa
     $user_address = $address_line1 . $address_line2 . ' ' . $city . ' ' . $state . ' ' . $zip;
     $number = $user->field_number->value;
     $pane_form['message'] = [
-      '#markup' => '<div>Curemint customer shipping address here</div>',
+      '#markup' => '<div>' . $user_address . '</div>',
     ];
     return $pane_form;
   }
