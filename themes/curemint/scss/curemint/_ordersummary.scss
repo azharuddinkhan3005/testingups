@@ -1,0 +1,24 @@
+.layout-region-checkout-secondary {
+  border: solid 1px $gainsborocolor;
+  border-radius: 4px;
+  padding: 30px 20px;
+}
+
+.total {
+  &__element {
+    border-bottom: 1px solid $culturedcolor;
+    clear: both;
+    color: $graycolor;
+    font-size: rem-calc(15px);
+    line-height: rem-calc(25px);
+    overflow: hidden;
+    padding: 2px 0;
+
+    &-value {
+      float: right;
+      font-family: $helvetica-b;
+      font-weight: bold;
+      text-align: right;
+    }
+  }
+}

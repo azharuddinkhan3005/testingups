@@ -90,3 +90,13 @@ $rem-base: 16px !default;
   margin-bottom: 18px;
   color: $quartzcolor;
 }
+
+@mixin heading-3 {
+  color: $quartzcolor;
+  font-family: $raleway-r;
+  font-size: rem-calc(20px);  
+  line-height: rem-calc(20px);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 33px;
+}
