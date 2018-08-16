@@ -27,6 +27,7 @@
 @import 'curemint/header-navbar';
 @import 'curemint/shoppingcart';
 @import 'curemint/headerbanner';
+@import 'curemint/ordersummary';
 
 :root {
   font-size: rem-calc(16);
@@ -34,8 +35,8 @@
 
 html {
   @include rem-base;
-  position: relative;
   min-height: 100%;
+  position: relative;
 }
 
 body {
@@ -55,6 +56,10 @@ h1 {
 
 h2 {
   @include heading-2;
+}
+
+h3 {
+  @include heading-3;
 }
 
 // home page default content hide

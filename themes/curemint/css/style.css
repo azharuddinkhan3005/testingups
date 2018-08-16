@@ -10738,19 +10738,44 @@ p:last-child,
   width: 220px;
 }
 
-/* line 31, ../scss/style.scss */
+/* line 1, ../scss/curemint/_ordersummary.scss */
+.layout-region-checkout-secondary {
+  border: solid 1px #dbdbdb;
+  border-radius: 4px;
+  padding: 30px 20px;
+}
+
+/* line 8, ../scss/curemint/_ordersummary.scss */
+.total__element {
+  border-bottom: 1px solid #f5f5f5;
+  clear: both;
+  color: #7f7f7f;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  overflow: hidden;
+  padding: 2px 0;
+}
+/* line 17, ../scss/curemint/_ordersummary.scss */
+.total__element-value {
+  float: right;
+  font-family: HelveticaBold;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* line 32, ../scss/style.scss */
 :root {
   font-size: 1rem;
 }
 
-/* line 35, ../scss/style.scss */
+/* line 36, ../scss/style.scss */
 html {
   font-size: 100%;
-  position: relative;
   min-height: 100%;
+  position: relative;
 }
 
-/* line 41, ../scss/style.scss */
+/* line 42, ../scss/style.scss */
 body {
   color: #7f7f7f;
   font-family: Helvetica;
@@ -10758,17 +10783,17 @@ body {
   margin-top: 9px;
 }
 
-/* line 48, ../scss/style.scss */
+/* line 49, ../scss/style.scss */
 * {
   outline: none;
 }
 
-/* line 52, ../scss/style.scss */
+/* line 53, ../scss/style.scss */
 h1 {
   font-family: RalewayMedium;
 }
 
-/* line 56, ../scss/style.scss */
+/* line 57, ../scss/style.scss */
 h2 {
   font-family: RalewayMedium;
   font-size: 1.25rem;
@@ -10778,6 +10803,17 @@ h2 {
 }
 
 /* line 61, ../scss/style.scss */
+h3 {
+  color: #4a4a4a;
+  font-family: RalewayRegular;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 33px;
+}
+
+/* line 66, ../scss/style.scss */
 .view-frontpage {
   display: none;
 }
