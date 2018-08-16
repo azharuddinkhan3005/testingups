@@ -1,0 +1,6 @@
+name: Custom Checkout Pane
+type: module
+description: 'Displays the user address on the checkout page.'
+package: Curemint
+core: '8.x'
+project: 'curemint_checkout'

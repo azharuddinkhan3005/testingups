@@ -5,6 +5,7 @@ dependencies:
   module:
     - cart_icon_popup
     - commerce_payment
+    - curemint_checkout
 _core:
   default_config_hash: wwkDVBiXUqSzRifJbb71ajFBklJdNJ_DgS67IF-_qgY
 id: default
