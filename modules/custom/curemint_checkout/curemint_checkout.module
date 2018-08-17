@@ -4,3 +4,21 @@
  * @file
  * Defines functionality to list the products w.r.t suppliers..
  */
+
+function curemint_checkout_field_widget_form_alter(&$element, \Drupal\Core\Form\FormStateInterface $form_state, $context) {
+
+  if(isset($context['form']['#id'])) {
+    if ($context['form']['#id'] === 'edit-payment-information-billing-information') {
+      die('here');
+      // load connected user
+      $user = User::load(\Drupal::currentUser()->id());
+      // fill billing info fields with user fields values
+      $element['address']['#default_value']['organization'] = $user->get('field_nom_de_l_etablissement')->value;
+      $element['address']['#default_value']['address_line1'] = $user->get('field_adresse')->value;
+      $element['address']['#default_value']['address_line2'] = $user->get('field_complement_d_adresse')->value;
+      $element['address']['#default_value']['postal_code'] = $user->get('field_code_postal')->value;
+      $element['address']['#default_value']['locality'] = $user->get('field_ville')->value;
+
+    }
+  }
+}

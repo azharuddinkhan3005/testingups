@@ -16,7 +16,7 @@ class CuremintTotalSummary {
   /**
    * Order Type defaults to 'default'.
    */
-  const ORDER_TYPE = 'default';
+  const ORDER_TYPE = 'curemint_order';
 
   /**
    * The store storage.

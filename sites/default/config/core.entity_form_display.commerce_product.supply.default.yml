@@ -66,13 +66,13 @@ content:
     type: inline_entity_form_complex
     weight: 4
     settings:
+      form_mode: default
       override_labels: true
       label_singular: variation
       label_plural: variations
-      form_mode: default
+      allow_new: true
       collapsible: false
       collapsed: false
-      allow_new: true
       allow_existing: false
       match_operator: CONTAINS
       allow_duplicate: false
