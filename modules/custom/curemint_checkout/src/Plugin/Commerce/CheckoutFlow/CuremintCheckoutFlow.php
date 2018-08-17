@@ -33,7 +33,12 @@ class CuremintCheckoutFlow extends CheckoutFlowWithPanesBase {
          'previous_label' => $this->t('Go back'),
          'has_sidebar' => TRUE,
        ],
-     ] + parent::getSteps();
+       'complete' => [
+         'label' => $this->t('Complete'),
+         'next_label' => $this->t('Complete checkout'),
+         'has_sidebar' => FALSE,
+       ],
+     ];
    }
 
 }
