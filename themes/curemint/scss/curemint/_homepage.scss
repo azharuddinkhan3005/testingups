@@ -47,7 +47,6 @@
     display: -moz-box;
     font-family: $helvetica-b;
     font-size: rem-calc(14);
-    font-weight: bold;
     -moz-line-clamp: 2;
     -webkit-line-clamp: 2;
     line-height: rem-calc(20);
@@ -75,7 +74,7 @@
     font-size: rem-calc(14);
     line-height: rem-calc(48);
     margin: 0;
-    padding: 0 20px;
+    padding: 0 15px;
     text-transform: uppercase;
     vertical-align: top;
   }
@@ -95,7 +94,7 @@
     font-size: rem-calc(16);
     height: 50px;
     padding: 0 5px 0 15px;
-    width: 77px;
+    width: 60px;
   }
 
   .form-actions {
