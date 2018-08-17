@@ -1,0 +1,78 @@
+// checkout nav bar styling
+.checkout-progress {
+  margin-bottom: 30px;
+  padding: 15px 0 0;
+
+  &--step {
+    color: $spanishgraycolor;
+    float: left;
+    font-family: $helvetica-r;
+    font-size: rem-calc(15px);
+    line-height: rem-calc(20px);
+    position: relative;
+    width: 20%;
+
+    &::before {
+      background-color: $culturedcolor;
+      border-radius: 40px;
+      color: $quartzcolor;
+      content: counter(checkout-progress)'';
+      display: inline-block;
+      height: 30px;
+      line-height: 30px;
+      margin-right: 8px;
+      text-align: center;
+      vertical-align: middle;
+      width: 30px;
+    }
+
+    &::after {
+      background-color: $culturedcolor;
+      bottom: -20px;
+      content: '';
+      height: 6px;
+      left: 0;
+      position: absolute;
+      right: 0;
+      width: 100%;
+    }
+
+    &:first-child::after {
+      border-radius: 4px 0 0 4px;
+    }
+
+    &:last-child::after {
+      border-radius: 0 4px 4px 0;
+    }
+  }
+
+  &--step__current {
+    color: $quartzcolor;
+    font-weight: normal;
+
+    &::before {
+      background-color: $prussianbluecolor;
+      color: $whitecolor;
+    }
+
+    &::after {
+      background-color: $prussianbluecolor;
+    }
+  }
+
+  &--step__previous {
+
+    &::before {
+      background-color: $applecolor;
+      background-image: url('../images/tick.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      color: $whitecolor;
+      content: '';
+    }
+
+    &::after {
+      background-color: $applecolor;
+    }
+  }
+}

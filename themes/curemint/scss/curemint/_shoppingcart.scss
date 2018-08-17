@@ -1,9 +1,8 @@
 .page-header {
   border: 0;
   color: $quartzcolor;
-  font-family: $raleway-r;
+  font-family: $helvetica-r;
   font-size: rem-calc(20px);
-  font-weight: 600;
   padding-top: 30px;
   text-transform: uppercase;
 }
@@ -49,7 +48,7 @@
     border: 0;
     box-shadow: 0 2px 2px 0 $lightblackcolor;
     color: $whitecolor;
-    font-family: $sftext;
+    font-family: $helvetica-r;
     font-size: rem-calc(15px);
     font-weight: bold;
     height: 40px;
@@ -89,8 +88,7 @@
 
   .field {
     color: $quartzcolor;
-    font-family: $sftext;
-    font-weight: bold;
+    font-family: $helvetica-b;
 
     &--type-image {
       float: left;
@@ -107,27 +105,27 @@
     &--name-field-packaging-details {
       color: $graycolor;
       display: inline-block;
-      font-weight: normal;
+      font-family: $helvetica-r;
       padding: 10px 0 0;
     }
 
     &--name-field-manufacturer-sku {
       color: $graycolor;
       display: inline-block;
-      font-weight: normal;
+      font-family: $helvetica-r;
       padding: 10px 5px 0;
     }
 
     &--name-field-distributor {
       color: $graycolor;
       display: inline-block;
-      font-weight: normal;
+      font-family: $helvetica-r;
       padding: 10px 0 0;
     }
 
     &--name-price {
       color: $graycolor;
-      font-weight: normal;
+      font-family: $helvetica-r;
       padding: 10px 0 0;
     }
   }
@@ -161,8 +159,7 @@
       box-shadow: 0 2px 2px 0 $lightblackcolor;
       color: $whitecolor;
       display: none;
-      font-family: $sftext;
-      font-weight: bold;
+      font-family: $helvetica-b;
       text-align: center;
       text-shadow: 0 1px 1px $lightgraycolor;
     }
