@@ -12,7 +12,7 @@ dependencies:
     - curemint
 third_party_settings:
   block_class:
-    classes: 'col-md-12 shop-supplier'
+    classes: 'shop-supplier hide'
 id: views_block__shop_by_supplier_block_1
 theme: curemint
 region: content

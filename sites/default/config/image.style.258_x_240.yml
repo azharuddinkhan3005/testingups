@@ -1,0 +1,14 @@
+uuid: da2fa3fa-0f16-45ef-b6ae-f7f7681e856c
+langcode: en
+status: true
+dependencies: {  }
+name: 258_x_240
+label: '258 X 240'
+effects:
+  39c8c3ac-8ed9-4bef-b4cd-a87e698739c0:
+    uuid: 39c8c3ac-8ed9-4bef-b4cd-a87e698739c0
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 258
+      height: 240

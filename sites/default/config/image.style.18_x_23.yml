@@ -1,0 +1,14 @@
+uuid: 9635efc1-c71d-43fe-b1b9-2bc0017bf3db
+langcode: en
+status: true
+dependencies: {  }
+name: 18_x_23
+label: '18 X 23'
+effects:
+  924c9184-5182-4a36-bf81-ee4fcecbd9c8:
+    uuid: 924c9184-5182-4a36-bf81-ee4fcecbd9c8
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 18
+      height: 23

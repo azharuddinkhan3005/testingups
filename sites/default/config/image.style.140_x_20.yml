@@ -1,0 +1,14 @@
+uuid: 27c6d632-0dbf-4265-b0b9-ec89bbe85781
+langcode: en
+status: true
+dependencies: {  }
+name: 140_x_20
+label: '140 X 20'
+effects:
+  bac0d3b1-a2a8-4a6f-8c22-12631bb7675b:
+    uuid: bac0d3b1-a2a8-4a6f-8c22-12631bb7675b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 140
+      height: 20

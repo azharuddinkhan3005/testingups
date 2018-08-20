@@ -10,7 +10,7 @@ dependencies:
     - field.storage.commerce_product_variation.field_msrp_price
     - field.storage.commerce_product_variation.field_packaging_details
     - field.storage.commerce_product_variation.field_product_images
-    - image.style.large
+    - image.style.258_x_240
   module:
     - commerce
     - commerce_price
@@ -186,7 +186,7 @@ display:
           click_sort_column: target_id
           type: image_url
           settings:
-            image_style: large
+            image_style: 258_x_240
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -666,7 +666,7 @@ display:
           plugin_id: standard
       arguments: {  }
       display_extenders: {  }
-      css_class: 'col-md-12 most-purchased most-purchased-listing'
+      css_class: ''
     cache_metadata:
       max-age: -1
       contexts:
