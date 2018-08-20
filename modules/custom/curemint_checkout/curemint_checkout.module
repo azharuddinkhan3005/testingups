@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * @file
+ * Defines Custom checkout flow for Curemint.
+ */
+
+use \Drupal\user\Entity\User;
+use \Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_field_widget_form_alter().
+ *
+ * Populates the payment information (User adddress) on the checkout page.
+ */
+function curemint_checkout_field_widget_form_alter(&$element, FormStateInterface $form_state, $context) {
+  if (isset($context['form']['#id'])) {
+    if ($context['form']['#id'] === 'edit-payment-information-billing-information') {
+      // Load current user.
+      $user = User::load(\Drupal::currentUser()->id());
+
+      // Provide default values.
+      $element['address']['#default_value'] = $user->field_address->getValue()[0];
+
+      // Change the name, as it is set in another field.
+      $name = explode(' ', $user->field_name->value);
+      $element['address']['#default_value']['given_name'] = $name[0];
+      $element['address']['#default_value']['family_name'] = $name[1];
+    }
+  }
+}

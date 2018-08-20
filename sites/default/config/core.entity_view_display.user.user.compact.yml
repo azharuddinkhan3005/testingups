@@ -4,6 +4,13 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.commerce_remote_id
+    - field.field.user.user.field_address
+    - field.field.user.user.field_headquarter
+    - field.field.user.user.field_hq_details
+    - field.field.user.user.field_name
+    - field.field.user.user.field_number
+    - field.field.user.user.field_regional_office
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:

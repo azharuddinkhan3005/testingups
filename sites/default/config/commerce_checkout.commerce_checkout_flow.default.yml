@@ -5,6 +5,7 @@ dependencies:
   module:
     - cart_icon_popup
     - commerce_payment
+    - curemint_checkout
 _core:
   default_config_hash: wwkDVBiXUqSzRifJbb71ajFBklJdNJ_DgS67IF-_qgY
 id: default
@@ -22,23 +23,26 @@ configuration:
       double_entry: true
       step: order_information
       weight: 1
+    payment_information:
+      step: order_information
+      weight: 3
     review:
       step: review
-      weight: 3
+      weight: 4
     payment_process:
       capture: true
       step: payment
-      weight: 4
+      weight: 5
     completion_message:
       step: complete
-      weight: 5
+      weight: 6
     curemint_order_summary:
       step: _sidebar
-      weight: 6
+      weight: 7
     order_summary:
       view: ''
       step: _disabled
-      weight: 7
-    payment_information:
+      weight: 8
+    curemint_user_address:
       step: order_information
       weight: 2

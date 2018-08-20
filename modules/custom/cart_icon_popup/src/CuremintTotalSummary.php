@@ -84,7 +84,11 @@ class CuremintTotalSummary {
         'subtotal' => $this->currencyFormatter->format($totalFormularyPrice, $totalCurrencyCode),
       ];
     }
-    return [];
+    return [
+      'quantity' => '',
+      'savings' => '',
+      'subtotal' => '',
+    ];
   }
 
 }

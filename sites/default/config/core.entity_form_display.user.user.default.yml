@@ -27,9 +27,13 @@ content:
   account:
     weight: -10
     region: content
+    settings: {  }
+    third_party_settings: {  }
   contact:
     weight: 5
     region: content
+    settings: {  }
+    third_party_settings: {  }
   field_address:
     weight: 8
     settings:
@@ -82,9 +86,13 @@ content:
   language:
     weight: 0
     region: content
+    settings: {  }
+    third_party_settings: {  }
   timezone:
     weight: 6
     region: content
+    settings: {  }
+    third_party_settings: {  }
   user_picture:
     type: image_image
     settings:

@@ -1,7 +1,16 @@
 uuid: b03d2459-d8c8-4a09-a364-8c07d7cf30c2
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - commerce_cart
+    - commerce_checkout
+third_party_settings:
+  commerce_cart:
+    cart_form_view: commerce_cart_form
+    cart_block_view: commerce_cart_block
+  commerce_checkout:
+    checkout_flow: curemint_checkout_flow
 _core:
   default_config_hash: pGvuJjaRPhhEY9oSM5EGsAtKWgGNSA-0aq4RIvd4BBE
 label: Default
