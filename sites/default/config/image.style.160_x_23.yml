@@ -1,0 +1,14 @@
+uuid: 2ddb5052-e79a-4ac8-8d25-0ef9bd107b1c
+langcode: en
+status: true
+dependencies: {  }
+name: 160_x_23
+label: '160 X 23'
+effects:
+  262382c1-1a21-4e3d-b478-8b99785b7bc5:
+    uuid: 262382c1-1a21-4e3d-b478-8b99785b7bc5
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 160
+      height: 23

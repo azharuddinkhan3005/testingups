@@ -1,0 +1,14 @@
+uuid: 06dc8b6a-a05a-4c5e-a102-b92967e13562
+langcode: en
+status: true
+dependencies: {  }
+name: 264_x_264
+label: '264 X 264'
+effects:
+  1a6a6ff9-e5dd-4ad8-bc78-5dabebbc2709:
+    uuid: 1a6a6ff9-e5dd-4ad8-bc78-5dabebbc2709
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 264
+      height: 264
