@@ -2,12 +2,17 @@
 
 /**
  * @file
- * Defines functionality to list the products w.r.t suppliers..
+ * Defines Custom checkout flow for Curemint.
  */
 
 use \Drupal\user\Entity\User;
 use \Drupal\Core\Form\FormStateInterface;
 
+/**
+ * Implements hook_field_widget_form_alter().
+ *
+ * Populates the payment information (User adddress) on the checkout page.
+ */
 function curemint_checkout_field_widget_form_alter(&$element, FormStateInterface $form_state, $context) {
   if (isset($context['form']['#id'])) {
     if ($context['form']['#id'] === 'edit-payment-information-billing-information') {
