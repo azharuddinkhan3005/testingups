@@ -1,0 +1,46 @@
+uuid: 1b807179-bdda-48ab-ae35-02e43a1530c1
+langcode: en
+status: true
+dependencies:
+  module:
+    - cart_icon_popup
+    - commerce_payment
+    - curemint_checkout
+id: curemint_checkout_flow
+label: 'Curemint checkout flow'
+plugin: curemint_checkout_flow
+configuration:
+  display_checkout_progress: true
+  panes:
+    curemint_user_address:
+      step: shipping_address
+      weight: '0'
+    payment_information:
+      step: shipping_address
+      weight: '1'
+    completion_message:
+      step: confirmation
+      weight: '3'
+    curemint_order_summary:
+      step: _sidebar
+      weight: '4'
+    review:
+      step: confirmation
+      weight: '2'
+    contact_information:
+      double_entry: false
+      step: _disabled
+      weight: '5'
+    order_summary:
+      view: ''
+      step: _disabled
+      weight: '6'
+    login:
+      allow_guest_checkout: true
+      allow_registration: false
+      step: _disabled
+      weight: '7'
+    payment_process:
+      capture: true
+      step: _disabled
+      weight: '8'

@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: general
 label: General
-orderItemType: curemint_order_type
+orderItemType: default
 generateTitle: true
 traits: {  }
 locked: false

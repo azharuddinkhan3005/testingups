@@ -29,7 +29,7 @@ class CuremintCheckoutFlow extends CheckoutFlowWithPanesBase {
        ],
        'confirmation' => [
          'label' => $this->t('Confirmation'),
-         'next_label' => $this->t('Continue to confirmation'),
+         'next_label' => $this->t('Complete your order'),
          'previous_label' => $this->t('Go back'),
          'has_sidebar' => TRUE,
        ],
