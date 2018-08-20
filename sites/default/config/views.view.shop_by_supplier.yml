@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_distributor_image
     - field.storage.node.field_punchout_supplier_select
     - field.storage.node.field_punchout_type
+    - image.style.50_x_50
     - node.type.distributor
   module:
     - image
@@ -179,7 +180,7 @@ display:
           click_sort_column: target_id
           type: image_url
           settings:
-            image_style: ''
+            image_style: 50_x_50
           group_column: ''
           group_columns: {  }
           group_rows: true

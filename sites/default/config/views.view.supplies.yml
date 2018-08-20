@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.taxonomy_term.field_main_category_image
-    - image.style.medium
+    - image.style.264_x_264
     - taxonomy.vocabulary.main_categories
   module:
     - image
@@ -115,7 +115,7 @@ display:
           click_sort_column: target_id
           type: image_url
           settings:
-            image_style: medium
+            image_style: 264_x_264
           group_column: ''
           group_columns: {  }
           group_rows: true
