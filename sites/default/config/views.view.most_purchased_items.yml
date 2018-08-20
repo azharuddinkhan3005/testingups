@@ -666,7 +666,7 @@ display:
           plugin_id: standard
       arguments: {  }
       display_extenders: {  }
-      css_class: 'col-md-12 most-purchased most-purchased-listing'
+      css_class: ''
     cache_metadata:
       max-age: -1
       contexts:

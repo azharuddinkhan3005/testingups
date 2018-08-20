@@ -5,10 +5,14 @@ dependencies:
   config:
     - views.view.most_purchased_items
   module:
+    - block_class
     - system
     - views
   theme:
     - curemint
+third_party_settings:
+  block_class:
+    classes: 'most-purchased most-purchased-listing hide'
 id: views_block__most_purchased_items_block_1
 theme: curemint
 region: content

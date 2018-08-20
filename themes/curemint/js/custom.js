@@ -25,6 +25,11 @@ jQuery(document).ready(function() {
      jQuery("#edit-checkout").trigger("click");
      return false;
   });
+
+  // modules show/hide on dom 
+  jQuery('.shop-supplier').removeClass('hide');
+  jQuery('.supplies').removeClass('hide');
+  jQuery('.most-purchased-listing').removeClass('hide');
 });
 
 //sticky footer
