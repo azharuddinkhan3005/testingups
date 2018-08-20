@@ -3,13 +3,9 @@ langcode: en
 status: true
 dependencies:
   module:
-    - block_class
     - commerce_checkout
   theme:
     - curemint
-third_party_settings:
-  block_class:
-    classes: container
 id: checkoutprogress
 theme: curemint
 region: advertisement_banner

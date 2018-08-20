@@ -23,9 +23,8 @@ class CuremintUserShippingAddress extends CheckoutPaneBase implements CheckoutPa
     $user = User::load(\Drupal::currentUser()->id());
 
     $userName = $user->field_name->value;
-    $userAddress = render($user->field_address->view());
+    $userAddress = render($user->field_address->view(['label' => 'hidden']));
     $userPhone = $user->field_number->value;
-
     $pane_form['message'] = [
       '#markup' => '<div>' . $userName . $userAddress . $userPhone . '</div>',
     ];

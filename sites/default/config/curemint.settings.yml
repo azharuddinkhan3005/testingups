@@ -2,8 +2,8 @@ cdn_provider: ''
 _core:
   default_config_hash: _5qrDuRmWmRVjW00si3U1s1NrgrocA4N653EYGRfgEE
 favicon:
-  mimetype: image/x-icon
-  path: themes/curemint/favicon.ico
+  mimetype: image/jpeg
+  path: themes/curemint/favicon.jpg
   url: 'http://localdev.curemint/themes/curemint/favicon.ico'
   use_default: 0
 schemas:
@@ -18,18 +18,6 @@ logo:
   path: themes/curemint/logo.jpg
   url: ''
   use_default: 0
-fluid_container: 0
+fluid_container: 1
 table_responsive: '-1'
 table: ''
-region_wells:
-  custom_header: ''
-  advertisement_banner: ''
-  navigation: ''
-  navigation_collapsible: ''
-  header: ''
-  highlighted: ''
-  help: ''
-  content: ''
-  sidebar_first: ''
-  sidebar_second: well
-  footer: ''
