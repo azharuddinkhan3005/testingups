@@ -32,7 +32,7 @@ class CmPunchoutMessenger {
     switch ($type) {
       case 'ERR_ANON':
         $login_path = Url::fromRoute('user.login')->toString();
-        $message = t('Your are currently not logged in. Click here to <a href="@link">login</a>.', ['@link' => $login_path]);
+        $message = t('You are currently not logged in. Click here to <a href="@link">login</a>.', ['@link' => $login_path]);
         break;
 
       case 'ERR_NOADDR':
