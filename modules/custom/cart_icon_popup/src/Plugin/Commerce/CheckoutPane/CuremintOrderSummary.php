@@ -71,16 +71,16 @@ class CuremintOrderSummary extends CheckoutPaneBase implements CheckoutPaneInter
   public function buildPaneForm(array $pane_form, FormStateInterface $form_state, array &$complete_form) {
     $totals = $this->curemintTotalSummary->buildTotals();
     $total = [
-      'quantity' => [
-        'label' => $this->t('Items'),
-        'value' => $totals['quantity'],
-      ],
       'savings' => [
         'label' => $this->t('Your Savings'),
         'value' => $totals['savings'],
       ],
+      'quantity' => [
+        'label' => $this->t('List item'),
+        'value' => $totals['quantity'],
+      ],
       'subtotal' => [
-        'label' => $this->t('Subtotal'),
+        'label' => $this->t('Estimated Total'),
         'value' => $totals['subtotal'],
       ],
     ];
