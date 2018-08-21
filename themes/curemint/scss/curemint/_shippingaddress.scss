@@ -1,0 +1,53 @@
+.shipping-address {
+  border: solid 1px $antiflashwhitecolor;
+  border-radius: 6px;
+  color: $graycolor;
+  font-family: $helvetica-r;
+  font-size: rem-calc(14px);
+  line-height: rem-calc(25px);
+  padding: 20px;
+  width: 55%;
+
+  .address br {
+    display: none;
+  }
+
+  .organization {
+    color: $quartzcolor;
+    display: block;
+  }
+
+  &:hover {
+    background-color: $bluecolacolor;
+    border-color: $bluecolacolor;
+    color: $whitecolor;
+
+    .organization {
+      color: $whitecolor;
+    }
+  }
+}
+
+.layout-region-checkout-footer {
+  .btn-primary {
+    background-image: linear-gradient(to bottom, $bluecolacolor, $frenchbluecolor);
+    border: 0;
+    box-shadow: 0 2px 2px 0 $lightblackcolor;
+    color: $whitecolor;
+    float: right;
+    font-family: $helvetica-r;
+    font-size: rem-calc(15px);
+    font-weight: bold;
+    height: 40px;
+    margin-right: 0;
+    margin-top: 15px;
+    text-align: center;
+    text-shadow: 0 1px 1px $lightgraycolor;
+    text-transform: uppercase;
+    width: 265px;
+  }
+}
+
+.checkout-pane-payment-information {
+  display: none;
+}

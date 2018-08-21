@@ -10833,19 +10833,74 @@ p:last-child,
   background-color: #5cb85c;
 }
 
-/* line 33, ../scss/style.scss */
+/* line 1, ../scss/curemint/_shippingaddress.scss */
+.shipping-address {
+  border: solid 1px #f0f0f0;
+  border-radius: 6px;
+  color: #7f7f7f;
+  font-family: Helvetica;
+  font-size: 0.875rem;
+  line-height: 1.5625rem;
+  padding: 20px;
+  width: 55%;
+}
+/* line 11, ../scss/curemint/_shippingaddress.scss */
+.shipping-address .address br {
+  display: none;
+}
+/* line 15, ../scss/curemint/_shippingaddress.scss */
+.shipping-address .organization {
+  color: #4a4a4a;
+  display: block;
+}
+/* line 20, ../scss/curemint/_shippingaddress.scss */
+.shipping-address:hover {
+  background-color: #0089dd;
+  border-color: #0089dd;
+  color: #fff;
+}
+/* line 25, ../scss/curemint/_shippingaddress.scss */
+.shipping-address:hover .organization {
+  color: #fff;
+}
+
+/* line 32, ../scss/curemint/_shippingaddress.scss */
+.layout-region-checkout-footer .btn-primary {
+  background-image: linear-gradient(to bottom, #0089dd, #0069c4);
+  border: 0;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  color: #fff;
+  float: right;
+  font-family: Helvetica;
+  font-size: 0.9375rem;
+  font-weight: bold;
+  height: 40px;
+  margin-right: 0;
+  margin-top: 15px;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  width: 265px;
+}
+
+/* line 51, ../scss/curemint/_shippingaddress.scss */
+.checkout-pane-payment-information {
+  display: none;
+}
+
+/* line 34, ../scss/style.scss */
 :root {
   font-size: 1rem;
 }
 
-/* line 37, ../scss/style.scss */
+/* line 38, ../scss/style.scss */
 html {
   font-size: 100%;
   min-height: 100%;
   position: relative;
 }
 
-/* line 43, ../scss/style.scss */
+/* line 44, ../scss/style.scss */
 body {
   color: #7f7f7f;
   font-family: Helvetica;
@@ -10853,17 +10908,17 @@ body {
   margin-top: 9px;
 }
 
-/* line 50, ../scss/style.scss */
+/* line 51, ../scss/style.scss */
 * {
   outline: none;
 }
 
-/* line 54, ../scss/style.scss */
+/* line 55, ../scss/style.scss */
 h1 {
   font-family: Helvetica;
 }
 
-/* line 58, ../scss/style.scss */
+/* line 59, ../scss/style.scss */
 h2 {
   font-family: Helvetica;
   font-size: 1.25rem;
@@ -10872,7 +10927,7 @@ h2 {
   color: #4a4a4a;
 }
 
-/* line 62, ../scss/style.scss */
+/* line 63, ../scss/style.scss */
 h3 {
   color: #4a4a4a;
   font-family: Helvetica;
@@ -10883,7 +10938,7 @@ h3 {
   padding-bottom: 33px;
 }
 
-/* line 67, ../scss/style.scss */
+/* line 68, ../scss/style.scss */
 .view-frontpage {
   display: none;
 }
