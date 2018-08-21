@@ -10186,6 +10186,11 @@ p:last-child,
 }
 
 /* line 7, ../scss/curemint/_slider.scss */
+.slick-track {
+  margin-left: 0;
+}
+
+/* line 11, ../scss/curemint/_slider.scss */
 .slick-prev {
   background: rgba(255, 255, 255, 0.75);
   border: 0;
@@ -10199,7 +10204,7 @@ p:last-child,
   width: 64px;
   z-index: 1;
 }
-/* line 20, ../scss/curemint/_slider.scss */
+/* line 24, ../scss/curemint/_slider.scss */
 .slick-prev::after {
   background-image: url("../images/Dark-Right.png");
   background-position: center;
@@ -10211,7 +10216,7 @@ p:last-child,
   width: 100%;
 }
 
-/* line 33, ../scss/curemint/_slider.scss */
+/* line 37, ../scss/curemint/_slider.scss */
 .slick-next {
   background: rgba(255, 255, 255, 0.75);
   border: 0;
@@ -10225,7 +10230,7 @@ p:last-child,
   width: 64px;
   z-index: 1;
 }
-/* line 46, ../scss/curemint/_slider.scss */
+/* line 50, ../scss/curemint/_slider.scss */
 .slick-next::after {
   background-image: url("../images/Dark-Right.png");
   background-position: center;
