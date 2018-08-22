@@ -38,7 +38,7 @@ class CuremintUserShippingAddress extends CheckoutPaneBase implements CheckoutPa
     }
 
     $pane_form['message'] = [
-      '#markup' => '<div>' . $userName . $userAddress . $userPhone . '</div>',
+      '#markup' => '<div class="shipping-address">' . $userName . $userAddress . $userPhone . '</div>',
     ];
     return $pane_form;
   }
