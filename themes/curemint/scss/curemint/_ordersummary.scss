@@ -1,7 +1,14 @@
-.layout-region-checkout-secondary {
-  border: solid 1px $gainsborocolor;
-  border-radius: 4px;
-  padding: 30px 20px;
+.path-checkout {
+  .layout-region-checkout-secondary {
+    border: solid 1px $gainsborocolor;
+    border-radius: 4px;
+    padding: 30px 20px;
+    width: 304px;
+  }
+
+  .layout-region-checkout-main {
+    width: 72%;
+  }
 }
 
 .total {
