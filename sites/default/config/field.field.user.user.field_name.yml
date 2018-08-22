@@ -11,8 +11,8 @@ field_name: field_name
 entity_type: user
 bundle: user
 label: Name
-description: ''
-required: false
+description: 'Please enter your first name and last name.'
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
