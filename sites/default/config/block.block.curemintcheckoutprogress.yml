@@ -1,0 +1,20 @@
+uuid: 6adc4441-653f-48f0-be12-a0c4be940002
+langcode: en
+status: true
+dependencies:
+  module:
+    - curemint_checkout
+  theme:
+    - curemint
+id: curemintcheckoutprogress
+theme: curemint
+region: advertisement_banner
+weight: 0
+provider: null
+plugin: curemint_commerce_checkout_progress
+settings:
+  id: curemint_commerce_checkout_progress
+  label: 'Curemint Checkout progress'
+  provider: curemint_checkout
+  label_display: '0'
+visibility: {  }

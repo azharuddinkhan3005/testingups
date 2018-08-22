@@ -18,20 +18,20 @@ class CuremintCheckoutFlow extends CheckoutFlowWithPanesBase {
    * {@inheritdoc}
    */
    public function getSteps() {
-     // Note that previous_label and next_label are not the labels
-     // shown on the step itself. Instead, they are the labels shown
-     // when going back to the step, or proceeding to the step.
      return [
        'shipping_address' => [
-         'label' => $this->t('Shipping Address'),
+         'label' => $this->t('1. Shipping Address'),
          'has_sidebar' => TRUE,
-         'previous_label' => $this->t('Go back'),
        ],
        'confirmation' => [
-         'label' => $this->t('Confirmation'),
+         'label' => $this->t('2. Confirmation'),
          'next_label' => $this->t('Continue'),
-         'previous_label' => $this->t('Go back'),
          'has_sidebar' => TRUE,
+       ],
+       'complete' => [
+         'label' => $this->t('3. Complete'),
+         'next_label' => $this->t('Continue'),
+         'has_sidebar' => FALSE,
        ],
      ];
    }
