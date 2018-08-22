@@ -10770,7 +10770,7 @@ p:last-child,
   font-size: 0.9375rem;
   line-height: 1.25rem;
   position: relative;
-  width: 20%;
+  width: 50%;
 }
 /* line 15, ../scss/curemint/_checkout-navbar.scss */
 .checkout-progress--step::before {
