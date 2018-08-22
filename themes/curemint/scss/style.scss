@@ -28,8 +28,9 @@
 @import 'curemint/shoppingcart';
 @import 'curemint/headerbanner';
 @import 'curemint/ordersummary';
-@import 'curemint/checkout-navbar.scss';
-@import 'curemint/shippingaddress.scss';
+@import 'curemint/checkout-navbar';
+@import 'curemint/shippingaddress';
+@import 'curemint/productdetail';
 
 :root {
   font-size: rem-calc(16);

@@ -1,0 +1,103 @@
+// product detail
+.path-product {
+  .page-header {
+    display: none;
+  }
+}
+
+.product-detail {
+  padding-top: 30px;
+
+  label {
+    font-family: $helvetica-r;
+    font-size: rem-calc(15px);
+    font-weight: normal;
+    line-height: rem-calc(25px);
+    margin-bottom: 0;
+  }
+
+  .field {
+    color: $graycolor;
+    font-family: $helvetica-r;
+    font-size: rem-calc(15px);
+    line-height: rem-calc(25px);
+
+    &--name-title {
+      color: $quartzcolor;
+      font-size: rem-calc(20px);
+      padding-bottom: 20px;
+    }
+
+    &--name-field-manufacturer-sku {
+      display: inline-block;
+      padding-right: 5px;
+    }
+
+    &--name-field-manufacturer {
+      display: inline-block;
+      padding-right: 5px;
+    }
+
+    &--name-field-distributor {
+      display: inline-block;
+    }
+
+    &--name-quantity {
+      display: inline-block;
+      float: left;
+    }
+
+    &--name-field-msrp-price {
+      text-decoration: line-through;
+    }
+
+    .control-label {
+      display: block;
+    }
+
+    .form-actions {
+      display: inline-block;
+      padding-left: 20px;
+      padding-top: 25px;
+      vertical-align: bottom;
+    }
+
+    .form-number {
+      border-color: $chinesesilvercolor;
+      box-shadow: none;
+      color: $graycolor;
+      font-size: rem-calc(16px);
+      height: 50px;
+      padding: 0 5px 0 15px;
+      width: 60px;
+    }
+
+    .btn {
+      background: transparent;
+      border: 1px solid $spanishlightgraycolor;
+      border-radius: 3px;
+      box-shadow: none;
+      color: $graycolor;
+      font-family: $helvetica-b;
+      font-size: rem-calc(14px);
+      line-height: rem-calc(48px);
+      margin: 0;
+      padding: 0 15px;
+      text-transform: uppercase;
+      vertical-align: top;
+    }
+  }
+
+  .product-price {
+    padding-top: 10px;
+
+    &--formulary {
+      display: inline-block;
+      width: 25%;
+    }
+
+    &--msrp {
+      display: inline-block;
+    }
+  }
+}
