@@ -26,6 +26,16 @@
       color: $whitecolor;
     }
   }
+
+  &.selected {
+    background-color: $bluecolacolor;
+    border-color: $bluecolacolor;
+    color: $whitecolor;
+
+    .organization {
+      color: $whitecolor;
+    }
+  }
 }
 
 .layout-region-checkout-footer {
