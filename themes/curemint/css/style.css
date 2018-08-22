@@ -10868,8 +10868,18 @@ p:last-child,
 .shipping-address:hover .organization {
   color: #fff;
 }
+/* line 30, ../scss/curemint/_shippingaddress.scss */
+.shipping-address.selected {
+  background-color: #0089dd;
+  border-color: #0089dd;
+  color: #fff;
+}
+/* line 35, ../scss/curemint/_shippingaddress.scss */
+.shipping-address.selected .organization {
+  color: #fff;
+}
 
-/* line 32, ../scss/curemint/_shippingaddress.scss */
+/* line 42, ../scss/curemint/_shippingaddress.scss */
 .layout-region-checkout-footer .btn-primary {
   background-image: linear-gradient(to bottom, #0089dd, #0069c4);
   border: 0;
@@ -10888,7 +10898,7 @@ p:last-child,
   width: 265px;
 }
 
-/* line 51, ../scss/curemint/_shippingaddress.scss */
+/* line 61, ../scss/curemint/_shippingaddress.scss */
 .checkout-pane-payment-information {
   display: none;
 }
