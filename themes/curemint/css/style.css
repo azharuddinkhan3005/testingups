@@ -10893,19 +10893,122 @@ p:last-child,
   display: none;
 }
 
-/* line 34, ../scss/style.scss */
+/* line 3, ../scss/curemint/_productdetail.scss */
+.path-product .page-header {
+  display: none;
+}
+
+/* line 8, ../scss/curemint/_productdetail.scss */
+.product-detail {
+  padding-top: 30px;
+}
+/* line 11, ../scss/curemint/_productdetail.scss */
+.product-detail label {
+  font-family: Helvetica;
+  font-size: 0.9375rem;
+  font-weight: normal;
+  line-height: 1.5625rem;
+  margin-bottom: 0;
+}
+/* line 19, ../scss/curemint/_productdetail.scss */
+.product-detail .field {
+  color: #7f7f7f;
+  font-family: Helvetica;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+}
+/* line 25, ../scss/curemint/_productdetail.scss */
+.product-detail .field--name-title {
+  color: #4a4a4a;
+  font-size: 1.25rem;
+  padding-bottom: 20px;
+}
+/* line 31, ../scss/curemint/_productdetail.scss */
+.product-detail .field--name-field-manufacturer-sku {
+  display: inline-block;
+  padding-right: 5px;
+}
+/* line 36, ../scss/curemint/_productdetail.scss */
+.product-detail .field--name-field-manufacturer {
+  display: inline-block;
+  padding-right: 5px;
+}
+/* line 41, ../scss/curemint/_productdetail.scss */
+.product-detail .field--name-field-distributor {
+  display: inline-block;
+}
+/* line 45, ../scss/curemint/_productdetail.scss */
+.product-detail .field--name-quantity {
+  display: inline-block;
+  float: left;
+}
+/* line 50, ../scss/curemint/_productdetail.scss */
+.product-detail .field--name-field-msrp-price {
+  text-decoration: line-through;
+}
+/* line 54, ../scss/curemint/_productdetail.scss */
+.product-detail .field .control-label {
+  display: block;
+}
+/* line 58, ../scss/curemint/_productdetail.scss */
+.product-detail .field .form-actions {
+  display: inline-block;
+  padding-left: 20px;
+  padding-top: 25px;
+  vertical-align: bottom;
+}
+/* line 65, ../scss/curemint/_productdetail.scss */
+.product-detail .field .form-number {
+  border-color: #ccc;
+  box-shadow: none;
+  color: #7f7f7f;
+  font-size: 1rem;
+  height: 50px;
+  padding: 0 5px 0 15px;
+  width: 60px;
+}
+/* line 75, ../scss/curemint/_productdetail.scss */
+.product-detail .field .btn {
+  background: transparent;
+  border: 1px solid #9e9e9e;
+  border-radius: 3px;
+  box-shadow: none;
+  color: #7f7f7f;
+  font-family: HelveticaBold;
+  font-size: 0.875rem;
+  line-height: 3rem;
+  margin: 0;
+  padding: 0 15px;
+  text-transform: uppercase;
+  vertical-align: top;
+}
+/* line 91, ../scss/curemint/_productdetail.scss */
+.product-detail .product-price {
+  padding-top: 10px;
+}
+/* line 94, ../scss/curemint/_productdetail.scss */
+.product-detail .product-price--formulary {
+  display: inline-block;
+  width: 25%;
+}
+/* line 99, ../scss/curemint/_productdetail.scss */
+.product-detail .product-price--msrp {
+  display: inline-block;
+}
+
+/* line 35, ../scss/style.scss */
 :root {
   font-size: 1rem;
 }
 
-/* line 38, ../scss/style.scss */
+/* line 39, ../scss/style.scss */
 html {
   font-size: 100%;
   min-height: 100%;
   position: relative;
 }
 
-/* line 44, ../scss/style.scss */
+/* line 45, ../scss/style.scss */
 body {
   color: #7f7f7f;
   font-family: Helvetica;
@@ -10913,17 +11016,17 @@ body {
   margin-top: 9px;
 }
 
-/* line 51, ../scss/style.scss */
+/* line 52, ../scss/style.scss */
 * {
   outline: none;
 }
 
-/* line 55, ../scss/style.scss */
+/* line 56, ../scss/style.scss */
 h1 {
   font-family: Helvetica;
 }
 
-/* line 59, ../scss/style.scss */
+/* line 60, ../scss/style.scss */
 h2 {
   font-family: Helvetica;
   font-size: 1.25rem;
@@ -10932,7 +11035,7 @@ h2 {
   color: #4a4a4a;
 }
 
-/* line 63, ../scss/style.scss */
+/* line 64, ../scss/style.scss */
 h3 {
   color: #4a4a4a;
   font-family: Helvetica;
@@ -10943,7 +11046,7 @@ h3 {
   padding-bottom: 33px;
 }
 
-/* line 68, ../scss/style.scss */
+/* line 69, ../scss/style.scss */
 .view-frontpage {
   display: none;
 }

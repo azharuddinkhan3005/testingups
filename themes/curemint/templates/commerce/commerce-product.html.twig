@@ -19,17 +19,25 @@
  * @ingroup themeable
  */
 #}
-
-{{ product.variation_field_product_images }}
-{{ product.title }}
-{{ product.variation_field_manufacturer_sku }}
-{{ product.variation_field_manufacturer }}
-{{ product.variation_field_distributor }}
-{{ product.variation_field_msrp_price }}
-{{ product.variation_price|without('label') }}
-{{ product.variations }}
-
--------------------------
-<article{{ attributes }}>
-  {{- product|without('variation_attributes') -}}
-</article>
+<div class="row product-detail">
+  <div class="col-md-6">
+    {{ product.variation_field_product_images }}
+  </div>
+  <div class="col-md-6">
+    {{ product.title }}
+    {{ product.variation_field_manufacturer_sku }}
+    <label>Manufacture Name:</label>{{ product.variation_field_manufacturer }}
+    <label>Distributor Name:</label>{{ product.variation_field_distributor }}
+    <div class="product-price">
+      <div class="product-price--formulary">
+        <label class="product-price--label">Formulary</label>
+        {{ product.variation_price|without('label') }}
+      </div>
+      <div class="product-price--msrp">
+        <label class="product-price--label">(MSRP)</label>
+        {{ product.variation_field_msrp_price }}
+      </div>
+    </div>
+    {{ product.variations }}
+  </div>
+</div>
