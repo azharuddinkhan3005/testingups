@@ -10748,8 +10748,12 @@ p:last-child,
 .path-checkout .layout-region-checkout-main {
   width: 72%;
 }
+/* line 13, ../scss/curemint/_ordersummary.scss */
+.path-checkout .layout-region-checkout-footer {
+  width: 72%;
+}
 
-/* line 15, ../scss/curemint/_ordersummary.scss */
+/* line 19, ../scss/curemint/_ordersummary.scss */
 .total__element {
   border-bottom: 1px solid #f5f5f5;
   clear: both;
@@ -10759,7 +10763,7 @@ p:last-child,
   overflow: hidden;
   padding: 2px 0;
 }
-/* line 24, ../scss/curemint/_ordersummary.scss */
+/* line 28, ../scss/curemint/_ordersummary.scss */
 .total__element-value {
   float: right;
   font-family: HelveticaBold;
