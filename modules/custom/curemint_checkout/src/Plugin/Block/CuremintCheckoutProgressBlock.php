@@ -94,6 +94,12 @@ class CuremintCheckoutProgressBlock extends BlockBase implements ContainerFactor
     $requested_step_id = $this->routeMatch->getParameter('step');
     $current_step_id = $this->checkoutOrderManager->getCheckoutStepId($order, $requested_step_id);
     $current_step_index = array_search($current_step_id, array_keys($visible_steps));
+
+    // Don't show block on complete step.
+    if ($current_step_id == 'complete') {
+      return [];
+    }
+
     $index = 0;
     foreach ($visible_steps as $step_id => $step_definition) {
       if ($index < $current_step_index) {

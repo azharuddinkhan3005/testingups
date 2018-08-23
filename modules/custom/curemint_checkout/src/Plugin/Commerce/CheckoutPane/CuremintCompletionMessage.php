@@ -41,6 +41,14 @@ class CuremintCompletionMessage extends CuremintConfirmation {
     // Add all other markup from review page.
     $pane_form = parent::buildPaneForm($pane_form, $form_state, $complete_form);
 
+    // Override Items markup and Get order products.
+    /* @var \Drupal\commerce_order\Entity\OrderItem $item */
+    foreach ($this->order->getItems() as $item) {
+      $view_builder = $this->entityTypeManager->getViewBuilder('commerce_product_variation');
+      $storage = $this->entityTypeManager->getStorage('commerce_product_variation');
+      $pane_form['items'][] = $view_builder->view($storage->load($item->getPurchasedEntityId()), 'cart');
+    }
+
     return $pane_form;
   }
 

@@ -9,6 +9,9 @@
  * @ingroup themeable
  */
 #}
+{% if form['#step_id'] == 'complete' %}
+  {{ 'Thank you, Your order has been submitted'|t }}
+{% endif %}
 <div class="layout-checkout-form clearfix">
   <div class="layout-region layout-region-checkout-footer">
     {{ form.actions }}
