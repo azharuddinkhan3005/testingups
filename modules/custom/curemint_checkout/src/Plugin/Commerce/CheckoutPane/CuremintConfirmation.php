@@ -95,19 +95,21 @@ class CuremintConfirmation extends CheckoutPaneBase implements CheckoutPaneInter
     // Get user shipping info.
     $userAttributes = $this->curemintCheckoutHelper->getUserAttributes();
     $pane_form['shipping_address'] = [
-      '#markup' => '<div class="title">' . $this->t('Shipping Address') . '</div><div class="shipping-address">' . implode('', $userAttributes) . '</div>',
+      '#markup' => '<div class="title">' . $this->t('Shipping Address') . '</div><div class="shipping-address-confirm">' . implode('', $userAttributes) . '</div>',
     ];
 
     // Get order total.
     $totals = $this->curemintTotalSummary->buildTotals();
     $pane_form['order_total'] = [
-      '#markup' => $totals['subtotal'],
+      '#markup' => '<div class="order-total">' . $totals['subtotal'] . '</div>',
     ];
 
     // Get cart products.
     $carts = $this->commerceCartProvider->getCarts();
     /* @var \Drupal\commerce_order\Entity\Order $cart */
     foreach ($carts as $cart) {
+      $pane_form['items']['#prefix'] = '<div class="cart-items">';
+      $pane_form['items']['#suffix'] = '</div>';
       /* @var \Drupal\commerce_order\Entity\OrderItem $item */
       foreach ($cart->getItems() as $item) {
         $view_builder = $this->entityTypeManager->getViewBuilder('commerce_product_variation');
