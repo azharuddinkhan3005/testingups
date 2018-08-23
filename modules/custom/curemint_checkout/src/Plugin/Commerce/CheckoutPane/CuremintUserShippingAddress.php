@@ -5,10 +5,12 @@ namespace Drupal\curemint_checkout\Plugin\Commerce\CheckoutPane;
 use Drupal\commerce_checkout\Plugin\Commerce\CheckoutPane\CheckoutPaneInterface;
 use Drupal\commerce_checkout\Plugin\Commerce\CheckoutPane\CheckoutPaneBase;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\user\Entity\User;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Drupal\Core\Url;
-use Drupal\Core\Messenger\MessengerInterface;
+use Drupal\curemint_checkout\CuremintCheckoutHelper;
+use Drupal\commerce_checkout\Plugin\Commerce\CheckoutFlow\CheckoutFlowInterface;
+use Drupal\Core\Entity\EntityTypeManagerInterface;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * @CommerceCheckoutPane(
@@ -20,20 +22,56 @@ use Drupal\Core\Messenger\MessengerInterface;
 class CuremintUserShippingAddress extends CheckoutPaneBase implements CheckoutPaneInterface {
 
   /**
+   * The Curemint checkout helper service object.
+   *
+   * @var \Drupal\curemint_checkout\CuremintCheckoutHelper
+   */
+  protected $curemintCheckoutHelper;
+
+  /**
+   * Constructs a new CheckoutPaneBase object.
+   *
+   * @param array $configuration
+   *   A configuration array containing information about the plugin instance.
+   * @param string $plugin_id
+   *   The plugin_id for the plugin instance.
+   * @param mixed $plugin_definition
+   *   The plugin implementation definition.
+   * @param \Drupal\commerce_checkout\Plugin\Commerce\CheckoutFlow\CheckoutFlowInterface $checkout_flow
+   *   The parent checkout flow.
+   * @param \Drupal\Core\Entity\EntityTypeManagerInterface $entity_type_manager
+   *   The entity type manager.
+   * @param \Drupal\curemint_checkout\curemintCheckoutHelper $curemint_checkout_helper
+   *   The curemint checkout helper service object.
+   */
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, CheckoutFlowInterface $checkout_flow, EntityTypeManagerInterface $entity_type_manager, CuremintCheckoutHelper $curemint_checkout_helper) {
+    parent::__construct($configuration, $plugin_id, $plugin_definition, $checkout_flow, $entity_type_manager);
+
+    $this->curemintCheckoutHelper = $curemint_checkout_helper;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition, CheckoutFlowInterface $checkout_flow = NULL) {
+    return new static(
+      $configuration,
+      $plugin_id,
+      $plugin_definition,
+      $checkout_flow,
+      $container->get('entity_type.manager'),
+      $container->get('curemint_checkout.checkout_helper')
+    );
+  }
+
+  /**
    * {@inheritdoc}
    */
   public function buildPaneForm(array $pane_form, FormStateInterface $form_state, array &$complete_form) {
-    $user = User::load(\Drupal::currentUser()->id());
+    $userAttributes = $this->curemintCheckoutHelper->getUserAttributes();
 
-    $userName = $user->field_name->value;
-    $address = $user->field_address;
-    $address_view = $address->view(['label' => 'hidden']);
-    $userAddress = render($address_view);
-    //$userAddress = render($user->field_address->view(['label' => 'hidden']));
-    $userPhone = $user->field_number->value;
-
-    // If $userAddress is empty, send the user back to cart page.
-    if (empty($userAddress)) {
+    // If users address is empty, send the user back to cart page.
+    if (empty($userAttributes['address'])) {
       $messenger = \Drupal::messenger();
       $messenger->addMessage($this->t('Please add your address to continue.'), 'error', FALSE);
       $response = new RedirectResponse(Url::fromRoute('commerce_cart.page', [], ['absolute' => TRUE])->toString());
@@ -41,7 +79,7 @@ class CuremintUserShippingAddress extends CheckoutPaneBase implements CheckoutPa
     }
 
     $pane_form['message'] = [
-      '#markup' => '<div class="shipping-address selected">' . $userName . $userAddress . $userPhone . '</div>',
+      '#markup' => '<div class="shipping-address selected">' . implode('', $userAttributes) . '</div>',
     ];
     return $pane_form;
   }
