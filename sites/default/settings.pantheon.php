@@ -40,7 +40,6 @@ if (
   ( ($_ENV['PANTHEON_ENVIRONMENT'] == 'live') || ($_ENV['PANTHEON_ENVIRONMENT'] == 'test') )
 ) {
   $pantheon_services_file = __DIR__ . '/services.pantheon.production.yml';
-  $config['config_split.config_split.development_config']['status'] = FALSE;
 }
 
 if (file_exists($pantheon_services_file)) {
@@ -205,4 +204,11 @@ if (empty($settings['file_scan_ignore_directories'])) {
     'node_modules',
     'bower_components',
   ];
+}
+
+/**
+ * Config Split settings
+ */
+if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
+  $config['config_split.config_split.development_config']['status'] = FALSE;
 }
