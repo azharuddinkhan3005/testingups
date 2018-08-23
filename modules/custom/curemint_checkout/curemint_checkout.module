@@ -11,7 +11,7 @@ use \Drupal\Core\Form\FormStateInterface;
 /**
  * Implements hook_field_widget_form_alter().
  *
- * Populates the payment information (User adddress) on the checkout page.
+ * Populates the payment information (User address) on the checkout page.
  */
 function curemint_checkout_field_widget_form_alter(&$element, FormStateInterface $form_state, $context) {
   if (isset($context['form']['#id'])) {
@@ -20,12 +20,14 @@ function curemint_checkout_field_widget_form_alter(&$element, FormStateInterface
       $user = User::load(\Drupal::currentUser()->id());
 
       // Provide default values.
-      $element['address']['#default_value'] = $user->field_address->getValue()[0];
+      $element['address']['#default_value'] = (isset($user->field_address->getValue()[0])) ? $user->field_address->getValue()[0] : '';
 
       // Change the name, as it is set in another field.
-      $name = explode(' ', $user->field_name->value);
-      $element['address']['#default_value']['given_name'] = $name[0];
-      $element['address']['#default_value']['family_name'] = $name[1];
+      if (!empty($user->field_name->value)) {
+        $name = explode(' ', $user->field_name->value);
+        $element['address']['#default_value']['given_name'] = $name[0];
+        $element['address']['#default_value']['family_name'] = $name[1];
+      }
     }
   }
 }
