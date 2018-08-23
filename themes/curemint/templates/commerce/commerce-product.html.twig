@@ -27,9 +27,9 @@
     {{ product.title }}
     {{ product.variation_field_manufacturer_sku }}
     {% if product.variation_field_manufacturer|render %}
-      <label>{% trans %} Manufacture Name: {% endtrans %}</label>{{ product.variation_field_manufacturer }}
+      <label>{% trans %}Manufacture Name:{% endtrans %}</label>{{ product.variation_field_manufacturer }}
     {% endif %}
-    <label>Distributor Name:</label>{{ product.variation_field_distributor }}
+    <label>{% trans %}Distributor Name:{% endtrans %}</label>{{ product.variation_field_distributor }}
     <div class="product-price">
       <div class="product-price--formulary">
         <label class="product-price--label">Formulary</label>
