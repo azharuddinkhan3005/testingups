@@ -1,0 +1,51 @@
+<?php
+
+/**
+ * @file
+ * Defines Curemint core module.
+ */
+
+use \Drupal\Core\Entity\EntityInterface;
+use \Drupal\node\Entity\Node;
+use \Drupal\Core\Messenger\MessengerInterface;
+
+/**
+ * Implements hook_ENTITY_TYPE_update().
+ */
+function curemint_core_node_update(EntityInterface $entity) {
+  curemint_core_unpublish_banner_nodes($entity);
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_insert().
+ */
+function curemint_core_node_insert(EntityInterface $entity) {
+  curemint_core_unpublish_banner_nodes($entity);
+}
+
+/**
+ * Internal function to help unpublish other banner nodes.
+ *
+ * @param \Drupal\Core\Entity\EntityInterface $entity
+ *   The node object being saved.
+ */
+function curemint_core_unpublish_banner_nodes($entity) {
+  // Only process if the current node is set to be published.
+  if ($entity->status->value == Node::PUBLISHED) {
+    $nids = \Drupal::entityQuery('node')->condition('type', 'banner')->execute();
+    $current_nid = $entity->id();
+    foreach ($nids as $nid) {
+      if ($nid == $current_nid) {
+        continue;
+      }
+
+      $node = Node::load($nid);
+      if ($node->status->value == Node::PUBLISHED) {
+        $node->setPublished(Node::NOT_PUBLISHED);
+        $node->save();
+      }
+    }
+    $messenger = \Drupal::messenger();
+    $messenger->addMessage('All other banners are unpublished.', MessengerInterface::TYPE_WARNING);
+  }
+}
