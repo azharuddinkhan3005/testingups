@@ -9,6 +9,9 @@
  * @ingroup themeable
  */
 #}
+{% if form['#step_id'] == 'complete' %}
+  {{ 'Thank you, Your order has been submitted'|t }}
+{% endif %}
 <div class="layout-checkout-form clearfix">
   <div class="layout-region layout-region-checkout-footer">
     {{ form.actions }}
@@ -20,7 +23,13 @@
     <h3>{% trans %} Order Summary {% endtrans %}</h3>
     {{ form.sidebar }}
   </div>
+  {% if form['#step_id'] == 'complete' %}
+    <a href="{{ url('<front>') }}">{{ 'Continue Shopping'|t }}</a>
+  {% endif %}
   <div class="layout-region layout-region-checkout-footer">
     {{ form.actions }}
   </div>
 </div>
+{% if form['#step_id'] == 'complete' %}
+  <a href="{{ url('<front>') }}">{{ 'Continue Shopping'|t }}</a>
+{% endif %}
