@@ -11155,19 +11155,98 @@ p:last-child,
   padding-top: 40px;
 }
 
-/* line 36, ../scss/style.scss */
+/* line 2, ../scss/curemint/_ordersuccess.scss */
+.complete-message {
+  color: #4a4a4a;
+  font-family: Helvetica;
+  font-size: 1.25rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 50px;
+  text-transform: uppercase;
+}
+
+/* line 13, ../scss/curemint/_ordersuccess.scss */
+.checkout-pane-curemint-completion-message .title {
+  color: #4a4a4a;
+  font-family: HelveticaBold;
+  font-size: 1rem;
+  line-height: normal;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+/* line 22, ../scss/curemint/_ordersuccess.scss */
+.checkout-pane-curemint-completion-message .order-sucess-hide {
+  display: none;
+}
+/* line 26, ../scss/curemint/_ordersuccess.scss */
+.checkout-pane-curemint-completion-message .cart-items {
+  margin-top: 70px;
+}
+
+/* line 32, ../scss/curemint/_ordersuccess.scss */
+.order-details {
+  color: #7f7f7f;
+  display: inline-block;
+  font-family: Helvetica;
+  font-size: 0.875rem;
+  line-height: 1.5625rem;
+  vertical-align: top;
+  width: 40%;
+}
+/* line 41, ../scss/curemint/_ordersuccess.scss */
+.order-details .order-placed {
+  display: block;
+}
+
+/* line 46, ../scss/curemint/_ordersuccess.scss */
+.shipping-address-details {
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+}
+
+/* line 52, ../scss/curemint/_ordersuccess.scss */
+.continue-btn {
+  background-image: linear-gradient(to bottom, #0089dd, #0069c4);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  color: #fff;
+  display: inline-block;
+  float: right;
+  font-family: Helvetica;
+  font-size: 0.9375rem;
+  font-weight: bold;
+  height: 50px;
+  line-height: 3.125rem;
+  margin-right: 0;
+  margin-top: 30px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  width: 304px;
+}
+/* line 73, ../scss/curemint/_ordersuccess.scss */
+.continue-btn:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 37, ../scss/style.scss */
 :root {
   font-size: 1rem;
 }
 
-/* line 40, ../scss/style.scss */
+/* line 41, ../scss/style.scss */
 html {
   font-size: 100%;
   min-height: 100%;
   position: relative;
 }
 
-/* line 46, ../scss/style.scss */
+/* line 47, ../scss/style.scss */
 body {
   color: #7f7f7f;
   font-family: Helvetica;
@@ -11175,17 +11254,17 @@ body {
   margin-top: 9px;
 }
 
-/* line 53, ../scss/style.scss */
+/* line 54, ../scss/style.scss */
 * {
   outline: none;
 }
 
-/* line 57, ../scss/style.scss */
+/* line 58, ../scss/style.scss */
 h1 {
   font-family: Helvetica;
 }
 
-/* line 61, ../scss/style.scss */
+/* line 62, ../scss/style.scss */
 h2 {
   font-family: Helvetica;
   font-size: 1.25rem;
@@ -11194,7 +11273,7 @@ h2 {
   color: #4a4a4a;
 }
 
-/* line 65, ../scss/style.scss */
+/* line 66, ../scss/style.scss */
 h3 {
   color: #4a4a4a;
   font-family: Helvetica;
@@ -11205,7 +11284,7 @@ h3 {
   padding-bottom: 33px;
 }
 
-/* line 70, ../scss/style.scss */
+/* line 71, ../scss/style.scss */
 .view-frontpage {
   display: none;
 }

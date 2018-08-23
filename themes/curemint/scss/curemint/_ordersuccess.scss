@@ -1,0 +1,77 @@
+// order success
+.complete-message {
+  color: $quartzcolor;
+  font-family: $helvetica-r;
+  font-size: rem-calc(20px);
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 50px;
+  text-transform: uppercase;
+}
+
+.checkout-pane-curemint-completion-message {
+  .title {
+    color: $quartzcolor;
+    font-family: $helvetica-b;
+    font-size: rem-calc(16px);
+    line-height: normal;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .order-sucess-hide {
+    display: none;
+  }
+
+  .cart-items {
+    margin-top: 70px;
+  }
+
+}
+
+.order-details {
+  color: $graycolor;
+  display: inline-block;
+  font-family: $helvetica-r;
+  font-size: rem-calc(14px);
+  line-height: rem-calc(25px);
+  vertical-align: top;
+  width: 40%;
+
+  .order-placed {
+    display: block;
+  }
+}
+
+.shipping-address-details {
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+}
+
+.continue-btn {
+  background-image: linear-gradient(to bottom, $bluecolacolor, $frenchbluecolor);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 2px 0 $lightblackcolor;
+  color: $whitecolor;
+  display: inline-block;
+  float: right;
+  font-family: $helvetica-r;
+  font-size: rem-calc(15px);
+  font-weight: bold;
+  height: 50px;
+  line-height: rem-calc(50px);
+  margin-right: 0;
+  margin-top: 30px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px 1px $lightgraycolor;
+  text-transform: uppercase;
+  width: 304px;
+
+  &:hover {
+    color: $whitecolor;
+    text-decoration: none;
+  }
+}
