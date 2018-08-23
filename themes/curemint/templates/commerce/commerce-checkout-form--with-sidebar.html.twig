@@ -13,10 +13,11 @@
   {{ 'Thank you, Your order has been submitted'|t }}
 {% endif %}
 <div class="layout-checkout-form clearfix">
-  <div class="layout-region layout-region-checkout-footer">
-    {{ form.actions }}
-  </div>
   <div class="layout-region layout-region-checkout-main">
+    <div class="checkout-top-bar">
+      <h1 class="checkout-top-bar--title">{{ form['#title'] }}</h1> 
+      <div class="checkout-btn">{{ form.actions }}</div>
+    </div>
     {{ form|without('sidebar', 'actions') }}
   </div>
   <div class="layout-region layout-region-checkout-secondary">

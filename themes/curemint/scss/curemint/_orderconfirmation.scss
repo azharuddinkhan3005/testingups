@@ -1,0 +1,137 @@
+.checkout-pane-curemint-confirmation {
+  .title {
+    color: $quartzcolor;
+    font-family: $helvetica-b;
+    font-size: rem-calc(16px);
+    line-height: normal;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .order-total {
+    color: $quartzcolor;
+    display: block;
+    font-family: $helvetica-b;
+    font-size: rem-calc(15px);
+    line-height: rem-calc(27px);
+    padding: 70px 0 20px;
+    text-align: right;
+  }
+}
+
+.cart-items {
+  border: solid 1px $platinumcolor;
+  padding: 15px 30px;
+
+  > div {
+    clear: both;
+    color: $quartzcolor;
+    font-family: $helvetica-r;
+    font-size: rem-calc(14px);
+    line-height: rem-calc(22px);
+    overflow: hidden;
+    padding: 15px 0;
+  }
+
+  .field {
+    color: $quartzcolor;
+    font-family: $helvetica-b;
+
+    &--name-field-product-images {
+      float: left;
+      height: 145px;
+      margin-right: 20px;
+      overflow: hidden;
+      text-align: center;
+      width: 145px;
+    }
+
+    .img-responsive {
+      display: inline-block;
+    }
+
+    &--name-field-packaging-details {
+      color: $graycolor;
+      display: inline-block;
+      font-family: $helvetica-r;
+      padding: 10px 0 0;
+    }
+
+    &--name-field-manufacturer-sku {
+      color: $graycolor;
+      display: inline-block;
+      font-family: $helvetica-r;
+      padding: 10px 5px 0;
+    }
+
+    &--name-field-distributor {
+      color: $graycolor;
+      font-family: $helvetica-r;
+      padding: 10px 0 0;
+    }
+
+    &--name-price {
+      color: $graycolor;
+      font-family: $helvetica-r;
+      padding: 10px 0 0;
+    }
+  }
+}
+
+.shipping-address-confirm {
+  color: $graycolor;
+  font-family: $helvetica-r;
+  font-size: rem-calc(14px);
+  line-height: rem-calc(25px);
+
+  .address br {
+    display: none;
+  }
+
+  .organization {
+    display: block;
+  }
+}
+
+.path-checkout {
+  .page-header {
+    display: none;
+  }
+}
+
+.checkout-top-bar {
+  clear: both;
+  overflow: hidden;
+  padding-bottom: 30px;
+
+  &--title {
+    color: $quartzcolor;
+    float: left;
+    font-family: Helvetica;
+    font-size: rem-calc(20px);
+    margin-top: 10px;
+    text-transform: uppercase;
+  }
+
+  .btn-primary {
+    background-image: linear-gradient(to bottom, $bluecolacolor, $frenchbluecolor);
+    border: 0;
+    box-shadow: 0 2px 2px 0 $lightblackcolor;
+    color: $whitecolor;
+    float: right;
+    font-family: $helvetica-r;
+    font-size: rem-calc(15px);
+    font-weight: bold;
+    height: 40px;
+    margin-right: 0;
+    margin-top: 0;
+    text-align: center;
+    text-shadow: 0 1px 1px $lightgraycolor;
+    text-transform: uppercase;
+    width: 265px;
+  }
+}
+
+.layout-checkout-form {
+  padding-top: 40px;
+}
