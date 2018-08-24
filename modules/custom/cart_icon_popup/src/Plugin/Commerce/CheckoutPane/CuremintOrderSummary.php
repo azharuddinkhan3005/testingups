@@ -69,7 +69,7 @@ class CuremintOrderSummary extends CheckoutPaneBase implements CheckoutPaneInter
    * {@inheritdoc}
    */
   public function buildPaneForm(array $pane_form, FormStateInterface $form_state, array &$complete_form) {
-    $totals = $this->curemintTotalSummary->buildTotals();
+    $totals = $this->curemintTotalSummary->buildTotals($this->order);
     $total = [
       'savings' => [
         'label' => $this->t('Your Savings'),
