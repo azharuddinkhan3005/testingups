@@ -680,7 +680,18 @@ display:
           entity_field: title
           plugin_id: standard
       title: 'Product listing'
-      header: {  }
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          content: '{{ field_distributor }}'
+          plugin_id: text_custom
       footer: {  }
       empty:
         area:
