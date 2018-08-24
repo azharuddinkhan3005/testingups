@@ -9,6 +9,7 @@ use Drupal\commerce_cart\Event\CartEvents;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
 use Drupal\Core\StringTranslation\TranslationInterface;
 use Drupal\Core\Url;
+use Drupal\commerce_product\Entity\Product;
 
 class CartEventSubscriber implements EventSubscriberInterface {
 
@@ -51,8 +52,10 @@ class CartEventSubscriber implements EventSubscriberInterface {
    *   The add to cart event.
    */
   public function displayAddToCartMessage(CartEntityAddEvent $event) {
+    $product = Product::load($event->getEntity()->id());
+    $product_title = $product->getTitle();
     $this->messenger->addMessage($this->t('@entity added to <a href=":url">your cart</a>.', [
-      '@entity' => $event->getEntity()->label(),
+      '@entity' => $product_title,
       ':url' => Url::fromRoute('commerce_cart.page')->toString(),
     ]));
   }

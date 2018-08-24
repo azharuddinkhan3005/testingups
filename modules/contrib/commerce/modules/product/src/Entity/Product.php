@@ -278,11 +278,18 @@ class Product extends CommerceContentEntityBase implements ProductInterface {
   public function postSave(EntityStorageInterface $storage, $update = TRUE) {
     parent::postSave($storage, $update);
 
+    $isTitleChanged = isset($this->original) && $this->getTitle() != $this->original->getTitle();
+
     // Ensure there's a back-reference on each product variation.
     foreach ($this->variations as $item) {
       $variation = $item->entity;
       if ($variation->product_id->isEmpty()) {
         $variation->product_id = $this->id();
+        $variation->save();
+      }
+      // Ensure product variations's title are updated when product title has
+      // change.
+      elseif ($isTitleChanged) {
         $variation->save();
       }
     }
