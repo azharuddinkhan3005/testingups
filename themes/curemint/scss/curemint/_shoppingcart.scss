@@ -60,6 +60,10 @@
     &:active:focus {
       color: $whitecolor;
     }
+
+    &.disabled {
+      opacity: .5;
+    }
   }
 }
 
