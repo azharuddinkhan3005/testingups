@@ -1,0 +1,57 @@
+uuid: b4c8b273-a8ab-457d-9afd-9c632f7f1d78
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.commerce_product.variations
+    - search_api.server.curemint_products
+  module:
+    - commerce_product
+    - search_api
+id: curemint_products_search_index
+name: 'Curemint products search index'
+description: ''
+read_only: false
+field_settings:
+  sku:
+    label: 'Variations » Product variation » SKU'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:sku'
+    type: text
+    dependencies:
+      config:
+        - field.storage.commerce_product.variations
+      module:
+        - commerce_product
+  title:
+    label: Title
+    datasource_id: 'entity:commerce_product'
+    property_path: title
+    type: text
+datasource_settings:
+  'entity:commerce_product':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  ignorecase:
+    all_fields: false
+    fields:
+      - sku
+      - title
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: curemint_products

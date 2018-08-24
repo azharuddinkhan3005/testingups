@@ -6,6 +6,7 @@ use Drupal\Core\Block\BlockBase;
 use Drupal\cart_icon_popup\CuremintTotalSummary;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
+use Drupal\block\Entity\Block;
 
 /**
  * Provides a 'header' block.
@@ -56,11 +57,18 @@ class CustomHeader extends BlockBase implements ContainerFactoryPluginInterface 
 
   public function build() {
     $totals = $this->curemintTotalSummary->buildTotals();
+
+    $cm_product_search_form_block_name = 'exposedformcm_product_searchpage_1';
+    $cm_product_search_form_block = Block::load($cm_product_search_form_block_name);
+    $cm_product_search_form_block_render = \Drupal::entityTypeManager()->getViewBuilder('block')->view($cm_product_search_form_block);
+
     return [
       '#title' => 'Custom Header',
       '#theme' => 'cart_icon_popup',
       '#items_count' => $totals['quantity'],
       '#savings' => $totals['savings'],
+      '#search_form' => $cm_product_search_form_block_render,
     ];
   }
+
 }

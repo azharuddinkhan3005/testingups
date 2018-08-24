@@ -1,18 +1,26 @@
 <?php
 
-use Drupal\views\ViewExecutable;
+/**
+ * @file
+ * Defines functionality to cart and search to header.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
 
 /**
  * Implements hook_theme().
  */
 function cart_icon_popup_theme() {
-  return array(
+  return [
     'cart_icon_popup' => [
       'variables' => [
         'title' => NULL,
         'link' => NULL,
         'items_count' => NULL,
         'savings' => NULL,
+        'search_form' => NULL,
       ],
       'template' => 'header',
     ],
@@ -31,15 +39,15 @@ function cart_icon_popup_theme() {
       ],
       'template' => 'curemint-checkout-order-summary',
     ],
-  );
+  ];
 }
 
 /**
-* Implements hook_preprocess_HOOK() for block.html.twig.
-*/
-function curemint_preprocess_block(&$variables){
-  if($variables['attributes']['id'] == 'block-customheaderblock') {
-    //-- This stops the block being cache in drupal 8
+ * Implements hook_preprocess_HOOK() for block.html.twig.
+ */
+function curemint_preprocess_block(&$variables) {
+  if ($variables['attributes']['id'] === 'block-customheaderblock') {
+    // This stops the block being cache in drupal 8.
     $variables['#cache']['max-age'] = 0;
   }
 }
@@ -47,8 +55,21 @@ function curemint_preprocess_block(&$variables){
 /**
  * Implements hook_entity_view_alter().
  */
-function cart_icon_popup_entity_view_alter(array &$build, Drupal\Core\Entity\EntityInterface $entity, \Drupal\Core\Entity\Display\EntityViewDisplayInterface $display) {
+function cart_icon_popup_entity_view_alter(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display) {
   if ($build['#view_mode'] == 'cart' && $entity->getEntityTypeId() == 'commerce_product_variation') {
     $build['product_name']['#markup'] = $entity->getTitle();
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function cart_icon_popup_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if ($form_id === 'views_exposed_form' && $form['#id'] === 'views-exposed-form-cm-product-search-page-1') {
+    $form['#attributes']['class'][] = 'searchprod__form-group';
+    $form['search_api_fulltext']['#attributes']['class'][] = 'searchprod__form-input';
+    $form['search_api_fulltext']['#attributes']['placeholder'] = 'Search';
+    $form['actions']['submit']['#value'] = '';
+    $form['actions']['submit']['#attributes']['class'][] = 'searchprod__form-btn';
   }
 }

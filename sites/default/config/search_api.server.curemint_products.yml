@@ -1,0 +1,17 @@
+uuid: f050135d-92a7-4f6b-bc01-0436dd591d87
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: curemint_products
+name: 'Curemint products'
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 1
+  matching: partial
+  autocomplete:
+    suggest_suffix: true
+    suggest_words: true
