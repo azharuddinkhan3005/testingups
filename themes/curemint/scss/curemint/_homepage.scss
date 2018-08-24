@@ -39,23 +39,6 @@
     overflow: hidden;
   }
 
-  .item-name {
-    -moz-box-orient: vertical;
-    -webkit-box-orient: vertical;
-    color: $quartzcolor;
-    display: -webkit-box;
-    display: -moz-box;
-    font-family: $helvetica-b;
-    font-size: rem-calc(14);
-    -moz-line-clamp: 2;
-    -webkit-line-clamp: 2;
-    line-height: rem-calc(20);
-    max-height: 40px;
-    min-height: 40px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
   .item-distributor {
     clear: both;
     color: $graycolor;
@@ -101,6 +84,28 @@
     float: right;
   }
 
+}
+
+.item-name {
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  color: $quartzcolor;
+  display: -webkit-box;
+  display: -moz-box;
+  font-family: $helvetica-b;
+  font-size: rem-calc(14);
+  -moz-line-clamp: 2;
+  -webkit-line-clamp: 2;
+  line-height: rem-calc(20);
+  max-height: 40px;
+  min-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  a {
+    color: $quartzcolor;
+    text-decoration: none;
+  }
 }
 
 .itemprice {
