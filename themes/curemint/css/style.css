@@ -11024,8 +11024,9 @@ p:last-child,
   padding-bottom: 10px;
   text-transform: uppercase;
 }
-/* line 11, ../scss/curemint/_orderconfirmation.scss */
-.checkout-pane-curemint-confirmation .order-total {
+
+/* line 13, ../scss/curemint/_orderconfirmation.scss */
+.order-total {
   color: #4a4a4a;
   display: block;
   font-family: HelveticaBold;
@@ -11035,12 +11036,12 @@ p:last-child,
   text-align: right;
 }
 
-/* line 22, ../scss/curemint/_orderconfirmation.scss */
+/* line 23, ../scss/curemint/_orderconfirmation.scss */
 .cart-items {
   border: solid 1px #e6e6e6;
   padding: 15px 30px;
 }
-/* line 26, ../scss/curemint/_orderconfirmation.scss */
+/* line 27, ../scss/curemint/_orderconfirmation.scss */
 .cart-items > div {
   clear: both;
   color: #4a4a4a;
@@ -11050,12 +11051,12 @@ p:last-child,
   overflow: hidden;
   padding: 15px 0;
 }
-/* line 36, ../scss/curemint/_orderconfirmation.scss */
+/* line 37, ../scss/curemint/_orderconfirmation.scss */
 .cart-items .field {
   color: #4a4a4a;
   font-family: HelveticaBold;
 }
-/* line 40, ../scss/curemint/_orderconfirmation.scss */
+/* line 41, ../scss/curemint/_orderconfirmation.scss */
 .cart-items .field--name-field-product-images {
   float: left;
   height: 145px;
@@ -11064,65 +11065,65 @@ p:last-child,
   text-align: center;
   width: 145px;
 }
-/* line 49, ../scss/curemint/_orderconfirmation.scss */
+/* line 50, ../scss/curemint/_orderconfirmation.scss */
 .cart-items .field .img-responsive {
   display: inline-block;
 }
-/* line 53, ../scss/curemint/_orderconfirmation.scss */
+/* line 54, ../scss/curemint/_orderconfirmation.scss */
 .cart-items .field--name-field-packaging-details {
   color: #7f7f7f;
   display: inline-block;
   font-family: Helvetica;
   padding: 10px 0 0;
 }
-/* line 60, ../scss/curemint/_orderconfirmation.scss */
+/* line 61, ../scss/curemint/_orderconfirmation.scss */
 .cart-items .field--name-field-manufacturer-sku {
   color: #7f7f7f;
   display: inline-block;
   font-family: Helvetica;
   padding: 10px 5px 0;
 }
-/* line 67, ../scss/curemint/_orderconfirmation.scss */
+/* line 68, ../scss/curemint/_orderconfirmation.scss */
 .cart-items .field--name-field-distributor {
   color: #7f7f7f;
   font-family: Helvetica;
   padding: 10px 0 0;
 }
-/* line 73, ../scss/curemint/_orderconfirmation.scss */
+/* line 74, ../scss/curemint/_orderconfirmation.scss */
 .cart-items .field--name-price {
   color: #7f7f7f;
   font-family: Helvetica;
   padding: 10px 0 0;
 }
 
-/* line 81, ../scss/curemint/_orderconfirmation.scss */
+/* line 82, ../scss/curemint/_orderconfirmation.scss */
 .shipping-address-confirm {
   color: #7f7f7f;
   font-family: Helvetica;
   font-size: 0.875rem;
   line-height: 1.5625rem;
 }
-/* line 87, ../scss/curemint/_orderconfirmation.scss */
+/* line 88, ../scss/curemint/_orderconfirmation.scss */
 .shipping-address-confirm .address br {
   display: none;
 }
-/* line 91, ../scss/curemint/_orderconfirmation.scss */
+/* line 92, ../scss/curemint/_orderconfirmation.scss */
 .shipping-address-confirm .organization {
   display: block;
 }
 
-/* line 97, ../scss/curemint/_orderconfirmation.scss */
+/* line 98, ../scss/curemint/_orderconfirmation.scss */
 .path-checkout .page-header {
   display: none;
 }
 
-/* line 102, ../scss/curemint/_orderconfirmation.scss */
+/* line 103, ../scss/curemint/_orderconfirmation.scss */
 .checkout-top-bar {
   clear: both;
   overflow: hidden;
   padding-bottom: 30px;
 }
-/* line 107, ../scss/curemint/_orderconfirmation.scss */
+/* line 108, ../scss/curemint/_orderconfirmation.scss */
 .checkout-top-bar--title {
   color: #4a4a4a;
   float: left;
@@ -11131,7 +11132,7 @@ p:last-child,
   margin-top: 10px;
   text-transform: uppercase;
 }
-/* line 116, ../scss/curemint/_orderconfirmation.scss */
+/* line 117, ../scss/curemint/_orderconfirmation.scss */
 .checkout-top-bar .btn-primary {
   background-image: linear-gradient(to bottom, #0089dd, #0069c4);
   border: 0;
@@ -11150,7 +11151,7 @@ p:last-child,
   width: 265px;
 }
 
-/* line 135, ../scss/curemint/_orderconfirmation.scss */
+/* line 136, ../scss/curemint/_orderconfirmation.scss */
 .layout-checkout-form {
   padding-top: 40px;
 }
@@ -11179,12 +11180,8 @@ p:last-child,
 .checkout-pane-curemint-completion-message .order-sucess-hide {
   display: none;
 }
-/* line 26, ../scss/curemint/_ordersuccess.scss */
-.checkout-pane-curemint-completion-message .cart-items {
-  margin-top: 70px;
-}
 
-/* line 32, ../scss/curemint/_ordersuccess.scss */
+/* line 28, ../scss/curemint/_ordersuccess.scss */
 .order-details {
   color: #7f7f7f;
   display: inline-block;
@@ -11194,19 +11191,18 @@ p:last-child,
   vertical-align: top;
   width: 40%;
 }
-/* line 41, ../scss/curemint/_ordersuccess.scss */
+/* line 37, ../scss/curemint/_ordersuccess.scss */
 .order-details .order-placed {
   display: block;
 }
 
-/* line 46, ../scss/curemint/_ordersuccess.scss */
+/* line 42, ../scss/curemint/_ordersuccess.scss */
 .shipping-address-details {
   display: inline-block;
   vertical-align: top;
-  width: 40%;
 }
 
-/* line 52, ../scss/curemint/_ordersuccess.scss */
+/* line 47, ../scss/curemint/_ordersuccess.scss */
 .continue-btn {
   background-image: linear-gradient(to bottom, #0089dd, #0069c4);
   border: 0;
@@ -11228,7 +11224,7 @@ p:last-child,
   text-transform: uppercase;
   width: 304px;
 }
-/* line 73, ../scss/curemint/_ordersuccess.scss */
+/* line 68, ../scss/curemint/_ordersuccess.scss */
 .continue-btn:hover {
   color: #fff;
   text-decoration: none;
