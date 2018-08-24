@@ -99,7 +99,7 @@ class CuremintConfirmation extends CheckoutPaneBase implements CheckoutPaneInter
     ];
 
     // Get order total.
-    $totals = $this->curemintTotalSummary->buildTotals();
+    $totals = $this->curemintTotalSummary->buildTotals($this->order);
     $pane_form['order_total'] = [
       '#markup' => '<div class="order-total">' . $totals['subtotal'] . '</div>',
     ];

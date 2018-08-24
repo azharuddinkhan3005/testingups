@@ -57,10 +57,18 @@ class CuremintTotalSummary {
 
   /**
    * Build totals from the current cart object in session.
+   *
+   * @param array/mixed $cart
+   *   Object of cart or order to fetch totals from.
+   *
+   * @return array
    */
-  public function buildTotals() {
-    $store = $this->storeStorage->load(self::STORE_ID);
-    $cart = $this->cartProvider->getCart(self::ORDER_TYPE, $store);
+  public function buildTotals($cart = []) {
+    if (empty($cart)) {
+      $store = $this->storeStorage->load(self::STORE_ID);
+      $cart = $this->cartProvider->getCart(self::ORDER_TYPE, $store);
+    }
+
     if ($cart) {
       $items = $cart->getItems();
       $totalFormularyPrice = $cart->total_price->number;
