@@ -20,7 +20,7 @@ class CuremintCompletionMessage extends CuremintConfirmation {
    */
   public function buildPaneForm(array $pane_form, FormStateInterface $form_state, array &$complete_form) {
     // Prepare Order Markup.
-    $orderMarkup = '<div class="title">';
+    $orderMarkup = '<div class="order-details"><div class="title">';
     $orderMarkup .= $this->t('Order');
     $orderMarkup .= '</div>';
     $orderMarkup .= '<div>';
@@ -32,7 +32,7 @@ class CuremintCompletionMessage extends CuremintConfirmation {
     $orderMarkup .= $this->t('Order Placed: ');
     $orderMarkup .= date('m/d/Y', $this->order->getPlacedTime());
     $orderMarkup .= '</span>';
-    $orderMarkup .= '</div>';
+    $orderMarkup .= '</div></div>';
 
     $pane_form['order_detail'] = [
       '#markup' => $orderMarkup,
@@ -41,7 +41,14 @@ class CuremintCompletionMessage extends CuremintConfirmation {
     // Add all other markup from review page.
     $pane_form = parent::buildPaneForm($pane_form, $form_state, $complete_form);
 
+    // Adding wrapper for shipping address details.
+    $pane_form['shipping_address']['#prefix'] = '<div class="shipping-address-details">';
+    $pane_form['shipping_address']['#suffix'] = '</div>';
+
     // Override Items markup and Get order products.
+    $pane_form['items']['#prefix'] = '<div class="cart-items">';
+    $pane_form['items']['#suffix'] = '</div>';
+
     /* @var \Drupal\commerce_order\Entity\OrderItem $item */
     foreach ($this->order->getItems() as $item) {
       $view_builder = $this->entityTypeManager->getViewBuilder('commerce_product_variation');

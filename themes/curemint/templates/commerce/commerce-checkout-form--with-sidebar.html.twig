@@ -10,14 +10,22 @@
  */
 #}
 {% if form['#step_id'] == 'complete' %}
-  {{ 'Thank you, Your order has been submitted'|t }}
+  <h1 class="complete-message">{{ 'Thank you, Your order has been submitted'|t }}</h1>
 {% endif %}
 <div class="layout-checkout-form clearfix">
   <div class="layout-region layout-region-checkout-main">
+    {% if form['#step_id'] != 'complete' %}
     <div class="checkout-top-bar">
       <h1 class="checkout-top-bar--title">{{ form['#title'] }}</h1> 
       <div class="checkout-btn">{{ form.actions }}</div>
     </div>
+    {% else %}
+    <div class="checkout-top-bar hide">
+      <h1 class="checkout-top-bar--title">{{ form['#title'] }}</h1> 
+      <div class="checkout-btn">{{ form.actions }}</div>
+    </div>
+    {% endif %}
+    
     {{ form|without('sidebar', 'actions') }}
   </div>
   <div class="layout-region layout-region-checkout-secondary">
@@ -25,12 +33,12 @@
     {{ form.sidebar }}
   </div>
   {% if form['#step_id'] == 'complete' %}
-    <a href="{{ url('<front>') }}">{{ 'Continue Shopping'|t }}</a>
+    <a class="continue-btn" href="{{ url('<front>') }}">{{ 'Continue Shopping'|t }}</a>
   {% endif %}
   <div class="layout-region layout-region-checkout-footer">
     {{ form.actions }}
   </div>
 </div>
 {% if form['#step_id'] == 'complete' %}
-  <a href="{{ url('<front>') }}">{{ 'Continue Shopping'|t }}</a>
+  <a class="continue-btn" href="{{ url('<front>') }}">{{ 'Continue Shopping'|t }}</a>
 {% endif %}

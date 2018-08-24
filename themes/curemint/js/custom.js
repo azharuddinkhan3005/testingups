@@ -26,6 +26,9 @@ jQuery(document).ready(function() {
      return false;
   });
 
+  // checkout button disable remove on dom ready
+  jQuery(".checkout .btn-default").removeClass('disabled');
+
   // modules show/hide on dom 
   jQuery('.shop-supplier').removeClass('hide');
   jQuery('.supplies').removeClass('hide');

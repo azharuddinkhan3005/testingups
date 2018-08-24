@@ -8,15 +8,16 @@
     text-transform: uppercase;
   }
 
-  .order-total {
-    color: $quartzcolor;
-    display: block;
-    font-family: $helvetica-b;
-    font-size: rem-calc(15px);
-    line-height: rem-calc(27px);
-    padding: 70px 0 20px;
-    text-align: right;
-  }
+}
+
+.order-total {
+  color: $quartzcolor;
+  display: block;
+  font-family: $helvetica-b;
+  font-size: rem-calc(15px);
+  line-height: rem-calc(27px);
+  padding: 70px 0 20px;
+  text-align: right;
 }
 
 .cart-items {
@@ -107,7 +108,7 @@
   &--title {
     color: $quartzcolor;
     float: left;
-    font-family: Helvetica;
+    font-family: $helvetica-r;
     font-size: rem-calc(20px);
     margin-top: 10px;
     text-transform: uppercase;
