@@ -119,7 +119,8 @@ class CuremintCheckoutProgressBlock extends BlockBase implements ContainerFactor
 
       $steps[] = [
         'id' => $step_id,
-        'label' => $step_definition['label'],
+        // @todo: Improve code, removed step number from text.
+        'label' => substr($step_definition['label'], 3),
         'position' => $position,
       ];
     }

@@ -11036,7 +11036,7 @@ p:last-child,
   font-family: HelveticaBold;
   font-size: 0.9375rem;
   line-height: 1.6875rem;
-  padding: 70px 0 20px;
+  padding: 40px 0 20px;
   text-align: right;
 }
 
@@ -11133,7 +11133,7 @@ p:last-child,
   float: left;
   font-family: Helvetica;
   font-size: 1.25rem;
-  margin-top: 10px;
+  margin-top: 5px;
   text-transform: uppercase;
 }
 /* line 117, ../scss/curemint/_orderconfirmation.scss */
