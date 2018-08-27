@@ -5,6 +5,7 @@ dependencies:
   config:
     - commerce_product.commerce_product_variation_type.general
     - field.field.commerce_product_variation.general.field_categories
+    - field.field.commerce_product_variation.general.field_description
     - field.field.commerce_product_variation.general.field_distributor
     - field.field.commerce_product_variation.general.field_distributor_sku
     - field.field.commerce_product_variation.general.field_manufacturer
@@ -28,6 +29,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_description:
+    weight: 16
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
     region: content
   field_distributor:
     weight: 3
