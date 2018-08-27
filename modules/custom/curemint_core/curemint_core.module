@@ -8,6 +8,7 @@
 use \Drupal\Core\Entity\EntityInterface;
 use \Drupal\node\Entity\Node;
 use \Drupal\Core\Messenger\MessengerInterface;
+use Drupal\views\ViewExecutable;
 
 /**
  * Implements hook_ENTITY_TYPE_update().
@@ -47,5 +48,20 @@ function curemint_core_unpublish_banner_nodes($entity) {
     }
     $messenger = \Drupal::messenger();
     $messenger->addMessage('All other banners are unpublished.', MessengerInterface::TYPE_WARNING);
+  }
+}
+
+/**
+ * Implements hook_views_pre_render().
+ */
+function curemint_core_views_pre_render(ViewExecutable $view) {
+  if ($view->id() == 'supplies'
+    && $view->current_display == 'page_2'
+  && !empty($view->result[0]->_entity)) {
+    $storage = \Drupal::service('entity_type.manager')
+      ->getStorage('taxonomy_term');
+    $parents = $storage->loadParents($view->result[0]->_entity->id());
+    $view->display_handler->setOption('link_display', 'custom_url');
+    $view->display_handler->setOption('link_url', 'supplies/' . current($parents)->id());
   }
 }

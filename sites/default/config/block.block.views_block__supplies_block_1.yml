@@ -23,9 +23,9 @@ settings:
   id: 'views_block:supplies-block_1'
   label: ''
   provider: views
-  label_display: visible
+  label_display: '0'
   views_label: ''
-  items_per_page: '10'
+  items_per_page: none
   context_mapping: {  }
 visibility:
   request_path:
