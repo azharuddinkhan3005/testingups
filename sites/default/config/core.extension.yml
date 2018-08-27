@@ -75,6 +75,7 @@ module:
   tour: 0
   user: 0
   userprotect: 0
+  views_field_view: 0
   views_ui: 0
   menu_link_content: 1
   views: 10
