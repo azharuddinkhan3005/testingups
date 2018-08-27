@@ -11268,6 +11268,10 @@ body {
 /* line 58, ../scss/style.scss */
 h1 {
   font-family: Helvetica;
+  border: 0;
+  color: #4a4a4a;
+  font-size: 1.25rem;
+  text-transform: uppercase;
 }
 
 /* line 62, ../scss/style.scss */
