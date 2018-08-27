@@ -9846,10 +9846,14 @@ p:last-child,
   padding-bottom: 8px;
 }
 /* line 35, ../scss/curemint/_header.scss */
+.custom-header .searchprod .form-type-textfield {
+  width: 100%;
+}
+/* line 39, ../scss/curemint/_header.scss */
 .custom-header .searchprod__form-group {
   position: relative;
 }
-/* line 39, ../scss/curemint/_header.scss */
+/* line 43, ../scss/curemint/_header.scss */
 .custom-header .searchprod__form-input {
   background: #fafafa;
   border-color: #efefef;
@@ -9866,9 +9870,9 @@ p:last-child,
   padding: 20px 63px;
   width: 100%;
 }
-/* line 56, ../scss/curemint/_header.scss */
+/* line 60, ../scss/curemint/_header.scss */
 .custom-header .searchprod__form-btn {
-  background: transparent;
+  background-color: transparent;
   border: 0;
   border-radius: 100%;
   box-shadow: none;
@@ -9880,45 +9884,46 @@ p:last-child,
   position: absolute;
   top: 17px;
   width: 21px;
+  background-image: url("../images/search.svg");
 }
 
-/* line 73, ../scss/curemint/_header.scss */
+/* line 78, ../scss/curemint/_header.scss */
 .navtools {
   list-style: none;
   margin: 0;
   padding: 15px 19px 0 0;
   text-align: right;
 }
-/* line 79, ../scss/curemint/_header.scss */
+/* line 84, ../scss/curemint/_header.scss */
 .navtools__list {
   display: inline-block;
   padding: 0 15px;
   vertical-align: top;
 }
-/* line 85, ../scss/curemint/_header.scss */
+/* line 90, ../scss/curemint/_header.scss */
 .navtools__list-cart {
   padding-bottom: 25px;
   padding-right: 0;
 }
-/* line 92, ../scss/curemint/_header.scss */
+/* line 97, ../scss/curemint/_header.scss */
 .navtools__listicon-img {
   height: 18px;
   width: 21px;
 }
-/* line 100, ../scss/curemint/_header.scss */
+/* line 105, ../scss/curemint/_header.scss */
 .navtools__profileicon-img {
   width: 18px;
 }
-/* line 105, ../scss/curemint/_header.scss */
+/* line 110, ../scss/curemint/_header.scss */
 .navtools__carticon {
   position: relative;
 }
-/* line 108, ../scss/curemint/_header.scss */
+/* line 113, ../scss/curemint/_header.scss */
 .navtools__carticon-img {
   height: 20px;
   width: 21px;
 }
-/* line 113, ../scss/curemint/_header.scss */
+/* line 118, ../scss/curemint/_header.scss */
 .navtools__carticon-item {
   background-color: #0089dd;
   border-radius: 100%;

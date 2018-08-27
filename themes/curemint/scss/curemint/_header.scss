@@ -32,6 +32,10 @@
   .searchprod {
     padding-bottom: 8px;
 
+    .form-type-textfield {
+      width: 100%;
+    }
+
     &__form-group {
       position: relative;
     }
@@ -54,7 +58,8 @@
     }
 
     &__form-btn {
-      background: transparent;
+      background-color: transparent;
+      background-image: url('../images/search.svg');
       border: 0;
       border-radius: 100%;
       box-shadow: none;

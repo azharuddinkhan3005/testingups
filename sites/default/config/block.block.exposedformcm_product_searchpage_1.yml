@@ -1,0 +1,23 @@
+uuid: 05d5179e-168f-439b-beb0-1e98174a58c5
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.cm_product_search
+  module:
+    - views
+  theme:
+    - curemint
+id: exposedformcm_product_searchpage_1
+theme: curemint
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:cm_product_search-page_1'
+settings:
+  id: 'views_exposed_filter_block:cm_product_search-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility: {  }
