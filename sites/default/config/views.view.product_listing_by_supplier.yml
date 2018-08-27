@@ -756,7 +756,7 @@ display:
           admin_label: ''
           empty: false
           tokenize: true
-          content: '{{ field_distributor }}'
+          content: '<h1>{{ field_distributor }}</h1>'
           plugin_id: text_custom
       footer: {  }
       empty:

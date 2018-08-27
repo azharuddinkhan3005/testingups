@@ -81,6 +81,10 @@ $rem-base: 16px !default;
 
 @mixin heading-1 {
   @include heading;
+  border: 0;
+  color: $quartzcolor;
+  font-size: rem-calc(20px);
+  text-transform: uppercase;
 }
 
 @mixin heading-2 {
