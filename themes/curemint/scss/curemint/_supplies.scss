@@ -12,6 +12,17 @@
     max-width: 100%;
   }
 
+  .view-header {
+    a {
+      color: $quartzcolor;
+      font-family: $helvetica-r;
+      font-size: rem-calc(20px);
+      margin-bottom: 18px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+
   .suppliesitem {
 
     &__img {

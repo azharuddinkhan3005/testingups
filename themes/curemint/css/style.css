@@ -9873,6 +9873,7 @@ p:last-child,
 /* line 60, ../scss/curemint/_header.scss */
 .custom-header .searchprod__form-btn {
   background-color: transparent;
+  background-image: url("../images/search.svg");
   border: 0;
   border-radius: 100%;
   box-shadow: none;
@@ -9884,7 +9885,6 @@ p:last-child,
   position: absolute;
   top: 17px;
   width: 21px;
-  background-image: url("../images/search.svg");
 }
 
 /* line 78, ../scss/curemint/_header.scss */
@@ -10296,13 +10296,22 @@ p:last-child,
 .supplies img {
   max-width: 100%;
 }
-/* line 17, ../scss/curemint/_supplies.scss */
+/* line 16, ../scss/curemint/_supplies.scss */
+.supplies .view-header a {
+  color: #4a4a4a;
+  font-family: Helvetica;
+  font-size: 1.25rem;
+  margin-bottom: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* line 28, ../scss/curemint/_supplies.scss */
 .supplies .suppliesitem__img {
   height: 240px;
   overflow: hidden;
   position: relative;
 }
-/* line 23, ../scss/curemint/_supplies.scss */
+/* line 34, ../scss/curemint/_supplies.scss */
 .supplies .suppliesitem__name {
   align-items: center;
   background: rgba(255, 255, 255, 0.75);
