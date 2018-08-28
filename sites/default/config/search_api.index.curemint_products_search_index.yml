@@ -4,17 +4,69 @@ status: true
 dependencies:
   config:
     - field.storage.commerce_product.variations
+    - field.storage.commerce_product_variation.field_distributor
+    - field.storage.commerce_product_variation.field_distributor_sku
+    - field.storage.commerce_product_variation.field_manufacturer_sku
+    - field.storage.commerce_product_variation.field_categories
     - search_api.server.curemint_products
   module:
     - commerce_product
+    - node
+    - taxonomy
     - search_api
 id: curemint_products_search_index
 name: 'Curemint products search index'
 description: ''
 read_only: false
 field_settings:
+  category:
+    label: 'Categories ID'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:field_categories:entity:tid'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.variations
+        - field.storage.commerce_product_variation.field_categories
+      module:
+        - commerce_product
+        - taxonomy
+  distributor:
+    label: 'Distributor ID'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:field_distributor:entity:nid'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.variations
+        - field.storage.commerce_product_variation.field_distributor
+      module:
+        - commerce_product
+        - node
+  distributor_sku:
+    label: 'Distributor SKU'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:field_distributor_sku'
+    type: text
+    dependencies:
+      config:
+        - field.storage.commerce_product.variations
+        - field.storage.commerce_product_variation.field_distributor_sku
+      module:
+        - commerce_product
+  manufacturer_sku:
+    label: 'Manufacturer SKU'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:field_manufacturer_sku'
+    type: text
+    dependencies:
+      config:
+        - field.storage.commerce_product.variations
+        - field.storage.commerce_product_variation.field_manufacturer_sku
+      module:
+        - commerce_product
   sku:
-    label: 'Variations » Product variation » SKU'
+    label: SKU
     datasource_id: 'entity:commerce_product'
     property_path: 'variations:entity:sku'
     type: text

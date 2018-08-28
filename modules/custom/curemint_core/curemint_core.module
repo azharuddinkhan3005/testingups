@@ -8,7 +8,8 @@
 use \Drupal\Core\Entity\EntityInterface;
 use \Drupal\node\Entity\Node;
 use \Drupal\Core\Messenger\MessengerInterface;
-use Drupal\views\ViewExecutable;
+use \Drupal\views\ViewExecutable;
+use \Drupal\taxonomy\Entity\Term;
 
 /**
  * Implements hook_ENTITY_TYPE_update().
@@ -58,10 +59,26 @@ function curemint_core_views_pre_render(ViewExecutable $view) {
   if ($view->id() == 'supplies'
     && $view->current_display == 'page_2'
   && !empty($view->result[0]->_entity)) {
+    // Change the URL of the "more link" rendered via Views pager.
     $storage = \Drupal::service('entity_type.manager')
       ->getStorage('taxonomy_term');
     $parents = $storage->loadParents($view->result[0]->_entity->id());
     $view->display_handler->setOption('link_display', 'custom_url');
     $view->display_handler->setOption('link_url', 'supplies/' . current($parents)->id());
+  }
+  elseif ($view->id() == 'cm_product_search') {
+    // Update the page title as per applied filters.
+    $params = \Drupal::request()->query->all();
+    $page_title_tid = '';
+    if (array_key_exists('distributor', $params)) {
+      $page_title_tid = $params['distributor'];
+    }
+    elseif (array_key_exists('category', $params)) {
+      $page_title_tid = $params['category'];
+    }
+    if (!empty($page_title_tid)) {
+      $term = Term::load($page_title_tid);
+      $view->setTitle($term->getName());
+    }
   }
 }
