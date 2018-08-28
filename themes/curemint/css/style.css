@@ -11254,19 +11254,19 @@ p:last-child,
   text-decoration: none;
 }
 
-/* line 37, ../scss/style.scss */
+/* line 38, ../scss/style.scss */
 :root {
   font-size: 1rem;
 }
 
-/* line 41, ../scss/style.scss */
+/* line 42, ../scss/style.scss */
 html {
   font-size: 100%;
   min-height: 100%;
   position: relative;
 }
 
-/* line 47, ../scss/style.scss */
+/* line 48, ../scss/style.scss */
 body {
   color: #7f7f7f;
   font-family: Helvetica;
@@ -11274,12 +11274,12 @@ body {
   margin-top: 9px;
 }
 
-/* line 54, ../scss/style.scss */
+/* line 55, ../scss/style.scss */
 * {
   outline: none;
 }
 
-/* line 58, ../scss/style.scss */
+/* line 59, ../scss/style.scss */
 h1 {
   font-family: Helvetica;
   border: 0;
@@ -11288,7 +11288,7 @@ h1 {
   text-transform: uppercase;
 }
 
-/* line 62, ../scss/style.scss */
+/* line 63, ../scss/style.scss */
 h2 {
   font-family: Helvetica;
   font-size: 1.25rem;
@@ -11297,7 +11297,7 @@ h2 {
   color: #4a4a4a;
 }
 
-/* line 66, ../scss/style.scss */
+/* line 67, ../scss/style.scss */
 h3 {
   color: #4a4a4a;
   font-family: Helvetica;
@@ -11308,7 +11308,7 @@ h3 {
   padding-bottom: 33px;
 }
 
-/* line 71, ../scss/style.scss */
+/* line 72, ../scss/style.scss */
 .view-frontpage {
   display: none;
 }
