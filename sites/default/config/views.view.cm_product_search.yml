@@ -9,7 +9,7 @@ dependencies:
     - field.storage.commerce_product_variation.field_msrp_price
     - field.storage.commerce_product_variation.field_packaging_details
     - field.storage.commerce_product_variation.field_product_images
-    - image.style.258_x_240
+    - image.style.208x208
     - search_api.index.curemint_products_search_index
   module:
     - better_exposed_filters
@@ -305,7 +305,7 @@ display:
           click_sort_column: target_id
           type: image_url
           settings:
-            image_style: 258_x_240
+            image_style: 208x208
           group_column: ''
           group_columns: {  }
           group_rows: true
