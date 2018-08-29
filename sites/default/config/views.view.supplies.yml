@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.taxonomy_term.field_main_category_image
-    - image.style.264_x_264
+    - image.style.208x208
     - taxonomy.vocabulary.main_categories
   module:
     - cart_icon_popup
@@ -122,7 +122,7 @@ display:
           click_sort_column: target_id
           type: image_url
           settings:
-            image_style: 264_x_264
+            image_style: 208x208
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -509,7 +509,7 @@ display:
           click_sort_column: target_id
           type: curemint_image
           settings:
-            image_style: 264_x_264
+            image_style: 208x208
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -1023,7 +1023,7 @@ display:
           click_sort_column: target_id
           type: curemint_image
           settings:
-            image_style: 264_x_264
+            image_style: 208x208
             image_link: ''
           group_column: ''
           group_columns: {  }

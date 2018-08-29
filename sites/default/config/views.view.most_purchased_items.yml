@@ -10,7 +10,7 @@ dependencies:
     - field.storage.commerce_product_variation.field_msrp_price
     - field.storage.commerce_product_variation.field_packaging_details
     - field.storage.commerce_product_variation.field_product_images
-    - image.style.258_x_240
+    - image.style.208x208
   module:
     - commerce
     - commerce_price
@@ -252,7 +252,7 @@ display:
           click_sort_column: target_id
           type: image_url
           settings:
-            image_style: 258_x_240
+            image_style: 208x208
           group_column: ''
           group_columns: {  }
           group_rows: true
