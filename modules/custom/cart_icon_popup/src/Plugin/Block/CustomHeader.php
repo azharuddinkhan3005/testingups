@@ -58,16 +58,14 @@ class CustomHeader extends BlockBase implements ContainerFactoryPluginInterface 
   public function build() {
     $totals = $this->curemintTotalSummary->buildTotals();
 
-    $cm_product_search_form_block_name = 'exposedformcm_product_searchpage_1';
-    $cm_product_search_form_block = Block::load($cm_product_search_form_block_name);
-    $cm_product_search_form_block_render = \Drupal::entityTypeManager()->getViewBuilder('block')->view($cm_product_search_form_block);
+    $params = \Drupal::request()->query->all();
 
     return [
       '#title' => 'Custom Header',
       '#theme' => 'cart_icon_popup',
       '#items_count' => $totals['quantity'],
       '#savings' => $totals['savings'],
-      '#search_form' => $cm_product_search_form_block_render,
+      '#keyword' => !empty($params['keyword']) ? $params['keyword'] : '',
     ];
   }
 

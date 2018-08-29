@@ -54,8 +54,8 @@ display:
           expose_sort_order: false
           sort_asc_label: Asc
           sort_desc_label: Desc
-          input_required: false
-          text_input_required: 'Select any filter and click on Apply to see results'
+          input_required: true
+          text_input_required: 'No results found.'
           bef:
             general:
               allow_secondary: false
@@ -100,6 +100,89 @@ display:
       row:
         type: fields
       fields:
+        product_id:
+          id: product_id
+          table: search_api_datasource_curemint_products_search_index_entity_commerce_product
+          field: product_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_numeric
+          fallback_options:
+            set_precision: false
+            precision: 0
+            decimal: .
+            separator: ','
+            format_plural: false
+            format_plural_string: !!binary MQNAY291bnQ=
+            prefix: ''
+            suffix: ''
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            format_plural_values:
+              - '1'
+              - '@count'
+          entity_type: commerce_product
+          plugin_id: search_api_field
         title:
           id: title
           table: search_api_datasource_curemint_products_search_index_entity_commerce_product
@@ -151,7 +234,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: false
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -622,7 +705,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "        <figure class=\"items-img\">\n        <img src=\"{{ field_product_images }}\">\n        </figure>\n        <h3 class=\"item-name\">{{ title }}</h3>\n        <div class=\"pkgsection\">\n        <p>{{ field_packaging_details }}</p><p class=\"pkgsection__sku\">{{ field_manufacturer_sku }}</p>\n        </div>\n        <h5 class=\"item-distributor\">{{ field_distributor }}</h5>\n        <h4 class=\"itemprice\"><span class=\"itemprice__formulary\">{{ price }}</span><span class=\"itemprice__msrp\">{{ field_msrp_price }}</span></h4>"
+            text: "<figure class=\"items-img\">\n  <a href=\"product/{{ product_id }}\">\n    <img src=\"{{ field_product_images }}\">\n  </a>\n</figure>\n<h3 class=\"item-name\">{{ title }}</h3>\n<div class=\"pkgsection\">\n  <p>{{ field_packaging_details }}</p>\n  <p class=\"pkgsection__sku\">{{ field_manufacturer_sku }}</p>\n</div>\n<h5 class=\"item-distributor\">{{ field_distributor }}</h5>\n<h4 class=\"itemprice\">\n  <span class=\"itemprice__formulary\">{{ price }}</span>\n  <span class=\"itemprice__msrp\">{{ field_msrp_price }}</span>\n</h4>"
             make_link: false
             path: ''
             absolute: false
@@ -753,7 +836,7 @@ display:
             description: ''
             use_operator: false
             operator: search_api_fulltext_op
-            identifier: search_api_fulltext
+            identifier: keyword
             required: false
             remember: false
             multiple: false
@@ -780,11 +863,107 @@ display:
           parse_mode: terms
           min_length: null
           fields:
+            - distributor_sku
+            - manufacturer_sku
             - sku
             - title
           plugin_id: search_api_fulltext
+        distributor:
+          id: distributor
+          table: search_api_index_curemint_products_search_index
+          field: distributor
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: distributor_op
+            label: 'Distributor ID'
+            description: ''
+            use_operator: false
+            operator: distributor_op
+            identifier: distributor
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              dental_office: '0'
+              regional: '0'
+              headquarter: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_api_numeric
+        category:
+          id: category
+          table: search_api_index_curemint_products_search_index
+          field: category
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: category_op
+            label: 'Categories ID'
+            description: ''
+            use_operator: false
+            operator: category_op
+            identifier: category
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              dental_office: '0'
+              regional: '0'
+              headquarter: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_api_numeric
       sorts: {  }
-      title: 'Search Results'
+      title: ''
       header: {  }
       footer: {  }
       empty:
@@ -815,7 +994,7 @@ display:
           plugin_id: search_api
       arguments: {  }
       display_extenders: {  }
-      css_class: 'most-purchased productlist-supplier'
+      css_class: ''
     cache_metadata:
       max-age: -1
       contexts:
@@ -837,7 +1016,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: product/search
+      path: search
       exposed_block: true
     cache_metadata:
       max-age: -1

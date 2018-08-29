@@ -20,7 +20,7 @@ function cart_icon_popup_theme() {
         'link' => NULL,
         'items_count' => NULL,
         'savings' => NULL,
-        'search_form' => NULL,
+        'keyword' => NULL,
       ],
       'template' => 'header',
     ],
