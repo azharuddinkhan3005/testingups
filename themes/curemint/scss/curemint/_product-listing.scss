@@ -1,1 +1,45 @@
 // product listing page
+.view-cm-product-search {
+  .views-col {
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .btn {
+    background: transparent;
+    border: 1px solid $spanishlightgraycolor;
+    border-radius: 3px;
+    box-shadow: none;
+    color: $graycolor;
+    font-family: $helvetica-b;
+    font-size: rem-calc(14);
+    line-height: rem-calc(48);
+    margin: 0;
+    padding: 0 15px;
+    text-transform: uppercase;
+    vertical-align: top;
+  }
+
+  .field--name-quantity {
+    float: left;
+  }
+
+  .control-label {
+    display: none;
+  }
+
+  .form-number {
+    border-color: $chinesesilvercolor;
+    box-shadow: none;
+    color: $graycolor;
+    font-size: rem-calc(16);
+    height: 50px;
+    padding: 0 5px 0 15px;
+    width: 60px;
+  }
+
+  .form-actions {
+    float: right;
+  }
+}
