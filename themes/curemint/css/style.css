@@ -10621,12 +10621,16 @@ p:last-child,
   border: 0;
   padding-top: 25px;
 }
-/* line 93, ../scss/curemint/_shoppingcart.scss */
+/* line 92, ../scss/curemint/_shoppingcart.scss */
+.view-commerce-cart-form .table-striped .views-field-rendered-entity {
+  width: 65%;
+}
+/* line 97, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .field {
   color: #4a4a4a;
   font-family: HelveticaBold;
 }
-/* line 97, ../scss/curemint/_shoppingcart.scss */
+/* line 101, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .field--type-image {
   float: left;
   height: 145px;
@@ -10634,42 +10638,42 @@ p:last-child,
   text-align: center;
   width: 155px;
 }
-/* line 105, ../scss/curemint/_shoppingcart.scss */
+/* line 109, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .field .img-responsive {
   display: inline-block;
 }
-/* line 109, ../scss/curemint/_shoppingcart.scss */
+/* line 113, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .field--name-field-packaging-details {
   color: #7f7f7f;
   display: inline-block;
   font-family: Helvetica;
   padding: 10px 0 0;
 }
-/* line 116, ../scss/curemint/_shoppingcart.scss */
+/* line 120, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .field--name-field-manufacturer-sku {
   color: #7f7f7f;
   display: inline-block;
   font-family: Helvetica;
   padding: 10px 5px 0;
 }
-/* line 123, ../scss/curemint/_shoppingcart.scss */
+/* line 127, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .field--name-field-distributor {
   color: #7f7f7f;
   display: inline-block;
   font-family: Helvetica;
   padding: 10px 0 0;
 }
-/* line 130, ../scss/curemint/_shoppingcart.scss */
+/* line 134, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .field--name-price {
   color: #7f7f7f;
   font-family: Helvetica;
   padding: 10px 0 0;
 }
-/* line 138, ../scss/curemint/_shoppingcart.scss */
+/* line 142, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .views-field-edit-quantity .form-type-number {
   display: inline-block;
 }
-/* line 142, ../scss/curemint/_shoppingcart.scss */
+/* line 146, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .views-field-edit-quantity .form-number {
   border-color: #ccc;
   box-shadow: none;
@@ -10679,11 +10683,11 @@ p:last-child,
   margin-left: 5px;
   padding: 0 5px 0 15px;
 }
-/* line 154, ../scss/curemint/_shoppingcart.scss */
+/* line 158, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .views-field-total-price__number {
   font-size: 1rem;
 }
-/* line 160, ../scss/curemint/_shoppingcart.scss */
+/* line 164, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .form-actions .btn-default {
   background-image: linear-gradient(to bottom, #0089dd, #0069c4);
   border: 0;
@@ -10694,7 +10698,7 @@ p:last-child,
   text-align: center;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 }
-/* line 171, ../scss/curemint/_shoppingcart.scss */
+/* line 175, ../scss/curemint/_shoppingcart.scss */
 .view-commerce-cart-form .form-actions .form-submit {
   font-size: 0.9375rem;
   height: 40px;
@@ -11254,19 +11258,93 @@ p:last-child,
   text-decoration: none;
 }
 
-/* line 38, ../scss/style.scss */
+/* line 2, ../scss/curemint/_supplies-cat.scss */
+.view-supplies.view-display-id-page_1 .views-col {
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 8, ../scss/curemint/_supplies-cat.scss */
+.view-supplies.view-display-id-page_1 .views-field-name {
+  position: relative;
+}
+/* line 11, ../scss/curemint/_supplies-cat.scss */
+.view-supplies.view-display-id-page_1 .views-field-name a {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.75);
+  bottom: 0;
+  color: #4a4a4a;
+  display: flex;
+  font-family: Helvetica;
+  font-size: 0.875rem;
+  font-weight: normal;
+  height: 70px;
+  left: 0;
+  padding: 0 20px;
+  position: absolute;
+  text-align: left;
+  text-decoration: none;
+  width: 100%;
+}
+/* line 30, ../scss/curemint/_supplies-cat.scss */
+.view-supplies.view-display-id-page_1 .views-field-view {
+  clear: both;
+  overflow: hidden;
+  padding: 20px 20px 0;
+}
+/* line 35, ../scss/curemint/_supplies-cat.scss */
+.view-supplies.view-display-id-page_1 .views-field-view .field-content {
+  line-height: 1.5625rem;
+}
+/* line 40, ../scss/curemint/_supplies-cat.scss */
+.view-supplies.view-display-id-page_1 .more-link a {
+  color: #7f7f7f;
+  font-family: HelveticaBold;
+  text-decoration: none;
+}
+
+/* line 2, ../scss/curemint/_supplies-subcat.scss */
+.view-supplies.view-display-id-page_3 .views-col {
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 8, ../scss/curemint/_supplies-subcat.scss */
+.view-supplies.view-display-id-page_3 .views-field-name {
+  position: relative;
+}
+/* line 11, ../scss/curemint/_supplies-subcat.scss */
+.view-supplies.view-display-id-page_3 .views-field-name .field-content {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.75);
+  bottom: 0;
+  color: #4a4a4a;
+  display: flex;
+  font-family: Helvetica;
+  font-size: 0.875rem;
+  font-weight: normal;
+  height: 70px;
+  left: 0;
+  padding: 0 20px;
+  position: absolute;
+  text-align: left;
+  text-decoration: none;
+  width: 100%;
+}
+
+/* line 39, ../scss/style.scss */
 :root {
   font-size: 1rem;
 }
 
-/* line 42, ../scss/style.scss */
+/* line 43, ../scss/style.scss */
 html {
   font-size: 100%;
   min-height: 100%;
   position: relative;
 }
 
-/* line 48, ../scss/style.scss */
+/* line 49, ../scss/style.scss */
 body {
   color: #7f7f7f;
   font-family: Helvetica;
@@ -11274,12 +11352,12 @@ body {
   margin-top: 9px;
 }
 
-/* line 55, ../scss/style.scss */
+/* line 56, ../scss/style.scss */
 * {
   outline: none;
 }
 
-/* line 59, ../scss/style.scss */
+/* line 60, ../scss/style.scss */
 h1 {
   font-family: Helvetica;
   border: 0;
@@ -11288,7 +11366,7 @@ h1 {
   text-transform: uppercase;
 }
 
-/* line 63, ../scss/style.scss */
+/* line 64, ../scss/style.scss */
 h2 {
   font-family: Helvetica;
   font-size: 1.25rem;
@@ -11297,7 +11375,7 @@ h2 {
   color: #4a4a4a;
 }
 
-/* line 67, ../scss/style.scss */
+/* line 68, ../scss/style.scss */
 h3 {
   color: #4a4a4a;
   font-family: Helvetica;
@@ -11308,7 +11386,7 @@ h3 {
   padding-bottom: 33px;
 }
 
-/* line 72, ../scss/style.scss */
+/* line 73, ../scss/style.scss */
 .view-frontpage {
   display: none;
 }

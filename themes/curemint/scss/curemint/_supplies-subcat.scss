@@ -1,0 +1,29 @@
+.view-supplies.view-display-id-page_3 {
+  .views-col {
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .views-field-name {
+    position: relative;
+
+    .field-content {
+      align-items: center;
+      background: $lightwhitecolor;
+      bottom: 0;
+      color: $quartzcolor;
+      display: flex;
+      font-family: $helvetica-r;
+      font-size: rem-calc(14px);
+      font-weight: normal;
+      height: 70px;
+      left: 0;
+      padding: 0 20px;
+      position: absolute;
+      text-align: left;
+      text-decoration: none;
+      width: 100%;
+    }
+  }
+}
