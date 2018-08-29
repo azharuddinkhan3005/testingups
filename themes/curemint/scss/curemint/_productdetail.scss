@@ -51,6 +51,10 @@
       text-decoration: line-through;
     }
 
+    &--name-field-packaging-details {
+      display: inline-block;
+    }
+
     .control-label {
       display: block;
     }
@@ -86,6 +90,19 @@
       text-transform: uppercase;
       vertical-align: top;
     }
+
+    &--label {
+      font-family: $helvetica-r;
+      font-size: rem-calc(15px);
+      font-weight: normal;
+      line-height: rem-calc(25px);
+      padding-bottom: 5px;
+      text-align: left;
+    }
+
+    &--item {
+      color: $spanishgraycolor;
+    }
   }
 
   .product-price {
@@ -99,5 +116,13 @@
     &--msrp {
       display: inline-block;
     }
+  }
+
+  .product-desc {
+    padding-top: 40px;
+  }
+
+  .product-pkg {
+    padding-top: 10px;
   }
 }

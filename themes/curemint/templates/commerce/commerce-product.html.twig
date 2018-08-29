@@ -30,16 +30,23 @@
       <label>{% trans %}Manufacture Name:{% endtrans %}</label>{{ product.variation_field_manufacturer }}
     {% endif %}
     <label>{% trans %}Distributor Name:{% endtrans %}</label>{{ product.variation_field_distributor }}
+    <div class="product-pkg">
+      <label>{% trans %}Product Package:{% endtrans %}</label>{{ product.variation_field_packaging_details }}
+    </div>
     <div class="product-price">
       <div class="product-price--formulary">
-        <label class="product-price--label">Formulary</label>
+        <label class="product-price--label">{% trans %}Formulary{% endtrans %}</label>
         {{ product.variation_price|without('label') }}
       </div>
       <div class="product-price--msrp">
-        <label class="product-price--label">(MSRP)</label>
+        <label class="product-price--label">{% trans %}(MSRP){% endtrans %}</label>
         {{ product.variation_field_msrp_price }}
       </div>
     </div>
     {{ product.variations }}
+
+    <div class="product-desc">
+      {{ product.variation_field_description }}
+    </div>
   </div>
 </div>

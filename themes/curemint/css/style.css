@@ -10981,17 +10981,21 @@ p:last-child,
   text-decoration: line-through;
 }
 /* line 54, ../scss/curemint/_productdetail.scss */
+.product-detail .field--name-field-packaging-details {
+  display: inline-block;
+}
+/* line 58, ../scss/curemint/_productdetail.scss */
 .product-detail .field .control-label {
   display: block;
 }
-/* line 58, ../scss/curemint/_productdetail.scss */
+/* line 62, ../scss/curemint/_productdetail.scss */
 .product-detail .field .form-actions {
   display: inline-block;
   padding-left: 20px;
   padding-top: 25px;
   vertical-align: bottom;
 }
-/* line 65, ../scss/curemint/_productdetail.scss */
+/* line 69, ../scss/curemint/_productdetail.scss */
 .product-detail .field .form-number {
   border-color: #ccc;
   box-shadow: none;
@@ -11001,7 +11005,7 @@ p:last-child,
   padding: 0 5px 0 15px;
   width: 60px;
 }
-/* line 75, ../scss/curemint/_productdetail.scss */
+/* line 79, ../scss/curemint/_productdetail.scss */
 .product-detail .field .btn {
   background: transparent;
   border: 1px solid #9e9e9e;
@@ -11016,18 +11020,39 @@ p:last-child,
   text-transform: uppercase;
   vertical-align: top;
 }
-/* line 91, ../scss/curemint/_productdetail.scss */
+/* line 94, ../scss/curemint/_productdetail.scss */
+.product-detail .field--label {
+  font-family: Helvetica;
+  font-size: 0.9375rem;
+  font-weight: normal;
+  line-height: 1.5625rem;
+  padding-bottom: 5px;
+  text-align: left;
+}
+/* line 103, ../scss/curemint/_productdetail.scss */
+.product-detail .field--item {
+  color: #999;
+}
+/* line 108, ../scss/curemint/_productdetail.scss */
 .product-detail .product-price {
   padding-top: 10px;
 }
-/* line 94, ../scss/curemint/_productdetail.scss */
+/* line 111, ../scss/curemint/_productdetail.scss */
 .product-detail .product-price--formulary {
   display: inline-block;
   width: 25%;
 }
-/* line 99, ../scss/curemint/_productdetail.scss */
+/* line 116, ../scss/curemint/_productdetail.scss */
 .product-detail .product-price--msrp {
   display: inline-block;
+}
+/* line 121, ../scss/curemint/_productdetail.scss */
+.product-detail .product-desc {
+  padding-top: 40px;
+}
+/* line 125, ../scss/curemint/_productdetail.scss */
+.product-detail .product-pkg {
+  padding-top: 10px;
 }
 
 /* line 2, ../scss/curemint/_orderconfirmation.scss */

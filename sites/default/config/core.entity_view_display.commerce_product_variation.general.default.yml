@@ -5,6 +5,7 @@ dependencies:
   config:
     - commerce_product.commerce_product_variation_type.general
     - field.field.commerce_product_variation.general.field_categories
+    - field.field.commerce_product_variation.general.field_description
     - field.field.commerce_product_variation.general.field_distributor
     - field.field.commerce_product_variation.general.field_distributor_sku
     - field.field.commerce_product_variation.general.field_manufacturer
@@ -17,6 +18,7 @@ dependencies:
     - commerce_price
     - commerce_variation_cart_form
     - image
+    - text
 third_party_settings:
   commerce_variation_cart_form:
     combine: 0
@@ -26,10 +28,17 @@ bundle: general
 mode: default
 content:
   commerce_variation_cart_form:
-    weight: 7
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_description:
+    weight: 9
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
   field_distributor:
     type: entity_reference_label
     weight: 4
@@ -55,7 +64,7 @@ content:
     type: string
     region: content
   field_msrp_price:
-    weight: 6
+    weight: 7
     label: hidden
     settings:
       strip_trailing_zeroes: false
@@ -63,6 +72,13 @@ content:
     third_party_settings: {  }
     type: commerce_price_default
     region: content
+  field_packaging_details:
+    type: text_default
+    weight: 5
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
   field_product_images:
     weight: 0
     label: hidden
@@ -75,7 +91,7 @@ content:
   price:
     label: hidden
     type: commerce_price_default
-    weight: 5
+    weight: 6
     region: content
     settings:
       strip_trailing_zeroes: false
@@ -92,7 +108,6 @@ content:
 hidden:
   field_categories: true
   field_distributor_sku: true
-  field_packaging_details: true
   field_quantity: true
   product_id: true
   sku: true
