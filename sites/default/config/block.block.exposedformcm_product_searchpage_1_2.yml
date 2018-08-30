@@ -5,13 +5,18 @@ dependencies:
   config:
     - views.view.cm_product_search
   module:
+    - block_class
+    - system
     - views
   theme:
     - curemint
+third_party_settings:
+  block_class:
+    classes: sort-products
 id: exposedformcm_product_searchpage_1_2
 theme: curemint
 region: content
-weight: -9
+weight: -8
 provider: null
 plugin: 'views_exposed_filter_block:cm_product_search-page_1'
 settings:
@@ -20,4 +25,9 @@ settings:
   provider: views
   label_display: '0'
   views_label: ''
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /search
+    negate: false
+    context_mapping: {  }

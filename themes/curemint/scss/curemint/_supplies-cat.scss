@@ -1,7 +1,7 @@
 // supplies category page
 .view-supplies.view-display-id-page_1 {
   .views-col {
-    padding-bottom: 20px;
+    padding-bottom: 25px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -31,7 +31,7 @@
   .views-field-view {
     clear: both;
     overflow: hidden;
-    padding: 20px 20px 0;
+    padding: 12px 20px 0;
 
     .field-content {
       line-height: rem-calc(25px);
@@ -42,5 +42,28 @@
     color: $graycolor;
     font-family: $helvetica-b;
     text-decoration: none;
+  }
+}
+
+.view-supplies.view-display-id-page_2 {
+  .views-field-name {
+    a {
+      align-items: center;
+      background: transparent;
+      bottom: 0;
+      color: $graycolor;
+      display: inline-block;
+      font-family: $helvetica-r;
+      font-size: rem-calc(14px);
+      font-weight: normal;
+      height: auto;
+      left: 0;
+      line-height: normal;
+      padding: 0;
+      position: relative;
+      text-align: left;
+      text-decoration: none;
+      width: auto;      
+    }
   }
 }

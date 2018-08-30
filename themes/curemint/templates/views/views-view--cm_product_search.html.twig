@@ -44,10 +44,12 @@
 
 <div class="listing-view">
   <a class="grid-view" href="#"><img width="24" src="/themes/curemint/images/grid.jpg"></a>
-  <select class="hide">
-    <option>sort by</option>
-  </select>
 </div>
+{% if pager %}
+<div class="top-pagination">
+  {{ pager }}
+</div>
+{% endif %}
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if title %}
@@ -58,9 +60,6 @@
     <div class="view-header">
       {{ header }}
     </div>
-  {% endif %}
-  {% if pager %}
-    {{ pager }}
   {% endif %}
   {% if exposed %}
     <div class="view-filters form-group">

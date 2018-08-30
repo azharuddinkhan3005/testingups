@@ -1,7 +1,10 @@
 // product listing page
 .view-cm-product-search {
+  clear: both;
+  overflow: hidden;
+
   .views-col {
-    padding-bottom: 20px;
+    padding-bottom: 25px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -45,22 +48,73 @@
 }
 
 .listing-view {
-  clear: both;
-  overflow: hidden;
-  padding-bottom: 25px;
-  
-  .grid-view {
+  float: left;
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
 
+  .grid-view {
+    border: 1px solid $chinesesilvercolor;
+    border-radius: 4px;
+    display: inline-block;
+    height: 50px;
+    line-height: rem-calc(50px);
+    text-align: center;
+    width: 50px;
+  }
+}
+
+.path-search {
+  .page-header {
+    display: none;
   }
 
-  select {
-    border-color: $chinesesilvercolor;
-    box-shadow: none;
-    color: $graycolor;
-    font-size: rem-calc(16);
-    height: 50px;
-    padding: 0 5px 0 15px;
-    width: 60px;
+  .sort-products {
     float: right;
+    margin-top: 20px;
+    z-index: 1;
+
+    .control-label {
+      display: none;
+    }
+
+    .form-control {
+      background-image: url('../images/arrow.png');
+      background-position: 95% center;
+      background-repeat: no-repeat;
+      border-color: $chinesesilvercolor;
+      box-shadow: none;
+      color: $graycolor;
+      float: right;
+      font-size: rem-calc(16);
+      height: 50px;
+      padding: 0 5px 0 15px;
+      width: 265px;
+    }
+
+    .select-wrapper::after {
+      display: none;
+    }
+  }
+
+  .form-item {
+    &-keyword {
+      display: none;
+    }
+
+    &-distributor {
+      display: none;
+    }
+
+    &-category {
+      display: none;
+    }
+  }
+
+  .top-pagination {
+    left: 0;
+    position: absolute;
+    top: 15px;
+    width: 100%;
   }
 }

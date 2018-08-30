@@ -33,6 +33,10 @@ jQuery(document).ready(function() {
   jQuery('.shop-supplier').removeClass('hide');
   jQuery('.supplies').removeClass('hide');
   jQuery('.most-purchased-listing').removeClass('hide');
+
+  // sort by option added and relevance option remove
+  jQuery('.path-search .sort-products select').prepend('<option value="sort by">Sort By</option>');
+  jQuery(".path-search .sort-products select option[value='search_api_relevance ASC']").remove();
 });
 
 //sticky footer
