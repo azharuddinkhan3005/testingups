@@ -78,8 +78,8 @@ display:
           id: 0
           total_pages: null
           tags:
-            previous: ‹‹
-            next: ››
+            previous: ‹
+            next: ›
             first: '« First'
             last: 'Last »'
           expose:
@@ -92,11 +92,16 @@ display:
             offset_label: Offset
           quantity: 4
       style:
-        type: default
+        type: grid
         options:
           grouping: {  }
-          row_class: col-sm-2
-          default_row_class: true
+          columns: 5
+          automatic_width: true
+          alignment: horizontal
+          col_class_default: true
+          col_class_custom: ''
+          row_class_default: true
+          row_class_custom: ''
       row:
         type: fields
       fields:
