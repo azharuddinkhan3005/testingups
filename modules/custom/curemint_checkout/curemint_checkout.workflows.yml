@@ -1,0 +1,32 @@
+curemint_order_fulfillment_validation:
+  id: curemint_order_fulfillment_validation
+  group: commerce_order
+  label: 'Curemint Fulfillment, with validation'
+  states:
+    draft:
+      label: Cart
+    pending:
+      label: Pending
+    approved:
+      label: Approved
+    completed:
+      label: Completed
+    canceled:
+      label: Canceled
+  transitions:
+    place:
+      label: 'Place order'
+      from: [draft]
+      to:   pending
+    approve:
+      label: 'Approve order'
+      from: [pending]
+      to:   approved
+    complete:
+      label: 'Complete order'
+      from: [approved]
+      to: completed
+    cancel:
+      label: 'Cancel order'
+      from: [draft, pending, approved]
+      to:   canceled
