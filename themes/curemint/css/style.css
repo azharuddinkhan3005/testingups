@@ -11401,6 +11401,24 @@ p:last-child,
   float: right;
 }
 
+/* line 47, ../scss/curemint/_product-listing.scss */
+.listing-view {
+  clear: both;
+  overflow: hidden;
+  padding-bottom: 25px;
+}
+/* line 56, ../scss/curemint/_product-listing.scss */
+.listing-view select {
+  border-color: #ccc;
+  box-shadow: none;
+  color: #7f7f7f;
+  font-size: 1rem;
+  height: 50px;
+  padding: 0 5px 0 15px;
+  width: 60px;
+  float: right;
+}
+
 /* line 40, ../scss/style.scss */
 :root {
   font-size: 1rem;

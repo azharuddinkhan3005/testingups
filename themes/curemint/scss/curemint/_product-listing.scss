@@ -43,3 +43,24 @@
     float: right;
   }
 }
+
+.listing-view {
+  clear: both;
+  overflow: hidden;
+  padding-bottom: 25px;
+  
+  .grid-view {
+
+  }
+
+  select {
+    border-color: $chinesesilvercolor;
+    box-shadow: none;
+    color: $graycolor;
+    font-size: rem-calc(16);
+    height: 50px;
+    padding: 0 5px 0 15px;
+    width: 60px;
+    float: right;
+  }
+}
