@@ -31,7 +31,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 20
+    weight: 3
     region: content
     third_party_settings: {  }
   order_items:
@@ -45,13 +45,21 @@ content:
       match_operator: CONTAINS
       allow_existing: false
       form_mode: default
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
     third_party_settings: {  }
     region: content
+  state:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
   ip_address: true
   mail: true
   order_number: true
-  state: true
   store_id: true
   uid: true
