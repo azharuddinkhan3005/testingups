@@ -69,16 +69,15 @@ function curemint_core_views_pre_render(ViewExecutable $view) {
   elseif ($view->id() == 'cm_product_search') {
     // Update the page title as per applied filters.
     $params = \Drupal::request()->query->all();
-    $page_title_tid = '';
+    $title = '';
     if (array_key_exists('distributor', $params)) {
-      $page_title_tid = $params['distributor'];
+      $title = Node::load($params['distributor'])->getTitle();
     }
     elseif (array_key_exists('category', $params)) {
-      $page_title_tid = $params['category'];
+      $title = Term::load($params['category'])->getName();
     }
-    if (!empty($page_title_tid)) {
-      $term = Term::load($page_title_tid);
-      $view->setTitle($term->getName());
+    if (!empty($title)) {
+      $view->setTitle($title);
     }
   }
 }
