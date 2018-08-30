@@ -10,6 +10,7 @@ use \Drupal\node\Entity\Node;
 use \Drupal\Core\Messenger\MessengerInterface;
 use \Drupal\views\ViewExecutable;
 use \Drupal\taxonomy\Entity\Term;
+use \Drupal\Core\Form\FormStateInterface;
 
 /**
  * Implements hook_ENTITY_TYPE_update().
@@ -78,6 +79,24 @@ function curemint_core_views_pre_render(ViewExecutable $view) {
     }
     if (!empty($title)) {
       $view->setTitle($title);
+    }
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function curemint_core_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if ($form_id == 'views_exposed_form' && $form['#id'] == 'views-exposed-form-cm-product-search-page-1') {
+    $params = \Drupal::request()->query->all();
+    if (!array_key_exists('keyword', $params)) {
+      $form['keyword']['#access'] = FALSE;
+    }
+    if (!array_key_exists('distributor', $params)) {
+      $form['distributor']['#access'] = FALSE;
+    }
+    if (!array_key_exists('category', $params)) {
+      $form['category']['#access'] = FALSE;
     }
   }
 }
