@@ -31,14 +31,6 @@
     max-width: 100%;
   }
 
-  .items-img {
-    align-items: center;
-    display: flex;
-    height: 220px;
-    justify-content: center;
-    overflow: hidden;
-  }
-
   .item-distributor {
     clear: both;
     color: $graycolor;
@@ -84,6 +76,10 @@
     float: right;
   }
 
+}
+
+.items-img {
+  margin-bottom: 10px;
 }
 
 .item-name {
