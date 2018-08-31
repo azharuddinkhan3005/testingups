@@ -1,0 +1,6 @@
+services:
+  curemint_order_event.subscriber:
+    class: '\Drupal\curemint_core\EventSubscriber\CuremintOrderEventSubscriber'
+    arguments: ['@config.factory']
+    tags:
+      - { name: 'event_subscriber' }

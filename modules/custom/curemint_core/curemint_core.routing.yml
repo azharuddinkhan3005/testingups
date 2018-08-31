@@ -1,0 +1,7 @@
+curemint_config.settings:
+  path: '/admin/config/curemint'
+  defaults:
+    _form: '\Drupal\curemint_core\Form\CuremintConfigForm'
+    _title: 'Curemint Config'
+  requirements:
+    _permission: 'administer site configuration'
