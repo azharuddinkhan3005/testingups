@@ -1,0 +1,130 @@
+// product listing page
+.view-cm-product-search {
+  clear: both;
+  overflow: hidden;
+
+  .views-col {
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .btn {
+    background: transparent;
+    border: 1px solid $spanishlightgraycolor;
+    border-radius: 3px;
+    box-shadow: none;
+    color: $graycolor;
+    font-family: $helvetica-b;
+    font-size: rem-calc(14);
+    line-height: rem-calc(48);
+    margin: 0;
+    padding: 0 15px;
+    text-transform: uppercase;
+    vertical-align: top;
+  }
+
+  .field--name-quantity {
+    float: left;
+  }
+
+  .control-label {
+    display: none;
+  }
+
+  .form-number {
+    border-color: $chinesesilvercolor;
+    box-shadow: none;
+    color: $graycolor;
+    font-size: rem-calc(16);
+    height: 50px;
+    padding: 0 5px 0 15px;
+    width: 60px;
+  }
+
+  .form-actions {
+    float: right;
+  }
+}
+
+.listing-view {
+  float: left;
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
+
+  .grid-view {
+    border: 1px solid $chinesesilvercolor;
+    border-radius: 4px;
+    display: inline-block;
+    height: 50px;
+    line-height: rem-calc(50px);
+    text-align: center;
+    width: 50px;
+  }
+}
+
+.path-search {
+  .page-header {
+    display: none;
+  }
+
+  .sort-products {
+    float: right;
+    margin-top: 20px;
+    z-index: 1;
+
+    .control-label {
+      font-size: rem-calc(16);
+      font-weight: normal;
+      line-height: normal;
+      margin-bottom: 0;
+      padding-right: 5px;
+      vertical-align: middle;
+    }
+
+    .form-control {
+      background-image: url('../images/arrow.png');
+      background-position: 95% center;
+      background-repeat: no-repeat;
+      border-color: $chinesesilvercolor;
+      box-shadow: none;
+      color: $graycolor;
+      float: right;
+      font-size: rem-calc(16);
+      height: 50px;
+      line-height: rem-calc(50px);
+      padding: 0 5px 0 15px;
+      width: 208px;
+    }
+  }
+
+  .select-wrapper {
+    vertical-align: middle;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .form-item {
+    &-keyword {
+      display: none;
+    }
+
+    &-distributor {
+      display: none;
+    }
+
+    &-category {
+      display: none;
+    }
+  }
+
+  .top-pagination {
+    left: 0;
+    position: absolute;
+    top: 15px;
+    width: 100%;
+  }
+}

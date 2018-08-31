@@ -203,7 +203,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<a class=\"distributor-link\" href=\"search?distributor={{ nid }}\">\n  <figure class=\"distributor-link-img\">\n    <img src=\"{{ field_distributor_image }}\">\n  </figure>\n</a>"
+            text: "<a class=\"distributor-link\" href=\"search?distributor={{ nid }}&sort_bef_combine=title+ASC\">\n  <figure class=\"distributor-link-img\">\n    <img src=\"{{ field_distributor_image }}\">\n  </figure>\n</a>"
             make_link: false
             path: ''
             absolute: false

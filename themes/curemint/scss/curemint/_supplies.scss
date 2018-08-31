@@ -26,7 +26,6 @@
   .suppliesitem {
 
     &__img {
-      height: 240px;
       overflow: hidden;
       position: relative;
     }
@@ -45,6 +44,7 @@
       padding: 0 20px;
       position: absolute;
       text-align: left;
+      text-decoration: none;
       width: 100%;
     }
   }

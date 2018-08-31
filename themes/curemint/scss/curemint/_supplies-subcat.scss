@@ -1,6 +1,7 @@
+// supplies sub-category page
 .view-supplies.view-display-id-page_3 {
   .views-col {
-    padding-bottom: 20px;
+    padding-bottom: 25px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -8,7 +9,7 @@
   .views-field-name {
     position: relative;
 
-    .field-content {
+    a {
       align-items: center;
       background: $lightwhitecolor;
       bottom: 0;
