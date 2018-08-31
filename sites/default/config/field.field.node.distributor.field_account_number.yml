@@ -1,0 +1,19 @@
+uuid: 69a9b79b-98ff-465f-a582-fb335cd51c5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_account_number
+    - node.type.distributor
+id: node.distributor.field_account_number
+field_name: field_account_number
+entity_type: node
+bundle: distributor
+label: 'Account Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
