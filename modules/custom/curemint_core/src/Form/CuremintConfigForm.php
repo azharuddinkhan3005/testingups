@@ -13,7 +13,7 @@ class CuremintConfigForm extends ConfigFormBase {
    * {@inheritdoc}
    */
   public function getFormId() {
-    return 'curemint_order_workflow_settings';
+    return 'curemint_core_settings';
   }
 
   /** 
@@ -21,7 +21,7 @@ class CuremintConfigForm extends ConfigFormBase {
    */
   protected function getEditableConfigNames() {
     return [
-      'curemint_config.settings',
+      'curemint_core.settings',
     ];
   }
 
@@ -29,7 +29,7 @@ class CuremintConfigForm extends ConfigFormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    $config = $this->config('curemint_config.settings');
+    $config = $this->config('curemint_core.settings');
     
     $form['order_type_state_fiesldset'] = [
       '#type' => 'fieldset',
@@ -53,7 +53,7 @@ class CuremintConfigForm extends ConfigFormBase {
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
       // Retrieve the configuration
-       $this->configFactory->getEditable('curemint_config.settings')
+       $this->configFactory->getEditable('curemint_core.settings')
       // Set the submitted configuration setting
       ->set('order_type_state', $form_state->getValue('order_type_state'))
       ->save();
