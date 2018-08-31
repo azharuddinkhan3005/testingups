@@ -9952,7 +9952,7 @@ p:last-child,
   text-align: left;
   top: 60px;
   width: 420px;
-  z-index: 1;
+  z-index: 10;
 }
 /* line 20, ../scss/curemint/_cart-dropdown.scss */
 .cart__dropdown-list {
