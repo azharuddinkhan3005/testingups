@@ -75,7 +75,12 @@
     z-index: 1;
 
     .control-label {
-      display: none;
+      font-size: rem-calc(16);
+      font-weight: normal;
+      line-height: normal;
+      margin-bottom: 0;
+      padding-right: 5px;
+      vertical-align: middle;
     }
 
     .form-control {
@@ -88,11 +93,16 @@
       float: right;
       font-size: rem-calc(16);
       height: 50px;
+      line-height: rem-calc(50px);
       padding: 0 5px 0 15px;
       width: 265px;
     }
+  }
 
-    .select-wrapper::after {
+  .select-wrapper {
+    vertical-align: middle;
+
+    &::after {
       display: none;
     }
   }

@@ -25,12 +25,12 @@
   </div>
   <div class="col-md-6">
     {{ product.title }}
-    {{ product.variation_field_manufacturer_sku }}
+    <label>{% trans %}SKU:{% endtrans %}</label>{{ product.variation_field_manufacturer_sku }}
     {% if product.variation_field_manufacturer|render %}
-      <label>{% trans %}Manufacture Name:{% endtrans %}</label>{{ product.variation_field_manufacturer }}
+      <div class="product-manufacturer prdt-var"><label>{% trans %}Manufacture:{% endtrans %}</label>{{ product.variation_field_manufacturer }}</div>
     {% endif %}
-    <label>{% trans %}Distributor Name:{% endtrans %}</label>{{ product.variation_field_distributor }}
-    <div class="product-pkg">
+    <div class="product-distributor prdt-var"><label>{% trans %}Distributor:{% endtrans %}</label>{{ product.variation_field_distributor }}</div>
+    <div class="product-pkg prdt-var">
       <label>{% trans %}Product Package:{% endtrans %}</label>{{ product.variation_field_packaging_details }}
     </div>
     <div class="product-price">

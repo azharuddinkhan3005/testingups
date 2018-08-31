@@ -9866,16 +9866,14 @@ p:last-child,
   font-weight: normal;
   height: 52px;
   letter-spacing: normal;
-  line-height: 1.43;
+  line-height: 1.4375rem;
   padding: 20px 63px;
   width: 100%;
 }
 /* line 60, ../scss/curemint/_header.scss */
 .custom-header .searchprod__form-btn {
   background-color: transparent;
-  background-image: url("../images/search.svg");
   border: 0;
-  border-radius: 100%;
   box-shadow: none;
   display: block;
   height: 20px;
@@ -9887,43 +9885,43 @@ p:last-child,
   width: 21px;
 }
 
-/* line 78, ../scss/curemint/_header.scss */
+/* line 76, ../scss/curemint/_header.scss */
 .navtools {
   list-style: none;
   margin: 0;
   padding: 15px 19px 0 0;
   text-align: right;
 }
-/* line 84, ../scss/curemint/_header.scss */
+/* line 82, ../scss/curemint/_header.scss */
 .navtools__list {
   display: inline-block;
   padding: 0 15px;
   vertical-align: top;
 }
-/* line 90, ../scss/curemint/_header.scss */
+/* line 88, ../scss/curemint/_header.scss */
 .navtools__list-cart {
   padding-bottom: 25px;
   padding-right: 0;
 }
-/* line 97, ../scss/curemint/_header.scss */
+/* line 95, ../scss/curemint/_header.scss */
 .navtools__listicon-img {
   height: 18px;
   width: 21px;
 }
-/* line 105, ../scss/curemint/_header.scss */
+/* line 103, ../scss/curemint/_header.scss */
 .navtools__profileicon-img {
   width: 18px;
 }
-/* line 110, ../scss/curemint/_header.scss */
+/* line 108, ../scss/curemint/_header.scss */
 .navtools__carticon {
   position: relative;
 }
-/* line 113, ../scss/curemint/_header.scss */
+/* line 111, ../scss/curemint/_header.scss */
 .navtools__carticon-img {
   height: 20px;
   width: 21px;
 }
-/* line 118, ../scss/curemint/_header.scss */
+/* line 116, ../scss/curemint/_header.scss */
 .navtools__carticon-item {
   background-color: #0089dd;
   border-radius: 100%;
@@ -11065,8 +11063,8 @@ p:last-child,
   padding-top: 40px;
 }
 /* line 125, ../scss/curemint/_productdetail.scss */
-.product-detail .product-pkg {
-  padding-top: 10px;
+.product-detail .prdt-var {
+  padding-top: 5px;
 }
 
 /* line 3, ../scss/curemint/_orderconfirmation.scss */
@@ -11457,9 +11455,14 @@ p:last-child,
 }
 /* line 77, ../scss/curemint/_product-listing.scss */
 .path-search .sort-products .control-label {
-  display: none;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: normal;
+  margin-bottom: 0;
+  padding-right: 5px;
+  vertical-align: middle;
 }
-/* line 81, ../scss/curemint/_product-listing.scss */
+/* line 86, ../scss/curemint/_product-listing.scss */
 .path-search .sort-products .form-control {
   background-image: url("../images/arrow.png");
   background-position: 95% center;
@@ -11470,26 +11473,31 @@ p:last-child,
   float: right;
   font-size: 1rem;
   height: 50px;
+  line-height: 3.125rem;
   padding: 0 5px 0 15px;
   width: 265px;
 }
-/* line 95, ../scss/curemint/_product-listing.scss */
-.path-search .sort-products .select-wrapper::after {
+/* line 102, ../scss/curemint/_product-listing.scss */
+.path-search .select-wrapper {
+  vertical-align: middle;
+}
+/* line 105, ../scss/curemint/_product-listing.scss */
+.path-search .select-wrapper::after {
   display: none;
 }
-/* line 101, ../scss/curemint/_product-listing.scss */
+/* line 111, ../scss/curemint/_product-listing.scss */
 .path-search .form-item-keyword {
   display: none;
 }
-/* line 105, ../scss/curemint/_product-listing.scss */
+/* line 115, ../scss/curemint/_product-listing.scss */
 .path-search .form-item-distributor {
   display: none;
 }
-/* line 109, ../scss/curemint/_product-listing.scss */
+/* line 119, ../scss/curemint/_product-listing.scss */
 .path-search .form-item-category {
   display: none;
 }
-/* line 114, ../scss/curemint/_product-listing.scss */
+/* line 124, ../scss/curemint/_product-listing.scss */
 .path-search .top-pagination {
   left: 0;
   position: absolute;
