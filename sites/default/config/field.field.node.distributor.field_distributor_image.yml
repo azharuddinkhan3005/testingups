@@ -12,7 +12,7 @@ field_name: field_distributor_image
 entity_type: node
 bundle: distributor
 label: 'Distributor image'
-description: ''
+description: 'Please upload image of dimension 50x50.'
 required: false
 translatable: false
 default_value: {  }

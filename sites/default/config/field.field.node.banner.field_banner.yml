@@ -12,7 +12,7 @@ field_name: field_banner
 entity_type: node
 bundle: banner
 label: Banner
-description: ''
+description: 'Please upload image of dimension 1440x350.'
 required: true
 translatable: false
 default_value: {  }

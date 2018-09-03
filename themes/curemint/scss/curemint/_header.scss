@@ -81,12 +81,12 @@
 
   &__list {
     display: inline-block;
-    padding: 0 15px;
+    padding: 0 15px 23px;
+    position: relative;
     vertical-align: top;
   }
 
   &__list-cart {
-    padding-bottom: 25px;
     padding-right: 0;
   }
 
@@ -101,6 +101,7 @@
   &__profileicon {
 
     &-img {
+      height: 22px;
       width: 18px;
     }
   }
@@ -109,7 +110,7 @@
     position: relative;
 
     &-img {
-      height: 20px;
+      height: 22px;
       width: 21px;
     }
 

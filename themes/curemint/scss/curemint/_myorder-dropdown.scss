@@ -1,5 +1,5 @@
-// cart
-.cart {
+// profile dropdown
+.myorder {
 
   &__dropdown {
     background-color: $whitecolor;
@@ -11,10 +11,10 @@
     margin: 0;
     padding: 30px;
     position: absolute;
-    right: -34px;
+    right: 0;
     text-align: left;
     top: 45px;
-    width: 420px;
+    width: 320px;
     z-index: 10;
 
     &-list {
@@ -25,23 +25,16 @@
       padding: 5px 0;
     }
 
-    &-price {
-      float: right;
-      font-family: $helvetica-b;
-      text-align: right;
-    }
-
-    &-item {
-      float: right;
-      font-family: $helvetica-b;
-      text-align: right;
+    &-title {
+      color: $graycolor;
+      text-decoration: none;
     }
   }
 }
 
 .navtools {
 
-  &__list-cart:hover .cart {
+  &__list-profile:hover .myorder {
 
     &__dropdown {
       display: block;

@@ -22,6 +22,11 @@
     padding: 0 15px;
     text-transform: uppercase;
     vertical-align: top;
+
+    &:active {
+      background: transparent;
+      color: $graycolor;
+    }
   }
 
   .field--name-quantity {
@@ -49,7 +54,6 @@
 
 .listing-view {
   float: left;
-  margin-top: 20px;
   position: relative;
   z-index: 1;
 
@@ -65,13 +69,13 @@
 }
 
 .path-search {
-  .page-header {
-    display: none;
+
+  .views-element-container {
+    position: relative;
   }
 
   .sort-products {
     float: right;
-    margin-top: 20px;
     z-index: 1;
 
     .control-label {
@@ -124,7 +128,7 @@
   .top-pagination {
     left: 0;
     position: absolute;
-    top: 15px;
+    top: 0;
     width: 100%;
   }
 }
