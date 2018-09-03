@@ -33,8 +33,8 @@ function curemint_core_node_insert(EntityInterface $entity) {
  *   The node object being saved.
  */
 function curemint_core_unpublish_banner_nodes($entity) {
-  // Only process if the current node is set to be published.
-  if ($entity->status->value == Node::PUBLISHED) {
+  // Only process if the current node is set to be published and is banner type.
+  if ($entity->bundle() == 'banner' && $entity->status->value == Node::PUBLISHED) {
     $nids = \Drupal::entityQuery('node')->condition('type', 'banner')->execute();
     $current_nid = $entity->id();
     foreach ($nids as $nid) {
