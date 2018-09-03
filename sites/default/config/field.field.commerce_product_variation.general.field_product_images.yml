@@ -12,7 +12,7 @@ field_name: field_product_images
 entity_type: commerce_product_variation
 bundle: general
 label: 'Product images'
-description: ''
+description: 'Please upload image of dimension 208x208.'
 required: false
 translatable: false
 default_value: {  }

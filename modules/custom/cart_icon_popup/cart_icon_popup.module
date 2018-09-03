@@ -19,6 +19,7 @@ function cart_icon_popup_theme() {
         'title' => NULL,
         'link' => NULL,
         'items_count' => NULL,
+        'user_id' => NULL,
         'savings' => NULL,
         'keyword' => NULL,
       ],

@@ -57,13 +57,13 @@ class CustomHeader extends BlockBase implements ContainerFactoryPluginInterface 
 
   public function build() {
     $totals = $this->curemintTotalSummary->buildTotals();
-
     $params = \Drupal::request()->query->all();
 
     return [
       '#title' => 'Custom Header',
       '#theme' => 'cart_icon_popup',
       '#items_count' => $totals['quantity'],
+      '#user_id' => $totals['user_id'],
       '#savings' => $totals['savings'],
       '#keyword' => !empty($params['keyword']) ? $params['keyword'] : '',
     ];

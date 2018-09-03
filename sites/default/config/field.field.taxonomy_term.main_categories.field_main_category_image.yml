@@ -12,7 +12,7 @@ field_name: field_main_category_image
 entity_type: taxonomy_term
 bundle: main_categories
 label: Image
-description: ''
+description: 'Please upload image of dimension 208x208.'
 required: false
 translatable: false
 default_value: {  }
