@@ -1,0 +1,5 @@
+curemint_core.config_settings:
+  title: 'Curemint configuration'
+  description: 'Approval mmechanism for curemint orders.'
+  parent: system.admin_config
+  route_name: 'curemint_config.settings'
