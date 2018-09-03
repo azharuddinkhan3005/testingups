@@ -2,10 +2,10 @@
 
 /**
  * @file
- * Contains \Drupal\curemint_core\EventSubscriber\CuremintOrderEventSubscriber.
+ * Contains \Drupal\curemint_checkout\EventSubscriber\CuremintOrderEventSubscriber.
  */
 
-namespace Drupal\curemint_core\EventSubscriber;
+namespace Drupal\curemint_checkout\EventSubscriber;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Drupal\state_machine\Event\WorkflowTransitionEvent;
