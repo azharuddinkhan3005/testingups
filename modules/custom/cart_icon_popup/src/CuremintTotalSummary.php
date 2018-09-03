@@ -5,7 +5,6 @@ namespace Drupal\cart_icon_popup;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\commerce_cart\CartProviderInterface;
 use CommerceGuys\Intl\Formatter\CurrencyFormatterInterface;
-use \Drupal\user\Entity\User;
 
 class CuremintTotalSummary {
 
@@ -86,22 +85,19 @@ class CuremintTotalSummary {
       $savings = ($totalMsrpPrice - $totalFormularyPrice);
     }
 
-    $user = \Drupal::currentUser();
-    $user_id = $user->id();
-
     if (!empty($savings) && !empty($totalFormularyPrice)) {
       return [
         'quantity' => $totalQuantity,
         'savings' => $this->currencyFormatter->format($savings, $totalCurrencyCode),
         'subtotal' => $this->currencyFormatter->format($totalFormularyPrice, $totalCurrencyCode),
-        'user_id' => $user_id,
+        'user_id' => \Drupal::currentUser()->id(), //@todo: Inject service.
       ];
     }
     return [
       'quantity' => '',
       'savings' => '',
       'subtotal' => '',
-      'user_id' => $user_id,
+      'user_id' => \Drupal::currentUser()->id(),
     ];
   }
 

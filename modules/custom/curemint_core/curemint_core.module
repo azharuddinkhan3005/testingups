@@ -33,8 +33,8 @@ function curemint_core_node_insert(EntityInterface $entity) {
  *   The node object being saved.
  */
 function curemint_core_unpublish_banner_nodes($entity) {
-  // Only process if the current node is set to be published.
-  if ($entity->status->value == Node::PUBLISHED) {
+  // Only process if the current node is set to be published and is banner type.
+  if ($entity->bundle() == 'banner' && $entity->status->value == Node::PUBLISHED) {
     $nids = \Drupal::entityQuery('node')->condition('type', 'banner')->execute();
     $current_nid = $entity->id();
     foreach ($nids as $nid) {
@@ -71,10 +71,10 @@ function curemint_core_views_pre_render(ViewExecutable $view) {
     // Update the page title as per applied filters.
     $params = \Drupal::request()->query->all();
     $title = '';
-    if (array_key_exists('distributor', $params)) {
+    if (array_key_exists('distributor', $params) && !empty($params['distributor'])) {
       $title = Node::load($params['distributor'])->getTitle();
     }
-    elseif (array_key_exists('category', $params)) {
+    elseif (array_key_exists('category', $params) && !empty($params['category'])) {
       $title = Term::load($params['category'])->getName();
     }
     if (!empty($title)) {
