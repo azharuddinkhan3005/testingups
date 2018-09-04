@@ -10,7 +10,7 @@
     position: relative;
 
     a {
-      align-items: center;
+      align-items: flex-end;
       background: $lightwhitecolor;
       bottom: 0;
       color: $quartzcolor;
@@ -18,9 +18,9 @@
       font-family: $helvetica-r;
       font-size: rem-calc(14px);
       font-weight: normal;
-      height: 70px;
       left: 0;
-      padding: 0 20px;
+      min-height: 40px;
+      padding: 10px;
       position: absolute;
       text-align: left;
       text-decoration: none;
@@ -31,7 +31,7 @@
   .views-field-view {
     clear: both;
     overflow: hidden;
-    padding: 12px 20px 0;
+    padding: 12px 10px 0;
 
     .field-content {
       line-height: rem-calc(25px);
@@ -48,7 +48,6 @@
 .view-supplies.view-display-id-page_2 {
   .views-field-name {
     a {
-      align-items: center;
       background: transparent;
       bottom: 0;
       color: $graycolor;
@@ -56,14 +55,14 @@
       font-family: $helvetica-r;
       font-size: rem-calc(14px);
       font-weight: normal;
-      height: auto;
       left: 0;
       line-height: normal;
+      min-height: auto;
       padding: 0;
       position: relative;
       text-align: left;
       text-decoration: none;
-      width: auto;      
+      width: auto;
     }
   }
 }
