@@ -2,3 +2,13 @@
 # For more information, see: https://pantheon.io/docs/pantheon-yml/
 api_version: 1
 php_version: 7.2
+
+workflows:
+  deploy_product:
+    after:
+      - type: webphp
+        description: Post deployment notification for initial setup
+        script: private/scripts/initialsetup.php
+      - type: webphp
+        description: Post deployment notification for config import
+        script: private/scripts/cim.php
