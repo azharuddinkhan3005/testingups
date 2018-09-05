@@ -11291,7 +11291,7 @@ p:last-child,
 }
 /* line 12, ../scss/curemint/_supplies-cat.scss */
 .view-supplies.view-display-id-page_1 .views-field-name a {
-  align-items: center;
+  align-items: flex-end;
   background: rgba(255, 255, 255, 0.75);
   bottom: 0;
   color: #4a4a4a;
@@ -11299,9 +11299,9 @@ p:last-child,
   font-family: Helvetica;
   font-size: 0.875rem;
   font-weight: normal;
-  height: 70px;
   left: 0;
-  padding: 0 20px;
+  min-height: 40px;
+  padding: 10px;
   position: absolute;
   text-align: left;
   text-decoration: none;
@@ -11311,7 +11311,7 @@ p:last-child,
 .view-supplies.view-display-id-page_1 .views-field-view {
   clear: both;
   overflow: hidden;
-  padding: 12px 20px 0;
+  padding: 12px 10px 0;
 }
 /* line 36, ../scss/curemint/_supplies-cat.scss */
 .view-supplies.view-display-id-page_1 .views-field-view .field-content {
@@ -11326,7 +11326,6 @@ p:last-child,
 
 /* line 50, ../scss/curemint/_supplies-cat.scss */
 .view-supplies.view-display-id-page_2 .views-field-name a {
-  align-items: center;
   background: transparent;
   bottom: 0;
   color: #7f7f7f;
@@ -11334,9 +11333,9 @@ p:last-child,
   font-family: Helvetica;
   font-size: 0.875rem;
   font-weight: normal;
-  height: auto;
   left: 0;
   line-height: normal;
+  min-height: auto;
   padding: 0;
   position: relative;
   text-align: left;
@@ -11356,7 +11355,7 @@ p:last-child,
 }
 /* line 12, ../scss/curemint/_supplies-subcat.scss */
 .view-supplies.view-display-id-page_3 .views-field-name a {
-  align-items: center;
+  align-items: flex-end;
   background: rgba(255, 255, 255, 0.75);
   bottom: 0;
   color: #4a4a4a;
@@ -11364,9 +11363,9 @@ p:last-child,
   font-family: Helvetica;
   font-size: 0.875rem;
   font-weight: normal;
-  height: 70px;
   left: 0;
-  padding: 0 20px;
+  min-height: 40px;
+  padding: 10px;
   position: absolute;
   text-align: left;
   text-decoration: none;
@@ -11514,12 +11513,12 @@ p:last-child,
   line-height: 1.5625rem;
   list-style: none;
   margin: 0;
+  min-width: 220px;
   padding: 30px;
   position: absolute;
   right: 0;
   text-align: left;
   top: 45px;
-  width: 320px;
   z-index: 10;
 }
 /* line 20, ../scss/curemint/_myorder-dropdown.scss */
@@ -11533,10 +11532,11 @@ p:last-child,
 /* line 28, ../scss/curemint/_myorder-dropdown.scss */
 .myorder__dropdown-title {
   color: #7f7f7f;
+  display: block;
   text-decoration: none;
 }
 
-/* line 39, ../scss/curemint/_myorder-dropdown.scss */
+/* line 40, ../scss/curemint/_myorder-dropdown.scss */
 .navtools__list-profile:hover .myorder__dropdown {
   display: block;
 }

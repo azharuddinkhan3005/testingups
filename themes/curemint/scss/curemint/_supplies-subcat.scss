@@ -10,7 +10,7 @@
     position: relative;
 
     a {
-      align-items: center;
+      align-items: flex-end;
       background: $lightwhitecolor;
       bottom: 0;
       color: $quartzcolor;
@@ -18,9 +18,9 @@
       font-family: $helvetica-r;
       font-size: rem-calc(14px);
       font-weight: normal;
-      height: 70px;
       left: 0;
-      padding: 0 20px;
+      min-height: 40px;
+      padding: 10px;
       position: absolute;
       text-align: left;
       text-decoration: none;
